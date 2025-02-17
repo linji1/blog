@@ -1,0 +1,2438 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>老林笔记</title><link>https://linji.org</link><description>&lt;script&gt;document.getElementById('content').innerHTML = `&lt;div id='divdown2' title=''&gt;&lt;/div&gt;`;var interval = 1000; function ShowCountDown(year,month,day,divname) { var now = new Date(); var endDate = new Date(year, month-1, day); var leftTime=endDate.getTime()-now.getTime(); var leftsecond = parseInt(leftTime/1000); var day1=Math.floor(leftsecond/(60*60*24)); var hour=Math.floor((leftsecond-day1*24*60*60)/3600); var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); var cc = document.getElementById(divname); cc.innerHTML = `暑假时间:`+year+`年`+month+`月`+day+`日&lt;br&gt;距今:`+day1+`天`+hour+`小时`+minute+`分`+second+`秒`; } window.setInterval(function(){ShowCountDown(2025,7,5,'divdown2');}, interval);&lt;/script&gt;</description><copyright>老林笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://linji.org/avatar.svg</url><title>avatar</title><link>https://linji.org</link></image><lastBuildDate>Mon, 17 Feb 2025 00:18:37 +0000</lastBuildDate><managingEditor>老林笔记</managingEditor><ttl>60</ttl><webMaster>老林笔记</webMaster><item><title>在GitHub上搭建个人图床</title><link>https://linji.org/post/47.html</link><description>在数字化时代，图片已成为我们日常沟通和表达的重要方式。</description><guid isPermaLink="true">https://linji.org/post/47.html</guid><pubDate>Sun, 16 Feb 2025 16:57:32 +0000</pubDate></item><item><title>雷州市杨家镇倜傥上村元首名册</title><link>https://linji.org/post/45.html</link><description>`Gmeek-html&lt;strong&gt;💠2025元首：林攀盛、林仁丰、林清、林胜贤、林诗武（2024.6.29 08:29）&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;💠2024元首：林文龙、林友华、林晓雨（林业余大子）、林宏、林东文（2023.7.14 7:32）&lt;/strong&gt;&lt;br&gt;&lt;a href='https://a.linji.org/倜上元首/20220621.webp'data-fancybox='gallery'&gt;&lt;strong&gt;💠2023元首：林东葵、林继、林港浩、林俊杰、林文挺（2022.6.7 6:39）&lt;/strong&gt;&lt;/a&gt;&lt;div class='ImgLazyLoad-circle'&gt;&lt;/div&gt;&lt;img data-fancybox='gallery' img-src='https://a.linji.org/倜上元首/倜傥上村2023年元首合照留念.webp'&gt;第一次点香（2022.6.13）&lt;br&gt;第二次点香（2022.6.26）&lt;br&gt;&lt;br&gt;&lt;a href='https://a.linji.org/倜上元首/20220613.webp'data-fancybox='gallery'&gt;第一次会议：与上届元首交接及预备建戏楼（2022.6.7）&lt;/a&gt;&lt;br&gt;第二次会议：商讨建设戏楼，建筑商，管区书记，林宏贤，元首，元老。</description><guid isPermaLink="true">https://linji.org/post/45.html</guid><pubDate>Sat, 15 Feb 2025 05:41:59 +0000</pubDate></item><item><title>【通知】转湛江关于2025年春季学期学前、义务资助工作提示</title><link>https://linji.org/post/44.html</link><description>### 一、落实工作责任
+各地各学校要严格按照《广东省学生资助资金管理实施办法》（粤财规〔2021〕1号）、《教育部等六部门关于做好家庭经济困难学生认定工作的指导意见》（教财〔2018〕16号）和《广东省家庭经济困难学生认定工作实施办法》（粤教助〔2023〕2号）等文件要求，学校设立学生资助工作领导小组和认定工作组、评审委员会等专项工作机构，明确职责分工，严格按照“谁采集谁负责”、“谁报送谁负责”、“谁审核谁负责”的原则，扎实做好学生资助工作。</description><guid isPermaLink="true">https://linji.org/post/44.html</guid><pubDate>Thu, 13 Feb 2025 14:56:13 +0000</pubDate></item><item><title>✅20250103-填报学生基本情况统计表</title><link>https://linji.org/post/43.html</link><description>【通知】各小学、幼儿园：请打开微信群上面的《2024—2025学年度第二学期杨家镇小学生基本情况统计表》共享链接，于2025年2月14日中午前把幼儿至六年级招生回校在班中就坐人数填入表中的橙色栏目的“现生数”栏，其它栏不要修改（过几天学生稳定后再又发表填写）。</description><guid isPermaLink="true">https://linji.org/post/43.html</guid><pubDate>Thu, 13 Feb 2025 13:54:55 +0000</pubDate></item><item><title>【通知】雷州市第一小学作息时间安排表</title><link>https://linji.org/post/42.html</link><description>`Gmeek-html&lt;center&gt;&lt;table border='1'style='border-collapse:collapse;font-size:14px;text-align:center;'&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td colspan='5'style='text-align:right;'&gt;开始执行日期：2023年9月1日&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;午&amp;nbsp;别&lt;/td&gt;&lt;td&gt;项&amp;nbsp;目&lt;/td&gt;&lt;td&gt;起止时间&lt;/td&gt;&lt;td&gt;分&amp;nbsp;钟&lt;/td&gt;&lt;td&gt;备&amp;nbsp;注&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan='8'&gt;上午&lt;/td&gt;&lt;td&gt;大课间&lt;/td&gt;&lt;td&gt;7:40-8:10&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;7时30分集中&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;第一节课&lt;/td&gt;&lt;td&gt;8:10-8:50&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;第二节课&lt;/td&gt;&lt;td&gt;9:00-9:40&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;第三节课&lt;/td&gt;&lt;td&gt;9:50-10:30&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;眼保健操&lt;/td&gt;&lt;td&gt;10:30-10:40&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan='3'&gt;第四节课&lt;/td&gt;&lt;td&gt;10:40-11:10&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;一、二年级&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10:40-11:20&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;三、四年级&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10:40-11:25&lt;/td&gt;&lt;td&gt;45&lt;/td&gt;&lt;td&gt;五、六年级&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan='3'&gt;&lt;/td&gt;&lt;td&gt;第五节课&lt;/td&gt;&lt;td&gt;3:00-3:40&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;眼保健操&lt;/td&gt;&lt;td&gt;3:40-3:55&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;第六节课&lt;/td&gt;&lt;td&gt;3:55-4:35&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/center&gt;`。</description><guid isPermaLink="true">https://linji.org/post/42.html</guid><pubDate>Thu, 13 Feb 2025 09:07:56 +0000</pubDate></item><item><title>✅20250102-填报2025年春季学校教师基本情况调查表</title><link>https://linji.org/post/41.html</link><description>【通知】各学校：为加强教师管理，现开展教师基本情况调查，请各学校(公办幼儿园)赶于2月20月前将《2025年春季学校教师基本情况调查表》纸质版报送管理组，电子版发到校长群。</description><guid isPermaLink="true">https://linji.org/post/41.html</guid><pubDate>Wed, 12 Feb 2025 05:07:34 +0000</pubDate></item><item><title>✅20250101-运送课本回校并报名</title><link>https://linji.org/post/40.html</link><description>运送课本回校（林继、黄丽），按班级分拣好课本。</description><guid isPermaLink="true">https://linji.org/post/40.html</guid><pubDate>Mon, 10 Feb 2025 08:04:17 +0000</pubDate></item><item><title>【通知】领取并清点课本及教辅材料</title><link>https://linji.org/post/39.html</link><description>【通知】各小学：1、请于2025年2月10日（农历正月十三日）上午9：50(全体教师会议结束后),派几位教师带学校公章，自带袋子到教育指导组领取并清点课本及教辅材料。</description><guid isPermaLink="true">https://linji.org/post/39.html</guid><pubDate>Sun, 09 Feb 2025 15:16:49 +0000</pubDate></item><item><title>【通知】期初工作会议</title><link>https://linji.org/post/38.html</link><description>【通知】各小学、幼儿园、托育托管机构：现定于2025年2月10日上午在中心小学本部召开期初工作会议，会议具体要求见安排表［杨家镇中心小学教育指导组2025年2月8日］
+
+&lt;table border='0' width='100%' height='auto'&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align:center;'&gt;序号&lt;/td&gt;&lt;td tyle='text-align:center;'&gt;
+时间&lt;/td&gt;&lt;td style='text-align:center;'&gt;地点&lt;/td&gt;&lt;td style='text-align:center;'&gt;内容&lt;/td&gt;&lt;td style='text-align:center;'&gt;参会人员&lt;/td&gt;&lt;td style='text-align:center;'&gt;备注&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2025年2月10日上午&lt;br&gt;9:00-9:40&lt;/td&gt;&lt;td&gt;本部报告厅&lt;/td&gt;&lt;td&gt;全镇教师相关业务学习&lt;/td&gt;&lt;td&gt;全镇教师&lt;/td&gt;&lt;td rowspan='4'&gt;不准缺席，特殊情况要请假的需林书记、何校长批准。</description><guid isPermaLink="true">https://linji.org/post/38.html</guid><pubDate>Sat, 08 Feb 2025 15:19:37 +0000</pubDate></item><item><title>免费获取大模型 API &amp; 利用实例</title><link>https://linji.org/post/37.html</link><description>## 💯  代理地址
+https://api-proxy.me/
+
+
+## 🔖 OpenAI API
+### 0. https://api.openai.com （国内无法直接访问，需要自建代理）
+代理API地址：https://api-proxy.me/openai
+模型：gpt-4o-mini
+
+
+以下2个，大佬自建的代理服务
+### 1. https://github.com/chatanywhere/GPT_API_free （一天200次）
+```
+gpt-4o-mini，和gpt-3.5-turbo共享一天200次
+国内动态加速 直连无需代理
+支持 gpt-3.5-turbo系列 / gpt-4系列 / gpt-4o系列 / gpt-4o-audio-preview / embeddings / DALL·E / whisper 等
+```
+模型：gpt-4o-mini
+获取KEY：[申请内测免费Key](https://api.chatanywhere.org/v1/oauth/free/render)
+API地址： https://api.chatanywhere.tech (国内中转，延时更低)
+　　　　　https://api.chatanywhere.org (国外使用)
+
+
+### 2. https://github.com/popjane/free_chatgpt_api （不限量 无门槛）
+```
+完全免费使用以下勾选模型：
+★ ✓gpt-4o-mini（不限量 无门槛）
+ 　✓gpt-3.5-turbo-0125
+ 　✓gpt-3.5-turbo-1106
+ 　✓gpt-3.5-turbo
+ 　✓gpt-3.5-turbo-16k
+ 　✓net-gpt-3.5-turbo (可联网搜索模型-稳定性稍差)
+ 　✓whisper-1
+ 　✓dall-e-2
+ 　×text-开头系列模型，例如：text-davinci（免费版已取消text系列模型）
+ 　×gpt-4全系列（只定期限量开放）
+ 　×付费版API支持OpenAI所有模型，包括（联网、绘画、聊天、向量、图片分析、文件分析、GPTs等）
+ 　×付费版API支持Midjourney专业绘画、Suno音乐生成、PPT生成、多种视频模型。</description><guid isPermaLink="true">https://linji.org/post/37.html</guid><pubDate>Fri, 07 Feb 2025 16:51:00 +0000</pubDate></item><item><title>批量获取免费的VPN节点</title><link>https://linji.org/post/36.html</link><description>## 【基礎篇】
+
+这个免费的代理节点主要是来自BPB-Worker-Panel 面板的漏洞利用
+
+- 下载V2ray 客户端：【 [GitHub 开源项目](https://github.com/2dust/v2rayN)】
+
+- 在V2ray 导入下方的代码：　菜单「服务器」→  从剪贴板导入链接
+```
+trojan://bpb-trojan@www.vpslook.com:443?security=tls&amp;sni=这里填域名&amp;alpn=h3&amp;fp=randomized&amp;allowlnsecure=1&amp;type=ws&amp;host=这里填域名&amp;path=%2Ftr%3Fed%3D2560#BPB
+
+伪装域名(host)：需要替换
+SNI：需要替换
+```
+
+- 免费获取BPB面板的后台地址：
+
+【[点击获取](https://fofa.info/result?qbase64=aWNvbl9oYXNoPSItMTM1NDAyNzMxOSIgJiYgYXNuPSIxMzMzNSIgJiYgcG9ydD0iNDQzIg%3D%3D)】443端口
+
+【[点击获取](https://fofa.info/result?qbase64=aWNvbl9oYXNoPSItMTM1NDAyNzMxOSIgJiYgYXNuPSIxMzMzNSIgJiYgcG9ydD0iODAi)】80端口
+
+打开后获取到大量的BPB-Worker-Panel 面板地址，只需在连接后面加上/login，就可以看到BBP面板的后台，`版本号是2.5.3 以上`就可以直接免费导入使用！
+
+- 然后把获得的地址填写到V2ray客户端里，如下所示：
+![](https://a.linji.org/file/2025/02/2fed20789620241124163317-2079x1440.webp)
+
+
+## 【高阶篇】
+
+- 需要安装下Python，没有安装的可以前往【[python官网】](https://www.python.org/)进行下载安装，推荐[python3.10.3](https://www.python.org/downloads/release/python-3103/) 版本
+
+- 安装下 Python 依赖库
+
+```
+pip install requests beautifulsoup4
+pip install selenium
+```
+如果报错，提示找不到package，可能python版本比较低，可以通过下面的命令解决
+
+```
+pip install selenium requests beautifulsoup4 packaging
+ ```
+
+- 把下面的代码另存为一个vpn.py
+
+```
+import requests
+from bs4 import BeautifulSoup
+from packaging import version  # 用于比较版本号
+
+## FOFA 查询页面 URL
+FOFA_URL = 'https://fofa.info/result?qbase64=aWNvbl9oYXNoPSItMTM1NDAyNzMxOSIgJiYgYXNuPSIxMzMzNSIgJiYgcG9ydD0iNDQzIg%3D%3D'
+
+## 文件名定义
+OUTPUT_FILE_1 = '1.txt'
+OUTPUT_FILE_2 = '2.txt'
+OUTPUT_FILE_OK = 'OK.txt'
+
+def get_fofa_results():
+import requests
+from bs4 import BeautifulSoup
+from packaging import version  # 用于比较版本号
+
+## FOFA 查询页面 URL
+FOFA_URL = 'https://fofa.info/result?qbase64=aWNvbl9oYXNoPSItMTM1NDAyNzMxOSIgJiYgYXNuPSIxMzMzNSIgJiYgcG9ydD0iNDQzIg%3D%3D'
+
+## 文件名定义
+OUTPUT_FILE_1 = '1.txt'
+OUTPUT_FILE_2 = '2.txt'
+OUTPUT_FILE_OK = 'OK.txt'
+
+def get_fofa_results():
+    '''抓取 FOFA 页面并提取结果地址'''
+    print('正在抓取 FOFA 页面...')
+    response = requests.get(FOFA_URL)
+    if response.status_code != 200:
+        print(f'无法访问 FOFA 页面，状态码：{response.status_code}')
+        return []
+
+    ## 使用 BeautifulSoup 解析 HTML 内容
+    soup = BeautifulSoup(response.text, 'html.parser')
+    results = []
+
+    ## 查找所有结果链接
+    for link in soup.find_all('a', href=True):
+        url = link['href']
+        if url.startswith('https://'):  # 提取 https 开头的链接
+            results.append(url)
+
+    print(f'提取到 {len(results)} 个地址')
+    return results
+
+def append_login_to_urls(input_file, output_file):
+    '''将地址加上 /login 并保存到新文件'''
+    print(f'正在处理 {input_file}，将地址加上 /login 并保存到 {output_file}...')
+    with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', encoding='utf-8') as outfile:
+        for line in infile:
+            url = line.strip() + '/login'
+            outfile.write(url + '\n')
+    print(f'已完成地址追加，结果保存到 {output_file}')
+
+def check_bpb_version(input_file, output_file):
+    '''访问地址并检查 BPB Panel 的版本号'''
+    print(f'正在验证 {input_file} 中的地址...')
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
+    }
+    min_version = version.parse('2.5.3')  # 最低版本号
+    with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', encoding='utf-8') as outfile:
+        for line in infile:
+            url = line.strip()
+            try:
+                response = requests.get(url, headers=headers, timeout=10)
+                if response.status_code == 200 and 'BPB Panel' in response.text:
+                    # 提取版本号
+                    raw_version = extract_version(response.text)
+                    if raw_version:
+                        parsed_version = version.parse(raw_version)
+                        if parsed_version &gt; min_version:
+                            print(f'[匹配] {url} (版本号: {parsed_version})')
+                            outfile.write(url + '\n')
+            except Exception as e:
+                print(f'[错误] 无法访问 {url}，错误：{e}')
+    print(f'验证完成，符合条件的地址保存到 {output_file}')
+
+def extract_version(html):
+    '''从 HTML 内容中提取 BPB Panel 的版本号'''
+    if 'BPB Panel' in html:
+        start_index = html.find('BPB Panel')
+        # 提取版本号（假设版本号以 2 开头）
+        version_start = html.find('2', start_index)
+        version_end = version_start
+        while version_end &lt; len(html) and (html[version_end].isdigit() or html[version_end] == '.'):
+            version_end += 1
+        return html[version_start:version_end]
+    return None
+
+def main():
+    ## 第一步：抓取 FOFA 页面结果并保存到 1.txt
+    urls = get_fofa_results()
+    with open(OUTPUT_FILE_1, 'w', encoding='utf-8') as f:
+        for url in urls:
+            f.write(url + '\n')
+    print(f'FOFA 页面结果已保存到 {OUTPUT_FILE_1}')
+
+    ## 第二步：将 1.txt 地址加上 /login 并保存到 2.txt
+    append_login_to_urls(OUTPUT_FILE_1, OUTPUT_FILE_2)
+
+    ## 第三步：验证 2.txt 中的地址，符合条件的保存到 OK.txt
+    check_bpb_version(OUTPUT_FILE_2, OUTPUT_FILE_OK)
+
+if __name__ == '__main__':
+    main()
+```
+
+- 最后在终端下执行命令：
+
+```
+python vpn.py
+```
+
+在脚本的所在目录会生成结果OK.txt，里面就是我们需要的地址！
+
+![](https://a.linji.org/file/2025/02/c85b610e7e20241124163116-2081x1440.webp)
+
+&gt; [!CAUTION]
+&gt; 默认我只获取了第一个页面，因为如果批量获取分页的话，会引起网站防火墙的拦截。</description><guid isPermaLink="true">https://linji.org/post/36.html</guid><pubDate>Fri, 07 Feb 2025 16:46:28 +0000</pubDate></item><item><title>2025年度继续教育学时</title><link>https://linji.org/post/35.html</link><description>`Gmeek-html&lt;center&gt;&lt;div class='xueshi' style='margin-top: -20px;'&gt;&lt;div class='dataBl' style='display: inline-block;text-align: center;width: 33.33%;border-right: 1px solid rgba(0, 0, 0, 0.15);' title=''&gt;&lt;strong style='font-size: 26px;font-weight: 600;color: #ff7505;' title=''&gt;&lt;span class='unget' title=''&gt;&lt;!-- 专业课开始 --&gt;36&lt;/span&gt;&lt;/strong&gt;&lt;strong style='font-size: 26px;font-weight: 600;' title=''&gt;/42&lt;/strong&gt;&lt;p style='font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;margin-bottom: 0px;' title=''&gt;专业课&lt;/p&gt;&lt;/div&gt;&lt;div class='dataBl' style='display: inline-block;width: 33.33%;border-right: 1px solid rgba(0, 0, 0, 0.15);' title=''&gt;&lt;strong style='font-size: 26px;font-weight: 600;color: #ff7505;' title=''&gt;&lt;span class='unget' title=''&gt;&lt;!-- 公需课开始 --&gt;0&lt;/span&gt;&lt;/strong&gt;&lt;strong style='font-size: 26px;font-weight: 600;' title=''&gt;/30&lt;/strong&gt;&lt;p style='font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;margin-bottom: 0px;' title=''&gt;公需课&lt;/p&gt;&lt;/div&gt;&lt;div class='dataBl' style='display: inline-block;text-align: center;width: 33.33%;' title=''&gt;&lt;strong style='font-size: 26px;font-weight: 600;color: #ff7505;' title=''&gt;&lt;span class='unget' title=''&gt;&lt;!-- 选修课开始 --&gt;0&lt;/span&gt;&lt;/strong&gt;&lt;strong style='font-size: 26px;font-weight: 600;' title=''&gt;/18&lt;/strong&gt;&lt;p style='font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;margin-bottom: 0px;' title=''&gt;选修课&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/center&gt;`
+
+`Gmeek-html&lt;center&gt;&lt;div class='core-next-dh-shortcode' title='广东省教师继续教育信息管理平台--学习公需课，查询学时。</description><guid isPermaLink="true">https://linji.org/post/35.html</guid><pubDate>Fri, 07 Feb 2025 16:41:56 +0000</pubDate></item><item><title>阻止win11系统自动调整麦克风音量</title><link>https://linji.org/post/34.html</link><description>win11在语音通话时，麦克风音量经常被自动下调，导致我听不清对面s|b声音，所以我一气之下。</description><guid isPermaLink="true">https://linji.org/post/34.html</guid><pubDate>Fri, 07 Feb 2025 16:14:14 +0000</pubDate></item><item><title>【Gmeek】搭建一个属于自己的博客</title><link>https://linji.org/post/33.html</link><description>[Gmeek](https://github.com/Meekdai/Gmeek)博客完全依托github，提供域名，无需服务器，比起传统的服务器建站更方便快捷。</description><guid isPermaLink="true">https://linji.org/post/33.html</guid><pubDate>Fri, 07 Feb 2025 16:11:45 +0000</pubDate></item><item><title>网站添加live2d看板娘</title><link>https://linji.org/post/32.html</link><description>## 内容简介
+把萌萌哒的看板娘抱回家 (ノ≧∇≦)ノ | Live2D widget for web platform
+
+
+## 添加内容
+如果你是小白，或者只需要最基础的功能，那么只用将这下面代码加入 html 页面的 head 或 body 中，即可加载看板娘：
+```
+&lt;script src='https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js'&gt;&lt;/script&gt;
+&lt;script src='https://cdn.jsdelivr.net/npm/jquery-ui@1.14.1/dist/jquery-ui.min.js'&gt;&lt;/script&gt;
+&lt;script src='https://cdn.jsdelivr.net/gh/hst1189/live2d-widget/autoload.js'&gt;&lt;/script&gt;
+```
+autoload.js 会自动加载：`live2d.min.js` `waifu.min.css` `waifu-tips.min.js` `ModelDefine.js` 
+详细参考：https://github.com/hst1189/live2d-widgetc
+
+---
+
+太可爱了就折腾了一下。</description><guid isPermaLink="true">https://linji.org/post/32.html</guid><pubDate>Fri, 07 Feb 2025 16:00:21 +0000</pubDate></item><item><title>网页添加【回到顶部】按钮</title><link>https://linji.org/post/31.html</link><description>博客并没有内置`回到顶部`按钮功能，所以自己搞一个简易的。</description><guid isPermaLink="true">https://linji.org/post/31.html</guid><pubDate>Fri, 07 Feb 2025 15:54:42 +0000</pubDate></item><item><title>给博客文章中的代码块增加【一键复制】按钮</title><link>https://linji.org/post/30.html</link><description>有时候代码块很长，复制确实挺费劲，还容易漏行，所以折腾个一键复制。</description><guid isPermaLink="true">https://linji.org/post/30.html</guid><pubDate>Fri, 07 Feb 2025 15:51:58 +0000</pubDate></item><item><title>给博客添加数字分页条</title><link>https://linji.org/post/29.html</link><description>Gmeek默认的分页只有`上一页`和`下一页`，翻页的时候就感觉很无力，~~没有那种掌控全局的感觉~~，所以搞一个插件插入数字分页条吧。</description><guid isPermaLink="true">https://linji.org/post/29.html</guid><pubDate>Fri, 07 Feb 2025 15:44:32 +0000</pubDate></item><item><title>【Cloudflare】http重定向到https</title><link>https://linji.org/post/28.html</link><description>网站首次访问或在移动端浏览器访问时，如果不输入`https://`，则会使用http访问，可配置重定向跳转到https。</description><guid isPermaLink="true">https://linji.org/post/28.html</guid><pubDate>Thu, 06 Feb 2025 05:05:05 +0000</pubDate></item><item><title>2025年糖尿病推荐食物</title><link>https://linji.org/post/27.html</link><description>| **类别** | **推荐食物**                                                       |
+| ------ | -------------------------------------------------------------- |
+| 主食     | 藜麦、荞麦、燕麦、玉米、糙米                                                 |
+| 蔬菜     | 魔芋、黄瓜、菠菜、西兰花、油麦菜、莴苣、白菜、生菜、西葫芦、冬瓜、豆芽、黑木耳、海带、蘑菇、番薯叶、空心菜、芦笋、芹菜、苦瓜 |
+| 水果     | 柠檬、车厘子、火龙果、李子、柚子、桃子、番石榴、苹果、梨、草莓、橙、耙耙柑、黑莓、龙眼、猕猴桃、蓝莓             |
+| 蛋白质    | 鸡肉、鸭肉、鹅肉、猪肉、羊肉、鱼肉、鸡蛋、豆腐、豆类                                     |
+| 健康脂肪   | 橄榄油、花生油、坚果（适量：夏威夷果、榛子、花生、碧根果（山核桃）、核桃、杏仁、巴旦木、松子、开心果、腰果）、深海鱼类    |
+| 乳制品    | 低脂牛奶、酸奶（无糖）                                                    |
+
+正常人血糖标准：1️⃣空 腹3.9-6.1毫摩尔/升 2️⃣餐后1小时6.7-9.4毫摩/升 3️⃣餐后2小时≤7.8毫摩/升
+
+低脂牛奶是指脂肪含量较低的牛奶。</description><guid isPermaLink="true">https://linji.org/post/27.html</guid><pubDate>Wed, 05 Feb 2025 06:34:55 +0000</pubDate></item><item><title>控糖放心吃的主食</title><link>https://linji.org/post/26.html</link><description>![20种降低血糖的食物](https://a.linji.org/file/2025/01/2025012807.webp)
+
+![1.玉米-控糖放心吃的6类主食](https://a.linji.org/file/2025/01/2025012801.webp)
+
+![2.薯类-控糖放心吃的6类主食](https://a.linji.org/file/2025/01/2025012802.webp)
+
+![3.燕麦片粥-控糖放心吃的6类主食](https://a.linji.org/file/2025/01/2025012803.webp)
+
+![4.杂粮饭-控糖放心吃的6类主食](https://a.linji.org/file/2025/01/2025012804.webp)
+
+![5.杂粮饼-控糖放心吃的6类主食](https://a.linji.org/file/2025/01/2025012805.webp)
+
+![6.全麦面包-控糖放心吃的6类主食](https://a.linji.org/file/2025/01/2025012806.webp)。</description><guid isPermaLink="true">https://linji.org/post/26.html</guid><pubDate>Wed, 05 Feb 2025 06:31:25 +0000</pubDate></item><item><title>糖尿病患者选择哪些水果？</title><link>https://linji.org/post/25.html</link><description>糖尿病患者在选择水果时，应优先考虑低糖、低升糖指数（GI）且富含纤维的种类，以帮助控制血糖。</description><guid isPermaLink="true">https://linji.org/post/25.html</guid><pubDate>Wed, 05 Feb 2025 06:30:33 +0000</pubDate></item><item><title>糖尿病饮食治疗</title><link>https://linji.org/post/24.html</link><description>&lt;p&gt;好，我现在要分析用户的问题“糖尿病饮食治疗”。</description><guid isPermaLink="true">https://linji.org/post/24.html</guid><pubDate>Wed, 05 Feb 2025 06:29:37 +0000</pubDate></item><item><title>什么食物含糖量低，甚至不会升糖</title><link>https://linji.org/post/23.html</link><description>&lt;p&gt;嗯，我现在想了解一下哪些食物含糖量低，甚至不会导致血糖上升。</description><guid isPermaLink="true">https://linji.org/post/23.html</guid><pubDate>Wed, 05 Feb 2025 06:28:54 +0000</pubDate></item><item><title>通过走路降血糖</title><link>https://linji.org/post/22.html</link><description>###  第一、什么时候走路散步好
+
+最好选择在餐后60分钟开始走路，这个时段体内的血糖处于高值，有助于降低血糖，还能避免低血糖的发生。</description><guid isPermaLink="true">https://linji.org/post/22.html</guid><pubDate>Wed, 05 Feb 2025 06:27:27 +0000</pubDate></item><item><title>糖尿病简介</title><link>https://linji.org/post/21.html</link><description>&lt;p&gt;糖尿病是一种慢性代谢性疾病，主要特征是血糖水平升高。</description><guid isPermaLink="true">https://linji.org/post/21.html</guid><pubDate>Wed, 05 Feb 2025 06:26:24 +0000</pubDate></item><item><title>VS Code 必备插件记录</title><link>https://linji.org/post/20.html</link><description>记录一下，正在使用的 VS Code 插件。</description><guid isPermaLink="true">https://linji.org/post/20.html</guid><pubDate>Wed, 05 Feb 2025 06:23:59 +0000</pubDate></item><item><title>VPS 服务器常用脚本及工具</title><link>https://linji.org/post/19.html</link><description>## 本文记录了一些 VPS 服务器常用的脚本和工具。</description><guid isPermaLink="true">https://linji.org/post/19.html</guid><pubDate>Wed, 05 Feb 2025 06:22:12 +0000</pubDate></item><item><title>【Cloudflare】CDN 支持的端口</title><link>https://linji.org/post/18.html</link><description>记录一下 CF 支持的反代/回源端口列表，开小黄云必备
+
+## HTTP
+
+- 80
+- 8080
+- 8880
+- 2052
+- 2082
+- 2086
+- 2095
+
+## HTTPS
+
+- 443
+- 2053
+- 2083
+- 2087
+- 2096
+- 8443。</description><guid isPermaLink="true">https://linji.org/post/18.html</guid><pubDate>Wed, 05 Feb 2025 06:20:36 +0000</pubDate></item><item><title>正则表达式 - 使用记录</title><link>https://linji.org/post/17.html</link><description>&gt; [!NOTE]
+&gt; GPT帮写最方便.
+
+## 匹配关键字并删除指定行
+
+`^.*关键字.*\r?\n`
+
+## 匹配8位任意字母和数字, 并用方括号包裹
+
+&gt; 用于动漫bt重命名
+
+`\[[A-Za-z0-9]{8}\]`
+
+## 查找换行并增加空行, 增加空行同时填写内容, 最后再换行
+
+&gt; [MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2) 歌单转 [poweramp](https://powerampapp.com/zh_tw/) 歌单编写时需要用到
+
+查找👉`\r\n`
+替换👉`\r\n填写的内容\r\n`
+
+## 匹配以 ?file 开头, 并且之间有任意字符, 最后以 jpg 或 png 结尾
+
+&gt; ipfs 超链接重命名
+
+`\?file.*\.{jpg|png}$`
+
+## 匹配 /* */ 中间包含任意字符串
+
+&gt; css 注释块
+
+`\/\*.*?\*\/`
+
+文章来源：https://gjkblog.us.kg/post/7.html。</description><guid isPermaLink="true">https://linji.org/post/17.html</guid><pubDate>Wed, 05 Feb 2025 06:13:52 +0000</pubDate></item><item><title>【jsDelivr】免费CDN+Github 使用方法</title><link>https://linji.org/post/16.html</link><description># jsDelivr 官网
+
+&gt; https://www.jsdelivr.com
+
+# 先决条件
+
+必须要创建一个 GitHub 仓库, 并且存放你需要加速的文件.
+
+# 创建版本号(Releases)
+
+进入仓库并创建 Releases:
+
+![1](https://a.linji.org/file/2025/02/401797022-d035adc5-9486-4288-9f9c-caf9163d90ba.webp)
+
+名称建议规范一点.
+
+![2](https://a.linji.org/file/2025/02/401797087-6ca6a2e3-edf4-49b9-afe8-6d8b0d54a34b.webp)
+
+# 创建标签(Tags)
+
+创建 Tags 和 Releases 步骤一样.
+
+# 使用方法
+
+例如:
+
+`https://cdn.jsdelivr.net/gh/[GitHub用户名]/[仓库名]@[版本号或者标签]/[文件路径]`
+
+https://cdn.jsdelivr.net/gh/gjken/gjken.github.io/static/primer.min.css
+
+| Key | Value
+| - | -
+| [GitHub 用户名] | 写你的 GitHub 用户名.
+| [仓库名]  | 写你的 GitHub 仓库名称.
+| [标签或分支] | 例如 `https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js`&lt;br&gt;都不写默认访问最新版本.&lt;/br&gt;
+| [文件路径] | 写你的 GitHub 仓库文件路径.
+
+&gt; [!Important]
+&gt; 省略版本号, 直接访问最新的资源, 不推荐在生产环境中使用.
+&gt; 如果源文件更新, cdn 加速后的文件内容不会更新那么快, 一般有12小时的延迟, ~~大概?~~
+
+# 其它替代地址
+
+Jsdelivr 国内的 CDN 服务被 DNS 污染了, 被指向了Google, Twitter 和 Facebook 的 IP 地址, 导致使用 CDN 服务加速的链接访问失败.
+
+```css
+fastly.jsdelivr.net
+gcore.jsdelivr.net
+testingcf.jsdelivr.net
+test1.jsdelivr.net
+```
+文章来源：https://gjkblog.us.kg/post/3.html
+
+------
+
+## 关于jsdelivr 
+&gt; https://www.jsdelivr.com/
+
+### jsdelivr CDN 和 GitHub 的关系
+jsdelivr 是一个免费且可靠的内容分发网络（CDN）服务，允许开发者将静态资源存储在 GitHub 仓库中，并通过 jsdelivr 进行全球加速访问。</description><guid isPermaLink="true">https://linji.org/post/16.html</guid><pubDate>Wed, 05 Feb 2025 06:11:38 +0000</pubDate></item><item><title>翻墙服务端和客户端 - 使用记录</title><link>https://linji.org/post/15.html</link><description>**记录翻墙软件使用记录**
+
+# 不同客户端汇总
+
+## Windows
+
+| Name
+|-
+| [Mihomo Party](#mihomo-party)
+| [Nekoray](#windows(nekoray))
+
+## Android
+
+| Name
+|-
+| [NekoBox](#android(nekobox))
+
+# Nekoray
+
+Nekoray 含 Windows 和 Andorid 版本.
+
+[官网](https://matsuridayo.github.io)
+
+## Windows(Nekoray)
+
+[Github](https://github.com/MatsuriDayo/nekoray)
+
+## Android(NekoBox)
+
+[Github](https://github.com/MatsuriDayo/NekoBoxForAndroid)
+
+# Mihomo Party
+
+所有订阅以及配置文件都备份到了 webdav 里, 在不同地方使用软件时可一键恢复配置, 非常方便.
+
+[官网](https://github.com/mihomo-party-org/mihomo-party)
+
+## 图示
+
+![](https://a.linji.org/file/2025/02/15-1.webp)
+
+## 覆写脚本
+
+&gt; 引用自 [Linux.do](https://linux.do/t/topic/229208)
+
+https://github.com/GJKen/clash-Rules/blob/main/Src/Mihomo%20%E8%A6%86%E5%86%99%E8%A7%84%E5%88%99.js
+
+文章来源：https://gjkblog.us.kg/post/10.html。</description><guid isPermaLink="true">https://linji.org/post/15.html</guid><pubDate>Wed, 05 Feb 2025 06:09:48 +0000</pubDate></item><item><title>[Markdown] 使用笔记</title><link>https://linji.org/post/14.html</link><description>## 在线 Markdown 编辑器
+- [HTML 转 Markdown 转换器](https://d1tools.com/tools/convert-html-to-markdown/) | [Markdown 转 HTML 转换器](https://d1tools.com/tools/convert-markdown-to-html/) 
+- 地址：[点击前往](https://markdown.buxiantang.top/)。</description><guid isPermaLink="true">https://linji.org/post/14.html</guid><pubDate>Wed, 05 Feb 2025 06:07:21 +0000</pubDate></item><item><title>【Cloudflare】域名 DNS 托管 + GitHub Pages 自定义域名</title><link>https://linji.org/post/13.html</link><description># 先决条件
+
+假设你已经:
+
+- [x] 拥有了一个域名.
+- [x] 域名备案已解决.
+
+# Cloudflare 添加域
+
+我们进入 https://dash.cloudflare.com
+
+![](https://a.linji.org/file/2025/02/401824633-65746e4c-33ac-42e5-8261-80b231cae4f2.webp)
+
+输入自己的域名点击继续, 然后选择底部的 Free 计划.
+
+![](https://a.linji.org/file/2025/02/401824864-7ac12093-dee3-4a9c-bd55-c124d0ac6453.webp)
+
+复制 dns 名称服务器.
+
+![](https://a.linji.org/file/2025/02/401824735-3fa17e93-d8ef-4271-b2f0-e2387a489601.webp)
+
+然后转到你的域名提供服务商, 添加 dns 记录.
+
+![](https://a.linji.org/file/2025/02/401824786-73aad798-1830-4bbf-b281-cda074f40485.webp)
+
+# 填写 DNS 记录.
+
+回到 Cloudflare 面板, 进入 dns 记录, 按照下图添加 `CNAME` 和 `A` 记录.
+
+![](https://a.linji.org/file/2025/02/401824842-57ed2272-5e7e-4807-b3de-bde1b95d7040.webp)
+
+```
+185.199.108.153
+
+185.199.109.153
+
+185.199.110.153
+
+185.199.111.153
+```
+
+# Github Page 设置自定义域名
+
+![](https://a.linji.org/file/2025/02/401824864-7ac12093-dee3-4a9c-bd55-c124d0ac6453.webp)
+
+填写并点击 Save 之后会提示你等待一会.
+
+![](https://a.linji.org/file/2025/02/401824887-8087186c-2b32-4064-8b03-92308b063b75.webp)
+
+提示`DNS check successful`代表完成, 之后就可以通过www+你的域名进行访问了.
+
+![](https://a.linji.org/file/2025/02/401826725-d7e62e5d-32b5-4acd-86dc-432a971c2218.webp)
+
+文章来源：https://gjkblog.us.kg/post/4.html。</description><guid isPermaLink="true">https://linji.org/post/13.html</guid><pubDate>Wed, 05 Feb 2025 06:05:35 +0000</pubDate></item><item><title>【Windows】超级上帝模式</title><link>https://linji.org/post/12.html</link><description>### 有开发者推出超级上帝模式，生成Windows系统各项设置快捷方式 
+
+上帝模式是微软预留的加强版控制面板，超级上帝模式则是上帝模式的加强版，融合控制面板、设置应用和微软预留的各种深层链接，让你在一个地方即可快速查找并调整系统设置。</description><guid isPermaLink="true">https://linji.org/post/12.html</guid><pubDate>Wed, 05 Feb 2025 06:03:53 +0000</pubDate></item><item><title>记录Gmeek的使用笔记</title><link>https://linji.org/post/11.html</link><description># 常用功能
+
+### 单个仓库不能超过 1 G
+
+## 1、插入单张图片
+
+```
+`Gmeek-imgbox='https://example.com/image.jpg'`
+```
+
+```html
+&lt;div class='ImgLazyLoad-circle'&gt;&lt;/div&gt;
+&lt;img data-fancybox='gallery' img-src='https://linji.org/image.webp'&gt;
+
+&lt;!--
+一个图片未加载时的占位 CSS 动画 DIV, 类名为 .ImgLazyLoad-circle, 这个类名的 CSS 动画我写在了 primer.css 里面.
+一个 img 标签, 包含 fancybox 所需的 data-fancybox='gallery' 值.
+--&gt;
+```
+
+或者
+
+```html
+&lt;div class='ImgLazyLoad-circle'&gt;&lt;/div&gt;
+&lt;img data-fancybox='gallery' img-src='https://linji.org/image.webp' width='100%' height='auto'&gt;
+```
+
+## 2、插入图集
+
+```html
+&lt;div class='core-next-dh-shortcode'&gt;&lt;div class='ImgLazyLoad-circle'&gt;&lt;/div&gt;&lt;img data-fancybox='gallery' img-src='https://linji.org/image.webp'&gt;&lt;/div&gt;
+```
+或者
+```html
+&lt;div class='core-next-dh-shortcode'&gt;&lt;div class='ImgLazyLoad-circle'&gt;&lt;/div&gt;&lt;img data-fancybox='gallery' img-src='https://linji.org/image.webp style='height: 201.43px;width: 268.72px;''&gt;&lt;/div&gt;
+```
+
+## 3、查看GitHub仓库使用大小
+
+`Gmeek-imgbox='https://a.linji.org/file/2025/02/2025021601.webp'`
+
+## 4、更改发布时间
+
+如需修改发布时间, 可以在 issues 文章最后一行添加如下代码, 里面的时间是采用时间戳的形式, 可以用这个👉[网站](https://tool.lu/timestamp) 转换.
+
+```html
+&lt;!-- ##{'timestamp':1738461390}## --&gt;
+```
+------
+### 下面是转载内容
+
+[Gmeek](https://github.com/Meekdai/Gmeek) 博客完全依托 Github, 提供域名, 无需服务器, 比起传统的服务器建站更方便快捷.
+
+# 搭建博客
+
+**如何搭建博客我就不写了, 强烈建议看完[官方文档](https://blog.meekdai.com/tag.html#gmeek).**
+
+**这里主要记录一些 js 和 CSS 的修改.记录的修改不一定准确, `Gmeek-spoilertxt='因为改动的地方太多了🥴'`.**
+
+&gt; [!WARNING]
+&gt; 利用 Github Page 搭建的网站内容是完全公开的, 请注意不要上传自己的隐私!!!
+
+## 博客调试
+
+**为了方便调试代码, 创建了一个名为 demo 的仓库, 调试过程只会用 demo 演示, 确定后再同步代码到线上模式.
+
+**demo模式:** https://gjken.github.io/demo
+
+**线上模式:** https://gjken.github.io
+
+**线上模式的仓库用 tag 区分代码版本, release 可有可无, 主要是用来说明版本改动(`Gmeek-spoilertxt='懒得写'`)**
+
+&gt; [!NOTE]
+&gt; static 这个目录里的文件发生了改动, 一定要手动 Actions 之后, 再等待20多分钟(`Gmeek-spoilertxt='测试的大概结果'`)才会更新外链内容.
+
+# Config.json 小妙用
+
+## 引用顺序
+
+官方虽然没说, 但是经过我后面测试得出:
+
+`script`字段里面引用的 js 代码, **写在尾巴加载顺序越靠前!**
+
+&gt; 其它字段还未测试过, 不知道是不是一样的道理.
+
+## subTitle - js插入
+
+`subTitle`字段可用 js 插入 html 实现修改文字.
+
+代码:
+
+```json
+'subTitle':'&lt;script&gt;document.getElementById('content').innerHTML = `&lt;div style='text-align: center;'&gt;&lt;p&gt;CV工程师,&lt;/p&gt;&lt;p&gt;一个又菜又爱玩, 喜欢瞎折腾的流浪者.&lt;/p&gt;&lt;/div&gt;`;&lt;/script&gt;',
+```
+
+## subTitle - 隐藏
+
+`'subTitle':' ',`
+
+- 效果图:
+
+![](https://a.linji.org/file/2025/02/11-1.webp)
+
+可以用空白字符的方式, 隐藏`subTitle`这个必须字段, 无需使用 js 隐藏.
+
+# 记录功能块代码
+
+代码摘抄自网络, 有删改, 都存放在仓库, 使用 jsdelivr CDN 加速.
+
+## [ArticleJs.js](https://linji.org/pluging/ArticleJs.js) - 文章自定义 js 代码
+
+### 图片图片浏览器+图片懒加载整合
+
+[图片浏览器的代码](#fancybox.js---图片浏览器)
+
+[图片懒加载的代码](#图片懒加载)
+
+👇这里说明一下, 图片浏览器和图片懒加载的整合后的工作流程:
+
+&lt;details&gt;&lt;summary&gt;点击展开&lt;/summary&gt;
+
+`Gmeek-imgbox`首先匹配到关键字后转化标签.
+
+`Gmeek.py`匹配转换的代码如下:
+
+```python
+        # 剧透
+        if '&lt;code class='notranslate'&gt;Gmeek-spoilertxt' in post_body: 
+            post_body = re.sub(r'&lt;code class='notranslate'&gt;Gmeek-spoilertxt='([^']+)'&lt;/code&gt;', lambda match: f'&lt;span class='spoilerText'&gt;{match.group(1)}&lt;/span&gt;', post_body, flags=re.DOTALL)
+```
+
+markdown 输入:
+
+```
+`Gmeek-imgbox='https://example.com/image.jpg'`
+```
+
+实际转化后的标签如下:
+
+```html
+&lt;div class='ImgLazyLoad-circle'&gt;&lt;/div&gt;
+&lt;img data-fancybox='gallery' img-src='https://example.com/image.jpg'&gt;
+
+&lt;!--
+一个图片未加载时的占位 CSS 动画 DIV, 类名为 .ImgLazyLoad-circle, 这个类名的 CSS 动画我写在了 primer.css 里面.
+一个 img 标签, 包含 fancybox 所需的 data-fancybox='gallery' 值.
+--&gt;
+```
+
+当页面加载完成后, 使用 IntersectionObserver 监听图片是否进入视口, 图片会提前 500px 接近视口时加载
+
+当图片即将进入视口时, 脚本会检测标签里面的`img-src='https://example.com/image.jpg'`内容,  给 img 标签增加`src`值, 这样图片就能显示了.
+
+在 CSS 中 img 标签默认模糊并且透明图片, 脚本会等待图片加载完成后才会正常显示, 显示图片之前会隐藏掉占位转圈动画, 这样就实现了转圈动画消失并显示正常的图片.
+
+图片加载失败则会创建指定的 SVG 图标以及文字提示, 同时隐藏加载失败的 img 标签和占位动画.
+
+大概就是这样的一个流程.
+
+&lt;/details&gt;
+
+## [ArticleToc.js](https://linji.org/pluging/ArticleToc.js) - 文章增加目录列表+一键返回顶部按钮(v1.0)
+
+&gt; 摘抄来源: [Github](https://github.com/cao-gift/cao-gift.github.io?tab=readme-ov-file)
+&gt; 修改-创建`.toc`的位置为body里面.
+&gt; 修改-批量给 a 标签创建的类名为: `toc-h1` `toc-h2` ... `toc-h6`
+&gt; 修改-适配切换博客主题颜色.
+&gt; 修改-增加滚动页面同时滚动章节.
+&gt; 修改-动画和样式.
+&gt; 修改-滚动页面自动显示&amp;隐藏返回顶部按钮.
+
+可以直接引用.
+
+## 文章增加目录列表(集成到header)
+
+这版把目录按钮集成到了文章的`#header`的按钮里面.
+
+功能和[v.1.0版本](#articletoc.js---文章增加目录列表+一键返回顶部按钮(v1.0))差不多一致(小改动), 同时打算把按钮统统放入`#functionBtn`标签里面, 代码也统一放入 ArticleJs.js 里面.
+
+&gt; 修改-当滚动页面使`#functionBtn`按钮不可见时, 使其悬浮在顶部.
+&gt; 修改-文章目录增加顶部和底部跳转按钮.
+
+- 图示:
+
+![](https://a.linji.org/file/2025/02/11-2.webp)
+
+## Fancybox.js - 图片浏览器
+
+&gt; Fancybox [官网](https://www.fancyapps.com)
+
+### config.json 里引用 Fancybox 所需的 CSS 和 JS
+
+&gt; 注意末尾的标点符号.
+
+我这里用的是`5.0`版本, cdn 加速链接.
+
+```json
+'script':'&lt;script src='https://linji.org/pluging/ArticleJs.js'&gt;&lt;/script&gt;&lt;script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'&gt;&lt;/script&gt;'
+```
+
+CSS写入到了👉[文章自定义 js 代码](#articlejs.js---文章自定义-js-代码)
+
+- 内容如下:
+
+意思是页面加载完成再加载 CSS, 同时增加 fancybox 必要的绑定函数.
+
+```Javascript
+document.addEventListener('DOMContentLoaded', () =&gt; {
+    document.head.appendChild(
+        Object.assign(document.createElement('link'), {
+            rel: 'stylesheet',
+            href: 'https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css'
+        })
+    );
+    Fancybox.bind('[data-fancybox='gallery']', {});
+});
+```
+
+### 增加自定义匹配 - Gmeek-imgbox
+
+修改 Gmeek 仓库的 Gmeek.py.
+
+&gt; 不知道怎么自定义 Gmeek 仓库的看这👉[通过 Gmeek 仓库美化博客](#通过-gmeek-仓库美化博客)
+
+打开`Gmeek.py`文件, 定位字符串`Gmeek-html`
+
+然后在下面增加代码:
+
+```python
+        # 手动插入外链图片
+        if '&lt;code class='notranslate'&gt;Gmeek-imgbox' in post_body:
+            post_body = re.sub(r'&lt;p&gt;\s*&lt;code class='notranslate'&gt;Gmeek-imgbox='([^']+)'&lt;/code&gt;\s*&lt;/p&gt;', lambda match: f'&lt;div class='ImgLazyLoad-circle'&gt;&lt;/div&gt;\n&lt;img data-fancybox='gallery' img-src='{match.group(1)}'&gt;', post_body, flags=re.DOTALL)
+```
+
+- **使用演示**
+
+在 markdown 插入图片:
+
+```html
+`Gmeek-imgbox='https://i0.img2ipfs.com/ipfs/QmNiH2pdrA9Hb61EXgYbKtEssBAGemEjTQRBZbgutUCNx2'`
+```
+
+通过 Actions 转换后实际效果如下, html 的 img 标签会增加 fancybox 所需的`data-fancybox='gallery'`属性.
+
+![](https://a.linji.org/file/2025/02/11-3.webp)
+
+## 图片懒加载
+
+&gt; 来源: [Github](https://github.com/liyifanniubi/liyifanniubi.github.io)
+
+代码内容合并到👉[文章自定义 js 代码](#articlejs.js---文章自定义-js-代码)
+
+关键内容如下:
+
+&lt;details&gt;&lt;summary&gt;Javascript Code&lt;/summary&gt;
+
+```Javascript
+    // 懒加载图片
+	const ob = new IntersectionObserver((entries) =&gt; {
+		entries.forEach(entry =&gt; {
+			if (entry.isIntersecting) {
+				const img = entry.target;
+				const imgContainer = img.previousElementSibling;
+				const handleError = (isError = false) =&gt; {
+					if (imgContainer &amp;&amp; imgContainer.classList.contains('ImgLazyLoad')) {
+						imgContainer.style.display = 'none';
+					}
+					if (isError) {
+						const errorContainer = document.createElement('div');
+						errorContainer.classList.add('Imgerror-container');
+						errorContainer.innerHTML = `&lt;svg xmlns='http://www.w3.org/2000/svg' style='height:60px;' class='Imgerror' viewBox='0 0 1024 1024'&gt;&lt;path fill='#ff5b5b' d='M320 896h-77.833L515.92 622.253a21.333 21.333 0 0 0 3.16-26.133l-89.427-149.053 165.427-330.86A21.333 21.333 0 0 0 576 85.333H96a53.393 53.393 0 0 0-53.333 53.334v746.666A53.393 53.393 0 0 0 96 938.667h224A21.333 21.333 0 0 0 320 896zM96 128h445.48L386.253 438.46a21.333 21.333 0 0 0 .787 20.513L474 603.86l-69.333 69.333-89.62-89.653a53.333 53.333 0 0 0-75.427 0L85.333 737.827v-599.16A10.667 10.667 0 0 1 96 128zM85.333 885.333v-87.166l184.46-184.454a10.667 10.667 0 0 1 15.08 0l89.627 89.62L181.833 896H96a10.667 10.667 0 0 1-10.667-10.667zm192-458.666C336.147 426.667 384 378.813 384 320s-47.853-106.667-106.667-106.667S170.667 261.187 170.667 320s47.853 106.667 106.666 106.667zm0-170.667a64 64 0 1 1-64 64 64.073 64.073 0 0 1 64-64zM928 128H661.333a21.333 21.333 0 0 0-19.08 11.793l-.046.087c-.04.087-.087.173-.127.253L535.587 353.127a21.333 21.333 0 1 0 38.16 19.08l100.773-201.54H928a10.667 10.667 0 0 1 10.667 10.666V652.5L783.713 497.54a53.333 53.333 0 0 0-75.426 0L571.08 634.747a21.333 21.333 0 0 0-3.153 26.153l24.666 41.08-203.646 244.36a21.333 21.333 0 0 0 16.386 34.993H928A53.393 53.393 0 0 0 981.333 928V181.333A53.393 53.393 0 0 0 928 128zm0 810.667H450.88L635.053 717.66a21.333 21.333 0 0 0 1.907-24.667l-23.933-39.886L738.46 527.68a10.667 10.667 0 0 1 15.08 0l185.127 185.153V928A10.667 10.667 0 0 1 928 938.667z'/&gt;&lt;/svg&gt;&lt;p class='Imgerror-message'&gt;图片错误&lt;/p&gt;`;
+						img.parentNode.insertBefore(errorContainer, img.nextSibling);
+						img.style.display = 'none';
+					} else {
+						img.classList.remove('ImgLazyLoad');
+						img.classList.add('ImgLoaded');
+					}
+				};
+
+				img.src = img.getAttribute('img-src');
+				ob.unobserve(img);
+
+				img.onload = () =&gt; handleError(false);
+				img.onerror = () =&gt; handleError(true);
+			}
+		});
+	}, {
+		rootMargin: '0px 0px 500px 0px',
+	});
+
+	document.querySelectorAll('[img-src]').forEach(img =&gt; ob.observe(img));
+```
+
+&lt;/details&gt;
+
+加载动画 CSS, 我把它写到了`primer.css`文件里面.
+
+&lt;details&gt;&lt;summary&gt;CSS Code&lt;/summary&gt;
+
+&gt; 这个主要样式一定要写在`:root`选择器的前面!
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+	--ImgLazyLoad-circle-shadowColor:#27272745;
+	--ImgLazyLoad-circle-shadowColor2:#28dddf4a;
+}
+
+/* 图片懒加载占位css动画 */
+.ImgLazyLoad-circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 6px #f3f3f3 solid;
+	border-top: 6px #8aefff solid;
+	transition: filter 0.5s ease, opacity 0.5s ease;
+	animation: ImgLazyLoadAni 1.2s infinite;
+	-webkit-animation: ImgLazyLoadAni 1.2s infinite;
+	box-shadow: 6px 6px 14px 0 var(--ImgLazyLoad-circle-shadowColor), -7px -7px 16px 0 var(--ImgLazyLoad-circle-shadowColor2);
+}
+
+@keyframes ImgLazyLoadAni {
+	0% {
+		transform: rotate(0)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+@-webkit-keyframes ImgLazyLoadAni {
+	0% {
+		-webkit-transform: rotate(0)
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+/* 图片懒加载文字提示样式 */
+.Imgerror-message {
+	color: #ff5b5b;
+	font-size: 100%;
+	user-select: none;
+}
+
+/* 图片模糊渐显样式 */
+[data-fancybox='gallery']{
+    opacity: 0;
+    filter: blur(15px);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+.ImgLoaded {
+	opacity: 1;
+    filter: blur(0);
+}
+
+:root {
+	--ImgLazyLoad-circle-shadowColor:#0000;
+	--ImgLazyLoad-circle-shadowColor2:#ebfffe
+}
+```
+
+&lt;/details&gt;
+
+## [GmeekVercount_uv.js](https://linji.org/pluging/GmeekVercount_uv.min.js) - 网站增加访客计数器
+
+&gt; Vercount [Github](https://github.com/EvanNotFound/vercount)
+&gt; pv 修改成 uv 计数.
+
+建议放入`allHead`里全站添加 js.
+
+```json
+'allHead':'&lt;script src='https://linji.org/pluging/GmeekVercount_uv.min.js'&gt;&lt;/script&gt;'
+```
+
+## [NumPagination.js](https://linji.org/pluging/NumPagination.js) - 主页添加数字分页条
+
+&gt; 来源 [Github](https://github.com/liyifanniubi/liyifanniubi.github.io)
+
+未实际测试过.
+
+# 通过 primer.css, 修改博客样式
+
+[primer.css](https://linji.org/pluging/primer.css), 这个文件用来控制网站的整体样式, 存放在我的 git 仓库, 使用 jsdelivr CDN 加速.
+
+对应的选择器只张贴出关键 CSS 部分的修改, ~~不然代码太多了.~~
+
+下面是修改笔记, 不一定实际使用.
+
+&gt; 已知bug: 给body增加`backdrop-filter: blur(30px);`样式时, 会出现页面异常, 待后续修复.
+
+## \&lt;html&gt; 标签样式
+
+`[data-color-mode]`
+
+&gt; [!NOTE]
+&gt; 优化 light &amp; dark 主题下的背景色.
+&gt; 增加兼容性动画过渡.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+[data-color-mode] {
+    color: var(--fgColor-default, var(--color-fg-default));
+    background-color: var(--bgColor-default, var(--color-canvas-default))
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+    --html-bgColor: #151c2f;/* 增加 */
+}
+:root {
+    --html-bgColor: #fff;/* 增加 */
+}
+[data-color-mode] {
+    color: var(--fgColor-default, var(--color-fg-default));
+    background-color: var(--html-bgColor);
+    -webkit-transition: background-color 0.5s ease;/* 增加 */
+    -moz-transition: background-color 0.5s ease;/* 增加 */
+    -o-transition: background-color 0.5s ease;/* 增加 */
+    transition: background-color 0.5s ease;/* 增加 */
+}
+```
+
+&lt;/details&gt;
+
+## \&lt;body&gt; 标签样式
+
+`body`
+
+&gt; [!NOTE]
+&gt; 优化 light &amp; dark 主题下的背景色.
+&gt; 增加宽高过渡动画.
+&gt; 增加 1080px 屏幕宽度响应
+&gt; 增加高度 auto 过渡动画, 这是一个较新的属性, Chrome 129+ 才支持.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    font-size: var(--body-font-size, 14px);
+    line-height: 1.5;
+    color: var(--fgColor-default, var(--color-fg-default));
+    background-color: var(--bgColor-default, var(--color-canvas-default))
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+    --body-bgColor: #3b3b3bd9;/* 增加 */
+    --body-shadow-color: #52afff3d;/* 增加 */
+}
+:root {
+    --body-bgColor: #ffffffde;/* 增加 */
+    --body-shadow-color: #50a8e726;/* 增加 */
+	interpolate-size: allow-keywords;/* 增加 */
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    font-size: var(--body-font-size, 14px);
+    line-height: 1.5;
+    color: var(--fgColor-default, var(--color-fg-default));
+    background: var(--body-bgColor);
+    box-shadow: 0 0 100px var(--body-shadow-color);/* 增加 */
+    border-radius: 10px;/* 增加 */
+	height: auto;
+}
+/* 增加 */
+@media (min-width: 1080px) {
+    body {
+        max-width: 1000px !important;
+    }
+}
+```
+
+&lt;/details&gt;
+
+## 博客滚动条样式
+
+`::-webkit-scrollbar`
+
+&gt; [!NOTE]
+&gt; 直接增加下面代码.
+
+&lt;details&gt;&lt;summary&gt;CSS Code&lt;/summary&gt;
+
+```CSS
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #97d3ffa1;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #81b5daa1;
+}
+
+/* Firefox */
+html {
+    scrollbar-color: #97d3ffa1 transparent;
+    scrollbar-width: thin;
+}
+```
+
+&lt;/details&gt;
+
+## \#header 样式
+
+`#header`
+
+&gt; [!NOTE]
+&gt; 修改顶部为 flex 居中布局, 更加美观.
+&gt; 修改头像 hover 样式.
+
+&lt;details&gt;&lt;summary&gt;CSS Code&lt;/summary&gt;
+
+```CSS
+/* 优化header样式 */
+#header {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px;
+    padding-bottom: 0 !important;
+    margin-bottom: 24px !important
+}
+
+/* 优化头像样式 */
+#header h1 {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px
+}
+
+#header h1 a {
+    margin: unset !important;
+}
+
+.avatar:hover {
+    transform: scale(1.5) rotate(720deg) !important;
+    box-shadow: 0 0 10px rgb(45 250 255 / 74%);
+}
+```
+
+&lt;/details&gt;
+
+## \#header 图标样式
+
+`.btn-invisible:hover, .btn-invisible.zeroclipboard-is-hover`
+
+&gt; [!NOTE]
+&gt; 图标增加阴影.
+&gt; svg 暗黑模式下颜色.
+&gt; 修改图标 hover 样式.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.btn-invisible {
+	color: var(--fgColor-accent, var(--color-accent-fg));
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	border-radius: 6px;
+	box-shadow: none
+}
+
+.btn-invisible:active,
+.btn-invisible.selected,
+.btn-invisible[aria-selected=true],
+.btn-invisible.zeroclipboard-is-active {
+	color: var(--fgColor-accent, var(--color-accent-fg));
+	background: none;
+	border-color: var(--button-default-borderColor-active, var(--color-btn-active-border));
+	outline: 2px solid var(--focus-outlineColor, var(--color-accent-fg));
+	outline-offset: -2px;
+	box-shadow: none
+}
+
+.btn-invisible:active .btn-invisible.zeroclipboard-is-active {
+	background-color: var(--button-default-bgColor-selected, var(--color-btn-selected-bg))
+}
+```
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+    /* 增加 */
+	--SideNav-bgColor: #00f0ff;
+	--title-right-svgHovercolor:#ff7150;
+	--header-btn-shadowColor:#00000045;
+	--header-btn-shadowColor2:#9bdfff14;
+}
+:root {
+    /* 增加 */
+	--title-right-svgColor:#000;
+	--title-right-svgHovercolor: #ff7804;
+	--header-btn-shadowColor:#fbfbfb26;
+	--header-btn-shadowColor2:#5f5f5f26;
+}
+.btn-invisible {
+	color: var(--fgColor-accent, var(--color-accent-fg));
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	border-radius: 6px;
+	box-shadow: 6px 6px 14px 0 var(--header-btn-shadowColor), -7px -7px 16px 0 var(--header-btn-shadowColor2);
+	transition: box-shadow .4s ease-in-out,filter .4s ease-in-out;
+}
+/* 图标颜色 */
+.btn-invisible svg path{
+	fill: var(--title-right-svgColor);
+}
+/* 图标hover颜色 */
+.btn-invisible:hover svg path,
+.btn-invisible.zeroclipboard-is-hover svg path{
+	fill: var(--title-right-svgHovercolor);
+}
+
+.btn-invisible:active,
+.btn-invisible.selected,
+.btn-invisible[aria-selected=true],
+.btn-invisible.zeroclipboard-is-active {
+	box-shadow: 6px 6px 14px 0 var(--header-btn-shadowColor) inset, -7px -7px 12px 0 var(--header-btn-shadowColor2) inset;
+}
+
+.btn-invisible:active .btn-invisible.zeroclipboard-is-active {
+	box-shadow: 6px 6px 14px 0 var(--header-btn-shadowColor) inset, -7px -7px 12px 0 var(--header-btn-shadowColor2) inset;
+}
+```
+
+&lt;/details&gt;
+
+## 修改文章主页, 文章的列表样式
+
+&gt; [!NOTE]
+&gt; 还未想好要怎么改, 先占位.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.border {
+	border: var(--borderWidth-thin, 1px) solid var(--borderColor-default, var(--color-border-default)) !important
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+.border {
+	border: var(--borderWidth-thin, 1px) solid var(--borderColor-default, var(--color-border-default)) !important
+}
+```
+
+&lt;/details&gt;
+
+## 文章 \&lt;blockquote&gt; 标签样式
+
+`.markdown-body blockquote`
+
+&gt; [!NOTE]
+&gt; 修改文字颜色, 适配 light &amp; dark 主题.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.markdown-body blockquote {
+    padding: 0 1em;
+    color: var(--fgColor-muted, var(--color-fg-muted));
+    border-left: .25em solid var(--borderColor-default, var(--color-border-default))
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+    /* 增加 */
+    --markdown-blockquote-color: #ffffff8c;
+    --markdown-blockquote-borderLeft-color: #bbbbbb8c;
+}
+:root {
+    /* 增加 */
+    --markdown-blockquote-color: #656d76;
+    --markdown-blockquote-borderLeft-color: #d0d7de;
+}
+.markdown-body blockquote {
+    padding: 0 1em;
+    color: var(--markdown-blockquote-color);
+    border-left: .25em solid var(--markdown-blockquote-borderLeft-color)
+}
+```
+
+&lt;/details&gt;
+
+## 文章文字通用样式
+
+`.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre, .markdown-body details`
+
+&gt; [!NOTE]
+&gt; 修改行高为 1.75
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body details {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body details {
+	margin-top: 0;
+	margin-bottom: 16px;
+	line-height: 1.75;/* 增加 */
+}
+```
+
+&lt;/details&gt;
+
+## 文章标题通用样式
+
+`.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6`
+
+&gt; [!NOTE]
+&gt; 删除左右 padding.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    padding: .22em;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: var(--base-text-weight-semibold, 600);
+    line-height: 1.25
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    padding: .22em 0;
+    margin-bottom: 16px;
+    font-weight: var(--base-text-weight-semibold, 600);
+    line-height: 1.25
+}
+```
+
+&lt;/details&gt;
+
+## 文章 \&lt;h1&gt; 标签样式
+
+`.markdown-body h1`
+
+&gt; [!NOTE]
+&gt; 修改字体大小1.65em.
+&gt; 删除下 padding, 增加左 padding .22em.
+&gt; 增加 margin-top.
+&gt; 优化 light &amp; dark 主题下的背景色.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.markdown-body h1 {
+    padding-bottom: .3em;
+    font-size: 2em;
+    border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted))
+}
+```
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+    --markdown-h1-bgColor: #7dc2ff7a;/* 增加 */
+}
+:root {
+    --markdown-h1-bgColor: #c8e5ff7a;/* 增加 */
+}
+.markdown-body h1 {
+    padding-left: .22em;
+    background: var(--markdown-h1-bgColor);/* 增加 */
+    border-radius: 6px;/* 增加 */
+    font-size: 1.65em;
+    border-left: .25em solid #71c4ef63;/* 增加 */
+    padding-left: .25em;/* 增加 */
+    margin-top: 42px;/* 增加 */
+}
+```
+
+&lt;/details&gt;
+
+## 文章 \&lt;h2&gt; 标签样式
+
+`.markdown-body h2`
+
+&gt; [!NOTE]
+&gt; 删除 padding-bottom.
+&gt; 增加下划线动画.
+&gt; 增加阴影样式.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.markdown-body h2 {
+    padding-bottom: .3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted))
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+.markdown-body h2 {
+    padding-bottom: .3em;
+    font-size: 1.5em;
+	box-shadow: rgb(41, 150, 186) 0px 9px 18px -15px;/* 增加 */
+	display: inline-block;/* 增加 */
+	border-radius: 6px;/* 增加 */
+}
+```
+
+&lt;/details&gt;
+
+## 文章 \&lt;img&gt; 标签样式
+
+`.markdown-body img`
+
+&gt; [!NOTE]
+&gt; 优化 light &amp; dark 主题下的背景色.
+&gt; 增加 hover 动画.
+&gt; img 标签增加`display: block;`, 防止 Actions 之后显示错误.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.markdown-body img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: var(--bgColor-default, var(--color-canvas-default))
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+/* 增加 */
+.markdown-body p {
+    position: relative;
+    overflow: visible;
+    clip-path: inset(0);
+    -webkit-clip-path: inset(0);
+}
+.markdown-body img {
+	display: block;
+    max-width: 100%;
+    box-sizing: content-box;
+	/* 增加 */
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease, clip-path 0.3s ease, -webkit-clip-path 0.3s ease;
+}
+/* 增加 */
+.markdown-body img:hover {
+	transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	clip-path: inset(-4%);
+	-webkit-clip-path: inset(-4%);
+	cursor: zoom-in;
+}
+```
+
+&lt;/details&gt;
+
+## 文章 \&lt;code&gt; 标签样式
+
+`.markdown-body code, .markdown-body tt`
+
+&gt; [!NOTE]
+&gt; 优化 light &amp; dark 主题下的背景色.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.markdown-body code,
+.markdown-body tt {
+    background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted));
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+    --markdown-code-bgColor: #0198b5a1;/* 增加 */
+}
+:root {
+    --markdown-code-bgColor: #81818138;/* 增加 */
+}
+.markdown-body code,
+.markdown-body tt {
+    background-color: var(--markdown-code-bgColor);
+}
+```
+
+&lt;/details&gt;
+
+## 文章代码块样式
+
+`.markdown-body .highlight pre, .markdown-body pre`
+
+&gt; [!NOTE]
+&gt; 优化 light &amp; dark 主题下的背景色.
+&gt; 增加内阴影.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.markdown-body .highlight pre,.markdown-body pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    color: var(--fgColor-default, var(--color-fg-default));
+    background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+    border-radius: 6px
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+    --markdown-pre-bgColor: #27282d;/* 增加 */
+	--markdown-pre-shadowColor: #00000026;/* 增加 */
+}
+:root {
+    --markdown-pre-bgColor: #f6f8fa;/* 增加 */
+	--markdown-pre-shadowColor: #5f5f5f26;/* 增加 */
+}
+.markdown-body .highlight pre, .markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	color: var(--fgColor-default, var(--color-fg-default));
+	border-radius: 6px;
+	background-color: var(--markdown-pre-bgColor);/* 增加 */
+	box-shadow: 4px 5px 14px 0 var(--markdown-pre-shadowColor) inset;/* 增加 */
+}
+```
+
+&lt;/details&gt;
+
+## 文章 diff 代码块样式
+
+&gt; [!NOTE]
+&gt; 因默认的效果可以双击复制到+和-号, 现通过 CSS 控制使其无法被选中复制.
+&gt; 直接增加下面代码.
+
+&lt;details&gt;&lt;summary&gt;CSS Code&lt;/summary&gt;
+
+```CSS
+.pl-mi1 {
+	user-select: text;
+}
+
+.pl-mi1&gt;span {
+	user-select: none;
+}
+
+.pl-md {
+	user-select: text;
+}
+
+.pl-md&gt;span {
+	user-select: none;
+}
+```
+
+&lt;/details&gt;
+
+- 效果图:
+
+![](https://a.linji.org/file/2025/02/11-4.webp)
+
+## 文章一键复制代码按钮样式
+
+&gt; [!NOTE]
+&gt; 给按钮增加 hover 动画, 使其显示&amp;隐藏一键复制按钮.
+&gt; 直接增加下面代码.
+
+&lt;details&gt;&lt;summary&gt;CSS Code&lt;/summary&gt;
+
+```CSS
+/* 一键复制hover出入动画 */
+.clipboard-container {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+    -webkit-transition: opacity 0.3s ease, visibility 0s 0.3s
+}
+
+.snippet-clipboard-content:hover .clipboard-container {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.3s ease, visibility 0s 0s;
+    -webkit-transition: opacity 0.3s ease, visibility 0s 0s
+}
+```
+
+&lt;/details&gt;
+
+## 文章 \&lt;a&gt; 标签样式
+
+`a`
+
+&gt; [!NOTE]
+&gt; 这个选择器经过查找发现有2行重复了, 总之合并成最靠下的那一行.
+&gt; 如果要改白天模式下超链的颜色, 需要定位36行的选择器然后找到`--color-accent-fg: #0969da`
+&gt; 优化 light &amp; dark 主题下的颜色.
+&gt; 修改下划线动画.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+    --color-accent-fg: #2f81f7;
+}
+/* 这条在12300行左右出现 */
+a {
+    background-color: rgba(0, 0, 0, 0)
+}
+/* 这条在12500行左右出现 */
+a {
+	color: var(--fgColor-accent, var(--color-accent-fg));
+	text-decoration: none
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=light][data-light-theme=dark]::selection,
+[data-color-mode=dark][data-dark-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark]::selection {
+    --color-accent-fg: #20d4ff;
+}
+/* 
+合并靠下的那一行, 修改为下面内容:
+*/
+a {
+	background: linear-gradient(#90d1ff, #90d1ff) no-repeat left bottom;
+	background-size: 0 2px;
+	transition: all 0.25s ease;
+	-webkit-transition: all 0.25s ease;
+	color: var(--fgColor-accent, var(--color-accent-fg));
+	text-decoration: none
+}
+/* 增加 */
+.markdown-body a:hover {
+    background-size: 100% 2px;
+}
+```
+
+&lt;/details&gt;
+
+## 文章 \&lt;td&gt; 最后的子元素样式
+
+`.markdown-body table td&gt;:last-child`
+
+&gt; [!NOTE]
+&gt; 修改下标基线对齐位置.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```CSS
+.markdown-body table td&gt;:last-child {
+	margin-bottom: 0
+}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```CSS
+.markdown-body table td&gt;:last-child {
+	margin-bottom: 0;
+	vertical-align: sub
+}
+```
+
+&lt;/details&gt;
+
+- 效果图:
+
+![](https://a.linji.org/file/2025/02/11-5.webp)
+
+# 通过 Gmeek 仓库美化博客
+
+为什么这样做? `Gmeek-spoilertxt='自娱自乐.~~'`
+
+## Fork Gmeek 仓库
+
+仓库地址👉 https://github.com/Meekdai/Gmeek
+
+![](https://a.linji.org/file/2025/02/11-6.webp)
+
+fork 之后, 转到搭建博客的 github 源码,
+
+打开`.github/workflows/Gmeek.yml`文件, 修改构建博客仓库的地址为你自己的仓库地址
+
+![](https://a.linji.org/file/2025/02/11-7.webp)
+
+打开`config.json`文件, 把`GMEEK_VERSION`的修改值为👉`main`
+
+&gt; [!NOTE]
+&gt; 如果值是`last`的话, Actions 会失败, 因为默认值`last`是靠模板仓库的 tag 来构建的, 改成 main 就不会构建失败.
+&gt; ~~创建新的 tag 也可以, 但是挺麻烦.~~
+
+## 修改 Actions 定时任务时间
+
+原本为每天 UTC 时间 16 点定时 Actions.
+
+```yaml
+        - cron: '0 16 * * *'
+```
+
+改成每周 UTC 时间 18 点定时 Actions.
+
+```yaml
+        - cron: '0 18 * * 0'
+```
+
+## 修改网站下方的文字
+
+打开`Gmeek.py`
+
+下图文字直接修改即可, 不同语言的按需修改.
+
+![](https://a.linji.org/file/2025/02/11-8.webp)
+
+## 修改默认 primer.css 链接
+
+打开`Gmeek.py`
+
+![](https://a.linji.org/file/2025/02/11-9.webp)
+
+这里我直接写改成我存放的链接, 并使用 tag 控制版本.
+
+## 修改模板文件记录
+
+### base.html 文件
+
+&gt; [!Important]
+&gt; base 这个模板文件里增加的代码可以应用到所有页面, 优先级很高.
+
+1. **增加所需的样式.**
+
+&gt; 文章头部背景色.
+&gt; 打字效果动画.
+&gt; 动画(已引用的地方:`#header`打字机光标, `body``#content``functionBtn``.tagTitle``.title-left a``.subnav-search`向上渐显动画).
+&gt; 分离图标的`#functionBtn`样式.
+
+&lt;details&gt;&lt;summary&gt;CSS Code&lt;/summary&gt;
+
+```CSS
+:root{--functionBtnFlex-bgColor:#ffffff61;}
+[data-color-mode=light][data-light-theme=dark],[data-color-mode=light][data-light-theme=dark]::selection,[data-color-mode=dark][data-dark-theme=dark],[data-color-mode=dark][data-dark-theme=dark]::selection{--functionBtnFlex-bgColor:#ffffff00;}
+
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+
+@keyframes blink{50%{opacity:0}100%{opacity:1}}@-webkit-keyframes blink{50%{opacity:0}100%{opacity:1}}
+
+@keyframes grow {
+    0% {opacity: 0.85;transform: scale(0.5);}
+    100% {opacity: 1;transform: translate(1);}
+}
+@-webkit-keyframes grow {
+    0% {opacity: 0.85;-webkit-transform: scale(0.5);}
+    100% {opacity: 1;-webkit-transform: translate(1);}
+}
+
+@keyframes slide-fade-in {
+	0% {opacity: 0;transform: translate3d(0, 20px, 0);}
+	100% {opacity: 1;transform: translate(0, 0, 0);}
+}
+@-webkit-keyframes slide-fade-in {
+	0% {opacity: 0;-webkit-transform: translate3d(0, 20px, 0);}
+	100% {opacity: 1;-webkit-transform: translate(0, 0, 0);}
+}
+
+#functionBtn{display:flex;justify-content:center;margin:20px 0;gap:20px;transition: transform 0.3s ease-in-out;}
+#functionBtn a{padding:14px 16px;}
+#functionBtn.Btn-flex{position:fixed;margin:0;padding:20px 0;top:-100px;left:0;width:100%;min-width:500px;background-color:var(--functionBtnFlex-bgColor);backdrop-filter:blur(30px);box-shadow:#00000078 0 9px 18px -15px;z-index:100;}
+
+body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animation:slide-fade-in 0.8s ease;animation:slide-fade-in 0.8s ease}
+```
+
+&lt;/details&gt;
+
+2. **定位`#header`, 修改样式.**
+
+&gt; 去除下划线, 优化布局.
+
+```Diff
++#header .homepage-header{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:24px;}
+👆
+-#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+```
+
+### post.html 文件
+
+&gt; [!Important]
+&gt; post 这个模板文件里增加的代码可以应用到所有文章页面.
+
+1. **定位`.postTitle`, 修改样式**
+
+&gt; 修改标题文字居中显示.
+&gt; after 是光标, blink 是光标动画.
+
+```Diff
++.postTitle{margin:0 auto;font-size:40px;font-weight:bold;}
++.postTitle::after{content:'|';animation:blink 1s infinite;font-family:fantasy;font-weight:normal;vertical-align:text-top;}
++.no-blink::after{animation:none;}
+👆
+-.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+```
+
+3. **定位样式`#functionBtn .circle`, 删除`margin-right:8px;`**
+
+```Diff
++#functionBtn .circle{padding: 14px 16px;}
+👆
+-#functionBtn .circle{padding: 14px 16px;margin-right:8px;}
+```
+
+4. **body响应**
+
+定位`@media (max-width:600px) {`, 给 body 增加最小宽度500px: `min-width:500px;`
+
+5. **分离 header 文字以及图标**
+
+&gt; 需要把`.title-right`这个类名全部重命名为`#functionBtn`
+&gt; 增加搜索页按钮.
+&gt; 增加文章目录按钮.
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```html
+{% block header %}
+&lt;h1 class='postTitle'&gt;{{ blogBase['postTitle'] }}&lt;/h1&gt;
+&lt;div class='title-right'&gt;
+    &lt;a href='{{ blogBase['homeUrl'] }}' id='buttonHome' class='btn btn-invisible circle' title='{{ i18n['home'] }}'&gt;
+        &lt;svg class='octicon' width='16' height='16'&gt;
+            &lt;path id='pathHome' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    {% if blogBase['showPostSource']==1 %}
+    &lt;a href='{{ blogBase['postSourceUrl'] }}' target='_blank' class='btn btn-invisible circle' title='Issue'&gt;
+        &lt;svg class='octicon' width='16' height='16'&gt;
+            &lt;path id='pathIssue' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    {% endif %}
+
+    &lt;a class='btn btn-invisible circle' onclick='modeSwitch();' title='{{ i18n['switchTheme'] }}' {%- if blogBase['themeMode']=='fix' -%}style='display:none;'{%- endif -%}&gt;
+        &lt;svg class='octicon' width='16' height='16' &gt;
+            &lt;path id='themeSwitch' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+
+&lt;/div&gt;
+{% endblock %}
+```
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```html
+{% block header %}
+&lt;h1 class='postTitle'&gt;{{ blogBase['postTitle'] }}&lt;/h1&gt;
+{% endblock %}
+
+{% block functionBtn %}
+&lt;a href='{{ blogBase['homeUrl'] }}' id='buttonHome' class='btn btn-invisible circle' title='{{ i18n['home'] }}'&gt;
+	&lt;svg class='octicon' width='16' height='16'&gt;&lt;path id='pathHome' fill-rule='evenodd'&gt;&lt;/path&gt;&lt;/svg&gt;
+&lt;/a&gt;
+{% if blogBase['showPostSource']==1 %}
+&lt;a href='{{ blogBase['postSourceUrl'] }}' target='_blank' class='btn btn-invisible circle' title='Issue'&gt;
+	&lt;svg class='octicon' width='16' height='16'&gt;&lt;path id='pathIssue' fill-rule='evenodd'&gt;&lt;/path&gt;&lt;/svg&gt;
+&lt;/a&gt;
+{% endif %}
+
+&lt;a class='btn btn-invisible circle' onclick='modeSwitch();' title='{{ i18n['switchTheme'] }}' {%- if blogBase['themeMode']=='fix' -%}style='display:none;'{%- endif -%}&gt;
+	&lt;svg class='octicon' width='16' height='16' &gt;&lt;path id='themeSwitch' fill-rule='evenodd'&gt;&lt;/path&gt;&lt;/svg&gt;
+&lt;/a&gt;
+
+&lt;a href='{{ blogBase['homeUrl'] }}/tag.html' id='buttonSearch' class='btn btn-invisible circle' title='{{ i18n['Search'] }}'&gt;
+	&lt;svg class='octicon' width='16' height='16' &gt;
+		&lt;path id='pathSearch' fill-rule='evenodd'&gt;&lt;/path&gt;
+	&lt;/svg&gt;
+&lt;/a&gt;
+
+&lt;a class='ArticleTOC btn btn-invisible circle' title='文章目录'&gt;
+	&lt;svg class='octicon' width='16' height='16'&gt;&lt;path&gt;&lt;/path&gt;&lt;/svg&gt;
+&lt;/a&gt;
+{% endblock %}
+```
+
+&lt;/details&gt;
+
+定位`document.getElementById('pathHome').setAttribute('d',IconList['home']);`, 在下面一行增加js.
+
+&gt; 暂时还不知道如何通过变量增加 path 的路径信息, 只能直接模仿原先的增加方式上, 直接写路径.
+
+```Javascript
+document.getElementById('ArticleTOC').setAttribute('d','M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z');
+
+document.getElementById('pathSearch').setAttribute('d','M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z');
+```
+
+6. **添加自定义 JS 代码.**
+
+&gt; 添加打字效果.
+&gt; 添加滚动切换显示顶部按钮导航.
+
+定位`&lt;script&gt;`标签, 在里面增加 JS 代码:
+
+&gt; [!NOTE]
+&gt; `document.addEventListener('DOMContentLoaded', () =&gt; {`这个监听不止可写当前功能, 还可写其它功能的代码进去.
+&gt; 实际应用场景我把这块的代码都压缩合并了.
+
+&lt;details&gt;&lt;summary&gt;JavaScript&lt;/summary&gt;
+
+```Javascript
+// 获取 .postTitle 元素的文本内容存储后清空
+const postTitle = document.querySelector('.postTitle');
+const textContent = postTitle.textContent;
+postTitle.textContent = '';
+
+// 定义逐字显示文本的函数, 末尾的数值代表每次输入字符的速度(毫秒)
+let idx = 0;
+const writeTimer = setInterval(() =&gt; {
+    postTitle.textContent = textContent.slice(0, idx++);
+    if (idx &gt; textContent.length) {
+        clearInterval(writeTimer);
+        postTitle.classList.remove('no-blink');
+    }
+}, 80);
+
+postTitle.classList.add('no-blink');
+
+document.addEventListener('DOMContentLoaded', () =&gt; {
+    // 创建检查按钮, 插入到指定id #functionBtn 的后面
+    const checkBtn = document.createElement('div');
+    checkBtn.id = 'checkBtn';
+    const functionBtn = document.getElementById('functionBtn');
+    functionBtn.insertAdjacentElement('afterend', checkBtn);
+
+    // 用 IntersectionObserver 观察 checkBtn 这个div的可见性
+    const observer = new IntersectionObserver(entries =&gt; {
+        entries.forEach(entry =&gt; {
+            const isIntersecting = entry.isIntersecting;
+            functionBtn.classList.toggle('Btn-flex', !isIntersecting);
+            functionBtn.style.top = isIntersecting ? '0' : '-100px';
+        });
+    }, { rootMargin: '300px 0px 0px 0px', threshold: 0 });
+    observer.observe(checkBtn);
+
+    let startY = 0;
+
+    // 通用滚动处理函数
+    const handleScroll = deltaY =&gt; {
+        functionBtn.style.top = deltaY &gt; 0 ? '-100px' : '0';
+    };
+
+// 监听触摸和滚轮事件
+document.addEventListener('touchstart', e =&gt; startY = e.touches[0].clientY);
+document.addEventListener('touchmove', e =&gt; handleScroll(e.touches[0].clientY - startY));
+document.addEventListener('wheel', e =&gt; handleScroll(e.deltaY));
+});
+```
+
+&lt;/details&gt;
+
+### plist.html 文件
+
+&gt; [!Important]
+&gt; plist 这个模板文件里增加的代码可以应用到博客首页.
+
+1. **增加样式**
+
+```CSS
+.title-left{display:flex;flex-direction:column;align-items:center;gap:20px;}
+```
+
+2. **定位样式`.title-left`, 直接删除相关的所有样式**
+
+3. **定位`.avatar:hover`, 修改样式**
+
+```CSS
+.avatar:hover{transform:scale(1.5) rotate(720deg);box-shadow:0 0 10px #2dfaffbd;}
+```
+
+4. **分离#header的文字以及图标**
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```html
+{% block header %}
+&lt;div class='title-left'&gt;
+    &lt;img src='{{ blogBase['avatarUrl'] }}' class='avatar circle' id='avatarImg' alt='avatar'&gt;
+    {%- if blogBase['displayTitle']=='Meekdai' -%}
+    &lt;a class='blogTitle' href='https://meekdai.com'&gt;&lt;span style='font-size:0;'&gt;M&lt;/span&gt;eekdai&lt;/a&gt;
+    {% else -%}
+    &lt;a class='blogTitle'&gt;{{ blogBase['displayTitle'] }}&lt;/a&gt;
+    {%- endif -%}
+&lt;/div&gt;
+&lt;div class='title-right'&gt;
+    &lt;a href='{{ blogBase['homeUrl'] }}/tag.html' id='buttonSearch' class='btn btn-invisible circle' title='{{ i18n['Search'] }}'&gt;
+        &lt;svg class='octicon' width='16' height='16' &gt;
+            &lt;path id='pathSearch' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    {% for key, value in blogBase['exlink'].items() -%}
+    &lt;a href='{{ value }}' class='btn btn-invisible circle' title='{{ key }}' target='_blank'&gt;
+        &lt;svg class='octicon' width='16' height='16' &gt;
+            &lt;path id='{{ key }}' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    {%- endfor %}
+    {% for num in blogBase['singeListJson'] -%}
+    &lt;a href='{{ blogBase['homeUrl'] }}/{{ blogBase['singeListJson'][num]['labels'][0] }}.html' class='btn btn-invisible circle' title='{{ blogBase['singeListJson'][num]['postTitle'] }}'&gt;
+        &lt;svg class='octicon' width='16' height='16' &gt;
+            &lt;path id='{{ blogBase['singeListJson'][num]['postTitle'] }}' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    {%- endfor %}
+    &lt;a href='{{ blogBase['homeUrl'] }}/rss.xml' target='_blank' id='buttonRSS' class='btn btn-invisible circle' title='RSS'&gt;
+        &lt;svg class='octicon' width='16' height='16' &gt;
+            &lt;path id='pathRSS' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    &lt;a class='btn btn-invisible circle' onclick='modeSwitch()' title='{{ i18n['switchTheme'] }}' {%- if blogBase['themeMode']=='fix' -%}style='display:none;'{%- endif -%}&gt;
+        &lt;svg class='octicon' width='16' height='16' &gt;
+            &lt;path id='themeSwitch' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+{% endblock %}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```html
+{% block header %}
+&lt;div class='title-left'&gt;
+    &lt;img src='{{ blogBase['avatarUrl'] }}' class='avatar circle' id='avatarImg' alt='avatar'&gt;
+    {%- if blogBase['displayTitle']=='Meekdai' -%}
+    &lt;a class='blogTitle' href='https://meekdai.com'&gt;&lt;span style='font-size:0;'&gt;M&lt;/span&gt;eekdai&lt;/a&gt;
+    {% else -%}
+    &lt;a class='blogTitle'&gt;{{ blogBase['displayTitle'] }}&lt;/a&gt;
+    {%- endif -%}
+&lt;/div&gt;
+{% endblock %}
+
+{% block functionBtn %}
+&lt;a href='{{ blogBase['homeUrl'] }}/tag.html' id='buttonSearch' class='btn btn-invisible circle' title='{{ i18n['Search'] }}'&gt;
+	&lt;svg class='octicon' width='16' height='16' &gt;
+		&lt;path id='pathSearch' fill-rule='evenodd'&gt;&lt;/path&gt;
+	&lt;/svg&gt;
+&lt;/a&gt;
+{% for key, value in blogBase['exlink'].items() -%}
+&lt;a href='{{ value }}' class='btn btn-invisible circle' title='{{ key }}' target='_blank'&gt;
+	&lt;svg class='octicon' width='16' height='16' &gt;
+		&lt;path id='{{ key }}' fill-rule='evenodd'&gt;&lt;/path&gt;
+	&lt;/svg&gt;
+&lt;/a&gt;
+{%- endfor %}
+{% for num in blogBase['singeListJson'] -%}
+&lt;a href='{{ blogBase['homeUrl'] }}/{{ blogBase['singeListJson'][num]['labels'][0] }}.html' class='btn btn-invisible circle' title='{{ blogBase['singeListJson'][num]['postTitle'] }}'&gt;
+	&lt;svg class='octicon' width='16' height='16' &gt;
+		&lt;path id='{{ blogBase['singeListJson'][num]['postTitle'] }}' fill-rule='evenodd'&gt;&lt;/path&gt;
+	&lt;/svg&gt;
+&lt;/a&gt;
+{%- endfor %}
+&lt;a href='{{ blogBase['homeUrl'] }}/rss.xml' target='_blank' id='buttonRSS' class='btn btn-invisible circle' title='RSS'&gt;
+	&lt;svg class='octicon' width='16' height='16' &gt;
+		&lt;path id='pathRSS' fill-rule='evenodd'&gt;&lt;/path&gt;
+	&lt;/svg&gt;
+&lt;/a&gt;
+&lt;a class='btn btn-invisible circle' onclick='modeSwitch()' title='{{ i18n['switchTheme'] }}' {%- if blogBase['themeMode']=='fix' -%}style='display:none;'{%- endif -%}&gt;
+	&lt;svg class='octicon' width='16' height='16' &gt;
+		&lt;path id='themeSwitch' fill-rule='evenodd'&gt;&lt;/path&gt;
+	&lt;/svg&gt;
+&lt;/a&gt;
+{% endblock %}
+```
+
+&lt;/details&gt;
+
+### tag.html 文件
+
+&gt; [!Important]
+&gt; tag 这个模板文件里增加的代码可以应用到搜索页.
+
+1. **打开`tag.html`修改样式, 用了 Diff 代码块, 看着改吧.**
+
+```Diff
++.title-right{display:flex;align-items:center;flex-direction:column;}
++.title-right .circle{padding:14px 16px;}
+👆
+-.title-right{display:flex;margin:auto 0 0 auto;}
+-.title-right .circle{padding: 14px 16px;margin-right:8px;}
+```
+
+2. **分离搜索框以及图标.**
+
+&lt;details&gt;&lt;summary&gt;修改前&lt;/summary&gt;
+
+```html
+{% block header %}
+&lt;span class='tagTitle'&gt;&lt;span&gt;Loading&lt;/span&gt;&lt;span class='AnimatedEllipsis'&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;div class='title-right'&gt;
+    &lt;div class='subnav-search'&gt;
+        &lt;input type='search' class='form-control subnav-search-input float-left' aria-label='Search site' value='' style='height:32px;'&gt;
+        &lt;button class='btn float-left' type='submit' onclick='javascript:searchShow()'&gt;{{ i18n['Search'] }}&lt;/button&gt;
+        &lt;svg class='subnav-search-icon octicon octicon-search' width='16' height='16' viewBox='0 0 16 16' aria-hidden='true'&gt;
+            &lt;path id='searchSVG' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;a href='{{ blogBase['homeUrl'] }}' id='buttonHome' class='btn btn-invisible circle' title='{{ i18n['home'] }}'&gt;
+        &lt;svg class='octicon' width='16' height='16'&gt;
+            &lt;path id='pathHome' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    &lt;a class='btn btn-invisible circle' onclick='modeSwitch()' title='{{ i18n['switchTheme'] }}' {%- if blogBase['themeMode']=='fix' -%}style='display:none;'{%- endif -%}&gt;
+        &lt;svg class='octicon' width='16' height='16' &gt;
+            &lt;path id='themeSwitch' fill-rule='evenodd'&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+{% endblock %}
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;&lt;summary&gt;修改后&lt;/summary&gt;
+
+```html
+{% block header %}
+&lt;span class='tagTitle'&gt;&lt;span&gt;Loading&lt;/span&gt;&lt;span class='AnimatedEllipsis'&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;div class='subnav-search'&gt;
+	&lt;input type='search' class='form-control subnav-search-input float-left' aria-label='Search site' value='' style='height:32px;'&gt;
+	&lt;button class='btn float-left' type='submit' onclick='javascript:searchShow()'&gt;{{ i18n['Search'] }}&lt;/button&gt;
+	&lt;svg class='subnav-search-icon octicon octicon-search' width='16' height='16' viewBox='0 0 16 16' aria-hidden='true'&gt;
+		&lt;path id='searchSVG' fill-rule='evenodd'&gt;&lt;/path&gt;
+	&lt;/svg&gt;
+&lt;/div&gt;
+{% endblock %}
+
+{% block functionBtn %}
+&lt;a href='{{ blogBase['homeUrl'] }}' id='buttonHome' class='btn btn-invisible circle' title='{{ i18n['home'] }}'&gt;
+	&lt;svg class='octicon' width='16' height='16'&gt;
+		&lt;path id='pathHome' fill-rule='evenodd'&gt;&lt;/path&gt;
+	&lt;/svg&gt;
+&lt;/a&gt;
+&lt;a class='btn btn-invisible circle' onclick='modeSwitch()' title='{{ i18n['switchTheme'] }}' {%- if blogBase['themeMode']=='fix' -%}style='display:none;'{%- endif -%}&gt;
+	&lt;svg class='octicon' width='16' height='16' &gt;
+		&lt;path id='themeSwitch' fill-rule='evenodd'&gt;&lt;/path&gt;
+	&lt;/svg&gt;
+&lt;/a&gt;
+{% endblock %}
+```
+
+&lt;/details&gt;
+
+#### 修改搜索框样式
+
+1. **定位`.subnav-search`类名. 直接删除这个样式**
+
+2. **定位`.subnav-search-input`类名, 修改以下内容**
+
+```Diff
++.subnav-search-input{width:160px;}
++.subnav-search button{padding:5px 8px;}
+👆
+-.subnav-search-input{width:160px;border-top-right-radius:0px;border-bottom-right-radius:0px;}
+-.subnav-search button{padding:5px 8px;border-top-left-radius:0px;border-bottom-left-radius:0px;}
+```
+
+3. 打开`primer.css`, 修改样式
+
+定位`.subnav-search {`, 删除了margin.
+
+```Diff
++.subnav-search {position: relative;s}
+👆
+-.subnav-search {position: relative;margin-left: 12px}
+```
+
+## 修改[警报强调信息]样式
+
+1. **增加圆角**
+
+打开`Gmeek.py`
+
+定位代码`&lt;style&gt;.markdown-alert{`, 给它增加圆角6px.
+
+`border-radius:6px;`
+
+2. **优化行高显示**
+
+定位`line-height:1;`, 直接删除这个属性.
+
+- 效果图:
+
+![](https://a.linji.org/file/2025/02/11-10.webp)
+
+## 优化任务列表样式
+
+具体问题看[#202](https://github.com/Meekdai/Gmeek/issues/202)
+
+打开`Gmeek.py`, 定位`postBase=self.blogBase.copy()`, 在它的下面增加如下代码:
+
+```python
+        # 优化任务列表样式
+        if '&lt;ul class='contains-task-list'&gt;' in post_body:
+            issue['style']=issue['style']+'&lt;style&gt;.contains-task-list{padding-left:0.9em !important;list-style:none}&lt;/style&gt;'
+```
+
+## 页面底部文字增加图标动画
+
+爱心图标动画.
+
+打开`footer.html`
+
+在`&lt;span id='runday'&gt;`前面插入下面一行 SVG 图标.
+
+```html
+&lt;svg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' style='margin-right: 4px;height:18px;vertical-align: bottom;fill: #ff5a5a;'class='animate_heartBeatScale'&gt;&lt;path d='M1017.152 426.592a263.296 263.296 0 0 0-502.304-133.92 263.328 263.328 0 0 0-502.304 133.92s5.152 259.264 505.536 520.096c500.32-260.832 499.072-520.096 499.072-520.096zM282.016 194.976a43.2 43.2 0 1 1 .096 86.4 43.2 43.2 0 0 1-.096-86.4zm-135.04 323.232a45.12 45.12 0 0 1-55.488-31.328 289.472 289.472 0 0 1-10.816-66.592C76.64 313.824 142.24 261.472 145.504 258.88a45.024 45.024 0 0 1 63.2 8.032c15.168 19.488 11.744 47.36-7.328 62.72-2.336 1.952-30.784 27.52-30.592 82.24.096 14.752 2.208 31.616 7.488 50.784a45.12 45.12 0 0 1-31.296 55.552z'/&gt;&lt;/svg&gt;
+```
+
+打开`primer.css`, 直接增加动画 CSS 代码.
+
+&lt;details&gt;&lt;summary&gt;CSS Code&lt;/summary&gt;
+
+```CSS
+@keyframes heartBeatScale  {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+@keyframes heartBeatColor {
+    0%, 28%, 70%, 100% {
+        fill: #ff5a5a; /* 初始颜色 */
+    }
+    14%, 42% {
+        fill: red; /* 放大时颜色变化 */
+    }
+}
+
+.animate_heartBeatScale {
+    animation: heartBeatScale 1.3s infinite ease-in-out, heartBeatColor 1.3s infinite ease-in-out;
+    -webkit-animation: heartBeatScale 1.3s infinite ease-in-out, heartBeatColor 1.3s infinite ease-in-out;
+}
+```
+
+&lt;/details&gt;
+
+转到页脚查看实际效果👉 [点我](#footer2)
+
+# Gmeek-html
+
+Github 由于安全考虑, 是不允许使用 iframe 等标签的, 而且在 issues 插入的图片也会自动转换为 Github 的地址, 为了文章的多样性, 在 Gmeek 的 v2.19 版本中添加了支持 html 标签的功能.
+
+&gt; Gmeek 的默认功能, 可使用这个匹配规则转换不同的 html 效果, 详看 👉 [Gmeek进阶](https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-wen-zhang-cha-ru-html-biao-qian.html)
+
+&gt; [!Important]
+&gt; 如果在文章中含有代码块标签并且内容为 Gmeek-html, Action 那边会进行转换导致显示错误, 详情看[#201](https://github.com/Meekdai/Gmeek/issues/201)
+&gt; `gmeek-html`换成小写就不会被匹配到.
+
+# 优化 Gmeek-html, 标签转换匹配
+
+打开`Gmeek.py`, 定位字符串`gmeek-html`
+
+替换成下面的代码:
+
+```python
+        # 给原本的Gmeek-html增加小括号判断:&lt;&gt;, 缩小匹配范围
+        if '&lt;code class='notranslate'&gt;Gmeek-html' in post_body:
+            post_body = re.sub(r'&lt;code class='notranslate'&gt;Gmeek-html(&amp;lt;.*?&amp;gt;)&lt;/code&gt;', lambda match: html.unescape(match.group(1)), post_body, flags=re.DOTALL)
+```
+
+原先匹配的内容为:`&lt;code class='notranslate'&gt;Gmeek-html(.*?)&lt;/code&gt;`,
+
+这种情况下, 如果在 html 中含有行内代码块标签并且内容含有 Gmeek-html, 会导致转换文章内容时出现显示错误,
+
+更改后缩小了匹配范围, 可直接用行内代码块👉`Gmeek-html`让其在文章内正常显示.
+
+# 增加图片转换, 并适配图片懒加载
+
+打开`Gmeek.py`, 定位字符串`Gmeek-html`
+
+在附近任意行增加代码:
+
+```python
+        # 默认情况插入图片情况下的匹配规则&lt;p&gt; -&gt; &lt;a&gt; -&gt;&lt;img&gt;
+        if '&lt;p&gt;&lt;a target='_blank' rel=' in post_body:
+            post_body = re.sub(r'&lt;p&gt;\s*&lt;a[^&gt;]*?href='([^']+)'[^&gt;]*?&gt;&lt;img[^&gt;]*?src='\1'[^&gt;]*?&gt;&lt;/a&gt;\s*&lt;/p&gt;', lambda match: f'&lt;div class='ImgLazyLoad-circle'&gt;&lt;/div&gt;\n&lt;img data-fancybox='gallery' img-src='{match.group(1)}'&gt;', post_body, flags=re.DOTALL)
+
+        # 通用插入图片情况下的匹配规则&lt;a&gt; -&gt;&lt;img&gt;
+        if '&lt;a target='_blank' rel=' in post_body:
+            post_body = re.sub(r'&lt;a[^&gt;]*?href='([^']+)'[^&gt;]*?&gt;&lt;img[^&gt;]*?src='\1'[^&gt;]*?&gt;&lt;/a&gt;',lambda match: f'&lt;div class='ImgLazyLoad-circle'&gt;&lt;/div&gt;\n&lt;img data-fancybox='gallery' img-src='{match.group(1)}'&gt;', post_body, flags=re.DOTALL)
+```
+
+- **使用演示**
+
+在 GitHub markdown 里上传图片, 粘贴&amp;拖拽都行,
+
+然后通过 Actions 转换后实际效果如下, html 里面 img 标签会增加 fancybox 所需的`data-fancybox='gallery'`属性.
+
+![](https://a.linji.org/file/2025/02/11-11.webp)
+
+这样优化后可以在 Github issue 的 Preview 里面直接预览图片, 同时还能防备图床问题导致的图片丢失(`Gmeek-spoilertxt='Github, 稳!'`)
+
+唯一缺点就是当 issues 删除后, 图片也会跟着消失, 无法再被外部引用, 所以删除仓库以及 issues 的时候一定要确保图片先备份哦~
+
+# 添加 Gmeek-spoilertxt - 文字防剧透模糊效果
+
+**默认模糊效果, 反复点击可反复显示或隐藏.**
+
+## 打开 Gmeek.py
+
+1. **增加匹配内容:**
+
+```python
+        if '&lt;code class='notranslate'&gt;Gmeek-spoilertxt' in post_body: 
+            post_body = re.sub(r'&lt;code class='notranslate'&gt;Gmeek-spoilertxt='([^']+)'&lt;/code&gt;', lambda match: f'&lt;span class='spoilerText'&gt;{match.group(1)}&lt;/span&gt;', post_body, flags=re.DOTALL)
+```
+
+2. **实际转化后的标签如下:**
+
+```html
+&lt;p&gt;测试剧透 &lt;span class='spoilerText'&gt;剧透内容&lt;/span&gt;&lt;/p&gt;
+```
+
+## 打开 post.html
+
+1. **增加 CSS 样式:**
+
+```CSS
+.spoilerText{filter:blur(5px);-webkit-filter:blur(5px);cursor:pointer;transition:filter .3s ease}
+.spoilerText.clear{filter: none;}
+```
+
+2. **定位`&lt;script&gt;`标签, 在里面增加 JS 代码:**
+
+&gt; [!NOTE]
+&gt; `document.addEventListener('DOMContentLoaded', () =&gt; {`这个监听可以写其它功能的代码进去, 不止剧透效果.
+
+&lt;details&gt;&lt;summary&gt;Javascript Code&lt;/summary&gt;
+
+```Javascript
+document.addEventListener('DOMContentLoaded', () =&gt; {
+	const spoilers = document.querySelectorAll('.spoilerText');
+	spoilers.length &amp;&amp; spoilers.forEach(el =&gt; el.onclick = () =&gt; el.classList.toggle('clear'));
+});
+```
+
+&lt;/details&gt;
+
+3. **markdown 输入:**
+
+```
+测试剧透👉`Gmeek-spoilertxt='666666'`.
+```
+
+4. **实际展示:**
+
+测试剧透👉`Gmeek-spoilertxt='666666'`.
+
+# 添加自定义单篇文章代码
+
+```html
+&lt;span id='busuanzi'&gt;
+:heart:感谢第&lt;span&gt;&lt;/span&gt;小伙伴的&lt;span&gt;&lt;/span&gt;次访问关于页面.
+&lt;/span&gt;
+
+&lt;!-- ##{'script':'&lt;script&gt;document.getElementById('user-content-busuanzi').id='busuanzi_container_site_uv';busuanzi=document.getElementById('busuanzi_container_site_uv');busuanzi.style.display='none';busuanzi.childNodes[1].id='busuanzi_value_site_uv';busuanzi.childNodes[3].id='busuanzi_value_site_pv';&lt;/script&gt;&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;','style':'&lt;style&gt;#busuanzi_value_site_uv{color:red}#busuanzi_value_site_pv{color:red}&lt;/style&gt;'}## --&gt;
+```
+
+# 自动展开评论区
+
+打开 post.html,
+
+1. **定位`onclick='openComments()'`, 在 html 结构里删除这个点击绑定.**
+
+2. **定位`function openComments(){`这个函数, 在函数结束外边尾行增加`openComments();`**
+
+# icon 图标
+
+写着备用.
+
+1. **打开 Gmeek.py**
+
+[Primer svg](https://primer.style/foundations/icons/#16px)
+
+定位`IconBase={`
+
+在这个 json 格式里面增加图标路径数值.
+
+```json
+
+    'ThreeBars':'M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z',
+    'MoveTop':'M3 2.25a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 3 2.25Zm5.53 2.97 3.75 3.75a.749.749 0 1 1-1.06 1.06L8.75 7.561v6.689a.75.75 0 0 1-1.5 0V7.561L4.78 10.03a.749.749 0 1 1-1.06-1.06l3.75-3.75a.749.749 0 0 1 1.06 0Z',
+    'MoveBottom':'M7.47 10.78a.749.749 0 0 0 1.06 0l3.75-3.75a.749.749 0 1 0-1.06-1.06L8.75 8.439V1.75a.75.75 0 0 0-1.5 0v6.689L4.78 5.97a.749.749 0 1 0-1.06 1.06l3.75 3.75ZM3.75 13a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z'
+```
+
+# issues相关
+
+# Issues Label 备份
+
+| Label Name | Color | 效果
+|-|-|-
+| 翻墙 | #cb7b58 | ![](https://a.linji.org/file/2025/02/11-12.svg)
+| 软件 | #5da167 | ![](https://a.linji.org/file/2025/02/11-13.svg)
+| 网站 | #7057ff | ![](https://a.linji.org/file/2025/02/11-14.svg)
+| 日常 | #008672 | ![](https://a.linji.org/file/2025/02/11-15.svg)
+| 教程 | #0075ca | ![](https://a.linji.org/file/2025/02/11-16.svg)
+| 图片处理 | #4c6cc5 | ![](https://a.linji.org/file/2025/02/11-17.svg)
+| Anime | #E77AB1 | ![](https://a.linji.org/file/2025/02/11-18.svg)
+| Win | #5AB3F3 | ![](https://a.linji.org/file/2025/02/11-19.svg)
+| VPS | #5319e7 | ![](https://a.linji.org/file/2025/02/11-20.svg)
+| JS | #AD3152 | ![](https://a.linji.org/file/2025/02/11-21.svg)
+| CSS | #218155 | ![](https://a.linji.org/file/2025/02/11-22.svg)
+| Github | #333333 | ![](https://a.linji.org/file/2025/02/11-23.svg)
+| CDN | #cb222c | ![](https://a.linji.org/file/2025/02/11-24.svg)
+| Bug | #D73A4A | ![](https://a.linji.org/file/2025/02/11-25.svg)
+| Game | #BC49AB | ![](https://a.linji.org/file/2025/02/11-26.svg)
+
+# Readme.md
+
+📄 &gt; 文章总数.
+💬 &gt; 评论总数.
+🌺 &gt; 是统计的所有文章的字符数.
+⏰ &gt; 最后一次 Actions 的时间.
+
+文章来源：https://gjkblog.us.kg/post/1.html。</description><guid isPermaLink="true">https://linji.org/post/11.html</guid><pubDate>Wed, 05 Feb 2025 06:01:06 +0000</pubDate></item><item><title>【Gmeek】插件功能的使用</title><link>https://linji.org/post/10.html</link><description>为了使得Gmeek的功能更加的丰富，我添加了插件的功能，目前已经有几个插件可以使用。</description><guid isPermaLink="true">https://linji.org/post/10.html</guid><pubDate>Wed, 05 Feb 2025 05:51:17 +0000</pubDate></item><item><title>【Gmeek】右上角圆按钮配置</title><link>https://linji.org/post/9.html</link><description>在博客首页的右上角有一些圆形的按钮，有同学不知道如何配置它们，下面就详细介绍一下配置的方式。</description><guid isPermaLink="true">https://linji.org/post/9.html</guid><pubDate>Wed, 05 Feb 2025 05:50:18 +0000</pubDate></item><item><title>【Gmeek】static文件夹使用</title><link>https://linji.org/post/8.html</link><description>有很多小伙伴反馈说需要在docs文件内上传一些自己的文件，比如图片、js、css等，所以在`v2.20`版本添加了这个功能。</description><guid isPermaLink="true">https://linji.org/post/8.html</guid><pubDate>Wed, 05 Feb 2025 05:49:34 +0000</pubDate></item><item><title>【Gmeek】文章插入html标签</title><link>https://linji.org/post/7.html</link><description>Github由于安全考虑，是不允许使用`iframe`等标签的，而且在issues插入的图片也会自动转换为github的地址。</description><guid isPermaLink="true">https://linji.org/post/7.html</guid><pubDate>Wed, 05 Feb 2025 05:48:49 +0000</pubDate></item><item><title>【Gmeek】强调关键信息使用</title><link>https://linji.org/post/6.html</link><description>Github的语法里面有5中警报强调信息，分别是`NOTE` `TIP` `IMPORTANT` `WARNING` `CAUTION` 。</description><guid isPermaLink="true">https://linji.org/post/6.html</guid><pubDate>Wed, 05 Feb 2025 05:47:41 +0000</pubDate></item><item><title>【Gmeek】亮暗主题配置方式</title><link>https://linji.org/post/5.html</link><description>这篇文章详细说一下目前Gmeek支持的亮暗主题配置方式，以及后续待改进之处。</description><guid isPermaLink="true">https://linji.org/post/5.html</guid><pubDate>Wed, 05 Feb 2025 05:46:40 +0000</pubDate></item><item><title>【Gmeek】快速上手</title><link>https://linji.org/post/4.html</link><description>[Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于`Github Pages `、 `Github Issues` 和 `Github Actions`，可以称作`All in Github`。</description><guid isPermaLink="true">https://linji.org/post/4.html</guid><pubDate>Wed, 05 Feb 2025 05:44:56 +0000</pubDate></item><item><title>【Gmeek】更新日志</title><link>https://linji.org/post/3.html</link><description>[Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于`Github Pages `、 `Github Issues` 和 `Github Actions`，可以称作`All in Github`。</description><guid isPermaLink="true">https://linji.org/post/3.html</guid><pubDate>Wed, 05 Feb 2025 05:37:11 +0000</pubDate></item><item><title>【通知】杨家环镇南路和环镇北路指引</title><link>https://linji.org/post/46.html</link><description>&lt;p&gt;【温馨提示】为解决杨家镇区交通拥堵问题，近两三年来，杨家镇党委、政府新建了杨家环镇南路和环镇北路，其中：&lt;/p&gt;
+&lt;p&gt;1、环镇南路由省道373线公和路口进入，经夏口村、武曲村、官塘村十字路口、吴划村委会东坡村西村下村、坡尾村，再进入省道373线，唐家、纪家、企水的群众开车可以避开最拥堵的杨家镇区来往，反之亦然；&lt;/p&gt;
+&lt;p&gt;2、环镇北路由省道373线杨家中桥前（安榄碾米厂）进入，起点杨安桥到安苗村卫生站止，开车前往杨家镇北片村庄和唐家、纪家和企水的群众可以避开杨家镇镇区拥堵路段来往。</description><guid isPermaLink="true">https://linji.org/post/46.html</guid><pubDate>Sun, 02 Feb 2025 01:56:30 +0000</pubDate></item><item><title>关于</title><link>https://linji.org/about.html</link><description>`Gmeek-html&lt;img data-fancybox='gallery' img-src='https://a.linji.org/file/2025/02/2025-02-13.webp' src='https://a.linji.org/file/2025/02/2025-02-13.webp' data-extentions-extra-ocr-id='23cd5cb238deb6a69584d64487c2ee1c' class='ImgLoaded' style='height: auto;width: 100%;'&gt;`
+
+### **个人简介**
+
+`Gmeek-html&lt;img data-fancybox='gallery' data-caption='教导主任 | 林继' img-src='https://linji.org/head.webp' data-extentions-extra-ocr-id='95bb6bcb9d7a5bb6d49b81976a01e542' src='https://linji.org/head.webp' class='ImgLoaded' style='width: 60px;float: left;margin-right: 10px;' alt='教导主任 | 林继'&gt;` 本人是一位农村教师，2001年从韶关学院毕业，一直在本村教书。</description><guid isPermaLink="true">https://linji.org/about.html</guid><pubDate>Tue, 04 Feb 2025 18:04:52 +0000</pubDate></item><item><title>老林导航</title><link>https://linji.org/link.html</link><description>### 💠工作网址
+
+`Gmeek-html&lt;div class='core-next-dh-shortcode'title='超时代AI智能机器人，由深圳超时代软件有限公司开发，擅长精准解读问题、深入回答、逻辑推理和创意创作，助您高效解决问题。</description><guid isPermaLink="true">https://linji.org/link.html</guid><pubDate>Tue, 04 Feb 2025 18:20:53 +0000</pubDate></item></channel></rss>

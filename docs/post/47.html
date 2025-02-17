@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="github-light" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://linji.org/pluging/primer.min.css' rel='stylesheet' />
+    <script src='https://linji.org/pluging/GmeekVercount_uv.min.js'></script><script src='https://linji.org/pluging/NumPagination.js'></script><script defer src='https://linji.org/pluging/customize.js'></script><script src='https://linji.org/pluging/ArticleJs.min.js'></script>
+    <link rel="icon" href="https://linji.org/favicon.svg">
+<meta name="description" content="在数字化时代，图片已成为我们日常沟通和表达的重要方式。">
+<meta property="og:title" content="在GitHub上搭建个人图床">
+<meta property="og:description" content="在数字化时代，图片已成为我们日常沟通和表达的重要方式。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://linji.org/post/47.html">
+<meta property="og:image" content="https://linji.org/avatar.svg">
+<title>在GitHub上搭建个人图床</title>
+
+
+
+</head>
+<style>
+:root{--functionBtnFlex-bgColor:#ffffff61;--tooglebtn-bgColor:#c0e4ff9c}
+[data-color-mode=light][data-light-theme=dark],[data-color-mode=light][data-light-theme=dark]::selection,[data-color-mode=dark][data-dark-theme=dark],[data-color-mode=dark][data-dark-theme=dark]::selection{--functionBtnFlex-bgColor:#ffffff00;--tooglebtn-bgColor:#7dc2ff7a}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes blink{50%{opacity:0}100%{opacity:1}}@-webkit-keyframes blink{50%{opacity:0}100%{opacity:1}}@keyframes grow{0%{opacity:0.85;transform:scale(0.5);}100%{opacity:1;transform:translate(1);}}@-webkit-keyframes grow{0%{opacity:0.85;-webkit-transform:scale(0.5);}100%{opacity:1;-webkit-transform:translate(1);}}@keyframes slide-fade-in{0%{opacity:0;transform:translate3d(0,20px,0);}100%{opacity:1;transform:translate(0,0,0);}}@-webkit-keyframes slide-fade-in{0%{opacity:0;-webkit-transform:translate3d(0,20px,0);}100%{opacity:1;-webkit-transform:translate(0,0,0);}}
+body{box-sizing:border-box;min-width:200px;max-width:900px;margin:20px auto;padding:45px;font-size:16px;font-family:sans-serif;line-height:1.25}
+#header{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:24px;}
+#functionBtn{display:flex;justify-content:center;margin:20px 0;gap:20px;}
+#functionBtn a{padding:14px 16px;}
+#functionBtn.Btn-flex{position:fixed;margin:0;padding:8px 0;top:-64px;left:0;width:100%;min-width:500px;background-color:var(--functionBtnFlex-bgColor);backdrop-filter:blur(30px);box-shadow:#00000078 0 9px 18px -15px;z-index:100;animation:fadeIn.2s ease-in 0s forwards;transition:top 0.3s ease-in-out}
+#footer{margin-top:64px;text-align:center;font-size:small;}
+body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animation:slide-fade-in 0.8s ease;animation:slide-fade-in 0.8s ease}
+.title-left img{animation:grow 0.5s cubic-bezier(0.23,1,0.32,1);-webkit-animation:grow 0.5s cubic-bezier(0.23,1,0.32,1);}
+</style>
+
+<style>
+.postTitle{margin:0 auto;font-size:40px;font-weight:bold;}
+.postTitle::after{content:'|';animation:blink 1s infinite;font-family:fantasy;font-weight:normal;vertical-align:text-top;}
+.no-blink::after{animation:none;}
+.spoilerText{filter:blur(5px);-webkit-filter:blur(5px);cursor:pointer;transition:filter .3s ease}
+.spoilerText.clear{filter:none;}
+#postBody{border-bottom:1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+
+#toogleBtn{position:fixed;top:51px;right:6%;display:none;}
+#toogleBtn.active,#toogleBtn path{display:flex;padding:6px 7px;fill:var(--title-right-svgColor);cursor:pointer;transition:transform 0.3s ease-in-out;background:var(--tooglebtn-bgColor)}
+#toogleBtn.active:hover svg path{fill:var(--title-right-svgHovercolor);}
+#toogleBtn.btn-fadeout{opacity:0;}
+#functionBtn div:first-of-type{display:flex;gap:20px}
+
+.g-emoji{font-size:24px;}
+@media (max-width:600px) {
+    body {padding:8px;min-width:500px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display:none;
+    position:absolute;
+    top:10px;
+    right:50px;
+    color:var(--color-fg-on-emphasis);
+    background-color:var(--color-fg-muted);
+    border-radius:3px;
+    padding:5px 8px;
+    font-size:12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">在GitHub上搭建个人图床</h1>
+</div>
+    <div id="functionBtn">
+<div>
+	<a href="https://linji.org" id="buttonHome" class="btn btn-invisible circle" title="首页">
+		<svg class="octicon" width="16" height="16"><path id="pathHome" fill-rule="evenodd"></path></svg>
+	</a>
+    <a href="/link.html" class="btn btn-invisible circle" title="老林导航">
+        <svg class="octicon" width="16" height="16">
+            <path id="老林导航" fill-rule="evenodd" d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg>
+    </a>
+    <a href="/about.html" class="btn btn-invisible circle" title="关于">
+        <svg class="octicon" width="16" height="16">
+            <path id="关于" fill-rule="evenodd" d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+        </svg>
+    </a>
+	
+	<a href="https://github.com/linji1/linji1.github.io/issues/47" target="_blank" class="btn btn-invisible circle" title="Issue">
+		<svg class="octicon" width="16" height="16"><path id="pathIssue" fill-rule="evenodd"></path></svg>
+	</a>
+	
+	
+	<a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题"style="display:none;">
+		<svg class="octicon" width="16" height="16" ><path id="themeSwitch" fill-rule="evenodd"></path></svg>
+	</a>
+	
+	<a href="https://linji.org/tag.html" id="buttonSearch" class="btn btn-invisible circle" title="搜索">
+		<svg class="octicon" width="16" height="16" >
+			<path id="pathSearch" fill-rule="evenodd"></path>
+		</svg>
+	</a>
+	
+	<a class="ArticleTOC btn btn-invisible circle" title="文章目录">
+		<svg class="octicon" width="16" height="16"><path id="ArticleTOC"></path></svg>
+	</a>
+</div>
+<a class="circle" id="toogleBtn">
+	<svg class="octicon" width="24" height="24"><path id="ArticleTOC" d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"></path></svg>
+</a>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>在数字化时代，图片已成为我们日常沟通和表达的重要方式。无论是社交媒体、博客还是论坛，图片都是不可或缺的元素。然而，随着图片数量的不断增加，如何高效地存储和分享图片成为了一个难题。这时候，图床应运而生，成为解决这一问题的利器。</p>
+<h3>🌍一. 图床</h3>
+<h4>❄️1.什么是图床</h4>
+<p>图床，顾名思义，就是存储图片的“床”。它是一种在线服务，允许用户上传、存储和分享图片。通过图床，用户可以将图片上传到云端，然后获得一个链接，可以在任何地方分享这个链接，而不需要担心图片的存储和带宽问题。</p>
+<h4>❄️2.图床能解决什么问题？</h4>
+<ul>
+<li>
+<p>存储问题：个人用户或者小型网站往往没有足够的服务器空间和带宽来存储和传输大量图片。图床提供了廉价甚至免费的图片存储解决方案，让用户可以无忧地存储大量图片。</p>
+</li>
+<li>
+<p>分享问题：图床使得图片分享变得更加简便。用户可以轻松地获得图片的链接，然后在任何地方分享这个链接，而不需要复杂的操作。这对于社交媒体、博客和论坛来说尤为重要。</p>
+</li>
+<li>
+<p>管理问题：图床通常提供图片管理的功能，用户可以组织和管理自己的图片，方便查找和使用。一些高级的图床还提供标签、分类等功能，让用户可以更高效地管理自己的图片。</p>
+</li>
+<li>
+<p>性能问题：图床往往拥有强大的服务器和CDN（内容分发网络），可以快速地向全球用户传输图片，提高图片的加载速度。这对于提升用户体验至关重要。</p>
+</li>
+<li>
+<p>安全性问题：一些图床提供图片防盗链功能，保护用户的图片不被未经授权的网站盗用。这对于保护用户的知识产权非常重要。</p>
+</li>
+</ul>
+<blockquote>
+<p>下面跟随着我的脚步，在gitHub上面搭建自己的图床，并且使用 PicGo 的可视化界面配置 GitHub 图床后，你可以在 Typora 中直接粘贴截图，Typora 会自动通过 PicGo 将图片上传到你的 GitHub 仓库。这样，你和他人就可以通过访问这些链接来共享图片，确保在发送文件时图片不会丢失。</p>
+</blockquote>
+<h3>🌍二. 在github上面创建图床</h3>
+<p>关于访问github速度慢的问题,在创建图床之前,先给大家分享一个工具Watt Toolkit <a href="https://steampp.net/" rel="nofollow">下载地址</a> 安装之后直接启动就OK,这里就不过多演示.</p>
+<p>2.1 创建仓库</p>
+<ul>
+<li>
+<p>登录 GitHub。</p>
+</li>
+<li>
+<p>点击右上角的 “+” 号，选择 “New repository”。</p>
+</li>
+</ul>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/775feade162d4b58b07b0040a9e0e47cfdefd90bdbf25e1e707525454bab767c/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730312e77656270">
+<ul>
+<li>填写仓库名称，仓库描述写不写无所谓，选择仓库可见性（公开或私有）建议公开，然后点击 “Create repository”。</li>
+</ul>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/e7315f83a4ff78d95685e99f7b0eca9d2f07f6b5523b4d174a881822eecc0b34/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730322e77656270">
+<p>2.2 生成token令牌</p>
+<ul>
+<li>
+<p>点击右上角的头像或照片。</p>
+</li>
+<li>
+<p>从下拉菜单中选择 “Settings”。</p>
+</li>
+</ul>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/dc857cf1f08022a31e9f1e2ad30e617461b08ba4a88e555a79a6466281c97636/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730332e77656270">
+<ul>
+<li>
+<p>在左侧菜单中，点击 “Developer settings”。</p>
+</li>
+<li>
+<p>在 “Developer settings” 页面中，点击 “Personal access tokens”。</p>
+</li>
+</ul>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/fe07b1c1a0f8f1577bf8db38bbe8430bb6f2c66de410f48393a9c126f908a396/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730342e77656270">
+<ul>
+<li>点击 “Generate new token” 按钮。</li>
+</ul>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/181b9b5ffa9016ddc6a8164208b19618f28382aa12cfcd80fa8618fc7f683298/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730352e77656270">
+<ul>
+<li>
+<p>在 “Note” 字段中，输入一个描述性名称，以便你记住这个令牌的用途。</p>
+</li>
+<li>
+<p>选择令牌的 “Expiration” 日期。你可以选择让令牌永不过期，或者设置一个过期日期。</p>
+</li>
+<li>
+<p>选择令牌的 “Scopes” 或权限。根据你使用令牌的目的，选择合适的权限。例如，如果你只需要访问仓库内容，可以选择 “repo” 权限。</p>
+</li>
+<li>
+<p>下划，点击 “Generate token” 按钮。</p>
+</li>
+</ul>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/fb66b10225564211238f2954c9d3ee7240156f2bea75251360a6d35be375f02e/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730362e77656270">
+<ul>
+<li>
+<p>一旦生成令牌，你将看到令牌的明文。请立即复制并保存这个令牌到一个安全的地方。这是你唯一一次看到这个令牌的机会。</p>
+</li>
+<li>
+<p>之后，你将无法查看这个令牌的明文，只能看到它是否仍然有效。<br>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/4588d5183a276641b0a5f4a89bb700db8cc64113ab4ad57ee6b380a90ef7641a/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730372e77656270"></p>
+</li>
+</ul>
+<blockquote>
+<p>注意:</p>
+<ul>
+<li>
+<p>个人访问令牌非常敏感，应像密码一样保护。不要将其泄露给他人，也不要将其硬编码在代码中。</p>
+</li>
+<li>
+<p>如果你怀疑令牌的安全性受到了威胁，应立即在 GitHub 设置中撤销该令牌。</p>
+</li>
+<li>
+<p>GitHub 令牌可以用于执行与你的 GitHub 账户相关的各种操作，因此请谨慎选择令牌的权限。</p>
+</li>
+</ul>
+</blockquote>
+<h3>🌍三. PicGo</h3>
+<h4>❄️1. PicGo介绍</h4>
+<p><strong>一、什么是PicGo？</strong></p>
+<p>PicGo 是一个开源的图片上传工具，支持多种图床服务，如七牛云、又拍云、SM.MS等。它可以帮助用户将本地图片上传到图床，并生成图片链接，方便在社交媒体、博客或论坛中分享。</p>
+<p><strong>二、PicGo能解决什么问题？</strong></p>
+<ol>
+<li><strong>图片上传</strong>：PicGo可以快速上传本地图片到图床，节省用户手动上传的时间。</li>
+<li><strong>图片管理</strong>：PicGo支持图片的批量上传和管理，用户可以方便地查找和使用已上传的图片。</li>
+<li><strong>图片链接生成</strong>：PicGo在上传图片后，会自动生成图片链接，方便用户在各种平台上分享。</li>
+<li><strong>图床切换</strong>：PicGo支持多种图床服务，用户可以根据需要随时切换图床，灵活应对不同的需求。</li>
+</ol>
+<h4>❄️ 2. 下载与安装</h4>
+<p>这里推荐山东大学的镜像网站：</p>
+<p><a href="https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo/v2.3.1/" rel="nofollow">下载地址</a> | <a href="https://github.com/Molunerfinn/PicGo/releases">PicGo GitHub地址</a><br>
+笔者是选择如图所示的下载资源<br>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/ab94f2ad7bdd91f7efef33e31c4befcdbf867faee1c1ff487d6f6487382393fc/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730382e77656270"></p>
+<p>安装之后打开，我们进行配置图床。如果出现错误，往下先看常见的错误解决方法。</p>
+<h4>❄️3. 配置图床</h4>
+<ul>
+<li>
+<p>打开图床设置</p>
+</li>
+<li>
+<p>打开Github</p>
+</li>
+</ul>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/a42d9466a87ff67c5e09adf25fece44bfb238a148c6faff196213751bfaa4a29/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730392e77656270">
+<ul>
+<li>
+<p>设定仓库名，实际上就是用户名+仓库名。这个仓库就是你刚刚在2.1中新建的仓库。</p>
+</li>
+<li>
+<p>设定分支名：就是你的仓库在哪个分支里，就填哪个分支。一般有main分支，master分支等。我这里是自己新创建的一个img分支。</p>
+</li>
+<li>
+<p>设定Token：就是刚刚在2.2中我们复制的Token字符串。将其填进去即可。</p>
+</li>
+<li>
+<p>设定存储路径，一般来说，它可以是你项目仓库中的一个文件夹。我们这里就统一设置成了img/</p>
+</li>
+<li>
+<p>设置自定义域名。这个是比较关键的。我们可以用一个免费的加速域名作为我们自定义域名。</p>
+</li>
+</ul>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/fcccdbdfdd0ddce8ea7ce4a2b2d797f22e6b99b461ff3831ccdc2732dfb10a26/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731302e77656270">
+<blockquote>
+<p>那么你所设置的就应当为 ` <a href="https://cdn.jsdelivr.net/gh/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93%E5%90%8D@%E5%88%86%E6%94%AF%E5%90%8D" rel="nofollow">https://cdn.jsdelivr.net/gh/用户名/仓库名@分支名</a></p>
+<p>这样从PicGo获取得到的链接就是经过jsDelivr代理得到的了，可以加快访问速度</p>
+<p>需要注意的是，这里一定要设置成@，而不要设置成 / 我也是花了很长很长时间才搞明白。。。</p>
+<p>设置成 / 以后，你会惊奇地发现，它在你的typora里面显示不了。。。</p>
+<p>如果分支名是 main ,可以不用写 @分支名</p>
+<p><a href="https://cdn.jsdelivr.net/gh/linji1/linji1.github.io/static/icon/%E4%B8%80%E5%B8%88%E4%B8%80%E8%AF%BE%E8%BD%AC%E7%A0%81%E5%B7%A5%E5%85%B7.ico" rel="nofollow">https://cdn.jsdelivr.net/gh/linji1/linji1.github.io/static/icon/一师一课转码工具.ico</a></p>
+</blockquote>
+<p>配置完以后，就可以点击确定，然后也可以将其设置为默认图床。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/a42d9466a87ff67c5e09adf25fece44bfb238a148c6faff196213751bfaa4a29/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313730392e77656270">
+<p>这样我们就可以通过PicGo来上传我们的图片,在上传的时候，一定要注意，把steam++给关了,也就是我们上面推荐的工具.</p>
+<p>然后，我们也可以对PicGo进行一系列的设置。</p>
+<p>比如启用时间戳，这样在多次上传同一张图片的时候就不会有问题了。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/a1feb63f151517c3da712a889d0241adaa82143c243cc63a7e32777c9d6885d5/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731312e77656270">
+<h4>❄️3.错误解决</h4>
+<h5>问题1</h5>
+<p>1.打开Picgo，显示报错</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/350706e77286d9d33e3495bc6a0317dcbc9829350c41e1dc94424de6b3e3d7b5/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731322e77656270">
+<p>2.解决方法：在文件管理系统]直接输入：%APPDATA%picgo,直接删除data.json文件（如果觉得不安全，可以备份)</p>
+<p>3.重启即可</p>
+<h5>问题2</h5>
+<p>1.picgo报错打不开，卸载重装后发现打不开软件界面，后台进程却有进程显示和发现存在某些版本安装不成功的现象</p>
+<p>2.解决方案：发现c盘的C:\Program Files中存在一个picgo文件目录并没有被删除，删除picgo可以正常打开界面。</p>
+<h5>问题3</h5>
+<p>2.picgo安装最新版本以后，按原来的配置无法正常上传图片，进入picgo设置-&gt;设置日志文件</p>
+<pre class="notranslate"><code class="notranslate">------Error Stack Begin------
+ RequestError: Error: getaddrinfo ENOTFOUND mynote123.oss-cn-guangzhou.aliyuncs.com.aliyuncs.com
+     at new RequestError (G:\Typora\PicGo\resources\app.asar\node_modules\request-promise-core\lib\errors.js:14:15)
+     at Request.plumbing.callback (G:\Typora\PicGo\resources\app.asar\node_modules\request-promise-core\lib\plumbing.js:87:29)
+     at Request.RP$callback [as _callback] (G:\Typora\PicGo\resources\app.asar\node_modules\request-promise-core\lib\plumbing.js:46:31)
+     at self.callback (G:\Typora\PicGo\resources\app.asar\node_modules\request\request.js:185:22)
+     at Request.emit (node:events:394:28)
+     at Request.onRequestError (G:\Typora\PicGo\resources\app.asar\node_modules\request\request.js:877:8)
+     at ClientRequest.emit (node:events:394:28)
+     at TLSSocket.socketErrorListener (node:_http_client:447:9)
+     at TLSSocket.emit (node:events:394:28)
+     at emitErrorNT (node:internal/streams/destroy:157:8)
+ -------Error Stack End------- 
+</code></pre>
+<p>看错误是地址无法成功访问，复制地址去ping发现也无法打开，仔细观察发现多了.aliyuncs.com</p>
+<p>于是删除存储区域的后缀，总结是旧版本和新版本的配置有差异性造成的（之前一直使用的是2.3.0版本）。</p>
+<h5>问题4</h5>
+<p>1.鼠标双击图标后根本没反应</p>
+<p>2.解决方法，找到下面的小图标，就可以打开了</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/986c6cfebe02d972d7c802f4ac029127692ab072c79c3d1245d24cc487fcf49d/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731332e77656270">
+<h3>🌍 四. Typora</h3>
+<p>Typora 是一款跨平台的Markdown编辑器，支持Windows、macOS和Linux操作系统。它以其简洁的界面和强大的功能，为用户提供了流畅的写作体验。Typora的最大特色是其实时预览功能，用户在编辑文本的同时，可以实时看到渲染后的效果。</p>
+<h4>❄️一. 破解版安装</h4>
+<p>1.首先我们到官网下载Typora</p>
+<blockquote>
+<p><a href="https://www.typoraio.cn/" rel="nofollow">https://www.typoraio.cn/</a></p>
+</blockquote>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/a51f4c1d7f23858e0d5e8a39e39cc3535a3f204906a75908173dfd9a21dc1cf7/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731342e77656270">
+<p>下划找到立即下载,下载之后按照流程安装完毕.</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/dfae4bb4453f486f3e708d9b28b352fbffed6dec479c346ce9f606bf263aabf3/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731352e77656270">
+<p>2.在刚刚安装的路径下找到js文件</p>
+<blockquote>
+<p>D:\韩顺平循序渐进学java\Typora\resources\page-dist\static\js</p>
+</blockquote>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/98e53e4f9393cbe24022f0ca3a2031902a4c5f0fe9f71e98e9ed13378404b9ac/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731362e77656270">
+<p>如图所示,使用记事本打开.<br>
+将下面内容</p>
+<blockquote>
+<p>e.hasActivated=“true”==e.hasActivated，</p>
+</blockquote>
+<p>替换为:</p>
+<blockquote>
+<p>e.hasActivated="true"=="true",</p>
+</blockquote>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/b88bbfe23a4ca94c7131fe2614e05773cf8c8178e388f7354fb8c01f65e9caa9/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731372e77656270">
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/5e8e81d9c620602c4f05ef1bdc10c4d73d2f102e70a5745fe93606e711079dba/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731382e77656270">
+<p>一定要保存,如果保存成功，那么修改时间会改变。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/00bca9dbd069c5c63c6a446357648da1f6e2dd268f8efde90c62dbe142bcdb2a/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313731392e77656270">
+<p>现在我们就可以打开Typora,显示已激活</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/af37434dc0a7356f4a97e98406d382afe11fdfee417bc6d9be7f92db1c1e5874/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313732302e77656270">
+<p><del>3.但是有的用户会提示弹窗提示需要输入许可证激活，接下来我们继续操作。</del></p>
+<p><del>根据下面的路径中进行操作：</del></p>
+<blockquote>
+<p><del>D:\韩顺平循序渐进学java\Typora\resources\page-dist</del></p>
+</blockquote>
+<p><del>找到下图的html文件，用记事本打开</del></p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/985b39c3b38072453d8103265d201424225ab3d5fd3d24b1604a07e514cc16bc/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313732312e77656270">
+<p><del>查找：</del></p>
+<blockquote>
+<p><code class="notranslate"> /body&gt;&lt;/html&gt;</code></p>
+</blockquote>
+<p><del>替换为:这里建议直接复制</del> <strong>（不要替换，替换后会直接将软件关闭）</strong></p>
+<blockquote>
+<p><code class="notranslate">&lt;/body&gt;&lt;script&gt;window.onload=function(){setTimeout(()=&gt;{window.close();},5);}&lt;/script&gt;&lt;/html&gt;</code></p>
+</blockquote>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/f5a23659dc032bf930ca9ded89955f87f1dc2d0f894881e5c48f2bf136da25c8/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313732322e77656270">
+<p>一定一定要保存,保持成功之后修改日期会发生变化</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/044a0f273ba0bd27dc36aa8eab2317c24ec9f71a813b21009d39f4889ab55e42/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313732332e77656270">
+<p>然后去这个路径下面找到对应的代码:</p>
+<blockquote>
+<p>D:\韩顺平循序渐进学java\Typora\resources\locales\zh-Hans.lproj</p>
+</blockquote>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/0c25ac5667f2b4510251eb4aa0dd8d2a0e6fc65ccfec8816d9d382cf1460e9ce/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313732342e77656270">
+<p>查找:</p>
+<blockquote>
+<p>“UNREGISTERED”:“未激活”,</p>
+</blockquote>
+<p>修改为:</p>
+<blockquote>
+<p>“UNREGISTERED”:" ",</p>
+</blockquote>
+<p>在这里插入图片描述</p>
+<p>现在我们的typora,就可以直接使用,不需要激活了.</p>
+<h4>❄️二. 设置Typora实现自动上传</h4>
+<p>1、首先，点击【文件】-&gt;【偏好设置】</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/37ec995b0e8b5717f9e2b5c4664266ce3e8d3506ee59aafdaa66b910ba9d2db5/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313732352e77656270">
+<p>2、再次，选择【图像】。</p>
+<p>然后按照下图所示，插入图片时选择上传图片。然后在上传服务内选择PicGo，并选择PicGo.exe的路径。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/3a39ecf8789e65a97a4d1e6fc1938a04d76f5df29480e6d9e02c79cdce03e8a8/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313732362e77656270">
+<p>使用 PicGo 的可视化界面配置 GitHub 图床后，你可以在 Typora 中直接粘贴截图，Typora 会自动通过 PicGo 将图片上传到你的 GitHub 仓库。这样，你和他人就可以通过访问这些链接来共享图片，确保在发送文件时图片不会丢失。</p>
+<h3>🌍 五. 部署Vercel仓库</h3>
+<p>在Vercel官网登入/注册账户后，再链接Github，点击右侧的Add New选择Project，找到你刚刚创建的Github图片仓库，点击Import导入Project Name随便填写Framework Preset默认other，Root Directory默认./</p>
+<p>在这里创建一个新项目</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="https://camo.githubusercontent.com/435c7a4c0522b1ba7dbcd8b951a0b7e48bec3f37891bc95a52516b22fd0d1956/68747470733a2f2f612e6c696e6a692e6f72672f66696c652f323032352f30322f323032353032313732372e77656270">
+<p>然后直接点击Deploy（部署）就好，进入Vercel仓库，点击Setting再点击Domain即可绑定自己的域名，默认的域名被DNS污染无法打开，然后点击Advanced，把Directory Listing打勾，等待域名解析完成就可以直接访问了，进入链接后就可以直接看到你仓库内的所有文件，同时访问速度也很快，算是Vercel送的CDN代理服务</p>
+<p>隐私<br>
+如果你不想让其他人看到你图床下的所有图片，可以进行下面的设置</p>
+<blockquote>
+<p>1、Vercel-仓库-Setting-Advanced-关闭Directory Listing<br>
+2、Github-仓库-Setting-将Public改成Private</p>
+</blockquote></div>
+<div style="font-size:small;margin-top:8px;float:right;">文章随意转载</div>
+
+<button class="btn btn-block" type="button" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer2">
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" style="margin-right: 4px;height:18px;vertical-align: bottom;fill: #ff5a5a;"class="animate_heartBeatScale"><path d="M1017.152 426.592a263.296 263.296 0 0 0-502.304-133.92 263.328 263.328 0 0 0-502.304 133.92s5.152 259.264 505.536 520.096c500.32-260.832 499.072-520.096 499.072-520.096zM282.016 194.976a43.2 43.2 0 1 1 .096 86.4 43.2 43.2 0 0 1-.096-86.4zm-135.04 323.232a45.12 45.12 0 0 1-55.488-31.328 289.472 289.472 0 0 1-10.816-66.592C76.64 313.824 142.24 261.472 145.504 258.88a45.024 45.024 0 0 1 63.2 8.032c15.168 19.488 11.744 47.36-7.328 62.72-2.336 1.952-30.784 27.52-30.592 82.24.096 14.752 2.208 31.616 7.488 50.784a45.12 45.12 0 0 1-31.296 55.552z"/></svg><span id="runday"></span><br>
+</div>
+<div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://linji.org">老林笔记</a><span> • Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span></div>
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("10/26/1977"!=""){
+    var startSite=new Date("10/26/1977");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="博主已运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+</script>
+
+<script>
+// const postTitle=document.querySelector(".postTitle"),textContent=postTitle.textContent;postTitle.textContent="";let idx=0;const writeTimer=setInterval(()=>{postTitle.textContent=textContent.slice(0,idx++),idx>textContent.length&&(clearInterval(writeTimer),postTitle.classList.remove("no-blink"))},80);postTitle.classList.add("no-blink");const spoilers=document.querySelectorAll(".spoilerText");spoilers.length&&spoilers.forEach(t=>t.onclick=(()=>t.classList.toggle("clear"))),document.addEventListener("DOMContentLoaded",()=>{const t=document.createElement("div");t.id="checkBtn";const e=document.getElementById("functionBtn");e.insertAdjacentElement("afterend",t),new IntersectionObserver(t=>{t.forEach(t=>{const n=t.isIntersecting;e.classList.toggle("Btn-flex",!n),e.style.top=n?"0":"-100px"})},{rootMargin:"300px 0px 0px 0px",threshold:0}).observe(t);let n=0;const o=t=>{e.style.top=t>0?"-100px":"0"};document.addEventListener("touchstart",t=>n=t.touches[0].clientY),document.addEventListener("touchmove",t=>o(t.touches[0].clientY-n)),document.addEventListener("wheel",t=>o(t.deltaY))});
+const postTitle=document.querySelector(".postTitle"),textContent=postTitle.textContent;postTitle.textContent="";let idx=0;const writeTimer=setInterval(()=>{postTitle.textContent=textContent.slice(0,idx++),idx>textContent.length&&(clearInterval(writeTimer),postTitle.classList.remove("no-blink"))},80);postTitle.classList.add("no-blink");const spoilers=document.querySelectorAll(".spoilerText");spoilers.length&&spoilers.forEach(t=>t.onclick=(()=>t.classList.toggle("clear"))),document.addEventListener("DOMContentLoaded",()=>{const t=document.createElement("div");t.id="checkBtn";const e=document.getElementById("toogleBtn"),n=document.getElementById("functionBtn");n.insertAdjacentElement("afterend",t),new IntersectionObserver(t=>{t.forEach(t=>{e.classList.toggle("active",!t.isIntersecting),n.classList.toggle("Btn-flex",!t.isIntersecting)})},{rootMargin:"300px 0px 0px 0px",threshold:0}).observe(t),e.addEventListener("click",()=>{n.style.top="0px"===n.style.top?"-64px":"0",e.style.transform="rotate(180deg)"===e.style.transform?"rotate(0deg)":"rotate(180deg)"})});
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("ArticleTOC").setAttribute("d","M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z");
+document.getElementById("pathSearch").setAttribute("d","M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z");
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+	cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","linji1/linji1.github.io");
+    script.setAttribute("issue-term","title");
+    
+    script.setAttribute("theme","github-light");
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+openComments();
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display:inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script><script src='https://linji.org/pluging/backtop.js'></script>
+
+</html>

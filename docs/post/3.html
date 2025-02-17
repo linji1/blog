@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="github-light" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://linji.org/pluging/primer.min.css' rel='stylesheet' />
+    <script src='https://linji.org/pluging/GmeekVercount_uv.min.js'></script><script src='https://linji.org/pluging/NumPagination.js'></script><script defer src='https://linji.org/pluging/customize.js'></script><script src='https://linji.org/pluging/ArticleJs.min.js'></script>
+    <link rel="icon" href="https://linji.org/favicon.svg">
+<meta name="description" content="[Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于`Github Pages `、 `Github Issues` 和 `Github Actions`，可以称作`All in Github`。">
+<meta property="og:title" content="【Gmeek】更新日志">
+<meta property="og:description" content="[Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于`Github Pages `、 `Github Issues` 和 `Github Actions`，可以称作`All in Github`。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://linji.org/post/3.html">
+<meta property="og:image" content="https://linji.org/avatar.svg">
+<title>【Gmeek】更新日志</title>
+
+
+
+</head>
+<style>
+:root{--functionBtnFlex-bgColor:#ffffff61;--tooglebtn-bgColor:#c0e4ff9c}
+[data-color-mode=light][data-light-theme=dark],[data-color-mode=light][data-light-theme=dark]::selection,[data-color-mode=dark][data-dark-theme=dark],[data-color-mode=dark][data-dark-theme=dark]::selection{--functionBtnFlex-bgColor:#ffffff00;--tooglebtn-bgColor:#7dc2ff7a}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes blink{50%{opacity:0}100%{opacity:1}}@-webkit-keyframes blink{50%{opacity:0}100%{opacity:1}}@keyframes grow{0%{opacity:0.85;transform:scale(0.5);}100%{opacity:1;transform:translate(1);}}@-webkit-keyframes grow{0%{opacity:0.85;-webkit-transform:scale(0.5);}100%{opacity:1;-webkit-transform:translate(1);}}@keyframes slide-fade-in{0%{opacity:0;transform:translate3d(0,20px,0);}100%{opacity:1;transform:translate(0,0,0);}}@-webkit-keyframes slide-fade-in{0%{opacity:0;-webkit-transform:translate3d(0,20px,0);}100%{opacity:1;-webkit-transform:translate(0,0,0);}}
+body{box-sizing:border-box;min-width:200px;max-width:900px;margin:20px auto;padding:45px;font-size:16px;font-family:sans-serif;line-height:1.25}
+#header{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:24px;}
+#functionBtn{display:flex;justify-content:center;margin:20px 0;gap:20px;}
+#functionBtn a{padding:14px 16px;}
+#functionBtn.Btn-flex{position:fixed;margin:0;padding:8px 0;top:-64px;left:0;width:100%;min-width:500px;background-color:var(--functionBtnFlex-bgColor);backdrop-filter:blur(30px);box-shadow:#00000078 0 9px 18px -15px;z-index:100;animation:fadeIn.2s ease-in 0s forwards;transition:top 0.3s ease-in-out}
+#footer{margin-top:64px;text-align:center;font-size:small;}
+body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animation:slide-fade-in 0.8s ease;animation:slide-fade-in 0.8s ease}
+.title-left img{animation:grow 0.5s cubic-bezier(0.23,1,0.32,1);-webkit-animation:grow 0.5s cubic-bezier(0.23,1,0.32,1);}
+</style>
+
+<style>
+.postTitle{margin:0 auto;font-size:40px;font-weight:bold;}
+.postTitle::after{content:'|';animation:blink 1s infinite;font-family:fantasy;font-weight:normal;vertical-align:text-top;}
+.no-blink::after{animation:none;}
+.spoilerText{filter:blur(5px);-webkit-filter:blur(5px);cursor:pointer;transition:filter .3s ease}
+.spoilerText.clear{filter:none;}
+#postBody{border-bottom:1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+
+#toogleBtn{position:fixed;top:51px;right:6%;display:none;}
+#toogleBtn.active,#toogleBtn path{display:flex;padding:6px 7px;fill:var(--title-right-svgColor);cursor:pointer;transition:transform 0.3s ease-in-out;background:var(--tooglebtn-bgColor)}
+#toogleBtn.active:hover svg path{fill:var(--title-right-svgHovercolor);}
+#toogleBtn.btn-fadeout{opacity:0;}
+#functionBtn div:first-of-type{display:flex;gap:20px}
+
+.g-emoji{font-size:24px;}
+@media (max-width:600px) {
+    body {padding:8px;min-width:500px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">【Gmeek】更新日志</h1>
+</div>
+    <div id="functionBtn">
+<div>
+	<a href="https://linji.org" id="buttonHome" class="btn btn-invisible circle" title="首页">
+		<svg class="octicon" width="16" height="16"><path id="pathHome" fill-rule="evenodd"></path></svg>
+	</a>
+    <a href="/link.html" class="btn btn-invisible circle" title="老林导航">
+        <svg class="octicon" width="16" height="16">
+            <path id="老林导航" fill-rule="evenodd" d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg>
+    </a>
+    <a href="/about.html" class="btn btn-invisible circle" title="关于">
+        <svg class="octicon" width="16" height="16">
+            <path id="关于" fill-rule="evenodd" d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+        </svg>
+    </a>
+	
+	<a href="https://github.com/linji1/linji1.github.io/issues/3" target="_blank" class="btn btn-invisible circle" title="Issue">
+		<svg class="octicon" width="16" height="16"><path id="pathIssue" fill-rule="evenodd"></path></svg>
+	</a>
+	
+	
+	<a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题"style="display:none;">
+		<svg class="octicon" width="16" height="16" ><path id="themeSwitch" fill-rule="evenodd"></path></svg>
+	</a>
+	
+	<a href="https://linji.org/tag.html" id="buttonSearch" class="btn btn-invisible circle" title="搜索">
+		<svg class="octicon" width="16" height="16" >
+			<path id="pathSearch" fill-rule="evenodd"></path>
+		</svg>
+	</a>
+	
+	<a class="ArticleTOC btn btn-invisible circle" title="文章目录">
+		<svg class="octicon" width="16" height="16"><path id="ArticleTOC"></path></svg>
+	</a>
+</div>
+<a class="circle" id="toogleBtn">
+	<svg class="octicon" width="24" height="24"><path id="ArticleTOC" d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"></path></svg>
+</a>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p><a href="https://github.com/Meekdai/Gmeek">Gmeek</a> 一个博客框架，超轻量级个人博客模板，完全基于<code class="notranslate">Github Pages </code>、 <code class="notranslate">Github Issues</code> 和 <code class="notranslate">Github Actions</code>，可以称作<code class="notranslate">All in Github</code>。不需要本地部署，从搭建到写作，只需要18秒，2步搭建好博客，第3步就是写作。</p>
+<h4>20240811（v2.24）</h4>
+<ul>
+<li>添加几个插件，并且自动部署，保存在<a href="https://github.com/Meekdai/Gmeek/tree/main/plugins">plugins</a></li>
+<li>添加代码复制按钮</li>
+<li>修复新增label无颜色的BUG <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2428883759" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/153" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/153/hovercard" href="https://github.com/Meekdai/Gmeek/issues/153">Meekdai/Gmeek#153</a></li>
+</ul>
+<h4>20240719（v2.22）</h4>
+<ul>
+<li>添加插件功能，目前有2个插件可用。 <a href="https://meekdai.github.io/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-cha-jian-gong-neng-de-shi-yong.html" rel="nofollow">【Gmeek进阶】插件功能的使用</a></li>
+<li>修复只有标题没有文章内容导致的获取字数失败的BUG <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2400879578" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/136" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/136/hovercard" href="https://github.com/Meekdai/Gmeek/issues/136">Meekdai/Gmeek#136</a></li>
+<li>添加allHead配置，用于自定义所有页面的head内容</li>
+<li>添加head配置，用于配置自定义文章页head内容 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2400654110" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/135" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/135/hovercard" href="https://github.com/Meekdai/Gmeek/issues/135">Meekdai/Gmeek#135</a></li>
+</ul>
+<h4>20240701（v2.21）</h4>
+<ul>
+<li>修改static文件拷贝策略，可以实现拷贝文件到根目录，比如robots.txt文件。</li>
+</ul>
+<h4>20240701（v2.20）</h4>
+<ul>
+<li>通过primerCSS自定义CDN的地址 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2379881863" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/121" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/121/hovercard" href="https://github.com/Meekdai/Gmeek/issues/121">Meekdai/Gmeek#121</a></li>
+<li>添加static文件夹，用于存放用户自定义文件 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2365659071" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/101" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/101/hovercard" href="https://github.com/Meekdai/Gmeek/issues/101">Meekdai/Gmeek#101</a></li>
+<li>添加needComment用于配置是否需要评论功能 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2366496713" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/102" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/102/hovercard" href="https://github.com/Meekdai/Gmeek/issues/102">Meekdai/Gmeek#102</a></li>
+<li>添加MIT License <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2382046774" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/123" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/123/hovercard" href="https://github.com/Meekdai/Gmeek/issues/123">Meekdai/Gmeek#123</a></li>
+</ul>
+<h4>20240531（v2.19）</h4>
+<ul>
+<li>添加5种<code class="notranslate">alerts</code>功能样式 <a href="https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-qiang-diao-guan-jian-xin-xi-shi-yong.html" rel="nofollow">使用说明</a></li>
+<li>添加文章页自定义html标签功能 <a href="https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-wen-zhang-cha-ru-html-biao-qian.html" rel="nofollow">使用说明</a></li>
+</ul>
+<h4>20240528（v2.18）</h4>
+<ul>
+<li>添加首页script和style自定义功能 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2308790925" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/88" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/88/hovercard" href="https://github.com/Meekdai/Gmeek/issues/88">Meekdai/Gmeek#88</a></li>
+<li>修复文章description里包含双引号导致的BUG <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2304570884" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/85" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/85/hovercard" href="https://github.com/Meekdai/Gmeek/issues/85">Meekdai/Gmeek#85</a></li>
+<li>添加赞赏码（如果本项目对你有帮助，可以用微信赞赏一下作者，二维码在项目Readme页面最后）</li>
+</ul>
+<h4>20240515（v2.17）</h4>
+<ul>
+<li>添加Open Graph协议内容，让分享博客链接有预览</li>
+<li>修复仓库名称大小写敏感的BUG</li>
+<li>修复 width 拼写错误 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2230981859" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/66" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/66/hovercard" href="https://github.com/Meekdai/Gmeek/issues/66">Meekdai/Gmeek#66</a></li>
+</ul>
+<h4>20240407（v2.16）</h4>
+<ul>
+<li>修复MathJax行内公式括号误判的BUG <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2221891923" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/59" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/59/hovercard" href="https://github.com/Meekdai/Gmeek/issues/59">Meekdai/Gmeek#59</a></li>
+<li>修复readme显示文章数量不对的BUG</li>
+<li>Tag页面标签显示文章数量，并且以多到少排列</li>
+<li>修复页面右上角圆形按钮超出边界还能点击的BUG</li>
+<li>通过exlink自定义外部链接按钮 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2224368322" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/64" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/64/hovercard" href="https://github.com/Meekdai/Gmeek/issues/64">Meekdai/Gmeek#64</a></li>
+<li>调整多label标签间距</li>
+</ul>
+<h4>20240402（v2.15）</h4>
+<ul>
+<li>修复MathJax行内公式显示不正常的BUG <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2216321261" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/51" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/51/hovercard" href="https://github.com/Meekdai/Gmeek/issues/51">Meekdai/Gmeek#51</a></li>
+<li>修复由于修改文章标题导致旧文章依旧存在的BUG <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2215260946" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/49" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/49/hovercard" href="https://github.com/Meekdai/Gmeek/issues/49">Meekdai/Gmeek#49</a></li>
+<li>标题带有不合法符号修复 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2185244645" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/39" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/39/hovercard" href="https://github.com/Meekdai/Gmeek/issues/39">Meekdai/Gmeek#39</a></li>
+<li>采用rssSplit用来自定义截取RSS输出 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2217312669" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/52" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/52/hovercard" href="https://github.com/Meekdai/Gmeek/issues/52">Meekdai/Gmeek#52</a></li>
+<li>通过themeMode配置主题模式，默认新增跟随系统</li>
+<li>添加多label支持 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2219924535" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/56" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/56/hovercard" href="https://github.com/Meekdai/Gmeek/issues/56">Meekdai/Gmeek#56</a> <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2052067018" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/22" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/22/hovercard" href="https://github.com/Meekdai/Gmeek/issues/22">Meekdai/Gmeek#22</a></li>
+</ul>
+<h4>20240326（v2.14）</h4>
+<ul>
+<li>修复全局<code class="notranslate">script</code>配置会在文章页出现2次的BUG <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2207082963" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/46" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/46/hovercard" href="https://github.com/Meekdai/Gmeek/issues/46">Meekdai/Gmeek#46</a></li>
+<li>删除冗余<code class="notranslate">icon</code>地址，添加自定义<code class="notranslate">icon</code>功能 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2204141103" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/40" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/40/hovercard" href="https://github.com/Meekdai/Gmeek/issues/40">Meekdai/Gmeek#40</a></li>
+<li>修改CDN地址为<a href="https://staticfile.net/" rel="nofollow">staticfile.net</a></li>
+</ul>
+<h4>20240314（v2.13）</h4>
+<ul>
+<li>README.md文件添加统计信息以及生成时间等</li>
+<li>修复时区不同导致的日期显示错误问题</li>
+</ul>
+<h4>20240313（v2.12）</h4>
+<ul>
+<li>优化markdown2html函数</li>
+<li>必填配置参数优化到4个，入门更简单</li>
+<li>展示README.md文件，添加博客主页地址，方便快速进入。</li>
+</ul>
+<h4>20240308（v2.11）</h4>
+<ul>
+<li>修复singeListJson文章的RSS地址错误的BUG</li>
+<li>优化首页的用户头像图片的展示比例 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2148133886" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/32" data-hovercard-type="pull_request" data-hovercard-url="/Meekdai/Gmeek/pull/32/hovercard" href="https://github.com/Meekdai/Gmeek/pull/32">Meekdai/Gmeek#32</a></li>
+<li>Russian language support <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2174814563" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/38" data-hovercard-type="pull_request" data-hovercard-url="/Meekdai/Gmeek/pull/38/hovercard" href="https://github.com/Meekdai/Gmeek/pull/38">Meekdai/Gmeek#38</a></li>
+<li>修复tag页面title显示错误的bug</li>
+<li>加载tag页面时，添加loading动画</li>
+</ul>
+<h4>20240129（v2.10）</h4>
+<ul>
+<li>添加<code class="notranslate">mathjax</code>数学公式支持</li>
+<li>更新RSS文件生成策略</li>
+<li>通过<code class="notranslate">bottomText</code>可配置文章底部信息，例如<code class="notranslate">转载请注明出处</code></li>
+<li>通过<code class="notranslate">showPostSource</code>来配置是否显示github源链接 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2103941405" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/30" data-hovercard-type="issue" data-hovercard-url="/Meekdai/Gmeek/issues/30/hovercard" href="https://github.com/Meekdai/Gmeek/issues/30">Meekdai/Gmeek#30</a></li>
+<li>迁移node16到20版本，原因是node16已达到其<a href="https://github.com/nodejs/Release/#end-of-life-releases">生命周期的终点</a>，需要手动修改<code class="notranslate">Gmeek.yml</code>文件。</li>
+</ul>
+<h4>20231216（v2.9）</h4>
+<ul>
+<li>修复创建仓库不是<code class="notranslate">XXX.github.io</code>导致的BUG <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2019973471" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/11" data-hovercard-type="pull_request" data-hovercard-url="/Meekdai/Gmeek/pull/11/hovercard" href="https://github.com/Meekdai/Gmeek/pull/11">Meekdai/Gmeek#11</a></li>
+<li>修复取消置顶后文章依旧置顶的BUG</li>
+<li>修复CLS布局偏移问题</li>
+<li>解决只有标题没有文章内容抓取失败的BUG</li>
+<li>添加全局文章页<code class="notranslate">script</code>和<code class="notranslate">style</code></li>
+<li>部分SEO优化</li>
+</ul>
+<h4>20231122（v2.7）</h4>
+<ul>
+<li>添加<code class="notranslate">Tag</code>标签归档功能</li>
+<li>移除临时的Google搜索框，添加页内搜索功能，速度一级棒</li>
+<li><code class="notranslate">markdown</code>渲染使用<code class="notranslate">gfm</code>格式以支持所有<code class="notranslate">github</code>特性  <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1998489907" data-permission-text="Title is private" data-url="https://github.com/Meekdai/Gmeek/issues/9" data-hovercard-type="pull_request" data-hovercard-url="/Meekdai/Gmeek/pull/9/hovercard" href="https://github.com/Meekdai/Gmeek/pull/9">Meekdai/Gmeek#9</a></li>
+<li>优化手机端排列显示</li>
+</ul>
+<h4>20231113（v2.6）</h4>
+<ul>
+<li>再一次简化搭建流程，真18秒搭建完成</li>
+<li>通过urlMode配置文章URL模式</li>
+</ul>
+<h4>20231102（v2.5）</h4>
+<ul>
+<li>修复h2 h3 h4 标签颜色变化</li>
+<li>修复单页面runOne报错的BUG</li>
+<li>如果存在备案号，添加链接到工信部备案官网</li>
+</ul>
+<h4>20230905（v2.4）</h4>
+<ul>
+<li>没有代码高亮需求的文章不加载高亮CSS</li>
+<li>添加<code class="notranslate">nightTheme</code>和<code class="notranslate">dayTheme</code>配置，可定义值同github的主题</li>
+<li><code class="notranslate">config.json</code>配置文件精简</li>
+</ul>
+<h4>20230829（v2.3）</h4>
+<ul>
+<li>修复黑色主题下刷新页面有短时白闪的BUG</li>
+</ul>
+<h4>20230822（v2.2）</h4>
+<ul>
+<li>首页添加翻页功能，每页展示数量由<code class="notranslate">onePageListNum</code>配置决定</li>
+<li>切换<a href="https://cdn.staticfile.org/Primer/21.0.7/primer.css" rel="nofollow">primer/css</a>文件CDN为七牛云staticfile</li>
+</ul>
+<h4>20230814（v2.1）</h4>
+<ul>
+<li>添加自定义文章页<code class="notranslate">style</code>和<code class="notranslate">script</code></li>
+<li>使用a标签优化圆形按钮</li>
+<li>修改切换主题亮暗颜色，更加直观</li>
+<li>不再使用<code class="notranslate">jsdelivr</code>，精简文件，提升页面加载速度</li>
+</ul>
+<h4>20230812（v2.0）</h4>
+<ul>
+<li>使用jinja2重构生成html的所有代码</li>
+<li>通过模板的方式后续可提供不同UI主题</li>
+<li>对SEO进行优化</li>
+</ul>
+<h4>20230804（v1.3）</h4>
+<ul>
+<li>添加文章置顶功能  🔝</li>
+<li>可自定义单篇文章的字体大小</li>
+</ul>
+<h4>20230801（v1.2） 🥂</h4>
+<ul>
+<li>添加RSS</li>
+<li>独立JS文件，使用jsdelivr CDN</li>
+<li>添加控制台console版本号输出</li>
+<li>把所有配置都统一到了<code class="notranslate">config.json</code>文件中，其他地方无需再修改</li>
+</ul>
+<h4>20230731（v1.1） 🍗</h4>
+<ul>
+<li>无需自己创建繁琐的secrets，简单3步搭建好，有手就行</li>
+<li>搜索框目前指定到Google搜索</li>
+<li>评论按钮加载优化，添加loading</li>
+<li>支持github Emoji表情 ✨</li>
+</ul>
+<h4>20230730</h4>
+<ul>
+<li>文章生成和部署流程合并到一个工作流中</li>
+<li>添加简易的i18n，目前支持中文<code class="notranslate">CN</code>和英文<code class="notranslate">EN</code>，可以在配置文件中配置 😉</li>
+</ul>
+<h4>20230729</h4>
+<ul>
+<li>简化搭建流程，无需克隆，只需要创建自己的仓库3步轻松搭建 😄</li>
+</ul>
+<h4>20230728</h4>
+<ul>
+<li>博客框架更名为Gmeek，源码上传Github</li>
+<li>修改python传递参数为Json格式</li>
+<li>在列表页和文章页展示评论非0的数量（非动态）</li>
+<li>评论添加按钮，点击后才加载utteranc</li>
+<li>修改评论框背景色随主题</li>
+<li>添加<code class="notranslate">config.json</code>文件，方便用户配置自己的信息</li>
+</ul>
+<h4>20230726</h4>
+<ul>
+<li>使用<code class="notranslate">if: github.event.repository.owner.id == github.event.sender.id</code> 辨别他人提交issues</li>
+<li>修复会抓取其他用户提交的issue的BUG</li>
+<li>添加底部copyright和网站运行时长</li>
+<li>添加首页文章列表前的Icon图标</li>
+<li>添加首页显示文章对应的<code class="notranslate">labels</code>，自动抓取对应github上的标签颜色</li>
+</ul>
+<h4>20230725</h4>
+<ul>
+<li>统一首页和博客页等样式排布</li>
+</ul>
+<h4>20230711</h4>
+<ul>
+<li>添加友情链接和关于等独立页面 🆕</li>
+<li>可以手动切换暗亮主题</li>
+</ul>
+<p>文章来源：<a href="https://blog.meekdai.com/post/Gmeek-geng-xin-ri-zhi.html" rel="nofollow">https://blog.meekdai.com/post/Gmeek-geng-xin-ri-zhi.html</a></p></div>
+<div style="font-size:small;margin-top:8px;float:right;">文章随意转载</div>
+
+<button class="btn btn-block" type="button" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer2">
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" style="margin-right: 4px;height:18px;vertical-align: bottom;fill: #ff5a5a;"class="animate_heartBeatScale"><path d="M1017.152 426.592a263.296 263.296 0 0 0-502.304-133.92 263.328 263.328 0 0 0-502.304 133.92s5.152 259.264 505.536 520.096c500.32-260.832 499.072-520.096 499.072-520.096zM282.016 194.976a43.2 43.2 0 1 1 .096 86.4 43.2 43.2 0 0 1-.096-86.4zm-135.04 323.232a45.12 45.12 0 0 1-55.488-31.328 289.472 289.472 0 0 1-10.816-66.592C76.64 313.824 142.24 261.472 145.504 258.88a45.024 45.024 0 0 1 63.2 8.032c15.168 19.488 11.744 47.36-7.328 62.72-2.336 1.952-30.784 27.52-30.592 82.24.096 14.752 2.208 31.616 7.488 50.784a45.12 45.12 0 0 1-31.296 55.552z"/></svg><span id="runday"></span><br>
+</div>
+<div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://linji.org">老林笔记</a><span> • Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span></div>
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("10/26/1977"!=""){
+    var startSite=new Date("10/26/1977");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="博主已运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+</script>
+
+<script>
+// const postTitle=document.querySelector(".postTitle"),textContent=postTitle.textContent;postTitle.textContent="";let idx=0;const writeTimer=setInterval(()=>{postTitle.textContent=textContent.slice(0,idx++),idx>textContent.length&&(clearInterval(writeTimer),postTitle.classList.remove("no-blink"))},80);postTitle.classList.add("no-blink");const spoilers=document.querySelectorAll(".spoilerText");spoilers.length&&spoilers.forEach(t=>t.onclick=(()=>t.classList.toggle("clear"))),document.addEventListener("DOMContentLoaded",()=>{const t=document.createElement("div");t.id="checkBtn";const e=document.getElementById("functionBtn");e.insertAdjacentElement("afterend",t),new IntersectionObserver(t=>{t.forEach(t=>{const n=t.isIntersecting;e.classList.toggle("Btn-flex",!n),e.style.top=n?"0":"-100px"})},{rootMargin:"300px 0px 0px 0px",threshold:0}).observe(t);let n=0;const o=t=>{e.style.top=t>0?"-100px":"0"};document.addEventListener("touchstart",t=>n=t.touches[0].clientY),document.addEventListener("touchmove",t=>o(t.touches[0].clientY-n)),document.addEventListener("wheel",t=>o(t.deltaY))});
+const postTitle=document.querySelector(".postTitle"),textContent=postTitle.textContent;postTitle.textContent="";let idx=0;const writeTimer=setInterval(()=>{postTitle.textContent=textContent.slice(0,idx++),idx>textContent.length&&(clearInterval(writeTimer),postTitle.classList.remove("no-blink"))},80);postTitle.classList.add("no-blink");const spoilers=document.querySelectorAll(".spoilerText");spoilers.length&&spoilers.forEach(t=>t.onclick=(()=>t.classList.toggle("clear"))),document.addEventListener("DOMContentLoaded",()=>{const t=document.createElement("div");t.id="checkBtn";const e=document.getElementById("toogleBtn"),n=document.getElementById("functionBtn");n.insertAdjacentElement("afterend",t),new IntersectionObserver(t=>{t.forEach(t=>{e.classList.toggle("active",!t.isIntersecting),n.classList.toggle("Btn-flex",!t.isIntersecting)})},{rootMargin:"300px 0px 0px 0px",threshold:0}).observe(t),e.addEventListener("click",()=>{n.style.top="0px"===n.style.top?"-64px":"0",e.style.transform="rotate(180deg)"===e.style.transform?"rotate(0deg)":"rotate(180deg)"})});
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("ArticleTOC").setAttribute("d","M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z");
+document.getElementById("pathSearch").setAttribute("d","M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z");
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+	cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","linji1/linji1.github.io");
+    script.setAttribute("issue-term","title");
+    
+    script.setAttribute("theme","github-light");
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+openComments();
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+<script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script><script src='https://linji.org/pluging/backtop.js'></script>
+
+</html>

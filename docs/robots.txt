@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://linji.org/rss.xml

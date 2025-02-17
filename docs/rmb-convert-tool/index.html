@@ -1,0 +1,148 @@
+
+<!DOCTYPE HTML>
+<html dir="ltr" lang="zh-CN">
+<!--
+在线货币金额大小写转换工具
+xiaoxia.de 2011-2013.
+http://xiaoxia.de/rmb-convert-tool/
+
+
+请保留此信息，转载使用禁止删除作者信息和链接。
+-->
+<head> 
+<title>在线货币金额大小写转换工具</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="小写数字, 大写数字, 人民币, 大写转小写, 小写转大写, 大小写转换, 中文金额, 中文数字, 大写转换" />
+<meta name="description" content="可能是互联网上最强大最准确的在线货币金额转换工具：在线对中文金额（中文数字，人民币）大小写进行相互转换，支持批量转换。无需下载！" />
+<meta name="Author" content="小虾, neverweep" />
+<meta http-equiv="Cache-Control" content="max-age=259200" />
+<style>
+html{backfround:#FFF;overflow:auto}
+*{margin:0;outline:none;font-size:20px;font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei",SimSun,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none}
+body{margin:0 auto;color:#222}
+h1 a{margin:5px auto;text-align:center;font-size:28px;*margin-bottom:0;display:block;color:#222;text-decoration:none}
+li{padding:1px 0}
+ul, ol{*padding-left:2em}
+input{margin:0 5px;color:#222}
+input[disabled]{color:#CCC}
+#input{width:470px;*width:450px;word-wrap:break-word;white-space:nowrap}
+#readme *{margin:0 auto;width:840px;font-size:13px}
+#radio *,#radio{font-size:14px;text-align:center;text-align:left;line-height:16px;*line-height:1.1em}
+#radio{float:left;padding-top:0.5em;width:350px;margin-left:3em}
+#radio p{margin:0 0 0.5em 0}
+#radio input[type="radio"]{margin-left:1em}
+#inputarea{width:550px;display:inline}
+#result{word-break:break-all;word-wrap:break-word}
+#buttons{text-align:center;padding:5px 0;float:right;width:15em}
+#wrap{min-height:400px;*height:410px;width:860px;margin:0 auto}
+#notice{position:absolute;bottom:0;left:0;width:100%;background:#F7CE67;text-align:center}
+#notice *{font-size:13px}
+.hr{margin:10px 0;background:#2AD;height:5px;width:100%}
+.space{margin:0 2em}
+.button{height:2.3em;background:#fff;border:1px solid #999;border-radius:4px;font-size:16px;margin:2px;font-weight:bold}
+.pad{width:3.8em}
+.button:hover{background:#2AD;color:white;cursor:pointer}
+.ctr{height:1.8em}
+.con{width:7em}
+.batch{height:280px;min-width:380px;max-width:380px;min-height:280px;max-height:280px;font-size:14px;overflow:auto;color:#222}
+.clear{clear:both;height:1px}
+#result-box.hover{background-color:#2AD;color:#FFF}
+</style>
+</head>
+<body onload="changeLayout('a');$('input').focus();loadcookie()" onkeydown="hotkey(event)" onresize="clip.reposition();">
+<h1><a href="http://xiaoxia.de/upload/rmb-convert-tool.html" title="在线货币金额大小写转换工具">在线货币金额大小写转换工具</a></h1>
+<div class="hr" style="height:20px"></div>
+<div id="wrap">
+<div id="main">
+<p>
+<span style="float:left;line-height:30px"><strong>输入：</strong></span>
+<input id="input" style="float:left" type="text" onchange="convert()" onpaste="convert();$('input').focus()" onkeyup="convert();$('input').focus()"/>
+<input class="button ctr" value="批量" style="float:right;color:red" type="button" onclick="$('batch').style.display='';$('main').style.display='none';batchs=true;$('batchinput').focus()"/>
+<input class="button ctr" value="清空" type="button" style="float:right" onclick="$('input').value='';$('input').focus();$('format').innerHTML='';$('result').innerHTML=''"/>
+<input class="button ctr" value="复制结果" style="float:right" type="button" id="result-box"/>
+<input class="button ctr con" value="转换(Enter)" style="float:right" type="button" onclick="convert();$('input').focus()"/></p>
+<div class="clear"></div>
+<p style="font-size:14px;text-align:center;padding-top:5px;padding-bottom:15px;line-height:14px">输入类似“￥1,223,003.2”、“534313.98”、“人民币五十六万元零一毛”或“玖仟零叁元贰角”的金额，自动识别并转换</p>
+<span style="float:left"><strong>设置：</strong></span>
+<div id="inputarea">
+<div id="buttons">
+<input class="button pad" name="n" value="7" type="button" onclick="input('7');"/>
+<input class="button pad" name="n" value="8" type="button" onclick="input('8');"/>
+<input class="button pad" name="n" value="9" type="button" onclick="input('9');"/>
+<input class="button pad" name="h" value="拾" type="button" onclick="input('拾');"/><br/>
+<input class="button pad" name="n" value="4" type="button" onclick="input('4');"/>
+<input class="button pad" name="n" value="5" type="button" onclick="input('5');"/>
+<input class="button pad" name="n" value="6" type="button" onclick="input('6');"/>
+<input class="button pad" name="h" value="佰" type="button" onclick="input('佰');"/><br/>
+<input class="button pad" name="n" value="1" type="button" onclick="input('1');"/>
+<input class="button pad" name="n" value="2" type="button" onclick="input('2');"/>
+<input class="button pad" name="n" value="3" type="button" onclick="input('3');"/>
+<input class="button pad" name="h" value="仟" type="button" onclick="input('仟');"/><br/>
+<input class="button pad" name="n" value="0" type="button" onclick="input('0');"/>
+<input class="button pad" name="s" value="." type="button" onclick="input('.');"/>
+<input class="button pad" name="s" value="," type="button" onclick="input(',');"/>
+<input class="button pad" name="h" value="万" type="button" onclick="input('万');"/><br/>
+<input class="button pad" name="h" value="元" type="button" onclick="input('元');"/>
+<input class="button pad" name="h" value="角" type="button" onclick="input('角');"/>
+<input class="button pad" name="h" value="分" type="button" onclick="input('分');"/>
+<input class="button pad" name="h" value="亿" type="button" onclick="input('亿');"/>
+</div>
+<strong style="float:right">数字键盘：</strong>
+<div id="radio">
+<p><strong>数字键盘输入格式：</strong></p>
+<input type="radio" name="inputs" id="i1" onchange="setcookie()" checked="checked"/><label for="i1" onclick="changeLayout('a')">阿拉伯数字“1234”</label><br/>
+<input type="radio" name="inputs" id="i2" onchange="setcookie()"/><label for="i2" onclick="changeLayout('l')">中文小写“一二三”</label><br/>
+<input type="radio" name="inputs" id="i3" onchange="setcookie()"/><label for="i3" onclick="changeLayout('u')">中文大写“壹贰叁”</label><br/><br/>
+<p><strong>小写转大写格式：</strong></p>
+<input type="radio" name="method" id="m2" checked="checked" onchange="convert();setcookie()"/><label for="m2">中文大写“壹贰叁”</label>
+<input type="radio" name="method" id="m1" onchange="convert();setcookie()"/><label for="m1">中文小写“一二三”</label><br/><br/>
+<p><input type="checkbox" name="rmb" id="rmb" onchange="setcookie()"/><label for="rmb"><strong>大写结果前加：</strong></label>
+<input type="text" id="rmb_text" value="人民币" onchange="setcookie()" style="width:6em;text-align:left;"/></p>
+<p><input type="checkbox" name="rmbs" id="rmbs" onchange="setcookie()"/><label for="rmbs"><strong>小写结果前加：</strong></label>
+<input type="text" id="rmbs_text" value="￥" onchange="setcookie()" style="width:6em;text-align:left;"/></p>
+</div>
+</div>
+<div class="clear"></div>
+<br/>
+<p><strong>分节：</strong><span id="format"></span><span class="space"></span></p>
+<br/>
+<p><strong>结果</strong><strong>：</strong><span id="result"></span></p>
+</div>
+<div id="batch" style="display:none">
+<p style="line-height:30px">
+<span style="float:left"><strong>批量转换</strong></span>
+<input class="button ctr" style="float:right" value="返回" type="button" onclick="$('batch').style.display='none';$('main').style.display='';batchs=false;$('input').focus()"/>
+<input class="button ctr" style="float:right" value="清空" type="button" onclick="batchoutput.value='';batchinput.value='';batchinput.focus()"/>
+<input class="button ctr" style="float:right" value="全选输出（再按ctrl+c复制）" type="button" onclick="batchoutput.select()"/>
+<input class="button ctr" style="float:right" value="进行批量转换" type="button" onclick="batch();$('batchinput').focus()"/>
+</p>
+<span class="line"></span>
+<div class="clear"></div>
+<p style="font-size:14px;text-align:center;padding-top:5px;padding-bottom:15px;line-height:14px">可返回主界面进行转换设置，不会丢失当前输入和输出数据；可同时批量转换大写和小写数字</p>
+<div style="float:left;width:380px">
+<strong>输入</strong>（每行放入一个数据）<span class="line"></span>
+<textarea id="batchinput" wrap="off" class="batch"></textarea>
+</div>
+<div style="float:right;width:380px">
+<strong>输出</strong><span class="line"></span>
+<textarea id="batchoutput" class="batch" wrap="off" readonly="readonly"></textarea>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="hr"></div>
+<div id="readme">
+<ul>
+<li>此工具可在线批量转换人民币金额（中文数字）大小写，即小写金额转大写金额，大写金额转小写金额。</li>
+<li>小写转大写可转换整数部分小于等于16位（即小于一亿亿）数字，且会忽略百分位后的数字（即最小单位为分，不四舍五入）。</li>
+<li>大写转小写可输入“零一二三四五六七八九零壹贰叁肆伍陆柒捌玖”，且可识别“毛块圆两正兆〇”等其他写法。</li>
+<li><strong>程序严格参考通用的人民币大写规则制作，但不保证结果完全符合标准且不对转换错误导致的后果承担任何责任。</strong></li>
+<li><strong>实用链接：</strong><a href="http://www.wendian.com.cn/hb.html" target="_blank" rel="nofollow external">各国货币符号列表</a>，<a href="http://www.pbc.gov.cn/rhwg/971601f7.htm" target="_blank" rel="nofollow external">正确填写票据和结算凭证的基本规定（中国人民银行）</a>，<a href="http://www.baidu.com/s?ie=utf-8&wd=%E9%87%91%E9%A2%9D%E5%A4%A7%E5%86%99" target="_blank" rel="nofollow external">更漂亮的转换工具？更好？</a></li>
+</ul>
+</div>
+<div id="notice"></div>
+<script type="text/javascript" src="rmb-convert-tool.js"></script>
+<div style="display:none">
+</div>
+</body>
+</html>
