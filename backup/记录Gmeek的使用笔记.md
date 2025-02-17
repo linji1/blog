@@ -37,7 +37,7 @@
 
 ## 3、查看GitHub仓库使用大小
 
-`Gmeek-imgbox="https://github.com/linji1/file/raw/main/file/2025/02/2025021601.webp"`
+`Gmeek-imgbox="../assets/file/2025/02/2025021601.webp"`
 
 ## 4、更改发布时间
 
@@ -99,7 +99,7 @@
 
 - 效果图:
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-1.webp)
+![](../assets/file/2025/02/11-1.webp)
 
 可以用空白字符的方式, 隐藏`subTitle`这个必须字段, 无需使用 js 隐藏.
 
@@ -107,7 +107,7 @@
 
 代码摘抄自网络, 有删改, 都存放在仓库, 使用 jsdelivr CDN 加速.
 
-## [ArticleJs.js](https://linji.org/pluging/ArticleJs.js) - 文章自定义 js 代码
+## [ArticleJs.js](../pluging/ArticleJs.js) - 文章自定义 js 代码
 
 ### 图片图片浏览器+图片懒加载整合
 
@@ -159,7 +159,7 @@ markdown 输入:
 
 </details>
 
-## [ArticleToc.js](https://linji.org/pluging/ArticleToc.js) - 文章增加目录列表+一键返回顶部按钮(v1.0)
+## [ArticleToc.js](../pluging/ArticleToc.js) - 文章增加目录列表+一键返回顶部按钮(v1.0)
 
 > 摘抄来源: [Github](https://github.com/cao-gift/cao-gift.github.io?tab=readme-ov-file)
 > 修改-创建`.toc`的位置为body里面.
@@ -182,7 +182,7 @@ markdown 输入:
 
 - 图示:
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-2.webp)
+![](../assets/file/2025/02/11-2.webp)
 
 ## Fancybox.js - 图片浏览器
 
@@ -195,7 +195,7 @@ markdown 输入:
 我这里用的是`5.0`版本, cdn 加速链接.
 
 ```json
-"script":"<script src='https://linji.org/pluging/ArticleJs.js'></script><script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script>"
+"script":"<script src='../pluging/ArticleJs.js'></script><script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script>"
 ```
 
 CSS写入到了👉[文章自定义 js 代码](#articlejs.js---文章自定义-js-代码)
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 通过 Actions 转换后实际效果如下, html 的 img 标签会增加 fancybox 所需的`data-fancybox="gallery"`属性.
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-3.webp)
+![](../assets/file/2025/02/11-3.webp)
 
 ## 图片懒加载
 
@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </details>
 
-## [GmeekVercount_uv.js](https://linji.org/pluging/GmeekVercount_uv.min.js) - 网站增加访客计数器
+## [GmeekVercount_uv.js](../pluging/GmeekVercount_uv.min.js) - 网站增加访客计数器
 
 > Vercount [Github](https://github.com/EvanNotFound/vercount)
 > pv 修改成 uv 计数.
@@ -375,10 +375,10 @@ document.addEventListener('DOMContentLoaded', () => {
 建议放入`allHead`里全站添加 js.
 
 ```json
-"allHead":"<script src='https://linji.org/pluging/GmeekVercount_uv.min.js'></script>"
+"allHead":"<script src='../pluging/GmeekVercount_uv.min.js'></script>"
 ```
 
-## [NumPagination.js](https://linji.org/pluging/NumPagination.js) - 主页添加数字分页条
+## [NumPagination.js](../pluging/NumPagination.js) - 主页添加数字分页条
 
 > 来源 [Github](https://github.com/liyifanniubi/liyifanniubi.github.io)
 
@@ -386,7 +386,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 # 通过 primer.css, 修改博客样式
 
-[primer.css](https://linji.org/pluging/primer.css), 这个文件用来控制网站的整体样式, 存放在我的 git 仓库, 使用 jsdelivr CDN 加速.
+[primer.css](../pluging/primer.css), 这个文件用来控制网站的整体样式, 存放在我的 git 仓库, 使用 jsdelivr CDN 加速.
 
 对应的选择器只张贴出关键 CSS 部分的修改, ~~不然代码太多了.~~
 
@@ -1066,7 +1066,7 @@ html {
 
 - 效果图:
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-4.webp)
+![](../assets/file/2025/02/11-4.webp)
 
 ## 文章一键复制代码按钮样式
 
@@ -1187,7 +1187,7 @@ a {
 
 - 效果图:
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-5.webp)
+![](../assets/file/2025/02/11-5.webp)
 
 # 通过 Gmeek 仓库美化博客
 
@@ -1197,13 +1197,13 @@ a {
 
 仓库地址👉 https://github.com/Meekdai/Gmeek
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-6.webp)
+![](../assets/file/2025/02/11-6.webp)
 
 fork 之后, 转到搭建博客的 github 源码,
 
 打开`.github/workflows/Gmeek.yml`文件, 修改构建博客仓库的地址为你自己的仓库地址
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-7.webp)
+![](../assets/file/2025/02/11-7.webp)
 
 打开`config.json`文件, 把`GMEEK_VERSION`的修改值为👉`main`
 
@@ -1231,13 +1231,13 @@ fork 之后, 转到搭建博客的 github 源码,
 
 下图文字直接修改即可, 不同语言的按需修改.
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-8.webp)
+![](../assets/file/2025/02/11-8.webp)
 
 ## 修改默认 primer.css 链接
 
 打开`Gmeek.py`
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-9.webp)
+![](../assets/file/2025/02/11-9.webp)
 
 这里我直接写改成我存放的链接, 并使用 tag 控制版本.
 
@@ -1711,7 +1711,7 @@ document.addEventListener('wheel', e => handleScroll(e.deltaY));
 
 - 效果图:
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-10.webp)
+![](../assets/file/2025/02/11-10.webp)
 
 ## 优化任务列表样式
 
@@ -1837,7 +1837,7 @@ Github 由于安全考虑, 是不允许使用 iframe 等标签的, 而且在 iss
 
 然后通过 Actions 转换后实际效果如下, html 里面 img 标签会增加 fancybox 所需的`data-fancybox="gallery"`属性.
 
-![](https://github.com/linji1/file/raw/main/file/2025/02/11-11.webp)
+![](../assets/file/2025/02/11-11.webp)
 
 这样优化后可以在 Github issue 的 Preview 里面直接预览图片, 同时还能防备图床问题导致的图片丢失(`Gmeek-spoilertxt="Github, 稳!"`)
 
@@ -1940,21 +1940,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 | Label Name | Color | 效果
 |-|-|-
-| 翻墙 | #cb7b58 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-12.svg)
-| 软件 | #5da167 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-13.svg)
-| 网站 | #7057ff | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-14.svg)
-| 日常 | #008672 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-15.svg)
-| 教程 | #0075ca | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-16.svg)
-| 图片处理 | #4c6cc5 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-17.svg)
-| Anime | #E77AB1 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-18.svg)
-| Win | #5AB3F3 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-19.svg)
-| VPS | #5319e7 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-20.svg)
-| JS | #AD3152 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-21.svg)
-| CSS | #218155 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-22.svg)
-| Github | #333333 | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-23.svg)
-| CDN | #cb222c | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-24.svg)
-| Bug | #D73A4A | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-25.svg)
-| Game | #BC49AB | ![](https://github.com/linji1/file/raw/main/file/2025/02/11-26.svg)
+| 翻墙 | #cb7b58 | ![](../assets/file/2025/02/11-12.svg)
+| 软件 | #5da167 | ![](../assets/file/2025/02/11-13.svg)
+| 网站 | #7057ff | ![](../assets/file/2025/02/11-14.svg)
+| 日常 | #008672 | ![](../assets/file/2025/02/11-15.svg)
+| 教程 | #0075ca | ![](../assets/file/2025/02/11-16.svg)
+| 图片处理 | #4c6cc5 | ![](../assets/file/2025/02/11-17.svg)
+| Anime | #E77AB1 | ![](../assets/file/2025/02/11-18.svg)
+| Win | #5AB3F3 | ![](../assets/file/2025/02/11-19.svg)
+| VPS | #5319e7 | ![](../assets/file/2025/02/11-20.svg)
+| JS | #AD3152 | ![](../assets/file/2025/02/11-21.svg)
+| CSS | #218155 | ![](../assets/file/2025/02/11-22.svg)
+| Github | #333333 | ![](../assets/file/2025/02/11-23.svg)
+| CDN | #cb222c | ![](../assets/file/2025/02/11-24.svg)
+| Bug | #D73A4A | ![](../assets/file/2025/02/11-25.svg)
+| Game | #BC49AB | ![](../assets/file/2025/02/11-26.svg)
 
 # Readme.md
 
