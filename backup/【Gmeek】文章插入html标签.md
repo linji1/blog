@@ -9,7 +9,7 @@ Github由于安全考虑，是不允许使用`iframe`等标签的，而且在iss
 `Gmeek-html<img src="https://picsum.photos/200">`
 ```
 
-`Gmeek-html<img src="https://a.linji.org/file/2025/02/191-200x200.webp">`
+`Gmeek-html<img src="https://github.com/linji1/file/raw/main/file/2025/02/191-200x200.webp">`
 
 ### 内嵌框架iframe-网站
 ```
