@@ -28,7 +28,7 @@
 ## 2、插入图集
 
 ```html
-<div class="core-next-dh-shortcode"><div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="https://linji.org/image.webp"></div>
+<div class="core-next-dh-shortcode" style="border: 0px;"><div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="https://linji.org/image.webp"></div>
 ```
 或者
 ```html
