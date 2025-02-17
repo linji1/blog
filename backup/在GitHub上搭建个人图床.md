@@ -31,11 +31,11 @@
 
  - 点击右上角的 “+” 号，选择 “New repository”。
 
-![](https://a.linji.org/file/2025/02/2025021701.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021701.webp)
 
  - 填写仓库名称，仓库描述写不写无所谓，选择仓库可见性（公开或私有）建议公开，然后点击 “Create repository”。
 
-![](https://a.linji.org/file/2025/02/2025021702.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021702.webp)
 
 2.2 生成token令牌
 
@@ -43,17 +43,17 @@
 
  - 从下拉菜单中选择 “Settings”。
 
-![](https://a.linji.org/file/2025/02/2025021703.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021703.webp)
 
  - 在左侧菜单中，点击 “Developer settings”。
 
  - 在 “Developer settings” 页面中，点击 “Personal access tokens”。
 
-![](https://a.linji.org/file/2025/02/2025021704.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021704.webp)
 
  - 点击 “Generate new token” 按钮。
 
-![](https://a.linji.org/file/2025/02/2025021705.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021705.webp)
 
  - 在 “Note” 字段中，输入一个描述性名称，以便你记住这个令牌的用途。
 
@@ -63,12 +63,12 @@
 
  - 下划，点击 “Generate token” 按钮。
 
-![](https://a.linji.org/file/2025/02/2025021706.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021706.webp)
 
  - 一旦生成令牌，你将看到令牌的明文。请立即复制并保存这个令牌到一个安全的地方。这是你唯一一次看到这个令牌的机会。
 
  - 之后，你将无法查看这个令牌的明文，只能看到它是否仍然有效。
- ![](https://a.linji.org/file/2025/02/2025021707.webp)
+ ![](https://github.com/linji1/file/raw/main/file/2025/02/2025021707.webp)
 
 >
 > 注意:
@@ -101,7 +101,7 @@ PicGo 是一个开源的图片上传工具，支持多种图床服务，如七�
 
 [下载地址](https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo/v2.3.1/ ) | [PicGo GitHub地址](https://github.com/Molunerfinn/PicGo/releases )
  笔者是选择如图所示的下载资源
- ![](https://a.linji.org/file/2025/02/2025021708.webp)
+ ![](https://github.com/linji1/file/raw/main/file/2025/02/2025021708.webp)
 
 安装之后打开，我们进行配置图床。如果出现错误，往下先看常见的错误解决方法。
 
@@ -111,7 +111,7 @@ PicGo 是一个开源的图片上传工具，支持多种图床服务，如七�
 
  - 打开Github
 
-![](https://a.linji.org/file/2025/02/2025021709.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021709.webp)
 
  -  设定仓库名，实际上就是用户名+仓库名。这个仓库就是你刚刚在2.1中新建的仓库。
 
@@ -123,7 +123,7 @@ PicGo 是一个开源的图片上传工具，支持多种图床服务，如七�
 
  -  设置自定义域名。这个是比较关键的。我们可以用一个免费的加速域名作为我们自定义域名。
 
-![](https://a.linji.org/file/2025/02/2025021710.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021710.webp)
 
 > 那么你所设置的就应当为 ` https://cdn.jsdelivr.net/gh/用户名/仓库名@分支名
 >
@@ -139,7 +139,7 @@ PicGo 是一个开源的图片上传工具，支持多种图床服务，如七�
 
 配置完以后，就可以点击确定，然后也可以将其设置为默认图床。
 
-![](https://a.linji.org/file/2025/02/2025021709.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021709.webp)
 
 这样我们就可以通过PicGo来上传我们的图片,在上传的时候，一定要注意，把steam++给关了,也就是我们上面推荐的工具.
 
@@ -147,7 +147,7 @@ PicGo 是一个开源的图片上传工具，支持多种图床服务，如七�
 
 比如启用时间戳，这样在多次上传同一张图片的时候就不会有问题了。
 
-![](https://a.linji.org/file/2025/02/2025021711.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021711.webp)
 
 #### ❄️3.错误解决
 
@@ -155,7 +155,7 @@ PicGo 是一个开源的图片上传工具，支持多种图床服务，如七�
 
 1.打开Picgo，显示报错
 
-![](https://a.linji.org/file/2025/02/2025021712.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021712.webp)
 
 2.解决方法：在文件管理系统]直接输入：%APPDATA%picgo,直接删除data.json文件（如果觉得不安全，可以备份)
 
@@ -196,7 +196,7 @@ PicGo 是一个开源的图片上传工具，支持多种图床服务，如七�
 
 2.解决方法，找到下面的小图标，就可以打开了
 
-![](https://a.linji.org/file/2025/02/2025021713.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021713.webp)
 
 ### 🌍 四. Typora
 
@@ -208,17 +208,17 @@ Typora 是一款跨平台的Markdown编辑器，支持Windows、macOS和Linux操
 
 >   https://www.typoraio.cn/
 
-![](https://a.linji.org/file/2025/02/2025021714.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021714.webp)
 
 下划找到立即下载,下载之后按照流程安装完毕.
 
-![](https://a.linji.org/file/2025/02/2025021715.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021715.webp)
 
 2.在刚刚安装的路径下找到js文件
 
 >   D:\韩顺平循序渐进学java\Typora\resources\page-dist\static\js
 
-![](https://a.linji.org/file/2025/02/2025021716.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021716.webp)
 
 如图所示,使用记事本打开.
 将下面内容
@@ -229,17 +229,17 @@ Typora 是一款跨平台的Markdown编辑器，支持Windows、macOS和Linux操
 
 >  e.hasActivated="true"=="true",
 
-![](https://a.linji.org/file/2025/02/2025021717.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021717.webp)
 
-![](https://a.linji.org/file/2025/02/2025021718.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021718.webp)
 
 一定要保存,如果保存成功，那么修改时间会改变。
 
-![](https://a.linji.org/file/2025/02/2025021719.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021719.webp)
 
 现在我们就可以打开Typora,显示已激活
 
-![](https://a.linji.org/file/2025/02/2025021720.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021720.webp)
 
 ~~3.但是有的用户会提示弹窗提示需要输入许可证激活，接下来我们继续操作。~~
 
@@ -249,7 +249,7 @@ Typora 是一款跨平台的Markdown编辑器，支持Windows、macOS和Linux操
 
 ~~找到下图的html文件，用记事本打开~~
 
-![](https://a.linji.org/file/2025/02/2025021721.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021721.webp)
 
 ~~查找：~~
 
@@ -259,17 +259,17 @@ Typora 是一款跨平台的Markdown编辑器，支持Windows、macOS和Linux操
 
 >  ` </body><script>window.onload=function(){setTimeout(()=>{window.close();},5);}</script></html> ` 
 
-![](https://a.linji.org/file/2025/02/2025021722.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021722.webp)
 
 一定一定要保存,保持成功之后修改日期会发生变化
 
-![](https://a.linji.org/file/2025/02/2025021723.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021723.webp)
 
 然后去这个路径下面找到对应的代码:
 
 >   D:\韩顺平循序渐进学java\Typora\resources\locales\zh-Hans.lproj
 
-![](https://a.linji.org/file/2025/02/2025021724.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021724.webp)
 
 查找:
 
@@ -287,13 +287,13 @@ Typora 是一款跨平台的Markdown编辑器，支持Windows、macOS和Linux操
 
 1、首先，点击【文件】->【偏好设置】
 
-![](https://a.linji.org/file/2025/02/2025021725.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021725.webp)
 
 2、再次，选择【图像】。
 
 然后按照下图所示，插入图片时选择上传图片。然后在上传服务内选择PicGo，并选择PicGo.exe的路径。
 
-![](https://a.linji.org/file/2025/02/2025021726.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021726.webp)
 
 使用 PicGo 的可视化界面配置 GitHub 图床后，你可以在 Typora 中直接粘贴截图，Typora 会自动通过 PicGo 将图片上传到你的 GitHub 仓库。这样，你和他人就可以通过访问这些链接来共享图片，确保在发送文件时图片不会丢失。
 
@@ -303,7 +303,7 @@ Typora 是一款跨平台的Markdown编辑器，支持Windows、macOS和Linux操
 
 在这里创建一个新项目
 
-![](https://a.linji.org/file/2025/02/2025021727.webp)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2025021727.webp)
 
 然后直接点击Deploy（部署）就好，进入Vercel仓库，点击Setting再点击Domain即可绑定自己的域名，默认的域名被DNS污染无法打开，然后点击Advanced，把Directory Listing打勾，等待域名解析完成就可以直接访问了，进入链接后就可以直接看到你仓库内的所有文件，同时访问速度也很快，算是Vercel送的CDN代理服务
 
