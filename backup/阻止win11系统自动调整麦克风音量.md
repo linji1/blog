@@ -194,6 +194,6 @@ shell:startup
 
 ## 效果图
 
-![](https://a.linji.org/file/2025/02/2cc80eb1d372209f79369.gif)
+![](https://github.com/linji1/file/raw/main/file/2025/02/2cc80eb1d372209f79369.gif)
 
 文章来源：https://blog.liyifan.xyz/post/zu-zhi-win11-xi-tong-zi-dong-diao-zheng-mai-ke-feng-yin-liang.html
