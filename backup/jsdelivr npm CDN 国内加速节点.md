@@ -66,3 +66,54 @@ https://cdn.jsdelivr.net/gh/用户名/仓库名@main/文件夹/文件名
 从 GitHub 迁移到 jsDelivr
 
 jsDelivr 是适用于 npm 和 GitHub 的免费、快速且可靠的开源 CDN。大多数 GitHub 链接都可以轻松转换为 jsDelivr 链接。
+
+### 访问最新版
+`https://cdn.jsdelivr.net/gh/${用户名}/${仓库名}/${文件路径}`
+
+### 访问特定版本号
+`https://cdn.jsdelivr.net/gh/${用户名}/${仓库名}@${发布的版本号}/${文件路径}`
+
+### 访问特定分支
+`https://cdn.jsdelivr.net/gh/${用户名}/${仓库名}@${分支名称}/${文件路径}`
+
+### 获取目录下的文件列表，给出的目录地址最后加上 / 即可
+`https://cdn.jsdelivr.net/gh/vuejs/docs/`
+
+### css, js 类型文件支持自动创建 .min 文件
+### 如果不存在，jsDelivr 将为您生成
+`https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/src/jquery.min.js`
+
+### jsDelivr如何刷新缓存
+首先 CDN 缓存同步需要时间是个正常现象，像我们这样改了就要看到刷新结果的属于 ”特殊需求“ 了，但也很常见了。
+
+方法也很简单，只要把想要刷新的文件路径的前缀 cdn 改成 **purge** 即可，看到一段返回的 json 对象，即表示刷新成功，再访问 cdn 地址就可以看到最新的版本了。
+
+```
+# 刷新前
+https://cdn.jsdelivr.net/gh/user/images/my.jpg
+
+# 刷新缓存
+https://purge.jsdelivr.net/gh/user/images/my.jpg
+
+# 返回结果
+{
+  "id": "783923723947294",
+  "status": "finished",
+  "timestamp": "2022-04-17T15:52:23.536Z",
+  "paths": {
+    "/gh/user/images/my.jpg": {
+      "throttled": false,
+      "providers": {
+        "fastly": true,
+        "bunny": true,
+        "cloudflare": true,
+        "gcore": true,
+        "quantil": true
+      }
+    }
+  }
+}
+
+# 再次访问即可
+https://cdn.jsdelivr.net/gh/user/images/my.jpg
+```
