@@ -116,6 +116,6 @@ if (window.innerWidth >= 1250) {
 
 ## 效果图
 
-![效果图](../assets/file/2025/02/d2ac4a18283a91258ebc2.webp)
+![效果图](https://linji1.github.io/assets/file/2025/02/d2ac4a18283a91258ebc2.webp)
 
 文章来源：https://blog.liyifan.xyz/post/wang-zhan-tian-jia-live2d-kan-ban-niang.html
