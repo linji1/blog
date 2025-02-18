@@ -37,7 +37,7 @@
 
 ## 3、查看GitHub仓库使用大小
 
-`Gmeek-imgbox="../assets/file/2025/02/2025021601.webp"`
+`Gmeek-imgbox="https://linji1.github.io/assets/file/2025/02/2025021601.webp"`
 
 ## 4、更改发布时间
 
@@ -99,7 +99,7 @@
 
 - 效果图:
 
-![](../assets/file/2025/02/11-1.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-1.webp)
 
 可以用空白字符的方式, 隐藏`subTitle`这个必须字段, 无需使用 js 隐藏.
 
@@ -182,7 +182,7 @@ markdown 输入:
 
 - 图示:
 
-![](../assets/file/2025/02/11-2.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-2.webp)
 
 ## Fancybox.js - 图片浏览器
 
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 通过 Actions 转换后实际效果如下, html 的 img 标签会增加 fancybox 所需的`data-fancybox="gallery"`属性.
 
-![](../assets/file/2025/02/11-3.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-3.webp)
 
 ## 图片懒加载
 
@@ -1066,7 +1066,7 @@ html {
 
 - 效果图:
 
-![](../assets/file/2025/02/11-4.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-4.webp)
 
 ## 文章一键复制代码按钮样式
 
@@ -1187,7 +1187,7 @@ a {
 
 - 效果图:
 
-![](../assets/file/2025/02/11-5.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-5.webp)
 
 # 通过 Gmeek 仓库美化博客
 
@@ -1197,13 +1197,13 @@ a {
 
 仓库地址👉 https://github.com/Meekdai/Gmeek
 
-![](../assets/file/2025/02/11-6.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-6.webp)
 
 fork 之后, 转到搭建博客的 github 源码,
 
 打开`.github/workflows/Gmeek.yml`文件, 修改构建博客仓库的地址为你自己的仓库地址
 
-![](../assets/file/2025/02/11-7.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-7.webp)
 
 打开`config.json`文件, 把`GMEEK_VERSION`的修改值为👉`main`
 
@@ -1231,13 +1231,13 @@ fork 之后, 转到搭建博客的 github 源码,
 
 下图文字直接修改即可, 不同语言的按需修改.
 
-![](../assets/file/2025/02/11-8.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-8.webp)
 
 ## 修改默认 primer.css 链接
 
 打开`Gmeek.py`
 
-![](../assets/file/2025/02/11-9.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-9.webp)
 
 这里我直接写改成我存放的链接, 并使用 tag 控制版本.
 
@@ -1711,7 +1711,7 @@ document.addEventListener('wheel', e => handleScroll(e.deltaY));
 
 - 效果图:
 
-![](../assets/file/2025/02/11-10.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-10.webp)
 
 ## 优化任务列表样式
 
@@ -1837,7 +1837,7 @@ Github 由于安全考虑, 是不允许使用 iframe 等标签的, 而且在 iss
 
 然后通过 Actions 转换后实际效果如下, html 里面 img 标签会增加 fancybox 所需的`data-fancybox="gallery"`属性.
 
-![](../assets/file/2025/02/11-11.webp)
+![](https://linji1.github.io/assets/file/2025/02/11-11.webp)
 
 这样优化后可以在 Github issue 的 Preview 里面直接预览图片, 同时还能防备图床问题导致的图片丢失(`Gmeek-spoilertxt="Github, 稳!"`)
 
@@ -1940,21 +1940,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 | Label Name | Color | 效果
 |-|-|-
-| 翻墙 | #cb7b58 | ![](../assets/file/2025/02/11-12.svg)
-| 软件 | #5da167 | ![](../assets/file/2025/02/11-13.svg)
-| 网站 | #7057ff | ![](../assets/file/2025/02/11-14.svg)
-| 日常 | #008672 | ![](../assets/file/2025/02/11-15.svg)
-| 教程 | #0075ca | ![](../assets/file/2025/02/11-16.svg)
-| 图片处理 | #4c6cc5 | ![](../assets/file/2025/02/11-17.svg)
-| Anime | #E77AB1 | ![](../assets/file/2025/02/11-18.svg)
-| Win | #5AB3F3 | ![](../assets/file/2025/02/11-19.svg)
-| VPS | #5319e7 | ![](../assets/file/2025/02/11-20.svg)
-| JS | #AD3152 | ![](../assets/file/2025/02/11-21.svg)
-| CSS | #218155 | ![](../assets/file/2025/02/11-22.svg)
-| Github | #333333 | ![](../assets/file/2025/02/11-23.svg)
-| CDN | #cb222c | ![](../assets/file/2025/02/11-24.svg)
-| Bug | #D73A4A | ![](../assets/file/2025/02/11-25.svg)
-| Game | #BC49AB | ![](../assets/file/2025/02/11-26.svg)
+| 翻墙 | #cb7b58 | ![](https://linji1.github.io/assets/file/2025/02/11-12.svg)
+| 软件 | #5da167 | ![](https://linji1.github.io/assets/file/2025/02/11-13.svg)
+| 网站 | #7057ff | ![](https://linji1.github.io/assets/file/2025/02/11-14.svg)
+| 日常 | #008672 | ![](https://linji1.github.io/assets/file/2025/02/11-15.svg)
+| 教程 | #0075ca | ![](https://linji1.github.io/assets/file/2025/02/11-16.svg)
+| 图片处理 | #4c6cc5 | ![](https://linji1.github.io/assets/file/2025/02/11-17.svg)
+| Anime | #E77AB1 | ![](https://linji1.github.io/assets/file/2025/02/11-18.svg)
+| Win | #5AB3F3 | ![](https://linji1.github.io/assets/file/2025/02/11-19.svg)
+| VPS | #5319e7 | ![](https://linji1.github.io/assets/file/2025/02/11-20.svg)
+| JS | #AD3152 | ![](https://linji1.github.io/assets/file/2025/02/11-21.svg)
+| CSS | #218155 | ![](https://linji1.github.io/assets/file/2025/02/11-22.svg)
+| Github | #333333 | ![](https://linji1.github.io/assets/file/2025/02/11-23.svg)
+| CDN | #cb222c | ![](https://linji1.github.io/assets/file/2025/02/11-24.svg)
+| Bug | #D73A4A | ![](https://linji1.github.io/assets/file/2025/02/11-25.svg)
+| Game | #BC49AB | ![](https://linji1.github.io/assets/file/2025/02/11-26.svg)
 
 # Readme.md
 
