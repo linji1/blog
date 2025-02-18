@@ -6,7 +6,7 @@
 
 ### 3. 填入配置
 
-![填入配置](../assets/file/2025/02/a2acd9c35c8003387c6ae.webp)
+![填入配置](https://linji1.github.io/assets/file/2025/02/a2acd9c35c8003387c6ae.webp)
 
 > [!NOTE]
 > `concat()`  方法用于连接两个或多个数组。
