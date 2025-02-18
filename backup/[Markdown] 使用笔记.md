@@ -218,7 +218,7 @@ gantt
 
 总而言之，不同于其它*所见即所得*的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。**Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。** 目前它已经成为世界上最大的技术分享网站 `GitHub` 和 技术问答网站 `StackOverFlow` 的御用书写格式，而且越发流行，正在在向各行业渗透。
 
-![](../assets/file/2025/02/14-2.svg) ![](../assets/file/2025/02/14-3.svg)
+![](https://linji1.github.io/assets/file/2025/02/14-2.svg) ![](https://linji1.github.io/assets/file/2025/02/14-3.svg)
 
 这是一个 Markdown 语法测试页面，同时记录个人常用语法。
 
@@ -226,7 +226,7 @@ gantt
 ```
 ![](https://img.shields.io/badge/微标示例-FF1D05)
 ```
-![](../assets/file/2025/02/14-1.svg)
+![](https://linji1.github.io/assets/file/2025/02/14-1.svg)
 
 ## 标题
 ```
