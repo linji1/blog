@@ -7,7 +7,7 @@
 
 介绍：必装插件，中文语言包。
 
-演示：![Chinese (Simplified) (简体中文) Language](../assets/file/2025/02/2025020301.webp)
+演示：![Chinese (Simplified) (简体中文) Language](https://linji1.github.io/assets/file/2025/02/2025020301.webp)
 
 ---
 
@@ -18,12 +18,12 @@
 > [!TIP]
 > 现在的 `VS Code` 已经内置该功能。
 
-演示：![Auto Rename Tag](../assets/file/2025/02/2025020302.gif)
+演示：![Auto Rename Tag](https://linji1.github.io/assets/file/2025/02/2025020302.gif)
 
 > [!NOTE]
 > 内置的开启方式在 `VS Code` 的设置中，搜索 `editor.linkedEditing` 并勾选即可。
 
-![Auto Rename Tag](../assets/file/2025/02/2025020303.webp)
+![Auto Rename Tag](https://linji1.github.io/assets/file/2025/02/2025020303.webp)
 ---
 
 名称：CSS Peek
@@ -33,7 +33,7 @@
 前端开发必备。
 
 演示：
-![CSS Peek](../assets/file/2025/02/2025020304.gif)
+![CSS Peek](https://linji1.github.io/assets/file/2025/02/2025020304.gif)
 
 ---
 
@@ -44,7 +44,7 @@
 可以快速按照指定格式，生成提交信息。
 
 演示：
-![git-commit-plugin](../assets/file/2025/02/2025020305.gif)
+![git-commit-plugin](https://linji1.github.io/assets/file/2025/02/2025020305.gif)
 
 ---
 
@@ -55,7 +55,7 @@
 再也不怕找不到标签对了。
 
 演示：
-![Highlight Matching Tag](../assets/file/2025/02/2025020306.gif)
+![Highlight Matching Tag](https://linji1.github.io/assets/file/2025/02/2025020306.gif)
 
 ---
 
@@ -64,7 +64,7 @@
 介绍：在 `HTML` 文件中对 `ID` 和 `Class` 提供 `CSS` 样式智能提示。
 
 演示：
-![HTML CSS Support](../assets/file/2025/02/2025020307.webp)
+![HTML CSS Support](https://linji1.github.io/assets/file/2025/02/2025020307.webp)
 
 ---
 
@@ -73,4 +73,4 @@
 介绍：提供 Markdown 所需的基础套件（键盘快捷键、目录、自动预览等）。
 
 演示：
-![Markdown All in One](../assets/file/2025/02/2025020308.webp)
+![Markdown All in One](https://linji1.github.io/assets/file/2025/02/2025020308.webp)
