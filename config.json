@@ -1,6 +1,10 @@
 {
-    "title":"Blog Title",
-    "subTitle":"Blog description",
+    "title":"老林笔记",
+    "subTitle":"",
+    "avatarUrl":"https://linji1.github.io/avatar.svg",
+    "displayTitle":"老林笔记",
+    "homeUrl":"https://linji1.github.io",
+    "faviconUrl":"https://linji1.github.io/favicon.svg",
     "email":"saboha@163.com",
     "startSite":"10/26/1977",
     "onePageListNum":10,
@@ -16,7 +20,6 @@
     "themeMode":"fix",
     "dayTheme":"light",
     "nightTheme":"github-light",
-    "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "allHead":"<script src='https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/GmeekVercount_uv.min.js'></script><script src='https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/NumPagination.js'></script><script defer src='https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/customize.js'></script><script src='https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/ArticleJs.min.js'></script>",
     "script":"<script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script><script src='https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/backtop.js'></script><script src='https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js'></script>",
     "GMEEK_VERSION":"main"
