@@ -1,6 +1,15 @@
 # 常用功能
 
 ### 单个仓库不能超过 1 G
+### 访问本站相关网址
+1.[https://linji.cn/](https://linji.cn/)
+2.[https://p.linji.cn/](https://p.linji.cn/)
+3.[https://m.linji.cn/](https://m.linji.cn/)
+4.[https://linji.org/](https://linji.org/)
+5.[https://wdlu.cn/](https://wdlu.cn/)
+6.[https://linji.vercel.app/](https://linji.vercel.app/)
+7.[https://linji1.github.io/assets/](https://linji1.github.io/)
+当我离开这个世界后，希望这个网站还能存在100年。
 
 ## 1、插入单张图片
 
