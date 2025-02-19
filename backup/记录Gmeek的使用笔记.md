@@ -52,12 +52,18 @@
 
 `Gmeek-imgbox="/assets/file/2025/02/2025021601.webp"`
 
-## 4、更改发布时间
+
 
 如需修改发布时间, 可以在 issues 文章最后一行添加如下代码, 里面的时间是采用时间戳的形式, 可以用这个👉[网站](https://tool.lu/timestamp) 转换.
 
 ```html
 <!-- ##{"timestamp":1738461390}## -->
+```
+## 5、jsdelivr CDN 使用格式
+
+```html
+https://gcore.jsdelivr.net/gh/linji1/assets@main/file/2025/02/2025-02-13.webp
+https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/primer.min.css
 ```
 ------
 ### 下面是转载内容
