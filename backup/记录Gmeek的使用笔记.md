@@ -1,15 +1,17 @@
 # 常用功能
 
 ### 单个仓库不能超过 1 G
+
 ### 访问本站相关网址
-[1.指向本站：https://linji1.github.io](https://linji1.github.io)
-[2.指向本站：https://linji.org](https://linji.org)
-[3.指向本站：https://linji.vercel.app](https://linji.vercel.app)
-[4.老林笔记：https://linji.cn](https://linji.cn)
-[5.老林导航：https://p.linji.cn](https://p.linji.cn)
-[6.老林网盘：https://linji.cn/file](https://linji.cn/file)
-[7.仿朋友圈：https://m.linji.cn](https://m.linji.cn)
-[8.学生报名：https://wdlu.cn](https://wdlu.cn)
+
+1.指向本站：[https://linji1.github.io](https://linji1.github.io)
+2.指向本站：[https://linji.org](https://linji.org)
+3.指向本站：[https://linji.vercel.app](https://linji.vercel.app)
+4.老林笔记：[https://linji.cn](https://linji.cn)
+5.老林导航：[https://p.linji.cn](https://p.linji.cn)
+6.老林网盘：[https://linji.cn/file](https://linji.cn/file)
+7.仿朋友圈：[https://m.linji.cn](https://m.linji.cn)
+8.学生报名：[https://wdlu.cn](https://wdlu.cn)
 
 **当我离开这个世界后，希望这个网站还能存在100年。**
 
