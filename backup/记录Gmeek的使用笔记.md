@@ -61,8 +61,12 @@
 ```
 ## 5、jsdelivr CDN 使用格式
 
+空间占用超过50M就无法显示文件列表，只能单个文件访问。
+
 ```html
+https://gcore.jsdelivr.net/gh/linji1/assets@main/
 https://gcore.jsdelivr.net/gh/linji1/assets@main/file/2025/02/2025-02-13.webp
+https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/
 https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/primer.min.css
 ```
 ------
