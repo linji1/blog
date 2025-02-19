@@ -1,5 +1,38 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>老林笔记</title><link>https://linji1.github.io</link><description>&lt;script&gt;document.getElementById('subTitle').innerHTML = `&lt;div id='divdown2' title=''&gt;&lt;/div&gt;`;var interval = 1000; function ShowCountDown(year,month,day,divname) { var now = new Date(); var endDate = new Date(year, month-1, day); var leftTime=endDate.getTime()-now.getTime(); var leftsecond = parseInt(leftTime/1000); var day1=Math.floor(leftsecond/(60*60*24)); var hour=Math.floor((leftsecond-day1*24*60*60)/3600); var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); var cc = document.getElementById(divname); cc.innerHTML = `暑假时间:`+year+`年`+month+`月`+day+`日&lt;br&gt;距今:`+day1+`天`+hour+`小时`+minute+`分`+second+`秒`; } window.setInterval(function(){ShowCountDown(2025,7,5,'divdown2');}, interval);&lt;/script&gt;</description><copyright>老林笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/avatar.svg</url><title>avatar</title><link>https://linji1.github.io</link></image><lastBuildDate>Wed, 19 Feb 2025 16:00:41 +0000</lastBuildDate><managingEditor>老林笔记</managingEditor><ttl>60</ttl><webMaster>老林笔记</webMaster><item><title>【通知】常态化推广使用“国家中小学智慧教育平台”</title><link>/post/54.html</link><description>【通知】各中学、中心小学、市直学校：为落实省教育厅、湛江市教育局通知的要求，进一步做好国家中小学智慧教育平台全域应用试点工作，现将有关事项通知以下：
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>老林笔记</title><link>https://linji1.github.io</link><description>&lt;script&gt;document.getElementById('subTitle').innerHTML = `&lt;div id='divdown2' title=''&gt;&lt;/div&gt;`;var interval = 1000; function ShowCountDown(year,month,day,divname) { var now = new Date(); var endDate = new Date(year, month-1, day); var leftTime=endDate.getTime()-now.getTime(); var leftsecond = parseInt(leftTime/1000); var day1=Math.floor(leftsecond/(60*60*24)); var hour=Math.floor((leftsecond-day1*24*60*60)/3600); var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); var cc = document.getElementById(divname); cc.innerHTML = `暑假时间:`+year+`年`+month+`月`+day+`日&lt;br&gt;距今:`+day1+`天`+hour+`小时`+minute+`分`+second+`秒`; } window.setInterval(function(){ShowCountDown(2025,7,5,'divdown2');}, interval);&lt;/script&gt;</description><copyright>老林笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/avatar.svg</url><title>avatar</title><link>https://linji1.github.io</link></image><lastBuildDate>Wed, 19 Feb 2025 16:33:01 +0000</lastBuildDate><managingEditor>老林笔记</managingEditor><ttl>60</ttl><webMaster>老林笔记</webMaster><item><title>Windows 终端命令</title><link>/post/55.html</link><description>```
+query user || qwinsta 查看当前在线用户
+net user 查看本机用户
+net user /domain 查看域用户
+net view &amp; net group 'domain computers' /domain 查看当前域计算机列表 第二个查的更多
+net view /domain 查看有几个域
+net view \\\\dc 查看 dc 域内共享文件
+net group /domain 查看域里面的组
+net group 'domain admins' /domain 查看域管
+net localgroup administrators /domain /这个也是查域管，是升级为域控时，本地账户也成为域管
+net group 'domain controllers' /domain 域控
+net time /domain
+net config workstation 当前登录域 - 计算机名 - 用户名
+net use \\\\域控(如 pc.xx.com) password /user:xxx.com\username 相当于这个帐号登录域内主机，可访问资源
+ipconfig
+systeminfo
+tasklist /svc
+tasklist /S ip /U domain\username /P /V 查看远程计算机 tasklist
+net localgroup administrators &amp;&amp; whoami 查看当前是不是属于管理组
+netstat -ano
+nltest /dclist:xx 查看域控
+whoami /all 查看 Mandatory Label uac 级别和 sid 号
+net sessoin 查看远程连接 session (需要管理权限)
+net share 共享目录
+cmdkey /l 查看保存登陆凭证
+echo %logonserver% 查看登陆域
+spn –l administrator spn 记录
+set 环境变量
+dsquery server - 查找目录中的 AD DC/LDS 实例
+dsquery user - 查找目录中的用户
+dsquery computer 查询所有计算机名称 windows 2003
+dir /s *.exe 查找指定目录下及子目录下没隐藏文件
+arp -a 查询当前环境
+```。</description><guid isPermaLink="true">/post/55.html</guid><pubDate>Wed, 19 Feb 2025 16:32:37 +0000</pubDate></item><item><title>【通知】常态化推广使用“国家中小学智慧教育平台”</title><link>/post/54.html</link><description>【通知】各中学、中心小学、市直学校：为落实省教育厅、湛江市教育局通知的要求，进一步做好国家中小学智慧教育平台全域应用试点工作，现将有关事项通知以下：
 （一）认真按照雷州市教育局《关于进一步做好国家中小学智慧教育平台全域应用试点工作的通知》的要求，召开专题会议，统筹安排，专人负责，组织师生全员全流程常态化推广使用“国家中小学智慧教育平台”（相关使用教程请参考平台网页右侧蓝色帮助工具条）。</description><guid isPermaLink="true">/post/54.html</guid><pubDate>Wed, 19 Feb 2025 15:39:37 +0000</pubDate></item><item><title>使用 CloudFlare 搭建 Github 加速镜像站</title><link>/post/53.html</link><description>### 配置 Worker
 
 进入[CloudFlare控制台](https://dash.cloudflare.com/)。</description><guid isPermaLink="true">/post/53.html</guid><pubDate>Wed, 19 Feb 2025 15:18:17 +0000</pubDate></item><item><title>Git 常用命令清单</title><link>/post/52.html</link><description>Git 命令还真不少，列一下方便回顾与查找。</description><guid isPermaLink="true">/post/52.html</guid><pubDate>Tue, 18 Feb 2025 09:17:11 +0000</pubDate></item><item><title>【通知】2025年地力补贴必须用社保卡才能拨付成功</title><link>/post/51.html</link><description>&lt;p&gt;【紧急通知】根据上级工作安排，2025年地力补贴必须用社保卡才能拨付成功，请各村委会一定要通知到位群众抓紧时间办理（激活）。</description><guid isPermaLink="true">/post/51.html</guid><pubDate>Tue, 18 Feb 2025 07:00:39 +0000</pubDate></item><item><title>jsdelivr npm CDN 国内加速节点</title><link>/post/50.html</link><description>## JSDelivr 介绍
