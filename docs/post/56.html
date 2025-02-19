@@ -7,17 +7,21 @@
     <link href='/pluging/primer.min.css' rel='stylesheet' />
     <script src='/pluging/GmeekVercount_uv.min.js'></script><script src='/pluging/NumPagination.js'></script><script defer src='/pluging/customize.js'></script><script src='/pluging/ArticleJs.min.js'></script><script src='https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js'></script>
     <link rel="icon" href="/favicon.svg">
-<meta name="description" content="### 配置 Worker
+<meta name="description" content="## Cloudflare介绍
 
-进入[CloudFlare控制台](https://dash.cloudflare.com/)。">
-<meta property="og:title" content="【Cloudflare】搭建 Github 加速镜像站">
-<meta property="og:description" content="### 配置 Worker
+### 什么是Cloudflare
 
-进入[CloudFlare控制台](https://dash.cloudflare.com/)。">
+Cloudflare是一家总部位于旧金山的美国跨国科技企业，以向客户提供基于反向代理的内容分发网络（CDN）及分布式域名解析服务为主要业务。">
+<meta property="og:title" content="【Cloudflare】如何注册账户、购买域名、开启免费CDN服务？">
+<meta property="og:description" content="## Cloudflare介绍
+
+### 什么是Cloudflare
+
+Cloudflare是一家总部位于旧金山的美国跨国科技企业，以向客户提供基于反向代理的内容分发网络（CDN）及分布式域名解析服务为主要业务。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="/post/53.html">
+<meta property="og:url" content="/post/56.html">
 <meta property="og:image" content="/avatar.svg">
-<title>【Cloudflare】搭建 Github 加速镜像站</title>
+<title>【Cloudflare】如何注册账户、购买域名、开启免费CDN服务？</title>
 
 
 
@@ -58,17 +62,7 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
     body {padding:8px;min-width:500px;}
     .postTitle{font-size:24px;}
 }
-.copy-feedback {
-    display:none;
-    position:absolute;
-    top:10px;
-    right:50px;
-    color:var(--color-fg-on-emphasis);
-    background-color:var(--color-fg-muted);
-    border-radius:3px;
-    padding:5px 8px;
-    font-size:12px;
-}
+
 </style>
 
 
@@ -76,7 +70,7 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 
 <body>
     <div id="header">
-<h1 class="postTitle">【Cloudflare】搭建 Github 加速镜像站</h1>
+<h1 class="postTitle">【Cloudflare】如何注册账户、购买域名、开启免费CDN服务？</h1>
 </div>
     <div id="functionBtn">
 <div>
@@ -94,7 +88,7 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
         </svg>
     </a>
 	
-	<a href="https://github.com/linji1/linji1.github.io/issues/53" target="_blank" class="btn btn-invisible circle" title="Issue">
+	<a href="https://github.com/linji1/linji1.github.io/issues/56" target="_blank" class="btn btn-invisible circle" title="Issue">
 		<svg class="octicon" width="16" height="16"><path id="pathIssue" fill-rule="evenodd" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
 	</a>
 	
@@ -119,53 +113,115 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 </a>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h3>配置 Worker</h3>
-<p>进入<a href="https://dash.cloudflare.com/" rel="nofollow">CloudFlare控制台</a>。</p>
+<div class="markdown-body" id="postBody"><h2>Cloudflare介绍</h2>
+<h3>什么是Cloudflare</h3>
+<p>Cloudflare是一家总部位于旧金山的美国跨国科技企业，以向客户提供基于反向代理的内容分发网络（CDN）及分布式域名解析服务为主要业务。</p>
+<p>目前，Cloudflare也开始面向用户提供域名注册、购买服务，价格在8.99美金一年，相对于Namesilo来说价格比较便宜，但是其客服的回应速度比较慢（一般情况下用不到客服）。</p>
+<p>所以我建议外贸建站新手在申请域名的时候可以将cloudflare域名作为节省预算的备选方案。</p>
+<h3>什么是CDN？</h3>
+<p>CDN 是一种优化网站请求处理的机制。它是在用户访问网站 (服务器) 时用户与网站服务器之间的中间层。</p>
+<p>CDN 可以将浏览器发起的请求信息缓存起来，并具有负载均衡的功能，因此即使突然大量访问，也能维持网站服务而不使服务器崩溃。此外，Cloudflare 的标准功能中还配备了优化缓存数据的功能。</p>
+<p>CDN 产品有 Akamai 和 CloudFront 等，而 Cloudflare 也是其中之一。<br>
+其中，Cloudflare CDN 的全球市场份额排名第一，被超过 80% 的用户选择使用。</p>
+<h3>Cloudflare优势：</h3>
+<ul>
+<li><strong>DDoS保护</strong>：过滤恶意流量，保护网站免受分布式拒绝服务的攻击。</li>
+<li><strong>内容分发网络（CDN）</strong>：帮助加速网站内容在全球范围内的传输。</li>
+<li><strong>SSL/TLS加密安全保护</strong>：帮助保护网站和访问者的安全。</li>
+<li><strong>提升网页访问速度</strong>：通过压缩代码、压缩资源和缓存内容来优化网站性能。</li>
+<li><strong>详细流量分析和报告</strong>：包括请求、带宽使用和安全事件等信息。</li>
+<li><strong>简单直观的界面</strong>：易于使用的管理网站设置和配置。</li>
+<li><strong>免费和收费计划</strong>：可以是获得CDN、DDoS保护和安全等优势的经济实惠方式。</li>
+</ul>
+<p>我设计的”WordPress高性能外贸建站速度提升方案1.0“版本中就是使用的Cloudflare CDN服务，对于出入外贸独立站行业的小白来说，网站打开速度在Google Speed Insight获得了90分以上的分数，足以满足一般企业建站要求了。</p>
+<p>目前，速度提升方案我已经迭代到了3.0版本，1.0版本不久之后会免费向读者开放，敬请期待！</p>
+<h2><a href="https://dash.cloudflare.com/" rel="nofollow">Cloudflare账号注册、激活，并绑定网站域名</a></h2>
+<p>点击此链接跳转cloudflare官网开始注册</p>
+<h3>1. 开始注册Cloudflare账号</h3>
+<p>输入邮箱、密码，邮箱国内外均可；密码需要满足以下条件。</p>
 <div class="ImgLazyLoad-circle"></div>
-<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025021901.webp">
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022001.webp">
+<h3>2. 激活cloudflare账号</h3>
+<p>在注册绑定的邮箱中会收到以下邮件，点击邮件链接将账号激活。</p>
 <div class="ImgLazyLoad-circle"></div>
-<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025021902.webp">
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022002.webp">
+<h3>3. 添加新的站点</h3>
 <div class="ImgLazyLoad-circle"></div>
-<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025021903.webp">
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022003.webp">
+<p>在cloudflare中添加新的网站，注意要添加不带有”WWW“的根域名。</p>
 <div class="ImgLazyLoad-circle"></div>
-<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025021904.webp">
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022004.webp">
+<p>套餐方案选择免费版即可。</p>
 <div class="ImgLazyLoad-circle"></div>
-<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025021905.webp">
-<p>在编辑页面填写下方js代码，保存并部署即可</p>
-<p>（ps:该代码为通用的反向代理代码，修改域名可以改为其他的镜像站（注：OpenAI无法使用此方法，请理性使用该功能，合法利用）</p>
-<pre class="notranslate"><code class="notranslate">const TELEGRAPH_URL = 'https://github.com';
-
-addEventListener('fetch', event =&gt; {
-  event.respondWith(handleRequest(event.request))
-})
-
-async function handleRequest(request) {
-  const url = new URL(request.url);
-  url.host = TELEGRAPH_URL.replace(/^https?:\/\//, '');
-
-  const modifiedRequest = new Request(url.toString(), {
-    headers: request.headers,
-    method: request.method,
-    body: request.body,
-    redirect: 'follow'
-  });
-
-  const response = await fetch(modifiedRequest);
-  const modifiedResponse = new Response(response.body, response);
-
-  // 添加允许跨域访问的响应头
-  modifiedResponse.headers.set('Access-Control-Allow-Origin', '*');
-
-  return modifiedResponse;
-}
-</code></pre>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022005.webp">
+<p>进入域名详情页面，cloudflare会自动扫描已有的DNS记录，直接选择继续即可。</p>
 <div class="ImgLazyLoad-circle"></div>
-<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025021906.webp">
-<p>接下来等待10min左右DNS更新。然后就可以访问你的域名来打开镜像站了</p>
-<h3>注意事项</h3>
-<p>1.保护好你的网站信息。免费版 Workers 每天有10w次调用额度，对于个人使用/4-5人使用绰绰有余。不建议公开网址，避免造成财产损失</p>
-<p>2.反向代理不要用于 IP 检测较为严格的网站，容易封号。例如不能用于 OpenAI。</p>
-<p>3.禁止用于非法用途。此脚本仅用为 Github 开源镜像加速</p></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022006.webp">
+<h3>4. 更改你的DNS服务器</h3>
+<p>cloudflare会提示我们更新名称服务器，这时便需要在域名申请、注册的服务商处进行修改。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022007.webp">
+<p>以Namesilo为例，进入namesilo后台后，找到购买的域名，将名称服务器修改为Cloudflare提供的，完成后，记得回到刚刚的页面点完成。</p>
+<p>注意：解析DNS需要一段时间，通常 5-10 分钟才会生效，泡杯咖啡喝。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022008.webp">
+<h3>5. Cloudflare 成功保护您的站点</h3>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022009.webp">
+<p>显示如下界面，则cloudflare已经成功绑定。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022010.webp">
+<h3>6. Cloudflare快速入门指南</h3>
+<p>cloudflare现在已经非常人性化了，按照其提供的快速入门指南就可以快速设置一些必要的选项。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022011.webp">
+<p>可以直接参考我的设置</p>
+<h4>自动 HTTPS 重写</h4>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022012.webp">
+<h4>始终使用HTTPS</h4>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022013.webp">
+<h4>开启CSS,JSS压缩</h4>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022014.webp">
+<h4>全部显示”ON“后，即可点击完成</h4>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022015.webp">
+<h2>给网站添加解析记录并开启CDN</h2>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022016.webp">
+<ol>
+<li>点击<strong>添加记录</strong>按钮</li>
+<li>在<strong>类型</strong>中选择<strong>A</strong></li>
+<li>在<strong>名称</strong>中填入@，表示你将使用不带www的域名，也叫根域，譬如<a href="https://oyouoo.com/" rel="nofollow">oyouoo.com</a>而非www.oyouoo.com；如果你要使用www域名，那么此处就填入www即可</li>
+<li><strong>IPv4地址</strong>：填入你的服务器的IP地址，通常服务器管理面板里都会提供</li>
+<li><strong>代理状态</strong>：默认是一朵<strong>橙色的云，表示启用了CDN</strong>；如果你点击一下它，就会变成灰色的云，表示不启用CDN。</li>
+<li>点击<strong>保存</strong>提交即可。</li>
+</ol>
+<h2>Cloudflare进阶设置</h2>
+<p>SSL和TLS设置</p>
+<p>尽量选择”完全“或者”完全（严格）“，<strong>在网站打开过程中不至于出现重定向过多的问题</strong>。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022017.webp">
+<p>缓存配置、Tiered Cache设置、网站副本设置</p>
+<p>Crawler Hints是Cloudflare新出的功能，能够减少源服务器及其他 Internet 基础结构的资源消耗，并且为搜索引擎和其他爬网程序提供高质量的数据。</p>
+<p>Always Online™功能则可以在网站宕机时提供一个副本供用户继续浏览。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022018.webp">
+<p>Tiered Caching 是一项服务，在 Cloudflare 网络中使用经过优化的路由，更快、更可靠且更安全地为您的用户提供响应。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022019.webp">
+<p>Cloudflare速度优化：开启Cloudflare Fonts、Early Hints、Rocket Loader™</p>
+<p>Rocket Loader™服务需要自己测试，开启后页面浏览速度提升显著，但是部分用户访问页面可能会出现问题</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022020.webp">
+<h2>Cloudflare申请、注册、购买域名</h2>
+<p>进入Cloudflare后台，点击左侧的”注册域“服务，即可。偶尔后台会出现不显示价格的BUG，网站语言改成英文便可解决。</p>
+<p>Cloudflare提供的域名数量挺少的，但是”com“域名却比Namesilo域名相对便宜，并且直接从Cloudflare购买域名省去了更改域名服务器的麻烦。</p>
+<div class="ImgLazyLoad-circle"></div>
+<img data-fancybox="gallery" img-src="/assets/file/2025/02/2025022021.webp">
+<p>本文原创于<a href="https://oyouoo.com/" rel="nofollow">掘金随想</a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;">文章随意转载</div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
@@ -189,7 +245,7 @@ if("10/26/1977"!=""){
 </script></div>
 </body>
 <script>
-var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
 var utterancesLoad=0;
 
 </script>
@@ -240,70 +296,7 @@ function iFrameLoading(){
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const createClipboardHTML = (codeContent, additionalClasses = '') => `
-        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
-        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
-            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display:inherit;">
-                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
-                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
-            </clipboard-copy>
-            <div class="copy-feedback">Copied!</div>
-        </div>
-    `;
 
-    const handleCodeElements = (selector = '') => {
-        document.querySelectorAll(selector).forEach(codeElement => {
-            const codeContent = codeElement.innerHTML;
-            const newStructure = document.createElement('div');
-            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
-            newStructure.innerHTML = createClipboardHTML(codeContent);
-
-            const parentElement = codeElement.parentElement;
-            if (selector.includes('highlight')) {
-                parentElement.insertBefore(newStructure, codeElement.nextSibling);
-                parentElement.removeChild(codeElement);
-            } else {
-                parentElement.parentElement.replaceChild(newStructure, parentElement);
-            }
-        });
-    };
-
-    handleCodeElements('pre.notranslate > code.notranslate');
-    handleCodeElements('div.highlight > pre.notranslate');
-
-    let currentFeedback = null;
-    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
-        copyButton.addEventListener('click', () => {
-            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
-            const tempTextArea = document.createElement('textarea');
-            tempTextArea.value = codeContent;
-            document.body.appendChild(tempTextArea);
-            tempTextArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempTextArea);
-
-            const copyIcon = copyButton.querySelector('.octicon-copy');
-            const checkIcon = copyButton.querySelector('.octicon-check');
-            const copyFeedback = copyButton.nextElementSibling;
-
-            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
-            currentFeedback = copyFeedback;
-
-            copyIcon.classList.add('d-none');
-            checkIcon.classList.remove('d-none');
-            copyFeedback.style.display = 'block';
-            copyButton.style.borderColor = 'var(--color-success-fg)';
-
-            setTimeout(() => {
-                copyIcon.classList.remove('d-none');
-                checkIcon.classList.add('d-none');
-                copyFeedback.style.display = 'none';
-                copyButton.style.borderColor = '';
-            }, 2000);
-        });
-    });
-});
 
 </script>
 <script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script><script src='/pluging/backtop.js'></script>
