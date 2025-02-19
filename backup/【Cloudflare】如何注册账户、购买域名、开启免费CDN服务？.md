@@ -31,7 +31,7 @@ CDN 产品有 Akamai 和 CloudFront 等，而 Cloudflare 也是其中之一。
 
 目前，速度提升方案我已经迭代到了3.0版本，1.0版本不久之后会免费向读者开放，敬请期待！
 
-## [Cloudflare账号注册、激活，并绑定网站域名](https://oyouoo.com/cloudflare-tutorial/)
+## [Cloudflare账号注册、激活，并绑定网站域名](https://dash.cloudflare.com/)
 
 点击此链接跳转cloudflare官网开始注册
 
@@ -74,8 +74,6 @@ cloudflare会提示我们更新名称服务器，这时便需要在域名申请�
 注意：解析DNS需要一段时间，通常 5-10 分钟才会生效，泡杯咖啡喝。
 
 ![](/assets/file/2025/02/2025022008.webp)
-
-更详细的操作步骤见《[Namesilo如何更换域名解析服务器到Cloudflare？](https://oyouoo.com/change-dns-server-to-cloudflare/)》
 
 ### 5. Cloudflare 成功保护您的站点
 
@@ -124,7 +122,7 @@ cloudflare现在已经非常人性化了，按照其提供的快速入门指南�
 
 SSL和TLS设置
 
-尽量选择”完全“或者”完全（严格）“，在网站打开过程中不至于出现重定向过多的问题。
+尽量选择”完全“或者”完全（严格）“，**在网站打开过程中不至于出现重定向过多的问题**。
 
 ![](/assets/file/2025/02/2025022017.webp)
 
