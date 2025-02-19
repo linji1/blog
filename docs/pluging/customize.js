@@ -122,7 +122,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-	font-size: 17px;
+	font-size: 16px;
     font-weight: bold;
     text-align: left;
 }
