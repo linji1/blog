@@ -10,11 +10,11 @@
 
 进入仓库并创建 Releases:
 
-![1](https://linji1.github.io/assets/file/2025/02/401797022-d035adc5-9486-4288-9f9c-caf9163d90ba.webp)
+![1](/assets/file/2025/02/401797022-d035adc5-9486-4288-9f9c-caf9163d90ba.webp)
 
 名称建议规范一点.
 
-![2](https://linji1.github.io/assets/file/2025/02/401797087-6ca6a2e3-edf4-49b9-afe8-6d8b0d54a34b.webp)
+![2](/assets/file/2025/02/401797087-6ca6a2e3-edf4-49b9-afe8-6d8b0d54a34b.webp)
 
 # 创建标签(Tags)
 
