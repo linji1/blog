@@ -3,5 +3,5 @@
 ### :page_facing_up: [50](https://linji1.github.io/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 194382 
-### :alarm_clock: 2025-02-19 08:28:47 
-### 曾经的域名 <br><br> [1.https://linji.org/](https://linji.org/)<br><br> [2.https://linji.cn/](https://linji.cn/)<br><br> [3.https://p.linji.cn/](https://p.linji.cn/)<br><br> [4.https://m.linji.cn/](https://m.linji.cn/)<br><br> [5.https://wdlu.cn/](https://wdlu.cn/)<br><br> [6.https://linji.vercel.app/](https://linji.vercel.app/)<br><br>Powered by :heart: [Gmeek](https://github.com/Meekdai/Gmeek)
+### :alarm_clock: 2025-02-19 10:12:29 
+### 曾经的网站 <br><br> [1.指向本站：https://linji.org](https://linji.org)<br><br> [2.指向本站：https://linji.vercel.app](https://linji.vercel.app)<br><br> [3.老林笔记：https://linji.cn](https://linji.cn)<br><br> [4.老林导航：https://p.linji.cn](https://p.linji.cn)<br><br>  [5.老林网盘：https://linji.cn/file](https://linji.cn/file)<br><br>[6.仿朋友圈：https://m.linji.cn](https://m.linji.cn)<br><br> [7.学生报名：https://wdlu.cn](https://wdlu.cn)<br><br>Powered by :heart: [Gmeek](https://github.com/Meekdai/Gmeek)
