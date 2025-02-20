@@ -13719,6 +13719,7 @@ a.btn-primary:focus-visible {
 	animation: ImgLazyLoadAni 1.2s infinite;
 	-webkit-animation: ImgLazyLoadAni 1.2s infinite;
 	box-shadow: 6px 6px 14px 0 var(--ImgLazyLoad-circle-shadowColor), -7px -7px 16px 0 var(--ImgLazyLoad-circle-shadowColor2);
+	margin: auto;
 }
 
 @keyframes ImgLazyLoadAni {
