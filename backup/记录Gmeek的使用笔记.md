@@ -2,7 +2,7 @@
 
 ### 单个仓库不能超过 1 G
 
-### 访问本站相关网址
+### 曾经的网站
 
 1.指向本站：[https://linji1.github.io](https://linji1.github.io)
 2.指向本站：[https://linji.org](https://linji.org)
