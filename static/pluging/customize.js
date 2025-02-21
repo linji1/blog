@@ -17,6 +17,7 @@ body {
 	background-color: white;
     min-width: auto;
     border-radius: 0px;
+    min-height: 100vh;
 }
 
 .SideNav-item:hover {
