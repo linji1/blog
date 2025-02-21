@@ -68,6 +68,11 @@ https://gcore.jsdelivr.net/gh/linji1/assets@main/
 https://gcore.jsdelivr.net/gh/linji1/assets@main/file/2025/02/2025-02-13.webp
 https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/
 https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/primer.min.css
+
+// fancybox.js---图片浏览器CDN
+https://gcore.jsdelivr.net/gh/linji1/fancyapps@main/
+https://gcore.jsdelivr.net/gh/linji1/fancyapps@main/fancyapps/dist/fancybox/fancybox.css
+https://gcore.jsdelivr.net/gh/linji1/fancyapps@main/fancyapps/dist/fancybox/fancybox.umd.js
 ```
 ## 6、config.json 配置
 
