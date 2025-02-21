@@ -20,7 +20,7 @@
     "themeMode":"fix",
     "dayTheme":"light",
     "nightTheme":"github-light",
-    "allHead":"<script src='/pluging/GmeekVercount_uv.min.js'></script><script src='/pluging/NumPagination.js'></script><script defer src='/pluging/customize.js'></script><script src='/pluging/ArticleJs.min.js'></script><script src='https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js'></script>",
+    "allHead":"<script src='/pluging/GmeekVercount_uv.min.js'></script><script src='/pluging/NumPagination.js'></script><script defer src='/pluging/customize.js'></script><script src='/pluging/ArticleJs.min.js'></script><script src='/live2d/autoload.js'></script>",
     "script":"<script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script><script src='/pluging/backtop.js'></script>",
     "GMEEK_VERSION":"main"
 }
