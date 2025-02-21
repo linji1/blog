@@ -69,6 +69,38 @@ https://gcore.jsdelivr.net/gh/linji1/assets@main/file/2025/02/2025-02-13.webp
 https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/
 https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/primer.min.css
 ```
+## 6、config.json 配置
+
+空间占用超过50M就无法显示文件列表，只能单个文件访问。
+
+```json
+{
+    "title":"老林笔记",
+    "subTitle":"<script>document.getElementById('subTitle').innerHTML = `<div id='divdown2' title=''></div>`;var interval = 1000; function ShowCountDown(year,month,day,divname) { var now = new Date(); var endDate = new Date(year, month-1, day); var leftTime=endDate.getTime()-now.getTime(); var leftsecond = parseInt(leftTime/1000); var day1=Math.floor(leftsecond/(60*60*24)); var hour=Math.floor((leftsecond-day1*24*60*60)/3600); var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); var cc = document.getElementById(divname); cc.innerHTML = `暑假时间:`+year+`年`+month+`月`+day+`日<br>距今:`+day1+`天`+hour+`小时`+minute+`分`+second+`秒`; } window.setInterval(function(){ShowCountDown(2025,7,5,'divdown2');}, interval);</script>",
+    "avatarUrl":"/avatar.svg",
+    "displayTitle":"老林笔记",
+    "homeUrl":"https://linji1.github.io",
+    "faviconUrl":"/favicon.svg",
+    "email":"saboha@163.com",
+    "startSite":"10/26/1977",
+    "onePageListNum":10,
+    "singlePage":["link","about"],
+    "commentLabelColor":"#006b75",
+    "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
+    "i18n":"CN",
+    "UTC":8,
+    "bottomText":"文章随意转载",
+    "urlMode":"issue",
+    "showPostSource":1,
+    "needComment":1,
+    "themeMode":"fix",
+    "dayTheme":"light",
+    "nightTheme":"github-light",
+    "allHead":"<script src='/pluging/GmeekVercount_uv.min.js'></script><script src='/pluging/NumPagination.js'></script><script defer src='/pluging/customize.js'></script><script src='/pluging/ArticleJs.min.js'></script><script src='/live2d/autoload.js'></script>",
+    "script":"<script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script><script src='/pluging/backtop.js'></script>",
+    "GMEEK_VERSION":"main"
+}
+```
 ------
 ### 下面是转载内容
 

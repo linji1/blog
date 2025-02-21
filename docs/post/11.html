@@ -186,6 +186,34 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 https://gcore.jsdelivr.net/gh/linji1/assets@main/file/2025/02/2025-02-13.webp
 https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/
 https://gcore.jsdelivr.net/gh/linji1/linji1.github.io@main/static/pluging/primer.min.css</pre></div>
+<h2>6、config.json 配置</h2>
+<p>空间占用超过50M就无法显示文件列表，只能单个文件访问。</p>
+<div class="highlight highlight-source-json"><pre class="notranslate">{
+    <span class="pl-ent">"title"</span>:<span class="pl-s"><span class="pl-pds">"</span>老林笔记<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"subTitle"</span>:<span class="pl-s"><span class="pl-pds">"</span>&lt;script&gt;document.getElementById('subTitle').innerHTML = `&lt;div id='divdown2' title=''&gt;&lt;/div&gt;`;var interval = 1000; function ShowCountDown(year,month,day,divname) { var now = new Date(); var endDate = new Date(year, month-1, day); var leftTime=endDate.getTime()-now.getTime(); var leftsecond = parseInt(leftTime/1000); var day1=Math.floor(leftsecond/(60*60*24)); var hour=Math.floor((leftsecond-day1*24*60*60)/3600); var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); var cc = document.getElementById(divname); cc.innerHTML = `暑假时间:`+year+`年`+month+`月`+day+`日&lt;br&gt;距今:`+day1+`天`+hour+`小时`+minute+`分`+second+`秒`; } window.setInterval(function(){ShowCountDown(2025,7,5,'divdown2');}, interval);&lt;/script&gt;<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"avatarUrl"</span>:<span class="pl-s"><span class="pl-pds">"</span>/avatar.svg<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"displayTitle"</span>:<span class="pl-s"><span class="pl-pds">"</span>老林笔记<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"homeUrl"</span>:<span class="pl-s"><span class="pl-pds">"</span>https://linji1.github.io<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"faviconUrl"</span>:<span class="pl-s"><span class="pl-pds">"</span>/favicon.svg<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"email"</span>:<span class="pl-s"><span class="pl-pds">"</span>saboha@163.com<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"startSite"</span>:<span class="pl-s"><span class="pl-pds">"</span>10/26/1977<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"onePageListNum"</span>:<span class="pl-c1">10</span>,
+    <span class="pl-ent">"singlePage"</span>:[<span class="pl-s"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>about<span class="pl-pds">"</span></span>],
+    <span class="pl-ent">"commentLabelColor"</span>:<span class="pl-s"><span class="pl-pds">"</span>#006b75<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"yearColorList"</span>:[<span class="pl-s"><span class="pl-pds">"</span>#bc4c00<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>#0969da<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>#1f883d<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>#A333D0<span class="pl-pds">"</span></span>],
+    <span class="pl-ent">"i18n"</span>:<span class="pl-s"><span class="pl-pds">"</span>CN<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"UTC"</span>:<span class="pl-c1">8</span>,
+    <span class="pl-ent">"bottomText"</span>:<span class="pl-s"><span class="pl-pds">"</span>文章随意转载<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"urlMode"</span>:<span class="pl-s"><span class="pl-pds">"</span>issue<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"showPostSource"</span>:<span class="pl-c1">1</span>,
+    <span class="pl-ent">"needComment"</span>:<span class="pl-c1">1</span>,
+    <span class="pl-ent">"themeMode"</span>:<span class="pl-s"><span class="pl-pds">"</span>fix<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"dayTheme"</span>:<span class="pl-s"><span class="pl-pds">"</span>light<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"nightTheme"</span>:<span class="pl-s"><span class="pl-pds">"</span>github-light<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"allHead"</span>:<span class="pl-s"><span class="pl-pds">"</span>&lt;script src='/pluging/GmeekVercount_uv.min.js'&gt;&lt;/script&gt;&lt;script src='/pluging/NumPagination.js'&gt;&lt;/script&gt;&lt;script defer src='/pluging/customize.js'&gt;&lt;/script&gt;&lt;script src='/pluging/ArticleJs.min.js'&gt;&lt;/script&gt;&lt;script src='/live2d/autoload.js'&gt;&lt;/script&gt;<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"script"</span>:<span class="pl-s"><span class="pl-pds">"</span>&lt;script src='https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'&gt;&lt;/script&gt;&lt;script src='/pluging/backtop.js'&gt;&lt;/script&gt;<span class="pl-pds">"</span></span>,
+    <span class="pl-ent">"GMEEK_VERSION"</span>:<span class="pl-s"><span class="pl-pds">"</span>main<span class="pl-pds">"</span></span>
+}</pre></div>
 <hr>
 <h3>下面是转载内容</h3>
 <p><a href="https://github.com/Meekdai/Gmeek">Gmeek</a> 博客完全依托 Github, 提供域名, 无需服务器, 比起传统的服务器建站更方便快捷.</p>
