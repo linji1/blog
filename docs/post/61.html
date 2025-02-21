@@ -12,10 +12,7 @@
 一般的 script 写法为：
 
 ```html
-html
-
-代码解读
-复制代码<script src='app.js'></script>
+<script src='app.js'></script>
 ```
 
 这种写法有一个问题：它会 **阻塞 HTML 的 DOM 构建**。">
@@ -25,10 +22,7 @@ html
 一般的 script 写法为：
 
 ```html
-html
-
-代码解读
-复制代码<script src='app.js'></script>
+<script src='app.js'></script>
 ```
 
 这种写法有一个问题：它会 **阻塞 HTML 的 DOM 构建**。">
@@ -139,13 +133,10 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
     <div id="content">
 <div class="markdown-body" id="postBody"><h2>默认加载</h2>
 <p>一般的 script 写法为：</p>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate">html
-
-代码解读
-复制代码<span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">src</span>="<span class="pl-s">app.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">src</span>="<span class="pl-s">app.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
 <p>这种写法有一个问题：它会 <strong>阻塞 HTML 的 DOM 构建</strong>。</p>
 <p>假如我们在 head 元素中使用了 script 脚本，它就会阻止后面元素的渲染，包括 body 元素，此时执行<code class="notranslate">document.querySeletor('body')</code> 拿到的是 null。</p>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate">html代码解读复制代码<span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
 <span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
 <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
   <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">UTF-8</span>"<span class="pl-kos">&gt;</span>
@@ -162,10 +153,7 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 <p>缺点是，HTML 很长的时候，解析到脚本就会花上一点时间，然后才会请求对应的脚本资源。</p>
 <p>不过通常来说，HTML 内容都比较简单，二者感受不到太大区别，除非你网很卡。</p>
 <h2>defer 加载</h2>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate">html
-
-代码解读
-复制代码<span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">defer</span> <span class="pl-c1">src</span>="<span class="pl-s">app.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">defer</span> <span class="pl-c1">src</span>="<span class="pl-s">app.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
 <p>defer，“延迟” 之意。这里的延迟，指的是延迟执行脚本，下载则不会被阻塞。</p>
 <p>需要注意的是， <strong>defer 属性对内嵌脚本无效</strong>。毕竟脚本内容就在 HTML 里了，完全不需要请求资源了好吧。</p>
 <p><strong>给 script 标签添加了 defer 属性后，脚本不会阻塞 DOM 树的构建，会先下载资源，然后等待到在 DOMContentLoaded 事件前执行。</strong></p>
@@ -174,21 +162,15 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 <p>实际开发中，我们可以将业务代码脚本加上 defer 属性，放到更上层的 head 标签下。</p>
 <p>这也是最新版 HtmlWebpackPlugin 插件的默认引入打包脚本的方式。</p>
 <h2>async 加载</h2>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate">html
-
-代码解读
-复制代码<span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">async</span> <span class="pl-c1">src</span>="<span class="pl-s">app.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">async</span> <span class="pl-c1">src</span>="<span class="pl-s">app.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
 <p>async，“异步” 之意。同样对内嵌脚本无效。</p>
 <p>设置 async  后，脚本一旦被下载好了就会执行，不管什么时机。</p>
 <p>适合与执行顺序无关的脚本，比如广告、网站流量分析脚本。</p>
 <p>比如插入 Google 分析脚本：</p>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate">html
-
-代码解读
-复制代码<span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">async</span> <span class="pl-c1">src</span>="<span class="pl-s">//www.google-analytics.com/analytics.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">async</span> <span class="pl-c1">src</span>="<span class="pl-s">//www.google-analytics.com/analytics.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
 <h2>动态加载</h2>
 <p>还有一种用脚本加载脚本的特殊情况，这里也说一说。</p>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate">html代码解读复制代码<span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
   <span class="pl-k">const</span> <span class="pl-s1">script</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElement</span><span class="pl-kos">(</span><span class="pl-s">'script'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
   <span class="pl-s1">script</span><span class="pl-kos">.</span><span class="pl-c1">src</span> <span class="pl-c1">=</span> <span class="pl-s">'app-a.js'</span><span class="pl-kos">;</span>
   <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">.</span><span class="pl-en">appendChild</span><span class="pl-kos">(</span><span class="pl-s1">script</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
@@ -196,7 +178,7 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 <p>脚本里创建一个 script 元素，设置好 src，然后加载到 DOM 树上，接着脚本就会下载和执行了。</p>
 <p>创建的 script 元素默认会给 async 设置为 true，即一旦下载好就立即执行。</p>
 <p>如果你要加载有依赖关系的多个脚本，就需要将 async 设置为 false。</p>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate">html代码解读复制代码<span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
   <span class="pl-k">const</span> <span class="pl-s1">script</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElement</span><span class="pl-kos">(</span><span class="pl-s">'script'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
   <span class="pl-c">// 取消 async 加载方式</span>
   <span class="pl-s1">script</span><span class="pl-kos">.</span><span class="pl-c1">async</span> <span class="pl-c1">=</span> <span class="pl-c1">false</span><span class="pl-kos">;</span>

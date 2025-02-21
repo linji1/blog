@@ -3,10 +3,7 @@
 一般的 script 写法为：
 
 ```html
-html
-
-代码解读
-复制代码<script src="app.js"></script>
+<script src="app.js"></script>
 ```
 
 这种写法有一个问题：它会 **阻塞 HTML 的 DOM 构建**。
@@ -14,7 +11,7 @@ html
 假如我们在 head 元素中使用了 script 脚本，它就会阻止后面元素的渲染，包括 body 元素，此时执行`document.querySeletor('body')` 拿到的是 null。
 
 ```html
-html代码解读复制代码<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -39,10 +36,7 @@ html代码解读复制代码<!DOCTYPE html>
 ## defer 加载
 
 ```html
-html
-
-代码解读
-复制代码<script defer src="app.js"></script>
+<script defer src="app.js"></script>
 ```
 
 defer，“延迟” 之意。这里的延迟，指的是延迟执行脚本，下载则不会被阻塞。
@@ -62,10 +56,7 @@ DOMContentLoaded 事件的触发时机为初始 HTML 被构建完成时，此时
 ## async 加载
 
 ```html
-html
-
-代码解读
-复制代码<script async src="app.js"></script>
+<script async src="app.js"></script>
 ```
 
 async，“异步” 之意。同样对内嵌脚本无效。
@@ -77,10 +68,7 @@ async，“异步” 之意。同样对内嵌脚本无效。
 比如插入 Google 分析脚本：
 
 ```html
-html
-
-代码解读
-复制代码<script async src="//www.google-analytics.com/analytics.js"></script>
+<script async src="//www.google-analytics.com/analytics.js"></script>
 ```
 
 ## 动态加载
@@ -88,7 +76,7 @@ html
 还有一种用脚本加载脚本的特殊情况，这里也说一说。
 
 ```html
-html代码解读复制代码<script>
+<script>
   const script = document.createElement('script');
   script.src = 'app-a.js';
   document.body.appendChild(script);
@@ -102,7 +90,7 @@ html代码解读复制代码<script>
 如果你要加载有依赖关系的多个脚本，就需要将 async 设置为 false。
 
 ```html
-html代码解读复制代码<script>
+<script>
   const script = document.createElement('script');
   // 取消 async 加载方式
   script.async = false;
