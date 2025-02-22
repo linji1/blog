@@ -76,8 +76,6 @@ https://gcore.jsdelivr.net/gh/linji1/fancyapps@main/fancyapps/dist/fancybox/fanc
 ```
 ## 6、config.json 配置
 
-空间占用超过50M就无法显示文件列表，只能单个文件访问。
-
 ```json
 {
     "title":"老林笔记",
