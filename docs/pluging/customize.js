@@ -88,7 +88,7 @@ body {
     width: 32.2%;
     border: 1px solid rgba(0, 0, 0, .125);
     margin: 0px 4px 10px 4px;
-    border-radius: 5px;
+    border-radius: 0.375rem;
 }
 .core-next-dh-shortcode-url {
     text-decoration: none !important;
@@ -97,7 +97,7 @@ body {
     align-items: stretch;
     border: 1px solid #f0f0f0;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 0.375rem;
     position: relative;
     top: 0;
     transition: top .3s;
