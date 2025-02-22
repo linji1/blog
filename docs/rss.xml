@@ -1,5 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>老林笔记</title><link>https://linji1.github.io</link><description>&lt;script&gt;document.getElementById('subTitle').innerHTML = `&lt;div id='divdown2' title=''&gt;&lt;/div&gt;`;var interval = 1000; function ShowCountDown(year,month,day,divname) { var now = new Date(); var endDate = new Date(year, month-1, day); var leftTime=endDate.getTime()-now.getTime(); var leftsecond = parseInt(leftTime/1000); var day1=Math.floor(leftsecond/(60*60*24)); var hour=Math.floor((leftsecond-day1*24*60*60)/3600); var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); var cc = document.getElementById(divname); cc.innerHTML = `暑假时间:`+year+`年`+month+`月`+day+`日&lt;br&gt;距今:`+day1+`天`+hour+`小时`+minute+`分`+second+`秒`; } window.setInterval(function(){ShowCountDown(2025,7,5,'divdown2');}, interval);&lt;/script&gt;</description><copyright>老林笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/avatar.svg</url><title>avatar</title><link>https://linji1.github.io</link></image><lastBuildDate>Sat, 22 Feb 2025 17:30:23 +0000</lastBuildDate><managingEditor>老林笔记</managingEditor><ttl>60</ttl><webMaster>老林笔记</webMaster><item><title>早晨、上午、下午、傍晚、晚上、深夜、凌晨是怎么区分的，分别是几点到几几点？</title><link>/post/82.html</link><description>凌晨：零点—日出前（因为日出每个季节不定）
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>老林笔记</title><link>https://linji1.github.io</link><description>&lt;script&gt;document.getElementById('subTitle').innerHTML = `&lt;div id='divdown2' title=''&gt;&lt;/div&gt;`;var interval = 1000; function ShowCountDown(year,month,day,divname) { var now = new Date(); var endDate = new Date(year, month-1, day); var leftTime=endDate.getTime()-now.getTime(); var leftsecond = parseInt(leftTime/1000); var day1=Math.floor(leftsecond/(60*60*24)); var hour=Math.floor((leftsecond-day1*24*60*60)/3600); var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); var cc = document.getElementById(divname); cc.innerHTML = `暑假时间:`+year+`年`+month+`月`+day+`日&lt;br&gt;距今:`+day1+`天`+hour+`小时`+minute+`分`+second+`秒`; } window.setInterval(function(){ShowCountDown(2025,7,5,'divdown2');}, interval);&lt;/script&gt;</description><copyright>老林笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/avatar.svg</url><title>avatar</title><link>https://linji1.github.io</link></image><lastBuildDate>Sat, 22 Feb 2025 18:03:30 +0000</lastBuildDate><managingEditor>老林笔记</managingEditor><ttl>60</ttl><webMaster>老林笔记</webMaster><item><title>早晨、上午、下午、傍晚、晚上、深夜、凌晨是怎么区分的，分别是几点到几几点？</title><link>/post/83.html</link><description>凌晨：零点—日出前（因为日出每个季节不定）
+
+早晨：日出—9点
+
+上午：9点—11点
+
+中午（又称正午）：11点—1点
+
+下午（包括正午）：12点—日落
+
+傍晚：5:30—7:30
+
+晚上：不细分就是日落后—12:00，细分就算上傍晚
+
+### 扩展资料
+
+一天24小时现在一般是分为晨8个小时（包括凌晨、早晨），午8个小时（包括上午、中午、下午），晚8个小时（包括傍晚、晚上）
+
+凌晨：0-2点 黎明：4-5点 拂晓：4-6点 清晨：6-7点 早晨：6-8点
+
+上午：8-11点 中午：11-13点 下午：14-17点 
+
+黄昏：16-17点 傍晚：17-18点 晚上：18-22点  午夜：23-1点 夜间：19-5点。</description><guid isPermaLink="true">/post/83.html</guid><pubDate>Sat, 22 Feb 2025 18:02:58 +0000</pubDate></item><item><title>早晨、上午、下午、傍晚、晚上、深夜、凌晨是怎么区分的，分别是几点到几几点？</title><link>/post/82.html</link><description>凌晨：零点—日出前（因为日出每个季节不定）
 
 早晨：日出—9点
 
