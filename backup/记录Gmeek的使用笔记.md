@@ -113,6 +113,25 @@ https://gcore.jsdelivr.net/gh/linji1/AutoXuefa@main/
     "GMEEK_VERSION":"main"
 }
 ```
+
+## 7、添加 Gmeek-spoilertxt - 文字防剧透模糊效果
+
+**默认模糊效果, 反复点击可反复显示或隐藏.**
+
+## 打开 Gmeek.py
+
+1. **增加匹配内容:**
+
+```python
+        if '<code class="notranslate">Gmeek-spoilertxt' in post_body: 
+            post_body = re.sub(r'<code class="notranslate">Gmeek-spoilertxt="([^"]+)"</code>', lambda match: f'<span class="spoilerText">{match.group(1)}</span>', post_body, flags=re.DOTALL)
+```
+
+2. **实际转化后的标签如下:**
+
+```html
+<p>测试剧透 <span class="spoilerText">剧透内容</span></p>
+```
 ------
 ### 下面是转载内容
 
@@ -1909,25 +1928,6 @@ Github 由于安全考虑, 是不允许使用 iframe 等标签的, 而且在 iss
 这样优化后可以在 Github issue 的 Preview 里面直接预览图片, 同时还能防备图床问题导致的图片丢失(`Gmeek-spoilertxt="Github, 稳!"`)
 
 唯一缺点就是当 issues 删除后, 图片也会跟着消失, 无法再被外部引用, 所以删除仓库以及 issues 的时候一定要确保图片先备份哦~
-
-# 添加 Gmeek-spoilertxt - 文字防剧透模糊效果
-
-**默认模糊效果, 反复点击可反复显示或隐藏.**
-
-## 打开 Gmeek.py
-
-1. **增加匹配内容:**
-
-```python
-        if '<code class="notranslate">Gmeek-spoilertxt' in post_body: 
-            post_body = re.sub(r'<code class="notranslate">Gmeek-spoilertxt="([^"]+)"</code>', lambda match: f'<span class="spoilerText">{match.group(1)}</span>', post_body, flags=re.DOTALL)
-```
-
-2. **实际转化后的标签如下:**
-
-```html
-<p>测试剧透 <span class="spoilerText">剧透内容</span></p>
-```
 
 ## 打开 post.html
 

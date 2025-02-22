@@ -226,6 +226,18 @@ https://gcore.jsdelivr.net/gh/linji1/AutoXuefa@main/</pre></div>
     <span class="pl-ent">"script"</span>:<span class="pl-s"><span class="pl-pds">"</span>&lt;script src='/fancyapps/dist/fancybox/fancybox.umd.js'&gt;&lt;/script&gt;<span class="pl-pds">"</span></span>,
     <span class="pl-ent">"GMEEK_VERSION"</span>:<span class="pl-s"><span class="pl-pds">"</span>main<span class="pl-pds">"</span></span>
 }</pre></div>
+<h2>7、添加 Gmeek-spoilertxt - 文字防剧透模糊效果</h2>
+<p><strong>默认模糊效果, 反复点击可反复显示或隐藏.</strong></p>
+<h2>打开 Gmeek.py</h2>
+<ol>
+<li><strong>增加匹配内容:</strong></li>
+</ol>
+<div class="highlight highlight-source-python"><pre class="notranslate">        <span class="pl-k">if</span> <span class="pl-s">'&lt;code class="notranslate"&gt;Gmeek-spoilertxt'</span> <span class="pl-c1">in</span> <span class="pl-s1">post_body</span>: 
+            <span class="pl-s1">post_body</span> <span class="pl-c1">=</span> <span class="pl-s1">re</span>.<span class="pl-c1">sub</span>(<span class="pl-s">r'&lt;code class="notranslate"&gt;Gmeek-spoilertxt="([^"]+)"&lt;/code&gt;'</span>, <span class="pl-k">lambda</span> <span class="pl-s1">match</span>: <span class="pl-s">f'&lt;span class="spoilerText"&gt;<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">match</span>.<span class="pl-c1">group</span>(<span class="pl-c1">1</span>)<span class="pl-kos">}</span></span>&lt;/span&gt;'</span>, <span class="pl-s1">post_body</span>, <span class="pl-s1">flags</span><span class="pl-c1">=</span><span class="pl-s1">re</span>.<span class="pl-c1">DOTALL</span>)</pre></div>
+<ol start="2">
+<li><strong>实际转化后的标签如下:</strong></li>
+</ol>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>测试剧透 <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">spoilerText</span>"<span class="pl-kos">&gt;</span>剧透内容<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span></pre></div>
 <hr>
 <h3>下面是转载内容</h3>
 <p><a href="https://github.com/Meekdai/Gmeek">Gmeek</a> 博客完全依托 Github, 提供域名, 无需服务器, 比起传统的服务器建站更方便快捷.</p>
@@ -1607,18 +1619,6 @@ after 是光标, blink 是光标动画.</p>
 <img data-fancybox="gallery" img-src="/assets/file/2025/02/11-11.webp">
 <p>这样优化后可以在 Github issue 的 Preview 里面直接预览图片, 同时还能防备图床问题导致的图片丢失(<span class="spoilerText">Github, 稳!</span>)</p>
 <p>唯一缺点就是当 issues 删除后, 图片也会跟着消失, 无法再被外部引用, 所以删除仓库以及 issues 的时候一定要确保图片先备份哦~</p>
-<h1>添加 Gmeek-spoilertxt - 文字防剧透模糊效果</h1>
-<p><strong>默认模糊效果, 反复点击可反复显示或隐藏.</strong></p>
-<h2>打开 Gmeek.py</h2>
-<ol>
-<li><strong>增加匹配内容:</strong></li>
-</ol>
-<div class="highlight highlight-source-python"><pre class="notranslate">        <span class="pl-k">if</span> <span class="pl-s">'&lt;code class="notranslate"&gt;Gmeek-spoilertxt'</span> <span class="pl-c1">in</span> <span class="pl-s1">post_body</span>: 
-            <span class="pl-s1">post_body</span> <span class="pl-c1">=</span> <span class="pl-s1">re</span>.<span class="pl-c1">sub</span>(<span class="pl-s">r'&lt;code class="notranslate"&gt;Gmeek-spoilertxt="([^"]+)"&lt;/code&gt;'</span>, <span class="pl-k">lambda</span> <span class="pl-s1">match</span>: <span class="pl-s">f'&lt;span class="spoilerText"&gt;<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">match</span>.<span class="pl-c1">group</span>(<span class="pl-c1">1</span>)<span class="pl-kos">}</span></span>&lt;/span&gt;'</span>, <span class="pl-s1">post_body</span>, <span class="pl-s1">flags</span><span class="pl-c1">=</span><span class="pl-s1">re</span>.<span class="pl-c1">DOTALL</span>)</pre></div>
-<ol start="2">
-<li><strong>实际转化后的标签如下:</strong></li>
-</ol>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>测试剧透 <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">spoilerText</span>"<span class="pl-kos">&gt;</span>剧透内容<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span></pre></div>
 <h2>打开 post.html</h2>
 <ol>
 <li><strong>增加 CSS 样式:</strong></li>
