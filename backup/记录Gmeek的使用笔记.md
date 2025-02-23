@@ -132,6 +132,11 @@ https://gcore.jsdelivr.net/gh/linji1/AutoXuefa@main/
 ```html
 <p>测试剧透 <span class="spoilerText">剧透内容</span></p>
 ```
+## 段落缩进 2 中文格
+
+```html
+`Gmeek-html<div id="divnone" class="divnone"><style type="text/css">.markdown-body p {text-indent: 40px;text-align: justify;}.divnone {display: none;}</style></div>`
+```
 ------
 ### 下面是转载内容
 
