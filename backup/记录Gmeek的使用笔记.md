@@ -24,30 +24,31 @@
 ```
 
 ```html
-<div class="ImgLazyLoad-circle"></div>
-<img data-fancybox="gallery" img-src="https://linji.org/image.webp">
+`Gmeek-html<div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="https://linji.org/image.webp">`
+```
 
-<!--
+```html
+ <!--
 一个图片未加载时的占位 CSS 动画 DIV, 类名为 .ImgLazyLoad-circle, 这个类名的 CSS 动画我写在了 primer.css 里面.
-一个 img 标签, 包含 fancybox 所需的 data-fancybox="gallery" 值.
--->
+
+ 一个 img 标签, 包含 fancybox 所需的 data-fancybox="gallery" 值.
+ -->
 ```
 
 或者
 
 ```html
-<div class="ImgLazyLoad-circle"></div>
-<img data-fancybox="gallery" img-src="https://linji.org/image.webp" width="100%" height="auto">
+`Gmeek-html<div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="https://linji.org/image.webp" width="100%" height="auto">`
 ```
 
 ## 2、插入图集
 
 ```html
-<div class="core-next-dh-shortcode" style="border: 0px;"><div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="https://linji.org/image.webp"></div>
+`Gmeek-html<div class="core-next-dh-shortcode" style="border: 0px;"><div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="https://linji.org/image.webp"></div>`
 ```
 或者
 ```html
-<div class="core-next-dh-shortcode"><div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="https://linji.org/image.webp style="height: 201.43px;width: 268.72px;""></div>
+`Gmeek-html<div class="core-next-dh-shortcode"><div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="https://linji.org/image.webp style="height: 201.43px;width: 268.72px;""></div>`
 ```
 
 ## 3、查看GitHub仓库使用大小
