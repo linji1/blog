@@ -140,6 +140,35 @@ https://gcore.jsdelivr.net/gh/linji1/AutoXuefa@main/
 ```html
 `Gmeek-html<div id="divnone" class="divnone"><style type="text/css">.markdown-body p {text-indent: 40px;text-align: justify;}.divnone {display: none;}</style></div>`
 ```
+## 9、给链接加上波浪线样式
+
+```css
+@keyframes waveMove {
+	from {background-position-x: 0;}
+	to {background-position-x: 50%;}
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23333' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E") repeat-x 0 100%;
+  background-size: 20px auto;
+  animation: waveMove 1s infinite linear;
+}
+```
+
+```html
+下面是黑色波浪线：
+data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23333' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E
+
+下面是红色波浪线：
+data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23ff3300' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E
+```
+
 ------
 ### 下面是转载内容
 

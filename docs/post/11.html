@@ -244,6 +244,28 @@ https://gcore.jsdelivr.net/gh/linji1/AutoXuefa@main/</pre></div>
 <div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>测试剧透 <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">spoilerText</span>"<span class="pl-kos">&gt;</span>剧透内容<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span></pre></div>
 <h2>8、段落缩进 2 中文格</h2>
 <div class="highlight highlight-text-html-basic"><pre class="notranslate">`Gmeek-html<span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">divnone</span>" <span class="pl-c1">class</span>="<span class="pl-s">divnone</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">style</span> <span class="pl-c1">type</span>="<span class="pl-s">text/css</span>"<span class="pl-kos">&gt;</span>.<span class="pl-c1">markdown-body</span> <span class="pl-ent">p</span> {<span class="pl-c1">text-indent</span><span class="pl-kos">:</span> <span class="pl-c1">40<span class="pl-smi">px</span></span>;<span class="pl-c1">text-align</span><span class="pl-kos">:</span> justify;}.<span class="pl-c1">divnone</span> {<span class="pl-c1">display</span><span class="pl-kos">:</span> none;}<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>`</pre></div>
+<h2>9、给链接加上波浪线样式</h2>
+<div class="highlight highlight-source-css"><pre class="notranslate"><span class="pl-k">@keyframes</span> waveMove {
+	<span class="pl-k">from</span> {<span class="pl-c1">background-position-x</span><span class="pl-kos">:</span> <span class="pl-c1">0</span>;}
+	<span class="pl-k">to</span> {<span class="pl-c1">background-position-x</span><span class="pl-kos">:</span> <span class="pl-c1">50<span class="pl-smi">%</span></span>;}
+}
+
+<span class="pl-ent">a</span> {
+  <span class="pl-c1">color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>000</span>;
+  <span class="pl-c1">text-decoration</span><span class="pl-kos">:</span> none;
+}
+
+<span class="pl-ent">a</span><span class="pl-kos">:</span><span class="pl-c1">hover</span> {
+  <span class="pl-c1">text-decoration</span><span class="pl-kos">:</span> none;
+  <span class="pl-c1">background</span><span class="pl-kos">:</span> <span class="pl-en">url</span>(<span class="pl-s">"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23333' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E"</span>) repeat-x <span class="pl-c1">0</span> <span class="pl-c1">100<span class="pl-smi">%</span></span>;
+  <span class="pl-c1">background-size</span><span class="pl-kos">:</span> <span class="pl-c1">20<span class="pl-smi">px</span></span> auto;
+  <span class="pl-c1">animation</span><span class="pl-kos">:</span> waveMove <span class="pl-c1">1<span class="pl-smi">s</span></span> infinite linear;
+}</pre></div>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate">下面是黑色波浪线：
+data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23333' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E
+
+下面是红色波浪线：
+data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23ff3300' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E</pre></div>
 <hr>
 <h3>下面是转载内容</h3>
 <p><a href="https://github.com/Meekdai/Gmeek">Gmeek</a> 博客完全依托 Github, 提供域名, 无需服务器, 比起传统的服务器建站更方便快捷.</p>
