@@ -210,7 +210,7 @@ Math.ceil()    “向上取整”， 小数部分直接舍去，并向正数部�
 <div class="ImgLazyLoad-circle"></div>
 <img data-fancybox="gallery" img-src="/assets/file/2025/02/4e1ae2ae8b35ee8050bc6.gif">
 <p>文章来源：<a href="https://blog.liyifan.xyz/post/wang-ye-tian-jia-%E3%80%90-hui-dao-ding-bu-%E3%80%91-an-niu.html" rel="nofollow">https://blog.liyifan.xyz/post/wang-ye-tian-jia-%E3%80%90-hui-dao-ding-bu-%E3%80%91-an-niu.html</a></p></div>
-<div style="font-size:small;margin-top:8px;float:right;">文章随意转载</div>
+<div style="font-size:small;margin-top:8px;float:right;" id="article-links"><script>const currentUrl = window.location.href;const urlParts = currentUrl.split('/');const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);const prevArticleNumber = currentArticleNumber - 1;const nextArticleNumber = currentArticleNumber + 1;const generateLink = (articleNumber, text) => {    if (articleNumber > 0) {        return `<a href=/post/${articleNumber}.html>${text}: ${articleNumber}</a>`;    }    return `${text}: 无`;};const prevLink = generateLink(prevArticleNumber, '上一篇');const nextLink = generateLink(nextArticleNumber, '下一篇');const linksDiv = document.getElementById('article-links');if (linksDiv) {    linksDiv.innerHTML = `${prevLink} | ${nextLink}`;} else {    console.log('没有找到ID为article-links的div元素');}</script></div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>

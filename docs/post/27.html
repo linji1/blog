@@ -376,7 +376,7 @@ v:(1)杂粮与大米按1:2的比例烹调即可。不建议只吃杂粮。(2)不
 <strong>感觉口渴时</strong><br>
 当感到口渴时，说明身体已经处于轻度缺水状态，此时应及时饮用白开水来补充水分。不要等到口渴难耐时才喝水，长期如此可能会对身体健康造成不利影响。</p>
 </details></div>
-<div style="font-size:small;margin-top:8px;float:right;">文章随意转载</div>
+<div style="font-size:small;margin-top:8px;float:right;" id="article-links"><script>const currentUrl = window.location.href;const urlParts = currentUrl.split('/');const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);const prevArticleNumber = currentArticleNumber - 1;const nextArticleNumber = currentArticleNumber + 1;const generateLink = (articleNumber, text) => {    if (articleNumber > 0) {        return `<a href=/post/${articleNumber}.html>${text}: ${articleNumber}</a>`;    }    return `${text}: 无`;};const prevLink = generateLink(prevArticleNumber, '上一篇');const nextLink = generateLink(nextArticleNumber, '下一篇');const linksDiv = document.getElementById('article-links');if (linksDiv) {    linksDiv.innerHTML = `${prevLink} | ${nextLink}`;} else {    console.log('没有找到ID为article-links的div元素');}</script></div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
