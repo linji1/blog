@@ -83,13 +83,17 @@ body {
 }
 
 @keyframes waveMove {
-	from {background-position-x: 0;}
-	to {background-position-x: 50%;}
+	from {background-position: 0 100%;}
+	to {background-position: -20px 100%;}
 }
 
 a {
   color: #000;
   text-decoration: none;
+}
+
+.markdown-body a:hover {
+    background-size: 20px auto;
 }
 
 a:hover {
