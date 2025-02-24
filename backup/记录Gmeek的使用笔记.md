@@ -152,7 +152,7 @@ https://gcore.jsdelivr.net/gh/linji1/AutoXuefa@main/
 ## 8、段落缩进 2 中文格
 
 ```html
-`Gmeek-html<div id="divnone" class="divnone"><style type="text/css">.markdown-body p {text-indent: 40px;text-align: justify;}.divnone {display: none;}</style></div>`
+`Gmeek-html<div id="divnone" class="divnone"><style type="text/css">.markdown-body p {text-indent: 40px;}.divnone {display: none;}</style></div>`
 ```
 ## 9、给链接加上波浪线样式
 
