@@ -105,7 +105,39 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><p><center><table border="1"style="border-collapse:collapse;font-size:14px;text-align:center;"><tbody><tr><td colspan="5"style="text-align:right;">开始执行日期：2023年9月1日</td></tr><tr><td>午&nbsp;别</td><td>项&nbsp;目</td><td>起止时间</td><td>分&nbsp;钟</td><td>备&nbsp;注</td></tr><tr><td rowspan="8">上午</td><td>大课间</td><td>7:40-8:10</td><td>30</td><td>7时30分集中</td></tr><tr><td>第一节课</td><td>8:10-8:50</td><td>40</td><td></td></tr><tr><td>第二节课</td><td>9:00-9:40</td><td>40</td><td></td></tr><tr><td>第三节课</td><td>9:50-10:30</td><td>40</td><td></td></tr><tr><td>眼保健操</td><td>10:30-10:40</td><td>10</td><td></td></tr><tr><td rowspan="3">第四节课</td><td>10:40-11:10</td><td>30</td><td>一、二年级</td></tr><tr><td>10:40-11:20</td><td>40</td><td>三、四年级</td></tr><tr><td>10:40-11:25</td><td>45</td><td>五、六年级</td></tr><tr><td rowspan="3"></td><td>第五节课</td><td>3:00-3:40</td><td>40</td><td></td></tr><tr><td>眼保健操</td><td>3:40-3:55</td><td>15</td><td></td></tr><tr><td>第六节课</td><td>3:55-4:35</td><td>40</td><td></td></tr></tbody></table></center></p></div>
-<div style="font-size:small;margin-top:8px;float:right;" id="article-links"><script>const currentUrl = window.location.href;const urlParts = currentUrl.split('/');const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);const prevArticleNumber = currentArticleNumber - 1;const nextArticleNumber = currentArticleNumber + 1;const generateLink = (articleNumber, text) => {    if (articleNumber > 0) {        return `<a href=/post/${articleNumber}.html>${text}: ${articleNumber}</a>`;    }    return `${text}: 无`;};const prevLink = generateLink(prevArticleNumber, '上一篇');const nextLink = generateLink(nextArticleNumber, '下一篇');const linksDiv = document.getElementById('article-links');if (linksDiv) {    linksDiv.innerHTML = `${prevLink} | ${nextLink}`;} else {    console.log('没有找到ID为article-links的div元素');}</script></div>
+<div style="font-size:small;margin-top:8px;float:right;" id="article-links">
+    <script>
+        // 获取当前页面的URL
+        const currentUrl = window.location.href;
+        
+        // 提取URL中的数字部分
+        const urlParts = currentUrl.split('/');
+        const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
+        
+        // 计算上一篇和下一篇文章的数字
+        const prevArticleNumber = currentArticleNumber - 1;
+        const nextArticleNumber = currentArticleNumber + 1;
+        
+        // 生成上一篇和下一篇文章的链接
+        const generateLink = (articleNumber, text) => {
+            if (articleNumber > 0) {
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+            }
+            return `${text}: 无`;
+        };
+        
+        const prevLink = generateLink(prevArticleNumber, '上一篇');
+        const nextLink = generateLink(nextArticleNumber, '下一篇');
+        
+        // 输出结果到指定的div中
+        const linksDiv = document.getElementById('article-links');
+        if (linksDiv) {
+            linksDiv.innerHTML = `${prevLink} | ${nextLink}`;
+        } else {
+            console.log('没有找到ID为article-links的div元素');
+        }
+        </script>
+</div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>

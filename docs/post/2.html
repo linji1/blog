@@ -139,7 +139,39 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 <h3>💠网页设计</h3>
 <p><div class="core-next-dh-shortcode"title="提供免费的计划使很多个人开发者和小型项目能够享受到基本的加速和安全保障"><a href="https://dash.cloudflare.com/"target="_blank"class="core-next-dh-shortcode-url dh-body-a"><div class="dh-icon"><img decoding="async"class="not-shadow"src="/icon/cloudflare.com.ico"/></div><div class="dh-body"><div class="dh-name">Cloudflare</div><div class="dh-des">提供免费的计划使很多个人开发者和小型项目能够享受到基本的加速和安全保障</div></div></a></div><div class="core-next-dh-shortcode"title="Vercel 是一个为前端开发者和团队打造的云端平台，专注于提供构建、扩展和保护更快速、更个性化网络体验所需的开发工具和云基础设施。"><a href="https://vercel.com"target="_blank"class="core-next-dh-shortcode-url dh-body-a"><div class="dh-icon"><img decoding="async"class="not-shadow"src="/icon/vercel.com.ico"/></div><div class="dh-body"><div class="dh-name">Vercel</div><div class="dh-des">Vercel 是一个为前端开发者和团队打造的云端平台，专注于提供构建、扩展和保护更快速、更个性化网络体验所需的开发工具和云基础设施。</div></div></a></div><div class="core-next-dh-shortcode" title="一些修改自网络的油猴脚本"><a href="https://github.com/ChinaGodMan/UserScripts" target="_blank" class="core-next-dh-shortcode-url dh-body-a"><div class="dh-icon"><img decoding="async" class="not-shadow" src="https://github.githubassets.com/favicons/favicon.svg"></div><div class="dh-body"><div class="dh-name">油猴脚本</div><div class="dh-des">一些修改自网络的油猴脚本</div></div></a></div></p>
 <p><div class="core-next-dh-shortcode" title="使用国内主流CDN分发网络，缓存常用或指定Web项目的静态资源，来加速您的网站的访问。目前已包含常用前端公共库、Google字体库服务、CDNJS镜像服务、NPM资源文件服务，且已支持对托管在GitHub、GitLab、Gitea、Gitee、GitCode和Bitbucket等代码托管平台下的Web项目的加速。"><a href="https://www.webcache.cn/" target="_blank" class="core-next-dh-shortcode-url dh-body-a"><div class="dh-icon"><img decoding="async" class="not-shadow" src="/icon/webcache.cn.ico"></div><div class="dh-body"><div class="dh-name">Web缓存网</div><div class="dh-des">使用国内主流CDN分发网络，缓存常用或指定Web项目的静态资源，来加速您的网站的访问。目前已包含常用前端公共库、Google字体库服务、CDNJS镜像服务、NPM资源文件服务，且已支持对托管在GitHub、GitLab、Gitea、Gitee、GitCode和Bitbucket等代码托管平台下的Web项目的加速。</div></div></a></div><div class="core-next-dh-shortcode" title="炸了么(zhale.me)免费提供网站速度测试、网络速度检测、多地区在线ping测试、dns查询、路由跟踪查询、ipv6网站测试等站长工具；网络检测节点覆盖全球，国内检测节点覆盖各省电信、联通、移动、教育网等。"><a href="https://zhale.me/" target="_blank" class="core-next-dh-shortcode-url dh-body-a"><div class="dh-icon"><img decoding="async" class="not-shadow" src="/icon/zhale.me.ico"></div><div class="dh-body"><div class="dh-name">网站速度测试</div><div class="dh-des">炸了么(zhale.me)免费提供网站速度测试、网络速度检测、多地区在线ping测试、dns查询、路由跟踪查询、ipv6网站测试等站长工具；网络检测节点覆盖全球，国内检测节点覆盖各省电信、联通、移动、教育网等。</div></div></a></div><div class="core-next-dh-shortcode" title="GitHub文件链接带不带协议头都可以，支持release、archive以及文件，右键复制出来的链接都是符合标准的。注意，不支持项目文件夹，请使用Git。"><a href="https://github.moeyy.xyz/" target="_blank" class="core-next-dh-shortcode-url dh-body-a"><div class="dh-icon"><img decoding="async" class="not-shadow" src="/icon/github.moeyy.xyz.ico"></div><div class="dh-body"><div class="dh-name">GitHub 文件加速</div><div class="dh-des">GitHub文件链接带不带协议头都可以，支持release、archive以及文件，右键复制出来的链接都是符合标准的。注意，不支持项目文件夹，请使用Git。</div></div></a></div></p></div>
-<div style="font-size:small;margin-top:8px;float:right;" id="article-links"><script>const currentUrl = window.location.href;const urlParts = currentUrl.split('/');const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);const prevArticleNumber = currentArticleNumber - 1;const nextArticleNumber = currentArticleNumber + 1;const generateLink = (articleNumber, text) => {    if (articleNumber > 0) {        return `<a href=/post/${articleNumber}.html>${text}: ${articleNumber}</a>`;    }    return `${text}: 无`;};const prevLink = generateLink(prevArticleNumber, '上一篇');const nextLink = generateLink(nextArticleNumber, '下一篇');const linksDiv = document.getElementById('article-links');if (linksDiv) {    linksDiv.innerHTML = `${prevLink} | ${nextLink}`;} else {    console.log('没有找到ID为article-links的div元素');}</script></div>
+<div style="font-size:small;margin-top:8px;float:right;" id="article-links">
+    <script>
+        // 获取当前页面的URL
+        const currentUrl = window.location.href;
+        
+        // 提取URL中的数字部分
+        const urlParts = currentUrl.split('/');
+        const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
+        
+        // 计算上一篇和下一篇文章的数字
+        const prevArticleNumber = currentArticleNumber - 1;
+        const nextArticleNumber = currentArticleNumber + 1;
+        
+        // 生成上一篇和下一篇文章的链接
+        const generateLink = (articleNumber, text) => {
+            if (articleNumber > 0) {
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+            }
+            return `${text}: 无`;
+        };
+        
+        const prevLink = generateLink(prevArticleNumber, '上一篇');
+        const nextLink = generateLink(nextArticleNumber, '下一篇');
+        
+        // 输出结果到指定的div中
+        const linksDiv = document.getElementById('article-links');
+        if (linksDiv) {
+            linksDiv.innerHTML = `${prevLink} | ${nextLink}`;
+        } else {
+            console.log('没有找到ID为article-links的div元素');
+        }
+        </script>
+</div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>

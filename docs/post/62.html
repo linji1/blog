@@ -105,7 +105,39 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><p>【紧急通知】各校长：根据湛江市教育局以及上面文件要求，请未登录“<a href="https://data.ictr.edu.cn/kcjc" rel="nofollow">全国中小学读物管理系统</a>”完成校园课外读物推荐结果备案填报和问卷信息填报工作的单位务必于2025年2月25日前完成填报，湛江已通报我们了。我们也将通报未按时填报完成的单位。联系人：饶晓，联系电话：13542049639。【雷州市市教育局】</p></div>
-<div style="font-size:small;margin-top:8px;float:right;" id="article-links"><script>const currentUrl = window.location.href;const urlParts = currentUrl.split('/');const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);const prevArticleNumber = currentArticleNumber - 1;const nextArticleNumber = currentArticleNumber + 1;const generateLink = (articleNumber, text) => {    if (articleNumber > 0) {        return `<a href=/post/${articleNumber}.html>${text}: ${articleNumber}</a>`;    }    return `${text}: 无`;};const prevLink = generateLink(prevArticleNumber, '上一篇');const nextLink = generateLink(nextArticleNumber, '下一篇');const linksDiv = document.getElementById('article-links');if (linksDiv) {    linksDiv.innerHTML = `${prevLink} | ${nextLink}`;} else {    console.log('没有找到ID为article-links的div元素');}</script></div>
+<div style="font-size:small;margin-top:8px;float:right;" id="article-links">
+    <script>
+        // 获取当前页面的URL
+        const currentUrl = window.location.href;
+        
+        // 提取URL中的数字部分
+        const urlParts = currentUrl.split('/');
+        const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
+        
+        // 计算上一篇和下一篇文章的数字
+        const prevArticleNumber = currentArticleNumber - 1;
+        const nextArticleNumber = currentArticleNumber + 1;
+        
+        // 生成上一篇和下一篇文章的链接
+        const generateLink = (articleNumber, text) => {
+            if (articleNumber > 0) {
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+            }
+            return `${text}: 无`;
+        };
+        
+        const prevLink = generateLink(prevArticleNumber, '上一篇');
+        const nextLink = generateLink(nextArticleNumber, '下一篇');
+        
+        // 输出结果到指定的div中
+        const linksDiv = document.getElementById('article-links');
+        if (linksDiv) {
+            linksDiv.innerHTML = `${prevLink} | ${nextLink}`;
+        } else {
+            console.log('没有找到ID为article-links的div元素');
+        }
+        </script>
+</div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
