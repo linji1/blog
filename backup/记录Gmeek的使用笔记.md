@@ -49,6 +49,20 @@
 或者
 ```html
 `Gmeek-html<div class="core-next-dh-shortcode"><div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="https://linji.org/image.webp style="height: 201.43px;width: 268.72px;""></div>`
+
+```
+
+### 横向二张图
+```html
+<style type="text/css">@media screen and (min-width:901px){.core-next-dh-shortcode{    height: 201.43px;width: 268.72px;border: none;    width: 49%;	}}	@media screen and (max-width:900px){.core-next-dh-shortcode{    width: 100%;	}	}</style>
+<div class="core-next-dh-shortcode"><div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="img.webp" style="height: 559.47px;width: 100%;"></div>
+```
+
+### 横向三张图
+
+```html
+<style type="text/css">@media screen and (min-width:901px){.core-next-dh-shortcode{height: 201.43px;width: 272.039px;border: none;
+overflow: hidden;}.core-next-dh-shortcode img {height: 201.43px;width: 272.039px; }} @media screen and (max-width:900px){.core-next-dh-shortcode{width: 100%;	}.core-next-dh-shortcode img {width: 100%;}}</style><div class="core-next-dh-shortcode" style="border: 0px;"><div class="ImgLazyLoad-circle" style="display: none;"></div><img data-fancybox="gallery" img-src="img.webp"></div>
 ```
 
 ## 3、查看GitHub仓库使用大小
