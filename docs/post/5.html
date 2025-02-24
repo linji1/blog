@@ -154,7 +154,7 @@ gruvbox-dark
 <p>1、固定跟随系统切换目前还没有实现<br>
 2、手动模式目前访问者第一次打开页面是亮主题，是否需要实现第一次打开是暗主题或者是跟随系统？</p>
 <p>文章来源：<a href="https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-liang-an-zhu-ti-pei-zhi-fang-shi.html" rel="nofollow">https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-liang-an-zhu-ti-pei-zhi-fang-shi.html</a></p></div>
-<div style="font-size:small;margin-top:8px;float:right;">文章随意转载</div>
+<div style="font-size:small;margin-top:8px;float:right;" id="article-links"><script>const currentUrl = window.location.href;const urlParts = currentUrl.split('/');const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);const prevArticleNumber = currentArticleNumber - 1;const nextArticleNumber = currentArticleNumber + 1;const generateLink = (articleNumber, text) => {    if (articleNumber > 0) {        return `<a href=/post/${articleNumber}.html>${text}: ${articleNumber}</a>`;    }    return `${text}: 无`;};const prevLink = generateLink(prevArticleNumber, '上一篇');const nextLink = generateLink(nextArticleNumber, '下一篇');const linksDiv = document.getElementById('article-links');if (linksDiv) {    linksDiv.innerHTML = `${prevLink} | ${nextLink}`;} else {    console.log('没有找到ID为article-links的div元素');}</script></div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
