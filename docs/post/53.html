@@ -165,7 +165,39 @@ async function handleRequest(request) {
 <p>1.保护好你的网站信息。免费版 Workers 每天有10w次调用额度，对于个人使用/4-5人使用绰绰有余。不建议公开网址，避免造成财产损失</p>
 <p>2.反向代理不要用于 IP 检测较为严格的网站，容易封号。例如不能用于 OpenAI。</p>
 <p>3.禁止用于非法用途。此脚本仅用为 Github 开源镜像加速</p></div>
-<div style="font-size:small;margin-top:8px;float:right;" id="article-links"><script>const currentUrl = window.location.href;const urlParts = currentUrl.split('/');const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);const prevArticleNumber = currentArticleNumber - 1;const nextArticleNumber = currentArticleNumber + 1;const generateLink = (articleNumber, text) => {    if (articleNumber > 0) {        return `<a href=/post/${articleNumber}.html>${text}: ${articleNumber}</a>`;    }    return `${text}: 无`;};const prevLink = generateLink(prevArticleNumber, '上一篇');const nextLink = generateLink(nextArticleNumber, '下一篇');const linksDiv = document.getElementById('article-links');if (linksDiv) {    linksDiv.innerHTML = `${prevLink} | ${nextLink}`;} else {    console.log('没有找到ID为article-links的div元素');}</script></div>
+<div style="font-size:small;margin-top:8px;float:right;" id="article-links">
+    <script>
+        // 获取当前页面的URL
+        const currentUrl = window.location.href;
+        
+        // 提取URL中的数字部分
+        const urlParts = currentUrl.split('/');
+        const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
+        
+        // 计算上一篇和下一篇文章的数字
+        const prevArticleNumber = currentArticleNumber - 1;
+        const nextArticleNumber = currentArticleNumber + 1;
+        
+        // 生成上一篇和下一篇文章的链接
+        const generateLink = (articleNumber, text) => {
+            if (articleNumber > 0) {
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+            }
+            return `${text}: 无`;
+        };
+        
+        const prevLink = generateLink(prevArticleNumber, '上一篇');
+        const nextLink = generateLink(nextArticleNumber, '下一篇');
+        
+        // 输出结果到指定的div中
+        const linksDiv = document.getElementById('article-links');
+        if (linksDiv) {
+            linksDiv.innerHTML = `${prevLink} | ${nextLink}`;
+        } else {
+            console.log('没有找到ID为article-links的div元素');
+        }
+        </script>
+</div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>

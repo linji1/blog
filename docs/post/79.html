@@ -203,7 +203,39 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 <p>七里村：有周、李两姓，从山尾村分出，原址在覃斗镇铺前村北，1969 年因建平南水库整村搬迁新建于此。</p>
 <p>参考资料：《湛江村庄简史-雷州市卷》</p>
 <p><details style="text-align: center;"><summary style="font-size: 16px;padding-bottom: 20px;text-align: center;">雷州市各镇村庄简史及姓氏来源（目录）</summary><p><a href="/post/64.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市<strong style="color: red;font-size: 22px;"> 杨家 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/65.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">附城 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/66.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">白沙 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/67.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">沈塘 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/68.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">东里 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/69.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">松竹 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/70.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">客路 </strong>镇村庄简史姓氏来源上</a></p><p><a href="/post/71.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">客路 </strong>镇村庄简史姓氏来源下</a></p><p><a href="/post/72.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">唐家 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/73.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">雷高 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/74.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">调风 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/75.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">龙门 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/76.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">英利 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/77.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">南兴 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/78.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">北和 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/79.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">覃斗 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/80.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">企水 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/81.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">乌石 </strong>镇村庄简史及姓氏来源</a></p><p><a href="/post/82.html" target="_blank" style="color: black;font-size: 18px;">💠雷州市 <strong style="color: red;font-size: 22px;">纪家 </strong>镇村庄简史及姓氏来源</a></p></details></p></div>
-<div style="font-size:small;margin-top:8px;float:right;" id="article-links"><script>const currentUrl = window.location.href;const urlParts = currentUrl.split('/');const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);const prevArticleNumber = currentArticleNumber - 1;const nextArticleNumber = currentArticleNumber + 1;const generateLink = (articleNumber, text) => {    if (articleNumber > 0) {        return `<a href=/post/${articleNumber}.html>${text}: ${articleNumber}</a>`;    }    return `${text}: 无`;};const prevLink = generateLink(prevArticleNumber, '上一篇');const nextLink = generateLink(nextArticleNumber, '下一篇');const linksDiv = document.getElementById('article-links');if (linksDiv) {    linksDiv.innerHTML = `${prevLink} | ${nextLink}`;} else {    console.log('没有找到ID为article-links的div元素');}</script></div>
+<div style="font-size:small;margin-top:8px;float:right;" id="article-links">
+    <script>
+        // 获取当前页面的URL
+        const currentUrl = window.location.href;
+        
+        // 提取URL中的数字部分
+        const urlParts = currentUrl.split('/');
+        const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
+        
+        // 计算上一篇和下一篇文章的数字
+        const prevArticleNumber = currentArticleNumber - 1;
+        const nextArticleNumber = currentArticleNumber + 1;
+        
+        // 生成上一篇和下一篇文章的链接
+        const generateLink = (articleNumber, text) => {
+            if (articleNumber > 0) {
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+            }
+            return `${text}: 无`;
+        };
+        
+        const prevLink = generateLink(prevArticleNumber, '上一篇');
+        const nextLink = generateLink(nextArticleNumber, '下一篇');
+        
+        // 输出结果到指定的div中
+        const linksDiv = document.getElementById('article-links');
+        if (linksDiv) {
+            linksDiv.innerHTML = `${prevLink} | ${nextLink}`;
+        } else {
+            console.log('没有找到ID为article-links的div元素');
+        }
+        </script>
+</div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
