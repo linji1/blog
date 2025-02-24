@@ -266,6 +266,43 @@ data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%
 
 下面是红色波浪线：
 data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23ff3300' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E</pre></div>
+<h2>10、给文章页右下角的 "bottomText":"", 地方加上 “上一篇和下一篇文章的链接”</h2>
+<p>修改 Gmeek/templates/post.html 第100行，将第二段代码 替换 第一段代码，要记得加上 id="article-links"</p>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">style</span>="<span class="pl-s">font-size:small;margin-top:8px;float:right;</span>" <span class="pl-c1">id</span>="<span class="pl-s">article-links</span>"<span class="pl-kos">&gt;</span>{{ blogBase['bottomText'] }}
+<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">style</span>="<span class="pl-s">font-size:small;margin-top:8px;float:right;</span>" <span class="pl-c1">id</span>="<span class="pl-s">article-links</span>"<span class="pl-kos">&gt;</span>{{ blogBase['bottomText'] }}
+    <span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+        <span class="pl-c">// 获取当前页面的URL</span>
+        <span class="pl-k">const</span> <span class="pl-s1">currentUrl</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-c1">location</span><span class="pl-kos">.</span><span class="pl-c1">href</span><span class="pl-kos">;</span>
+        
+        <span class="pl-c">// 提取URL中的数字部分</span>
+        <span class="pl-k">const</span> <span class="pl-s1">urlParts</span> <span class="pl-c1">=</span> <span class="pl-s1">currentUrl</span><span class="pl-kos">.</span><span class="pl-en">split</span><span class="pl-kos">(</span><span class="pl-s">'/'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+        <span class="pl-k">const</span> <span class="pl-s1">currentArticleNumber</span> <span class="pl-c1">=</span> <span class="pl-en">parseInt</span><span class="pl-kos">(</span><span class="pl-s1">urlParts</span><span class="pl-kos">[</span><span class="pl-s1">urlParts</span><span class="pl-kos">.</span><span class="pl-c1">length</span> <span class="pl-c1">-</span> <span class="pl-c1">1</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-en">split</span><span class="pl-kos">(</span><span class="pl-s">'.'</span><span class="pl-kos">)</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-c1">10</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+        
+        <span class="pl-c">// 计算上一篇和下一篇文章的数字</span>
+        <span class="pl-k">const</span> <span class="pl-s1">prevArticleNumber</span> <span class="pl-c1">=</span> <span class="pl-s1">currentArticleNumber</span> <span class="pl-c1">-</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+        <span class="pl-k">const</span> <span class="pl-s1">nextArticleNumber</span> <span class="pl-c1">=</span> <span class="pl-s1">currentArticleNumber</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+        
+        <span class="pl-c">// 生成上一篇和下一篇文章的链接</span>
+        <span class="pl-k">const</span> <span class="pl-en">generateLink</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">articleNumber</span><span class="pl-kos">,</span> <span class="pl-s1">text</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+            <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">articleNumber</span> <span class="pl-c1">&gt;</span> <span class="pl-c1">0</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+                <span class="pl-k">return</span> <span class="pl-s">`&lt;a href="/post/<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">articleNumber</span><span class="pl-kos">}</span></span>.html" style="color: black;"&gt;<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">text</span><span class="pl-kos">}</span></span>: <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">articleNumber</span><span class="pl-kos">}</span></span>&lt;/a&gt;`</span><span class="pl-kos">;</span>
+            <span class="pl-kos">}</span>
+            <span class="pl-k">return</span> <span class="pl-s">`<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">text</span><span class="pl-kos">}</span></span>: 无`</span><span class="pl-kos">;</span>
+        <span class="pl-kos">}</span><span class="pl-kos">;</span>
+        
+        <span class="pl-k">const</span> <span class="pl-s1">prevLink</span> <span class="pl-c1">=</span> <span class="pl-en">generateLink</span><span class="pl-kos">(</span><span class="pl-s1">prevArticleNumber</span><span class="pl-kos">,</span> <span class="pl-s">'上一篇'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+        <span class="pl-k">const</span> <span class="pl-s1">nextLink</span> <span class="pl-c1">=</span> <span class="pl-en">generateLink</span><span class="pl-kos">(</span><span class="pl-s1">nextArticleNumber</span><span class="pl-kos">,</span> <span class="pl-s">'下一篇'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+        
+        <span class="pl-c">// 输出结果到指定的div中</span>
+        <span class="pl-k">const</span> <span class="pl-s1">linksDiv</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">'article-links'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">linksDiv</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+            <span class="pl-s1">linksDiv</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">=</span> <span class="pl-s">`<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">prevLink</span><span class="pl-kos">}</span></span> | <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">nextLink</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">;</span>
+        <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+            <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'没有找到ID为article-links的div元素'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+        <span class="pl-kos">}</span>
+        <span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></pre></div>
 <hr>
 <h3>下面是转载内容</h3>
 <p><a href="https://github.com/Meekdai/Gmeek">Gmeek</a> 博客完全依托 Github, 提供域名, 无需服务器, 比起传统的服务器建站更方便快捷.</p>
