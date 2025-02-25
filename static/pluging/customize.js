@@ -95,7 +95,7 @@ a {
 .markdown-body a:hover {
     background-size: 20px auto;
 }
-    
+
 a:hover {
   text-decoration: none;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23333' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E") repeat-x 0 100%;
@@ -191,12 +191,12 @@ body {
 
 	@media screen and (min-width: 1028px) and (max-width:99999px) {
 	#divdown2 {
-	margin-top: -20px;text-align: center;margin-bottom: 0px;font-size: clamp(1rem, 0.489rem + 1.5vw, 100rem);line-height: 1.8em;display: -webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;display: -moz-box;-moz-box-orient: horizontal;-moz-box-pack: center;-moz-box-align: center;display: -o-box;-o-box-orient: horizontal;-o-box-pack: center;-o-box-align: center;display: -ms-box;-ms-box-orient: horizontal;-ms-box-pack: center;-ms-box-align: center;
+	margin-top: -20px;text-align: center;margin-bottom: 0px;font-size: clamp(1rem, 0.489rem + 1.42vw, 100rem);line-height: 1.8em;display: -webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;display: -moz-box;-moz-box-orient: horizontal;-moz-box-pack: center;-moz-box-align: center;display: -o-box;-o-box-orient: horizontal;-o-box-pack: center;-o-box-align: center;display: -ms-box;-ms-box-orient: horizontal;-ms-box-pack: center;-ms-box-align: center;
 	}
 	}
 	@media screen and (min-width: 900px) and (max-width:1028px) {
 	#divdown2 {
-	margin-top: -20px;text-align: center;margin-bottom: 0px;font-size: clamp(1rem, 0.489rem + 1.5vw, 100rem);line-height: 1.8em;display: -webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;display: -moz-box;-moz-box-orient: horizontal;-moz-box-pack: center;-moz-box-align: center;display: -o-box;-o-box-orient: horizontal;-o-box-pack: center;-o-box-align: center;display: -ms-box;-ms-box-orient: horizontal;-ms-box-pack: center;-ms-box-align: center;
+	margin-top: -20px;text-align: center;margin-bottom: 0px;font-size: clamp(1rem, 0.489rem + 1.42vw, 100rem);line-height: 1.8em;display: -webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;display: -moz-box;-moz-box-orient: horizontal;-moz-box-pack: center;-moz-box-align: center;display: -o-box;-o-box-orient: horizontal;-o-box-pack: center;-o-box-align: center;display: -ms-box;-ms-box-orient: horizontal;-ms-box-pack: center;-ms-box-align: center;
 	}
 	}
 	@media screen and (max-width:900px){
