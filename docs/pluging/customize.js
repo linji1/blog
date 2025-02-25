@@ -54,7 +54,8 @@ body {
 }
 
 #functionBtn {
-    gap: 10px;
+    gap: 6px;
+    margin: 20px 0 10px 0;
 }
 
 #functionBtn div:first-of-type {
