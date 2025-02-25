@@ -158,7 +158,7 @@ function showList(labelsCount){
         let showLabels = document.createElement("button");
         showLabels.setAttribute("class", "Label");
         showLabels.setAttribute("style", "background-color:" + jsonData['labelColorDict'][label]+";padding:4px;");
-        showLabels.innerHTML="&nbsp;&nbsp;"+label+" ";
+        showLabels.innerHTML="&nbsp;"+label+" ";
         showLabels.setAttribute("onclick", "javascript:updateShowTag('" + label + "');");
 
         let LabelNum=document.createElement("span");
