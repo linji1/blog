@@ -88,11 +88,6 @@ body {
 	to {background-position: -20px 100%;}
 }
 
-a {
-  color: #000;
-  text-decoration: none;
-}
-
 .markdown-body a:hover {
     background-size: 20px auto;
 }
