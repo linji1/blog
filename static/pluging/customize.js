@@ -21,7 +21,7 @@ body {
 }
 
 #taglabel .Label {
-  width: 110px;
+  width: 108px;
 }
 
 .SideNav-item:hover {
