@@ -20,6 +20,10 @@ body {
     min-height: 100vh;
 }
 
+#content {
+    margin-top: -10px;
+}
+
 .SideNav-item:hover {
     transform: scale(1.02);
 }
