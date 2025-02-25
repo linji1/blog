@@ -17,10 +17,10 @@
     "urlMode":"issue",
     "showPostSource":1,
     "needComment":1,
-    "themeMode":"fix",
+    "themeMode":"manual",
     "dayTheme":"light",
-    "nightTheme":"github-light",
-    "allHead":"<script src='/pluging/GmeekVercount_uv.min.js'></script><script src='/pluging/NumPagination.js'></script><script async src='/pluging/customize.js'></script><script src='/pluging/ArticleJs.min.js'></script><script src='/live2d/autoload.js'></script><script defer src='/pluging/backtop.js'></script>",
+    "nightTheme":"dark",
+    "allHead":"<script defer src='/pluging/backtop.js'></script><script src='/pluging/ArticleJs.min.js'></script><script src='/live2d/autoload.js'></script><script src='/pluging/NumPagination.js'></script><script src='/pluging/GmeekVercount_uv.min.js'></script><script src='/pluging/customize.js'></script>",
     "script":"<script src='/fancyapps/dist/fancybox/fancybox.umd.js'></script>",
     "GMEEK_VERSION":"main"
 }
