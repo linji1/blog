@@ -195,12 +195,12 @@ body {
 
 	@media screen and (min-width: 1028px) and (max-width:99999px) {
 	#divdown2 {
-	margin-top: -20px;text-align: center;margin-bottom: 0px;font-size: clamp(1rem, 0.489rem + 1.42vw, 100rem);line-height: 1.8em;display: -webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;display: -moz-box;-moz-box-orient: horizontal;-moz-box-pack: center;-moz-box-align: center;display: -o-box;-o-box-orient: horizontal;-o-box-pack: center;-o-box-align: center;display: -ms-box;-ms-box-orient: horizontal;-ms-box-pack: center;-ms-box-align: center;
+	margin-top: -20px;text-align: center;margin-bottom: 0px;font-size: clamp(1rem, 0.489rem + 1.41vw, 100rem);line-height: 1.8em;display: -webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;display: -moz-box;-moz-box-orient: horizontal;-moz-box-pack: center;-moz-box-align: center;display: -o-box;-o-box-orient: horizontal;-o-box-pack: center;-o-box-align: center;display: -ms-box;-ms-box-orient: horizontal;-ms-box-pack: center;-ms-box-align: center;
 	}
 	}
 	@media screen and (min-width: 900px) and (max-width:1028px) {
 	#divdown2 {
-	margin-top: -20px;text-align: center;margin-bottom: 0px;font-size: clamp(1rem, 0.489rem + 1.42vw, 100rem);line-height: 1.8em;display: -webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;display: -moz-box;-moz-box-orient: horizontal;-moz-box-pack: center;-moz-box-align: center;display: -o-box;-o-box-orient: horizontal;-o-box-pack: center;-o-box-align: center;display: -ms-box;-ms-box-orient: horizontal;-ms-box-pack: center;-ms-box-align: center;
+	margin-top: -20px;text-align: center;margin-bottom: 0px;font-size: clamp(1rem, 0.489rem + 1.41vw, 100rem);line-height: 1.8em;display: -webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;display: -moz-box;-moz-box-orient: horizontal;-moz-box-pack: center;-moz-box-align: center;display: -o-box;-o-box-orient: horizontal;-o-box-pack: center;-o-box-align: center;display: -ms-box;-ms-box-orient: horizontal;-ms-box-pack: center;-ms-box-align: center;
 	}
 	}
 	@media screen and (max-width:900px){
