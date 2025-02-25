@@ -118,14 +118,14 @@ https://gcore.jsdelivr.net/gh/linji1/AutoXuefa@main/
     "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
     "i18n":"CN",
     "UTC":8,
-    "bottomText":"文章随意转载",
+    "bottomText":"",
     "urlMode":"issue",
     "showPostSource":1,
     "needComment":1,
     "themeMode":"fix",
     "dayTheme":"light",
     "nightTheme":"github-light",
-    "allHead":"<script src='/pluging/GmeekVercount_uv.min.js'></script><script src='/pluging/NumPagination.js'></script><script async src='/pluging/customize.js'></script><script src='/pluging/ArticleJs.min.js'></script><script src='/live2d/autoload.js'></script><script defer src='/pluging/backtop.js'></script>",
+    "allHead":"<script defer src='/pluging/backtop.js'></script><script src='/pluging/ArticleJs.min.js'></script><script src='/live2d/autoload.js'></script><script src='/pluging/NumPagination.js'></script><script src='/pluging/GmeekVercount_uv.min.js'></script><script src='/pluging/customize.js'></script>",
     "script":"<script src='/fancyapps/dist/fancybox/fancybox.umd.js'></script>",
     "GMEEK_VERSION":"main"
 }
@@ -152,7 +152,7 @@ https://gcore.jsdelivr.net/gh/linji1/AutoXuefa@main/
 ## 8、段落缩进 2 中文格
 
 ```html
-`Gmeek-html<div id="divnone" class="divnone"><style type="text/css">.markdown-body p {text-indent: 40px;}.divnone {display: none;}</style></div>`
+`Gmeek-html<style type="text/css">.markdown-body p {text-indent: 40px;}</style>`
 ```
 ## 9、给链接加上波浪线样式
 
