@@ -71,6 +71,10 @@ body {
         font-size: 28px;
 }
 
+#taglabel {
+    text-align: center;
+}
+    
 #footer {
 	margin-top: 10px;
 }
