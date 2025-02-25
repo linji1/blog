@@ -20,6 +20,10 @@ body {
     min-height: 100vh;
 }
 
+#taglabel .Label {
+  width: 110px;
+}
+
 .SideNav-item:hover {
     transform: scale(1.02);
 }
