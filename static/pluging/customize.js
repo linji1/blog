@@ -18,7 +18,7 @@ body {
     min-width: auto;
     border-radius: 0px;
     min-height: 100vh;
-    max-width: 1028px;
+    max-width: 1024px;
 }
 
 .SideNav-item:hover {
