@@ -74,7 +74,7 @@ body {
 #taglabel {
     text-align: center;
 }
-
+    
 #footer {
 	margin-top: 10px;
 }
@@ -103,20 +103,6 @@ a:hover {
   animation: waveMove 1s infinite linear;
 }
 
-.ImgLazyLoad-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    border-top-color: #636767;
-    animation: spin 1s linear infinite;
-    z-index: 10;
-}
-    
 /* 网站导航开始 */
    .core-next-dh-shortcode {
     display: inline-block;
