@@ -224,7 +224,7 @@ Math.ceil()    “向上取整”， 小数部分直接舍去，并向正数部�
         // 生成上一篇和下一篇文章的链接
         const generateLink = (articleNumber, text) => {
             if (articleNumber > 0) {
-                return `<a href="post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
             }
             return `${text}: 无`;
         };

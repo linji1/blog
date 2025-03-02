@@ -152,7 +152,7 @@ URL Protocols：URL 协议是微软预留的特殊关联，例如启动计算器
         // 生成上一篇和下一篇文章的链接
         const generateLink = (articleNumber, text) => {
             if (articleNumber > 0) {
-                return `<a href="post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
             }
             return `${text}: 无`;
         };

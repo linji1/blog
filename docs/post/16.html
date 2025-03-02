@@ -333,7 +333,7 @@ https://raw.githubusercontent.com/[GitHub用户名]/[仓库名]/[标签或分支
         // 生成上一篇和下一篇文章的链接
         const generateLink = (articleNumber, text) => {
             if (articleNumber > 0) {
-                return `<a href="post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
             }
             return `${text}: 无`;
         };
