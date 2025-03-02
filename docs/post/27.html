@@ -390,7 +390,7 @@ v:(1)杂粮与大米按1:2的比例烹调即可。不建议只吃杂粮。(2)不
         // 生成上一篇和下一篇文章的链接
         const generateLink = (articleNumber, text) => {
             if (articleNumber > 0) {
-                return `<a href="post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
             }
             return `${text}: 无`;
         };

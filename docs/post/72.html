@@ -253,7 +253,7 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
         // 生成上一篇和下一篇文章的链接
         const generateLink = (articleNumber, text) => {
             if (articleNumber > 0) {
-                return `<a href="post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
             }
             return `${text}: 无`;
         };
