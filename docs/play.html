@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>视频播放</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  body {
+    background: #000;
+    margin: 20px auto;
+    /* line-height: 100vh; */
+    text-align: center;
+    overflow: hidden;
+  }
+
+  #video {
+    width: 80%;
+    display: inline-block;
+    outline: none;
+
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+
+  }
+</style>
+
+<body>
+  <div>
+    <video id="video" src="" controls="true" controlslist="nodownload" autoplay="autoplay"></video>
+    <p id="title"></p>
+  </div>
+  <script>
+    function isWeiXin() {
+      var ua = window.navigator.userAgent.toLowerCase();
+      if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    function getUrlParam(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) return unescape(r[2]); return null;
+    }
+
+
+    function isFullUrl(link) {
+      return link && (link.indexOf('//') === 0 || link.indexOf('https://') === 0 || link.indexOf('http://') === 0);
+    }
+    var yxUrl = "";
+    var url = getUrlParam('v');
+    if (!isFullUrl(url)) {
+      url = yxUrl + url
+    }
+
+    var video = document.getElementById('video');
+    video.setAttribute('src', url);
+
+    if (isWeiXin()) {
+      var title = document.getElementById('title');
+      title.innerHTML = '请手动点击播放按钮'
+      title.onclick = function () {
+        video.play();
+      }
+    }
+  </script>
+
+</html>
