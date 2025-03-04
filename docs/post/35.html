@@ -145,28 +145,45 @@ B，A，A，A，B，B，A，A</p>
 <div class="ImgLazyLoad-circle"></div>
 <img data-fancybox="gallery" img-src="/assets//%E7%BB%A7%E7%BB%AD%E6%95%99%E8%82%B2/%E5%8F%8C%E8%9E%8D%E5%8F%8C%E5%88%9B.webp"></div>
 <div style="font-size:small;margin-top:8px;float:right;" id="article-links">
-    <script>
-        // 获取当前页面的URL
-        const currentUrl = window.location.href;
-        
-        // 提取URL中的数字部分
-        const urlParts = currentUrl.split('/');
-        const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
-        
-        // 计算上一篇和下一篇文章的数字
-        const prevArticleNumber = currentArticleNumber - 1;
-        const nextArticleNumber = currentArticleNumber + 1;
-        
-        // 生成上一篇和下一篇文章的链接
-        const generateLink = (articleNumber, text) => {
-            if (articleNumber > 0) {
-                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
-            }
-            return `${text}: 无`;
-        };
-        
-        const prevLink = generateLink(prevArticleNumber, '上一篇');
-        const nextLink = generateLink(nextArticleNumber, '下一篇');
+<script>
+    // 获取当前页面的URL
+    const currentUrl = window.location.href;
+    
+    // 提取URL中的数字部分
+    const urlParts = currentUrl.split('/');
+    const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
+    
+    // 计算上一篇和下一篇文章的数字
+    const prevArticleNumber = currentArticleNumber - 1;
+    const nextArticleNumber = currentArticleNumber + 1;
+    
+    // 检查文章是否存在
+    const checkArticleExists = (articleNumber) => {
+        // 这里可以使用AJAX请求或其他方法检查文件是否存在
+        // 示例：使用AJAX请求检查文件是否存在
+        return new Promise((resolve) => {
+            const xhr = new XMLHttpRequest();
+            xhr.open('HEAD', `/post/${articleNumber}.html`, true);
+            xhr.onload = () => resolve(xhr.status === 200);
+            xhr.onerror = () => resolve(false);
+            xhr.send();
+        });
+    };
+
+    // 生成上一篇和下一篇文章的链接
+    const generateLink = (articleNumber, text) => {
+        if (articleNumber > 0) {
+            return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+        }
+        return `${text}: 无`;
+    };
+
+    // 生成上一篇链接
+    const prevLink = generateLink(prevArticleNumber, '上一篇');
+
+    // 检查下一篇是否存在并生成链接
+    checkArticleExists(nextArticleNumber).then((exists) => {
+        const nextLink = exists ? generateLink(nextArticleNumber, '下一篇') : '下一篇: 无';
         
         // 输出结果到指定的div中
         const linksDiv = document.getElementById('article-links');
@@ -175,7 +192,8 @@ B，A，A，A，B，B，A，A</p>
         } else {
             console.log('没有找到ID为article-links的div元素');
         }
-        </script>
+    });
+</script>
 </div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>

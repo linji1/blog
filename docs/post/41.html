@@ -105,28 +105,45 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 <div class="markdown-body" id="postBody"><p>【通知】各学校：为加强教师管理，现开展教师基本情况调查，请各学校(公办幼儿园)赶于2月20月前将《2025年春季学校教师基本情况调查表》纸质版报送管理组，电子版发到校长群。【2025.02.12】</p>
 <p><p style="text-align: center; "><b>2025年春季学校教师基本情况调查表</b></p><table border="1" style="border-collapse: collapse; width: 100%;font-size: 14px;">	<tbody><tr><td colspan="9">填报学校（盖章）：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;填报人：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;负责人（书记、校长签名）：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;填报时间：</td></tr><tr><td style="text-align:center;">序号</td><td style="text-align:center;">姓名</td><td style="text-align:center;">性别</td><td style="text-align:center;">身份证号码</td><td style="text-align:center;">教师资格种类</td><td style="text-align:center;">职称</td><td style="text-align:center;">任教年级及科目</td><td style="text-align:center;">职务</td><td style="text-align:center;">教师性质</td></tr><tr><td style="text-align:center;">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="text-align:center;">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="text-align:center;">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="text-align:center;">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="text-align:center;">5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="text-align:center;">6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="text-align:center;">7</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="text-align:center;">8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="text-align:center;">9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td colspan="9">说明：1.如实填写，不得弄虚作假；2.教师资格种类填写：幼儿园、小学、初中、高中、中职；3.职称填写：学段+科目+等级，如初中语文一级；4.任教年级及科目如实填写，不任课教师要写明原因，如长期病假、产假、跟岗等；5.职务填写：校长、副校长、中层正职、中层副职、教师；6.教师性质填写：公办、临聘、银龄等；7.此表调查对象是所有任教教师，各学校赶于2月21月前将纸质版报送我局人事股（4）室，电子版发至在岗管理交流群“群报数”小程序，中心小学负责汇总辖区小学、公办幼儿园上报。</td></tr></tbody></table></p></div>
 <div style="font-size:small;margin-top:8px;float:right;" id="article-links">
-    <script>
-        // 获取当前页面的URL
-        const currentUrl = window.location.href;
-        
-        // 提取URL中的数字部分
-        const urlParts = currentUrl.split('/');
-        const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
-        
-        // 计算上一篇和下一篇文章的数字
-        const prevArticleNumber = currentArticleNumber - 1;
-        const nextArticleNumber = currentArticleNumber + 1;
-        
-        // 生成上一篇和下一篇文章的链接
-        const generateLink = (articleNumber, text) => {
-            if (articleNumber > 0) {
-                return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
-            }
-            return `${text}: 无`;
-        };
-        
-        const prevLink = generateLink(prevArticleNumber, '上一篇');
-        const nextLink = generateLink(nextArticleNumber, '下一篇');
+<script>
+    // 获取当前页面的URL
+    const currentUrl = window.location.href;
+    
+    // 提取URL中的数字部分
+    const urlParts = currentUrl.split('/');
+    const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
+    
+    // 计算上一篇和下一篇文章的数字
+    const prevArticleNumber = currentArticleNumber - 1;
+    const nextArticleNumber = currentArticleNumber + 1;
+    
+    // 检查文章是否存在
+    const checkArticleExists = (articleNumber) => {
+        // 这里可以使用AJAX请求或其他方法检查文件是否存在
+        // 示例：使用AJAX请求检查文件是否存在
+        return new Promise((resolve) => {
+            const xhr = new XMLHttpRequest();
+            xhr.open('HEAD', `/post/${articleNumber}.html`, true);
+            xhr.onload = () => resolve(xhr.status === 200);
+            xhr.onerror = () => resolve(false);
+            xhr.send();
+        });
+    };
+
+    // 生成上一篇和下一篇文章的链接
+    const generateLink = (articleNumber, text) => {
+        if (articleNumber > 0) {
+            return `<a href="/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+        }
+        return `${text}: 无`;
+    };
+
+    // 生成上一篇链接
+    const prevLink = generateLink(prevArticleNumber, '上一篇');
+
+    // 检查下一篇是否存在并生成链接
+    checkArticleExists(nextArticleNumber).then((exists) => {
+        const nextLink = exists ? generateLink(nextArticleNumber, '下一篇') : '下一篇: 无';
         
         // 输出结果到指定的div中
         const linksDiv = document.getElementById('article-links');
@@ -135,7 +152,8 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
         } else {
             console.log('没有找到ID为article-links的div元素');
         }
-        </script>
+    });
+</script>
 </div>
 
 <button class="btn btn-block" type="button" id="cmButton">评论</button>
