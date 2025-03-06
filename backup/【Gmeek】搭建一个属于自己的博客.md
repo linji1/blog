@@ -17,11 +17,11 @@ https://github.com/Meekdai/Gmeek
 
 在Gmeek仓库的readme中点击`通过模板创建仓库`
 
-![创建仓库](/assets/file/2025/02/e860fa26fc02859344a77.webp)
+![创建仓库](/assets1/file/2025/02/e860fa26fc02859344a77.webp)
 
 会打开如下网页：
 
-![](/assets/file/2025/02/c4fc9e5406082ab8eaf02.webp)
+![](/assets1/file/2025/02/c4fc9e5406082ab8eaf02.webp)
 
 在`Repository name`处填写`github账号的名字.github.io`
 
@@ -32,43 +32,43 @@ https://github.com/Meekdai/Gmeek
 
 最后点击`create repository`完成仓库创建！
 
-![](/assets/file/2025/02/e7a2658c391bb245ff30f.webp)
+![](/assets1/file/2025/02/e7a2658c391bb245ff30f.webp)
 
 ## 二、配置仓库
 
 ### 1. 进入刚刚创建完成的仓库，点击`settings`
 
-![](/assets/file/2025/02/edc56fb31b0510b441497.webp)
+![](/assets1/file/2025/02/edc56fb31b0510b441497.webp)
 
 ### 2. 进入`pages`分页
 
-![](/assets/file/2025/02/89198898a426807f1ed19.webp)
+![](/assets1/file/2025/02/89198898a426807f1ed19.webp)
 
 ### 3. 将构建方式改为`github actions`
 
-![](/assets/file/2025/02/5adfdac21ba9da137f6e4.webp)
+![](/assets1/file/2025/02/5adfdac21ba9da137f6e4.webp)
 
 > [!NOTE]
 > 关于自定义域名，可以在下方的`custom domain`中填写，需要一个二级域名，并添加cname解析，指向`github账号的名字.github.io`
 
-![](/assets/file/2025/02/8f04f09bdcdf8fd81cd6f.webp)
+![](/assets1/file/2025/02/8f04f09bdcdf8fd81cd6f.webp)
 
-![](/assets/file/2025/02/98294a9f9b913b9caf96b.webp)
+![](/assets1/file/2025/02/98294a9f9b913b9caf96b.webp)
 
 
 ### 4. 进入`issues`页面，然后点击`new issue`
 
-![](/assets/file/2025/02/087b466ec09136a170fa9.webp)
+![](/assets1/file/2025/02/087b466ec09136a170fa9.webp)
 
 ### 5. 随意填入标题和正文，随意添加一个`标签（lable）`，然后点击`submit new issue`
 
-![](/assets/file/2025/02/7bc0d98eed8e4fe84484c.webp)
+![](/assets1/file/2025/02/7bc0d98eed8e4fe84484c.webp)
 
 此时在`actions`界面中可以看到正在构建，等待一分钟左右直到构建完成
 
 ### 6. 回到`code`界面，此时域名已经生成
 
-![](/assets/file/2025/02/68b636609b57df758edc2.webp)
+![](/assets1/file/2025/02/68b636609b57df758edc2.webp)
 
 > 如果没添加自定义域名，域名会是xxx.github.io
 
@@ -78,11 +78,11 @@ https://github.com/Meekdai/Gmeek
 
 在code界面点击`config.json`
 
-![](/assets/file/2025/02/4dcf3ca2c7fbc0f740eba.webp)
+![](/assets1/file/2025/02/4dcf3ca2c7fbc0f740eba.webp)
 
 点击钢笔图案开始编辑
 
-![](/assets/file/2025/02/ca56f9adf974763b3d6ae.webp)
+![](/assets1/file/2025/02/ca56f9adf974763b3d6ae.webp)
 
 ### 2. [配置参数](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)
 
@@ -173,7 +173,7 @@ https://github.com/Meekdai/Gmeek
 
 进入`actions`界面，点击`build gmeek`，选择`run workflow`并点击
 
-![](/assets/file/2025/02/6fc709491a266dee0d820.webp)
+![](/assets1/file/2025/02/6fc709491a266dee0d820.webp)
 
 等待一分钟左右直到完成
 
