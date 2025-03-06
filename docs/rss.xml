@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>老林笔记</title><link>https://linji1.github.io</link><description>&lt;script&gt;document.getElementById('subTitle').innerHTML = `&lt;div id='divdown2' title=''&gt;&lt;/div&gt;`;var interval = 1000; function ShowCountDown(year,month,day,divname) { var now = new Date(); var endDate = new Date(year, month-1, day); var leftTime=endDate.getTime()-now.getTime(); var leftsecond = parseInt(leftTime/1000); var day1=Math.floor(leftsecond/(60*60*24)); var hour=Math.floor((leftsecond-day1*24*60*60)/3600); var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); var cc = document.getElementById(divname); cc.innerHTML = `暑假时间:`+year+`年`+month+`月`+day+`日&lt;br&gt;距今:`+day1+`天`+hour+`小时`+minute+`分`+second+`秒`; } window.setInterval(function(){ShowCountDown(2025,7,5,'divdown2');}, interval);&lt;/script&gt;</description><copyright>老林笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/blog/avatar.svg</url><title>avatar</title><link>https://linji1.github.io</link></image><lastBuildDate>Thu, 06 Mar 2025 22:18:56 +0000</lastBuildDate><managingEditor>老林笔记</managingEditor><ttl>60</ttl><webMaster>老林笔记</webMaster><item><title>✅202501012-填写《2025年湛江市普通学校（幼儿园）随班就读特需学生情况调查表》</title><link>post/100.html</link><description>【通知】各小学、幼儿园：请根据2024年10月填报的学年初报表中的随班就读残疾儿童人数，填写微信上面的《2025年湛江市普通学校（幼儿园）随班就读特需学生情况调查表》，于3月5日下午放学前发到后勤工作群。</description><guid isPermaLink="true">post/100.html</guid><pubDate>Tue, 04 Mar 2025 13:11:25 +0000</pubDate></item><item><title>【通知】雷州附城中心小学晨读、午学及课后服务放学时间</title><link>post/99.html</link><description>为进一步优化学校教学管理，合理安排学生的学习时间，确保教育教学工作有序开展，经学校研究决定，现对晨读、午学及课后服务放学时间进行调整。</description><guid isPermaLink="true">post/99.html</guid><pubDate>Tue, 04 Mar 2025 09:51:49 +0000</pubDate></item><item><title>【通知】2025年春季学期杨家镇中心小学教学教研工作行事历</title><link>post/98.html</link><description>`Gmeek-html&lt;center&gt;&lt;table border='1'style='border-collapse: collapse;font-size: 14px;'&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='width: 55px;'&gt;月份&lt;/td&gt;&lt;td&gt;周次&lt;/td&gt;&lt;td style='text-align: center;'&gt;主要工作安排&lt;/td&gt;&lt;td style='width: 55px;'&gt;备注&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;二&lt;/td&gt;&lt;td&gt;1至3&lt;/td&gt;&lt;td&gt;1、讨论制定学校教学、教研计划&lt;br/&gt;2、开学工作检查，下乡视导&lt;br/&gt;3、组织教师参加新教材培训&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;三&lt;/td&gt;&lt;td&gt;4至8&lt;/td&gt;&lt;td&gt;1、下乡视导。</description><guid isPermaLink="true">post/98.html</guid><pubDate>Tue, 04 Mar 2025 09:47:59 +0000</pubDate></item><item><title>【通知】2025年春季学期-杨家镇中心小学德育安全工作安排表</title><link>post/97.html</link><description>`Gmeek-html&lt;center&gt;&lt;table border='1'style='border-collapse: collapse;max-width: 100%;font-size: 14px;'&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: center;'&gt;月份&lt;/td&gt;&lt;td style='text-align: center;'&gt;工作内容&lt;/td&gt;&lt;td style='text-align: center;'&gt;执行部门&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan='7'&gt;2月份&lt;/td&gt;&lt;td&gt;1、开学前全镇教师师德师风学习教育大会、安全隐患大排查。</description><guid isPermaLink="true">post/97.html</guid><pubDate>Tue, 04 Mar 2025 09:43:07 +0000</pubDate></item><item><title>✅202501011-填报校园视频监控离线情况</title><link>post/96.html</link><description>【通知】各中学、中心小学、市直校（园）：为更好地推进我市校园视频监控联网修复工作，现需对校园视频监控离线情况进行核查。</description><guid isPermaLink="true">post/96.html</guid><pubDate>Tue, 04 Mar 2025 09:17:25 +0000</pubDate></item><item><title>✅202501010-填报2024至2025学年度第二学期幼儿园基本情况一览表</title><link>post/95.html</link><description>【通知】各小学、幼儿园：请打开微信上面的《杨家镇XX幼儿园（班）2024至2025学年度第二学期幼儿园基本情况一览表》空表，按各栏目的要求认真填写（中心幼儿园、民办幼儿园和小学附设班都要填写）。</description><guid isPermaLink="true">post/95.html</guid><pubDate>Mon, 03 Mar 2025 18:03:55 +0000</pubDate></item><item><title>✅202501009-2025年春季生均公用经费登记表、名册表和汇总表录入打印、2月考勤</title><link>post/94.html</link><description>【通知】各小学、中心幼儿园、普惠性民办幼儿园：为做好2025年春季小学、幼儿园公用经费拨款资料填报工作，现要求如下：
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>老林笔记</title><link>https://linji1.github.io</link><description>&lt;script&gt;document.getElementById('subTitle').innerHTML = `&lt;div id='divdown2' title=''&gt;&lt;/div&gt;`;var interval = 1000; function ShowCountDown(year,month,day,divname) { var now = new Date(); var endDate = new Date(year, month-1, day); var leftTime=endDate.getTime()-now.getTime(); var leftsecond = parseInt(leftTime/1000); var day1=Math.floor(leftsecond/(60*60*24)); var hour=Math.floor((leftsecond-day1*24*60*60)/3600); var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); var cc = document.getElementById(divname); cc.innerHTML = `暑假时间:`+year+`年`+month+`月`+day+`日&lt;br&gt;距今:`+day1+`天`+hour+`小时`+minute+`分`+second+`秒`; } window.setInterval(function(){ShowCountDown(2025,7,5,'divdown2');}, interval);&lt;/script&gt;</description><copyright>老林笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/blog/avatar.svg</url><title>avatar</title><link>https://linji1.github.io</link></image><lastBuildDate>Thu, 06 Mar 2025 22:37:02 +0000</lastBuildDate><managingEditor>老林笔记</managingEditor><ttl>60</ttl><webMaster>老林笔记</webMaster><item><title>✅202501012-填写《2025年湛江市普通学校（幼儿园）随班就读特需学生情况调查表》</title><link>post/100.html</link><description>【通知】各小学、幼儿园：请根据2024年10月填报的学年初报表中的随班就读残疾儿童人数，填写微信上面的《2025年湛江市普通学校（幼儿园）随班就读特需学生情况调查表》，于3月5日下午放学前发到后勤工作群。</description><guid isPermaLink="true">post/100.html</guid><pubDate>Tue, 04 Mar 2025 13:11:25 +0000</pubDate></item><item><title>【通知】雷州附城中心小学晨读、午学及课后服务放学时间</title><link>post/99.html</link><description>为进一步优化学校教学管理，合理安排学生的学习时间，确保教育教学工作有序开展，经学校研究决定，现对晨读、午学及课后服务放学时间进行调整。</description><guid isPermaLink="true">post/99.html</guid><pubDate>Tue, 04 Mar 2025 09:51:49 +0000</pubDate></item><item><title>【通知】2025年春季学期杨家镇中心小学教学教研工作行事历</title><link>post/98.html</link><description>`Gmeek-html&lt;center&gt;&lt;table border='1'style='border-collapse: collapse;font-size: 14px;'&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='width: 55px;'&gt;月份&lt;/td&gt;&lt;td&gt;周次&lt;/td&gt;&lt;td style='text-align: center;'&gt;主要工作安排&lt;/td&gt;&lt;td style='width: 55px;'&gt;备注&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;二&lt;/td&gt;&lt;td&gt;1至3&lt;/td&gt;&lt;td&gt;1、讨论制定学校教学、教研计划&lt;br/&gt;2、开学工作检查，下乡视导&lt;br/&gt;3、组织教师参加新教材培训&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;三&lt;/td&gt;&lt;td&gt;4至8&lt;/td&gt;&lt;td&gt;1、下乡视导。</description><guid isPermaLink="true">post/98.html</guid><pubDate>Tue, 04 Mar 2025 09:47:59 +0000</pubDate></item><item><title>【通知】2025年春季学期-杨家镇中心小学德育安全工作安排表</title><link>post/97.html</link><description>`Gmeek-html&lt;center&gt;&lt;table border='1'style='border-collapse: collapse;max-width: 100%;font-size: 14px;'&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: center;'&gt;月份&lt;/td&gt;&lt;td style='text-align: center;'&gt;工作内容&lt;/td&gt;&lt;td style='text-align: center;'&gt;执行部门&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan='7'&gt;2月份&lt;/td&gt;&lt;td&gt;1、开学前全镇教师师德师风学习教育大会、安全隐患大排查。</description><guid isPermaLink="true">post/97.html</guid><pubDate>Tue, 04 Mar 2025 09:43:07 +0000</pubDate></item><item><title>✅202501011-填报校园视频监控离线情况</title><link>post/96.html</link><description>【通知】各中学、中心小学、市直校（园）：为更好地推进我市校园视频监控联网修复工作，现需对校园视频监控离线情况进行核查。</description><guid isPermaLink="true">post/96.html</guid><pubDate>Tue, 04 Mar 2025 09:17:25 +0000</pubDate></item><item><title>✅202501010-填报2024至2025学年度第二学期幼儿园基本情况一览表</title><link>post/95.html</link><description>【通知】各小学、幼儿园：请打开微信上面的《杨家镇XX幼儿园（班）2024至2025学年度第二学期幼儿园基本情况一览表》空表，按各栏目的要求认真填写（中心幼儿园、民办幼儿园和小学附设班都要填写）。</description><guid isPermaLink="true">post/95.html</guid><pubDate>Mon, 03 Mar 2025 18:03:55 +0000</pubDate></item><item><title>✅202501009-2025年春季生均公用经费登记表、名册表和汇总表录入打印、2月考勤</title><link>post/94.html</link><description>【通知】各小学、中心幼儿园、普惠性民办幼儿园：为做好2025年春季小学、幼儿园公用经费拨款资料填报工作，现要求如下：
 
 **一、小学公用经费填报：**
 
@@ -240,7 +240,7 @@ SNI：需要替换
 打开后获取到大量的BPB-Worker-Panel 面板地址，只需在连接后面加上/login，就可以看到BBP面板的后台，`版本号是2.5.3 以上`就可以直接免费导入使用！
 
 - 然后把获得的地址填写到V2ray客户端里，如下所示：
-![](/assets/file/2025/02/2fed20789620241124163317-2079x1440.webp)
+![](/assets1/file/2025/02/2fed20789620241124163317-2079x1440.webp)
 
 
 ## 【高阶篇】
@@ -379,7 +379,7 @@ python vpn.py
 
 在脚本的所在目录会生成结果OK.txt，里面就是我们需要的地址！
 
-![](/assets/file/2025/02/c85b610e7e20241124163116-2081x1440.webp)
+![](/assets1/file/2025/02/c85b610e7e20241124163116-2081x1440.webp)
 
 &gt; [!CAUTION]
 &gt; 默认我只获取了第一个页面，因为如果批量获取分页的话，会引起网站防火墙的拦截。</description><guid isPermaLink="true">post/36.html</guid><pubDate>Fri, 07 Feb 2025 16:46:28 +0000</pubDate></item><item><title>2025年度继续教育学时</title><link>post/35.html</link><description>`Gmeek-html&lt;center&gt;&lt;div class='xueshi'&gt;&lt;div class='dataBl' style='display: inline-block;text-align: center;width: 33.33%;border-right: 1px solid rgba(0, 0, 0, 0.15);' title=''&gt;&lt;strong style='font-size: 26px;font-weight: 600;color: #ff7505;' title=''&gt;&lt;span class='unget' title=''&gt;&lt;!-- 专业课开始 --&gt;36&lt;/span&gt;&lt;/strong&gt;&lt;strong style='font-size: 26px;font-weight: 600;' title=''&gt;/42&lt;/strong&gt;&lt;p style='font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;margin-bottom: 0px;' title=''&gt;专业课&lt;/p&gt;&lt;/div&gt;&lt;div class='dataBl' style='display: inline-block;width: 33.33%;border-right: 1px solid rgba(0, 0, 0, 0.15);' title=''&gt;&lt;strong style='font-size: 26px;font-weight: 600;color: #ff7505;' title=''&gt;&lt;span class='unget' title=''&gt;&lt;!-- 公需课开始 --&gt;0&lt;/span&gt;&lt;/strong&gt;&lt;strong style='font-size: 26px;font-weight: 600;' title=''&gt;/30&lt;/strong&gt;&lt;p style='font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;margin-bottom: 0px;' title=''&gt;公需课&lt;/p&gt;&lt;/div&gt;&lt;div class='dataBl' style='display: inline-block;text-align: center;width: 33.33%;' title=''&gt;&lt;strong style='font-size: 26px;font-weight: 600;color: #ff7505;' title=''&gt;&lt;span class='unget' title=''&gt;&lt;!-- 选修课开始 --&gt;0&lt;/span&gt;&lt;/strong&gt;&lt;strong style='font-size: 26px;font-weight: 600;' title=''&gt;/18&lt;/strong&gt;&lt;p style='font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;margin-bottom: 0px;' title=''&gt;选修课&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/center&gt;`
@@ -574,7 +574,7 @@ Nekoray 含 Windows 和 Andorid 版本.
 
 ## 图示
 
-![](/assets/file/2025/02/15-1.webp)
+![](/assets1/file/2025/02/15-1.webp)
 
 ## 覆写脚本
 
@@ -595,25 +595,25 @@ https://github.com/GJKen/clash-Rules/blob/main/Src/Mihomo%20%E8%A6%86%E5%86%99%E
 
 我们进入 https://dash.cloudflare.com
 
-![](/assets/file/2025/02/401824633-65746e4c-33ac-42e5-8261-80b231cae4f2.webp)
+![](/assets1/file/2025/02/401824633-65746e4c-33ac-42e5-8261-80b231cae4f2.webp)
 
 输入自己的域名点击继续, 然后选择底部的 Free 计划.
 
-![](/assets/file/2025/02/401824864-7ac12093-dee3-4a9c-bd55-c124d0ac6453.webp)
+![](/assets1/file/2025/02/401824864-7ac12093-dee3-4a9c-bd55-c124d0ac6453.webp)
 
 复制 dns 名称服务器.
 
-![](/assets/file/2025/02/401824735-3fa17e93-d8ef-4271-b2f0-e2387a489601.webp)
+![](/assets1/file/2025/02/401824735-3fa17e93-d8ef-4271-b2f0-e2387a489601.webp)
 
 然后转到你的域名提供服务商, 添加 dns 记录.
 
-![](/assets/file/2025/02/401824786-73aad798-1830-4bbf-b281-cda074f40485.webp)
+![](/assets1/file/2025/02/401824786-73aad798-1830-4bbf-b281-cda074f40485.webp)
 
 # 填写 DNS 记录.
 
 回到 Cloudflare 面板, 进入 dns 记录, 按照下图添加 `CNAME` 和 `A` 记录.
 
-![](/assets/file/2025/02/401824842-57ed2272-5e7e-4807-b3de-bde1b95d7040.webp)
+![](/assets1/file/2025/02/401824842-57ed2272-5e7e-4807-b3de-bde1b95d7040.webp)
 
 ```
 185.199.108.153
@@ -627,15 +627,15 @@ https://github.com/GJKen/clash-Rules/blob/main/Src/Mihomo%20%E8%A6%86%E5%86%99%E
 
 # Github Page 设置自定义域名
 
-![](/assets/file/2025/02/401824864-7ac12093-dee3-4a9c-bd55-c124d0ac6453.webp)
+![](/assets1/file/2025/02/401824864-7ac12093-dee3-4a9c-bd55-c124d0ac6453.webp)
 
 填写并点击 Save 之后会提示你等待一会.
 
-![](/assets/file/2025/02/401824887-8087186c-2b32-4064-8b03-92308b063b75.webp)
+![](/assets1/file/2025/02/401824887-8087186c-2b32-4064-8b03-92308b063b75.webp)
 
 提示`DNS check successful`代表完成, 之后就可以通过www+你的域名进行访问了.
 
-![](/assets/file/2025/02/401826725-d7e62e5d-32b5-4acd-86dc-432a971c2218.webp)
+![](/assets1/file/2025/02/401826725-d7e62e5d-32b5-4acd-86dc-432a971c2218.webp)
 
 文章来源：https://gjkblog.us.kg/post/4.html。</description><guid isPermaLink="true">post/13.html</guid><pubDate>Wed, 05 Feb 2025 06:05:35 +0000</pubDate></item><item><title>【Windows】超级上帝模式</title><link>post/12.html</link><description>### 有开发者推出超级上帝模式，生成Windows系统各项设置快捷方式 
 
