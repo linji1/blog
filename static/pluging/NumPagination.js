@@ -8,7 +8,7 @@ var custompages = 0;
 //---------------------------------------------------------------------
 
 // XML文件路径
-var xmlUrl = `${window.location.origin}/rss.xml`;
+var xmlUrl = `${window.location.origin}/blog/rss.xml`;
 
 // 获取当前页数
 function getCurrentPage() {
@@ -21,7 +21,7 @@ function getCurrentPage() {
 // 插入页码元素，链接
 function appendPageLink(pagination, pageNumber, currentPage) {
     var pageLink = document.createElement('a');
-    pageLink.href = pageNumber === 1 ? `${window.location.origin}` : `${window.location.origin}/page${pageNumber}.html`;
+    pageLink.href = pageNumber === 1 ? `${window.location.origin}` : `${window.location.origin}/blog/page${pageNumber}.html`;
     pageLink.textContent = pageNumber;
     if (pageNumber === currentPage) {
         pageLink.classList.add('current-page');
