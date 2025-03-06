@@ -214,6 +214,6 @@ git push [remote] --all
 
 [在线git命令](https://try.github.io/levels/1/challenges/1)
 
-![](/assets/file/2025/02/git命令速查表.webp)
+![](/assets1/file/2025/02/git命令速查表.webp)
 
 原文链接：https://pangwu86.com/posts/3646253715/
