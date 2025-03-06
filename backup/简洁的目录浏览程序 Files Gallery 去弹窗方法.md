@@ -11,4 +11,4 @@
 </script>
 ```
 
-`Gmeek-html<div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="/assets/file/2024/12/2024122001.webp">`
+`Gmeek-html<div class="ImgLazyLoad-circle"></div><img data-fancybox="gallery" img-src="/assets1/file/2024/12/2024122001.webp">`
