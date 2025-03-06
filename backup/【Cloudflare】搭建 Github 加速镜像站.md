@@ -2,15 +2,15 @@
 
 进入[CloudFlare控制台](https://dash.cloudflare.com/)。
 
-`Gmeek-imgbox="/assets/file/2025/02/2025021901.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025021901.webp"`
 
-`Gmeek-imgbox="/assets/file/2025/02/2025021902.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025021902.webp"`
 
-`Gmeek-imgbox="/assets/file/2025/02/2025021903.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025021903.webp"`
 
-`Gmeek-imgbox="/assets/file/2025/02/2025021904.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025021904.webp"`
 
-`Gmeek-imgbox="/assets/file/2025/02/2025021905.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025021905.webp"`
 
 在编辑页面填写下方js代码，保存并部署即可
 
@@ -44,7 +44,7 @@ async function handleRequest(request) {
 }
 ```
 
-`Gmeek-imgbox="/assets/file/2025/02/2025021906.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025021906.webp"`
 
 接下来等待10min左右DNS更新。然后就可以访问你的域名来打开镜像站了
 
