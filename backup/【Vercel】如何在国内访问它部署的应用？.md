@@ -6,7 +6,7 @@
 当天晚上我用这玩意一次性把我写的乱七八糟的一堆项目全都扔上去了，也是美滋滋的享受到了自动部署的安逸。我买的服务器就纯纯作为一个后端服务的提供者就好了；前端的应用一律用 ` vercel ` 一股脑扔上去就好了。
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022022.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022022.webp"`
 
  
 但是，** ` vercel ` 在目前貌似已经禁止国内进行访问了。**别问，问就是一些相关的政策出台。。。那我那些扔上去的项目咋办啊？？？
@@ -42,7 +42,7 @@
 既然是要代理到原来的域名，所以得准备一个自己在国内服务商购买的域名。具体的流程应该都清楚的吧也就不多说了，在腾讯云里面你只用登录控制台然后搜“域名注册”四个字就会提示你怎么操作了。唯一的要求就是你要付钱，我建议便宜点就行。
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022023.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022023.webp"`
  
 
 #### 二、登录Cloudflare控制台并添加站点
@@ -54,29 +54,29 @@
 进来之后看到如下页面，我之前加过一个站点所以会弹出来，没有的就可以不用管：
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022024.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022024.webp"`
 
  
 然后点击右侧的这个添加站点就好了，进入下一步，输入你要加的域名（就是你之前在腾讯云上面买好的）然后点击继续：
 
-`Gmeek-imgbox="/assets/file/2025/02/2025022025.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022025.webp"`
  
 然后选择计划，一般无特殊需求直接白嫖然后点击继续：
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022026.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022026.webp"`
 
  
 接下来 Cloudflare 会自动扫描你的部分dns记录。我这个域名是刚刚买的还没有进行一些解析的操作，所以是没有记录的。点击继续：
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022027.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022027.webp"`
 
  
 **然后最关键的点来了，Cloudflare会自动生成两条dns地址，就是下面两个云右边的字符串，你得拿着这两个地址去换掉腾讯云原本的解析**：
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022028.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022028.webp"`
 
  
 至此，Cloudflare部分的工作告一段落。
@@ -88,19 +88,19 @@
  
 接下来启动腾讯云域名管理后台[https://console.cloud.tencent.com/domain](https://console.cloud.tencent.com/domain )。我这边有一个是已经解析到cloudflare所以DNS状态变成了其他，我现在要改的这个 ` nullvideo.cn ` 待会儿也会变成其他。
 
-`Gmeek-imgbox="/assets/file/2025/02/2025022029.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022029.webp"`
 
  
 点击“解析”按钮右边的“管理”按钮，进入域名管理页，找到DNS解析部分：
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022030.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022030.webp"`
 
  
 然后点击“修改DNS服务器”，把刚刚Cloudflare给我们的两个DNS地址黏贴到原本的DNS地址处：
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022031.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022031.webp"`
 
  
 保存然后等待dns缓存刷新即可，这可能需要1-24小时因为每个域名体质不一样。
@@ -127,7 +127,7 @@
 在 Cloudflare 添加 ` CNAME ` 类型的解析，比如这个项目就是把 ` nullvideo.cn ` 重定向到 ` null-video.vercel.app ` ，并打开 proxy 服务。我在这边为了对应根路径访问和www访问，两个都加上了。
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022032.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022032.webp"`
 
  
 
@@ -137,19 +137,19 @@
 进入到部署好了的项目的主页，可以看到一个“Domain”的按钮，点击进入：
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022033.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022033.webp"`
 
  
 然后进入之后，输入你买好的域名然后点击Add：
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022034.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022034.webp"`
 
  
 选择默认的方案，也就是把根域名和 ` www ` 解析一起加上。
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022035.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022035.webp"`
 
  
 添加之后会进行校验，校验完成了之后就可以进行访问了。。。**看起来是这样，实际上还是有问题的！！！**
@@ -162,7 +162,7 @@
 你把域名解析添加好了，校验也通过了，然后你会直接点击访问：
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022036.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022036.webp"`
 
  
 没错，你会遇到**重定向次数过多**的问题。
@@ -174,7 +174,7 @@
 进入 Cloudflare Dashboard，点击有问题的域名，打开左侧的 SSL/TLS 设置，在 Overview 中设置加密模式为完全或完全（严格）即可。
 
  
-`Gmeek-imgbox="/assets/file/2025/02/2025022037.webp"`
+`Gmeek-imgbox="/assets1/file/2025/02/2025022037.webp"`
 
  
 这样子之后你的 ` vercel ` 应用应该是可以正常的在国内进行访问了。
