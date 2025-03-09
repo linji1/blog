@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="github-light" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='/blog/pluging/primer.min.css' rel='stylesheet' />
+    <script defer src='/blog/pluging/backtop.js'></script><script src='/blog/pluging/ArticleJs.min.js'></script><script src='/live2d/autoload.js'></script><script src='/blog/pluging/NumPagination.min.js'></script><script src='/blog/pluging/GmeekVercount_uv.min.js'></script><script src='/blog/pluging/customize.js'></script>
+    <link rel="icon" href="/blog/favicon.svg">
+<meta name="description" content="[Wget-Windows 版本，直接解压使用。">
+<meta property="og:title" content="如何使用Wget下载整个网站？">
+<meta property="og:description" content="[Wget-Windows 版本，直接解压使用。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="post/102.html">
+<meta property="og:image" content="/blog/avatar.svg">
+<title>如何使用Wget下载整个网站？</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
+
+</head>
+<style>
+:root{--functionBtnFlex-bgColor:#ffffff61;--tooglebtn-bgColor:#c0e4ff9c}
+[data-color-mode=light][data-light-theme=dark],[data-color-mode=light][data-light-theme=dark]::selection,[data-color-mode=dark][data-dark-theme=dark],[data-color-mode=dark][data-dark-theme=dark]::selection{--functionBtnFlex-bgColor:#ffffff00;--tooglebtn-bgColor:#7dc2ff7a}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes blink{50%{opacity:0}100%{opacity:1}}@-webkit-keyframes blink{50%{opacity:0}100%{opacity:1}}@keyframes grow{0%{opacity:0.85;transform:scale(0.5);}100%{opacity:1;transform:translate(1);}}@-webkit-keyframes grow{0%{opacity:0.85;-webkit-transform:scale(0.5);}100%{opacity:1;-webkit-transform:translate(1);}}@keyframes slide-fade-in{0%{opacity:0;transform:translate3d(0,20px,0);}100%{opacity:1;transform:translate(0,0,0);}}@-webkit-keyframes slide-fade-in{0%{opacity:0;-webkit-transform:translate3d(0,20px,0);}100%{opacity:1;-webkit-transform:translate(0,0,0);}}
+body{box-sizing:border-box;min-width: auto;max-width:900px;margin:0px auto;padding: 20px 30px 10px 30px;font-size:16px;font-family:sans-serif;line-height:1.25}
+#header{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:24px;}
+#functionBtn{display:flex;justify-content:center;margin:20px 0 10px 0;gap:6px;}
+#functionBtn a{padding:14px 16px;}
+#functionBtn.Btn-flex{position:fixed;margin:0;padding:8px 0;top:-64px;left:0;width:100%;min-width:500px;background-color:var(--functionBtnFlex-bgColor);backdrop-filter:blur(30px);box-shadow:#00000078 0 9px 18px -15px;z-index:100;animation:fadeIn.2s ease-in 0s forwards;transition:top 0.3s ease-in-out}
+#footer{margin-top:10px;text-align:center;font-size:small;}
+body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animation:slide-fade-in 0.8s ease;animation:slide-fade-in 0.8s ease}
+.title-left img{animation:grow 0.5s cubic-bezier(0.23,1,0.32,1);-webkit-animation:grow 0.5s cubic-bezier(0.23,1,0.32,1);}
+</style>
+
+<style>
+.postTitle{margin:0 auto;font-size:40px;font-weight:bold;}
+.no-blink::after{animation:none;}
+.spoilerText{filter:blur(5px);-webkit-filter:blur(5px);cursor:pointer;transition:filter .3s ease}
+.spoilerText.clear{filter:none;}
+#postBody{border-bottom:1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+
+#toogleBtn{position:fixed;top:51px;right:6%;display:none;}
+#toogleBtn.active,#toogleBtn path{display:flex;padding:6px 7px;fill:var(--title-right-svgColor);cursor:pointer;transition:transform 0.3s ease-in-out;background:var(--tooglebtn-bgColor)}
+#toogleBtn.active:hover svg path{fill:var(--title-right-svgHovercolor);}
+#toogleBtn.btn-fadeout{opacity:0;}
+#functionBtn div:first-of-type{display:flex;gap:20px}
+
+.g-emoji{font-size:24px;}
+@media (max-width:600px) {
+    body {padding:8px;min-width:500px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display:none;
+    position:absolute;
+    top:10px;
+    right:50px;
+    color:var(--color-fg-on-emphasis);
+    background-color:var(--color-fg-muted);
+    border-radius:3px;
+    padding:5px 8px;
+    font-size:12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">如何使用Wget下载整个网站？</h1>
+</div>
+    <div id="functionBtn">
+<div>
+	<a href="/blog/index.html" id="buttonHome" class="btn btn-invisible circle" title="首页">
+		<svg class="octicon" width="16" height="16"><path id="pathHome" fill-rule="evenodd" d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"></path></svg>
+	</a>
+	<a href="/blog/tag.html" id="buttonSearch" class="btn btn-invisible circle" title="搜索">
+		<svg class="octicon" width="16" height="16">
+			<path id="pathSearch" fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path>
+		</svg>
+	</a>
+    <a href="/blog/post/2.html" class="btn btn-invisible circle" title="老林导航">
+        <svg class="octicon" width="16" height="16">
+            <path id="老林导航" fill-rule="evenodd" d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg>
+    </a>
+    <a href="/blog/post/1.html" class="btn btn-invisible circle" title="关于本人">
+        <svg class="octicon" width="16" height="16">
+            <path id="关于本人" fill-rule="evenodd" d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+        </svg>
+    </a>
+	
+	<a href="https://github.com/linji1/blog/issues/102" target="_blank" class="btn btn-invisible circle" title="Issue">
+		<svg class="octicon" width="16" height="16"><path id="pathIssue" fill-rule="evenodd" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+	</a>
+	
+
+	<a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题"style="display:none;">
+		<svg class="octicon" width="16" height="16" ><path id="themeSwitch" fill-rule="evenodd"></path></svg>
+	</a>   
+	
+	<a class="ArticleTOC btn btn-invisible circle" title="文章目录">
+		<svg class="octicon" width="16" height="16"><path id="ArticleTOC"></path></svg>
+	</a>
+</div>
+<a class="circle" id="toogleBtn">
+	<svg class="octicon" width="24" height="24"><path id="ArticleTOC" d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"></path></svg>
+</a>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p><a href="https://eternallybored.org/misc/wget/" rel="nofollow">Wget-Windows 版本，直接解压使用。</a></p>
+<pre class="notranslate"><code class="notranslate"> .\wget.exe -c -t 0 -r -l inf -p --restrict-file-names=windows -A.html https://linji.cn
+</code></pre>
+<pre class="notranslate"><code class="notranslate">.\wget.exe -c -t 0 -r -l inf --page-requisites --restrict-file-names=nocontrol https://linji.cn
+</code></pre>
+<p>该命令使用<code class="notranslate">wget</code>工具从指定网站下载网页，具体解释如下：</p>
+<ul>
+<li><code class="notranslate">.\wget.exe</code>：表示在当前目录下执行<code class="notranslate">wget</code>可执行程序。在Windows系统中，<code class="notranslate">. </code>代表当前目录，这条命令指明了要运行的工具是当前目录下的<code class="notranslate">wget.exe</code>。</li>
+<li><code class="notranslate">-c</code>： 表示断点续传。如果下载过程中断，使用该参数可以从上次中断的地方继续下载，而不是重新开始，避免重复下载已完成的部分，节省时间和带宽。</li>
+<li><code class="notranslate">-t 0</code>：设置重试次数为0 ，意味着遇到错误时不进行重试。一般情况下，下载过程中可能因为网络波动等原因出现错误，<code class="notranslate">-t</code>参数用于指定遇到错误时的重试次数，<code class="notranslate">0</code>表示不重试。</li>
+<li><code class="notranslate">-r</code>：启用递归下载。它会递归地下载指定网页及其链接的所有页面，从而获取整个网站的内容结构，包括页面中的各种链接所指向的页面。</li>
+<li><code class="notranslate">-l inf</code>：设置递归深度为无穷。<code class="notranslate">-l</code>用于指定递归下载的层数，<code class="notranslate">inf</code>是“infinite”的缩写，表示无穷，这样可以确保下载整个网站，而不受特定层数的限制。</li>
+<li><code class="notranslate">-p</code>：下载所有为了使所下载页面正常显示而需要的元素，比如图片、CSS样式表、JavaScript脚本等。这些元素对于完整显示网页内容和样式至关重要，该参数能保证下载的网页在本地可以正常浏览。</li>
+<li><code class="notranslate">--restrict-file-names=nocontrol</code>：限制文件名，避免文件名中出现控制字符。在下载文件时，网站的某些文件名可能包含操作系统不允许的控制字符，使用该参数可以确保文件名合规，防止因文件名问题导致下载失败或文件无法正常保存。</li>
+<li><code class="notranslate">-A.html</code>：指定只下载扩展名为<code class="notranslate">.html</code>的文件。这可以筛选出符合特定扩展名的文件进行下载，避免下载其他不需要的文件类型，比如<code class="notranslate">.jpg</code>、<code class="notranslate">.pdf</code>等，提高下载的针对性和效率。</li>
+<li><code class="notranslate">https://linji.cn</code>：指定要下载的目标网站地址。它明确了从哪个网站获取网页内容，是整个下载任务的目标指向。</li>
+</ul>
+<p>这条命令的目的是从<code class="notranslate">https://linji.cn</code>网站递归下载所有<code class="notranslate">.html</code>文件，包括相关的页面元素，支持断点续传，不进行重试，并且规范文件名以确保下载顺利进行 。</p>
+<hr>
+<p><code class="notranslate">wget</code> 有很多其他实用的参数，下面为你详细介绍一些常见参数：</p>
+<h3>网络相关参数</h3>
+<ul>
+<li><strong><code class="notranslate">-P &lt;目录&gt;</code></strong>
+<ul>
+<li><strong>作用</strong>：指定下载文件保存的目录。如果该目录不存在，<code class="notranslate">wget</code> 会尝试创建它。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe -P D:\downloads https://example.com/file.zip</code>，会将 <code class="notranslate">file.zip</code> 下载到 <code class="notranslate">D:\downloads</code> 目录下。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">--proxy=代理地址</code></strong>
+<ul>
+<li><strong>作用</strong>：使用指定的代理服务器进行下载。当你处于需要通过代理访问外网的网络环境时，该参数很有用。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe --proxy=http://proxy.example.com:8080 https://example.com</code>，通过 <code class="notranslate">http://proxy.example.com:8080</code> 代理服务器下载 <code class="notranslate">https://example.com</code> 的内容。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">--timeout=秒数</code></strong>
+<ul>
+<li><strong>作用</strong>：设置网络连接和读取数据的超时时间。如果在指定时间内没有响应，<code class="notranslate">wget</code> 会放弃当前操作。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe --timeout=10 https://example.com</code>，如果连接或读取数据超过 10 秒无响应，就会中断操作。</li>
+</ul>
+</li>
+</ul>
+<h3>下载行为相关参数</h3>
+<ul>
+<li><strong><code class="notranslate">-q</code></strong>
+<ul>
+<li><strong>作用</strong>：安静模式，不输出下载过程中的详细信息，只在下载完成或出现错误时给出提示。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe -q https://example.com/file.txt</code>，执行时不会显示下载进度等信息。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">-nv</code></strong>
+<ul>
+<li><strong>作用</strong>：非详细模式，输出比正常模式更少的信息，但比安静模式多一些基本信息。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe -nv https://example.com</code>，会显示一些必要的下载信息，但不会像正常模式那样详细。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">-nc</code></strong>
+<ul>
+<li><strong>作用</strong>：不覆盖已存在的文件。如果本地已经有同名文件，<code class="notranslate">wget</code> 不会再次下载该文件。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe -nc https://example.com/file.pdf</code>，若本地已有 <code class="notranslate">file.pdf</code>，则不会重新下载。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">-N</code></strong>
+<ul>
+<li><strong>作用</strong>：只下载比本地文件更新的文件。<code class="notranslate">wget</code> 会比较服务器上文件和本地文件的修改时间，只有当服务器上的文件更新时才会下载。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe -N https://example.com/file.js</code>，会检查服务器上 <code class="notranslate">file.js</code> 的修改时间，若比本地新则下载。</li>
+</ul>
+</li>
+</ul>
+<h3>过滤和范围相关参数</h3>
+<ul>
+<li><strong><code class="notranslate">-R &lt;后缀列表&gt;</code></strong>
+<ul>
+<li><strong>作用</strong>：排除指定后缀的文件，不进行下载。与 <code class="notranslate">-A</code> 相反，用于过滤不需要的文件类型。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe -R .jpg,.png https://example.com</code>，不会下载 <code class="notranslate">.jpg</code> 和 <code class="notranslate">.png</code> 格式的文件。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">--domains &lt;域名列表&gt;</code></strong>
+<ul>
+<li><strong>作用</strong>：限制递归下载的域名范围。只下载指定域名下的文件，避免下载到其他域名的链接。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe -r --domains=example.com https://example.com</code>，只下载 <code class="notranslate">example.com</code> 域名下的文件。</li>
+</ul>
+</li>
+</ul>
+<h3>认证相关参数</h3>
+<ul>
+<li><strong><code class="notranslate">--user=用户名 --password=密码</code></strong>
+<ul>
+<li><strong>作用</strong>：用于需要认证的网站，提供用户名和密码进行身份验证。</li>
+<li><strong>示例</strong>：<code class="notranslate">.\wget.exe --user=myuser --password=mypassword https://example.com/protected/file.zip</code>，使用 <code class="notranslate">myuser</code> 用户名和 <code class="notranslate">mypassword</code> 密码访问受保护的文件。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>如何使用wget下载整个网站？</h3>
+<p>使用<code class="notranslate">wget</code>下载整个网站可以通过合理组合其参数来实现，下面为你详细介绍操作步骤及相关参数示例：</p>
+<h3>基本命令示例</h3>
+<p>以下是一个能下载整个网站的常用<code class="notranslate">wget</code>命令示例：</p>
+<div class="highlight highlight-source-shell"><pre class="notranslate">wget -r -l inf -p -k -E --restrict-file-names=windows --domains=example.com https://example.com</pre></div>
+<h3>参数解释</h3>
+<ol>
+<li><strong><code class="notranslate">-r</code></strong>：
+<ul>
+<li><strong>含义</strong>：开启递归下载模式。这意味着<code class="notranslate">wget</code>会从指定的起始页面开始，自动下载该页面中所有链接指向的页面，逐层深入，从而获取整个网站的内容。</li>
+<li><strong>示例影响</strong>：如果起始页面有指向其他页面的链接，<code class="notranslate">wget</code>会继续下载这些链接页面，以此类推。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">-l inf</code></strong>：
+<ul>
+<li><strong>含义</strong>：设置递归的深度为无穷大（<code class="notranslate">inf</code>是“infinite”的缩写）。保证<code class="notranslate">wget</code>会尽可能深入地下载网站的所有层级页面，不会因为预设的层数限制而停止。</li>
+<li><strong>示例影响</strong>：无论网站结构有多深，<code class="notranslate">wget</code>都会尝试下载所有层级的页面。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">-p</code></strong>：
+<ul>
+<li><strong>含义</strong>：下载所有为了使所下载页面正常显示而需要的元素，如图片、CSS样式表、JavaScript脚本等资源。这些元素对于完整呈现网页的样式和功能至关重要。</li>
+<li><strong>示例影响</strong>：下载的页面在本地打开时，能够正确显示样式和执行脚本，就像在浏览器中访问一样。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">-k</code></strong>：
+<ul>
+<li><strong>含义</strong>：将下载的页面中的链接转换为适合本地浏览的形式。当页面下载到本地后，原本指向网站内其他页面或资源的链接会被修改为指向本地相应文件的路径，方便在本地离线浏览整个网站。</li>
+<li><strong>示例影响</strong>：在本地打开下载的页面时，点击页面中的链接可以正常跳转到本地对应的页面。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">-E</code></strong>：
+<ul>
+<li><strong>含义</strong>：在下载的文件扩展名后面添加合适的后缀，通常是根据文件的实际类型添加，如<code class="notranslate">.html</code>、<code class="notranslate">.css</code>等。这样可以确保文件的扩展名与内容类型一致，便于识别和使用。</li>
+<li><strong>示例影响</strong>：如果下载的是一个HTML页面，文件名将以<code class="notranslate">.html</code>结尾，方便后续查看和处理。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">--restrict-file-names=windows</code></strong>：
+<ul>
+<li><strong>含义</strong>：限制文件名的字符，确保生成的文件名符合Windows操作系统的命名规则。避免因文件名包含Windows不允许的字符（如<code class="notranslate">/</code>、<code class="notranslate">\</code>、<code class="notranslate">:</code>等）而导致下载失败或文件无法正常保存。</li>
+<li><strong>示例影响</strong>：在Windows系统上下载时，能保证所有文件都可以正常命名和保存。</li>
+</ul>
+</li>
+<li><strong><code class="notranslate">--domains=example.com</code></strong>：
+<ul>
+<li><strong>含义</strong>：限制递归下载的范围，只下载指定域名（这里是<code class="notranslate">example.com</code>）下的页面和资源。防止<code class="notranslate">wget</code>下载到外部链接指向的其他网站的内容，确保只获取目标网站的信息。</li>
+<li><strong>示例影响</strong>：如果页面中包含指向其他域名的链接，<code class="notranslate">wget</code>不会对其进行下载。</li>
+</ul>
+</li>
+</ol>
+<h3>注意事项</h3>
+<ul>
+<li><strong>网站规则</strong>：在下载整个网站之前，务必查看该网站的<code class="notranslate">robots.txt</code>文件，了解网站允许和禁止抓取的内容范围，遵守网站的使用条款和相关法律法规，避免因违规下载而带来法律风险。</li>
+<li><strong>网络和服务器负载</strong>：下载整个网站可能会消耗大量的网络带宽和服务器资源，对目标网站的服务器造成较大压力。因此，建议在非高峰时段进行下载，并尽量控制下载频率，避免给网站运营带来不必要的影响。</li>
+</ul></div>
+<div style="font-size:small;margin-top:8px;float:right;" id="article-links">
+<script>
+    // 获取当前页面的URL
+    const currentUrl = window.location.href;
+    
+    // 提取URL中的数字部分
+    const urlParts = currentUrl.split('/');
+    const currentArticleNumber = parseInt(urlParts[urlParts.length - 1].split('.')[0], 10);
+    
+    // 计算上一篇和下一篇文章的数字
+    const prevArticleNumber = currentArticleNumber - 1;
+    const nextArticleNumber = currentArticleNumber + 1;
+    
+    // 检查文章是否存在
+    const checkArticleExists = (articleNumber) => {
+        // 这里可以使用AJAX请求或其他方法检查文件是否存在
+        // 示例：使用AJAX请求检查文件是否存在
+        return new Promise((resolve) => {
+            const xhr = new XMLHttpRequest();
+            xhr.open('HEAD', `/blog/post/${articleNumber}.html`, true);
+            xhr.onload = () => resolve(xhr.status === 200);
+            xhr.onerror = () => resolve(false);
+            xhr.send();
+        });
+    };
+
+    // 生成上一篇和下一篇文章的链接
+    const generateLink = (articleNumber, text) => {
+        if (articleNumber > 0) {
+            return `<a href="/blog/post/${articleNumber}.html" style="color: black;">${text}: ${articleNumber}</a>`;
+        }
+        return `${text}: 无`;
+    };
+
+    // 生成上一篇链接
+    const prevLink = generateLink(prevArticleNumber, '上一篇');
+
+    // 检查下一篇是否存在并生成链接
+    checkArticleExists(nextArticleNumber).then((exists) => {
+        const nextLink = exists ? generateLink(nextArticleNumber, '下一篇') : '下一篇: 无';
+        
+        // 输出结果到指定的div中
+        const linksDiv = document.getElementById('article-links');
+        if (linksDiv) {
+            linksDiv.innerHTML = `${prevLink} | ${nextLink}`;
+        } else {
+            console.log('没有找到ID为article-links的div元素');
+        }
+    });
+</script>
+</div>
+
+<button class="btn btn-block" type="button" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer2">
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" style="margin-right: 4px;height:18px;vertical-align: bottom;fill: #ff5a5a;"class="animate_heartBeatScale"><path d="M1017.152 426.592a263.296 263.296 0 0 0-502.304-133.92 263.328 263.328 0 0 0-502.304 133.92s5.152 259.264 505.536 520.096c500.32-260.832 499.072-520.096 499.072-520.096zM282.016 194.976a43.2 43.2 0 1 1 .096 86.4 43.2 43.2 0 0 1-.096-86.4zm-135.04 323.232a45.12 45.12 0 0 1-55.488-31.328 289.472 289.472 0 0 1-10.816-66.592C76.64 313.824 142.24 261.472 145.504 258.88a45.024 45.024 0 0 1 63.2 8.032c15.168 19.488 11.744 47.36-7.328 62.72-2.336 1.952-30.784 27.52-30.592 82.24.096 14.752 2.208 31.616 7.488 50.784a45.12 45.12 0 0 1-31.296 55.552z"/></svg><span id="runday"></span><br>
+</div>
+<div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="/blog/https://linji1.github.io">老林笔记</a><span> • Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span></div>
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("10/26/1977"!=""){
+    var startSite=new Date("10/26/1977");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="博主已运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+</script>
+
+<script>
+// const postTitle=document.querySelector(".postTitle"),textContent=postTitle.textContent;postTitle.textContent="";let idx=0;const writeTimer=setInterval(()=>{postTitle.textContent=textContent.slice(0,idx++),idx>textContent.length&&(clearInterval(writeTimer),postTitle.classList.remove("no-blink"))},80);postTitle.classList.add("no-blink");const spoilers=document.querySelectorAll(".spoilerText");spoilers.length&&spoilers.forEach(t=>t.onclick=(()=>t.classList.toggle("clear"))),document.addEventListener("DOMContentLoaded",()=>{const t=document.createElement("div");t.id="checkBtn";const e=document.getElementById("functionBtn");e.insertAdjacentElement("afterend",t),new IntersectionObserver(t=>{t.forEach(t=>{const n=t.isIntersecting;e.classList.toggle("Btn-flex",!n),e.style.top=n?"0":"-100px"})},{rootMargin:"300px 0px 0px 0px",threshold:0}).observe(t);let n=0;const o=t=>{e.style.top=t>0?"-100px":"0"};document.addEventListener("touchstart",t=>n=t.touches[0].clientY),document.addEventListener("touchmove",t=>o(t.touches[0].clientY-n)),document.addEventListener("wheel",t=>o(t.deltaY))});
+const postTitle=document.querySelector(".postTitle"),textContent=postTitle.textContent;postTitle.textContent="";let idx=0;const writeTimer=setInterval(()=>{postTitle.textContent=textContent.slice(0,idx++),idx>textContent.length&&(clearInterval(writeTimer),postTitle.classList.remove("no-blink"))},80);postTitle.classList.add("no-blink");const spoilers=document.querySelectorAll(".spoilerText");spoilers.length&&spoilers.forEach(t=>t.onclick=(()=>t.classList.toggle("clear"))),document.addEventListener("DOMContentLoaded",()=>{const t=document.createElement("div");t.id="checkBtn";const e=document.getElementById("toogleBtn"),n=document.getElementById("functionBtn");n.insertAdjacentElement("afterend",t),new IntersectionObserver(t=>{t.forEach(t=>{e.classList.toggle("active",!t.isIntersecting),n.classList.toggle("Btn-flex",!t.isIntersecting)})},{rootMargin:"300px 0px 0px 0px",threshold:0}).observe(t),e.addEventListener("click",()=>{n.style.top="0px"===n.style.top?"-64px":"0",e.style.transform="rotate(180deg)"===e.style.transform?"rotate(0deg)":"rotate(180deg)"})});
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("ArticleTOC").setAttribute("d","M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z");
+document.getElementById("pathSearch").setAttribute("d","M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z");
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+	cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","linji1/blog");
+    script.setAttribute("issue-term","title");
+    
+    script.setAttribute("theme","github-light");
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+openComments();
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display:inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src='/fancyapps/dist/fancybox/fancybox.umd.js'></script>
+
+</html>
