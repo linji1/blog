@@ -1,3 +1,5 @@
+[Wget-Windows 版本，直接解压使用。](https://eternallybored.org/misc/wget/)
+
 ```
  .\wget.exe -c -t 0 -r -l inf -p --restrict-file-names=windows -A.html https://linji.cn
 ```
