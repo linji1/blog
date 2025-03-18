@@ -1,11 +1,11 @@
 [Wget-Windows 版本，直接解压使用。](https://eternallybored.org/misc/wget/)
 
 ```
- .\wget.exe -c -t 0 -r -l inf -p --restrict-file-names=windows -A.html https://linji.cn
+ .\wget.exe -c -t 0 -r -l inf -p --restrict-file-names=windows -A.html https://www.baidu.com
 ```
 
 ```
-.\wget.exe -c -t 0 -r -l inf --page-requisites --restrict-file-names=nocontrol https://linji.cn
+.\wget.exe -c -t 0 -r -l inf --page-requisites --restrict-file-names=nocontrol https://www.baidu.com
 ```
 
 该命令使用`wget`工具从指定网站下载网页，具体解释如下：
