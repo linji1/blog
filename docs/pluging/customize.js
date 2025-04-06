@@ -111,7 +111,7 @@ a:hover {
    .core-next-dh-shortcode {
     display: inline-block;
     vertical-align: top;
-    width: 32.382%;
+    width: 32.3%;
     border: 1px solid rgba(0, 0, 0, .125);
     margin: 0px 4px 10px 4px;
     border-radius: 0.375rem;
