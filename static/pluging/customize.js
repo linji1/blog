@@ -168,7 +168,7 @@ a:hover {
 /* 网站导航结束 */
 @media (max-width: 768px) {
 body {
-	padding: 45px 20px 10px 20px;
+	padding: 8px;
 }
 .core-next-dh-shortcode {
     margin: 0px 8px 10px 0px;
