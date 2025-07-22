@@ -13,7 +13,7 @@ html {
 
 body {
     margin: 0px auto;
-	padding: 20px 30px 10px 30px;
+	padding: 20px 29px 10px 29px;
 	background-color: white;
     min-width: auto;
     border-radius: 0px;
