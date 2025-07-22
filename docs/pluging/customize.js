@@ -13,7 +13,7 @@ html {
 
 body {
     margin: 0px auto;
-	padding: 20px 30px 10px 30px;
+	padding: 20px 29px 10px 29px;
 	background-color: white;
     min-width: auto;
     border-radius: 0px;
@@ -168,7 +168,7 @@ a:hover {
 /* 网站导航结束 */
 @media (max-width: 768px) {
 body {
-	padding: 45px 20px 10px 20px;
+	padding: 8px;
 }
 .core-next-dh-shortcode {
     margin: 0px 8px 10px 0px;
