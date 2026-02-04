@@ -16,7 +16,7 @@
     "bottomText":"",
     "urlMode":"issue",
     "showPostSource":1,
-    "needComment":0,
+    "needComment":1,
     "themeMode":"fix",
     "dayTheme":"light",
     "nightTheme":"github-light",
