@@ -27,7 +27,7 @@ body{box-sizing:border-box;min-width: auto;max-width:900px;margin:0px auto;paddi
 #functionBtn{display:flex;justify-content:center;margin:20px 0 10px 0;gap:6px;}
 #functionBtn a{padding:14px 16px;}
 #functionBtn.Btn-flex{position:fixed;margin:0;padding:8px 0;top:-64px;left:0;width:100%;min-width:500px;background-color:var(--functionBtnFlex-bgColor);backdrop-filter:blur(30px);box-shadow:#00000078 0 9px 18px -15px;z-index:100;animation:fadeIn.2s ease-in 0s forwards;transition:top 0.3s ease-in-out}
-#footer{margin-top:15px;text-align:center;font-size:small;}
+#footer{margin-top:10px;text-align:center;font-size:small;}
 body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animation:slide-fade-in 0.8s ease;animation:slide-fade-in 0.8s ease}
 .title-left img{animation:grow 0.5s cubic-bezier(0.23,1,0.32,1);-webkit-animation:grow 0.5s cubic-bezier(0.23,1,0.32,1);}
 </style>
@@ -61,9 +61,7 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 
 <body>
     <div id="header">
-
-<a href="https://github.com/linji1/blog/issues/173" target="_blank"><h1 class="postTitle" style="color: black;">（改革前后）中小学教师职称十二级对照表</h1></a>
-
+<h1 class="postTitle">（改革前后）中小学教师职称十二级对照表</h1>
 </div>
     <div id="functionBtn">
 <div>
@@ -85,12 +83,12 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
             <path id="关于本人" fill-rule="evenodd" d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
         </svg>
     </a>
+	
+	<a href="https://github.com/linji1/blog/issues/173" target="_blank" class="btn btn-invisible circle" title="Issue">
+		<svg class="octicon" width="16" height="16"><path id="pathIssue" fill-rule="evenodd" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+	</a>
+	
 
-<span class="btn btn-invisible circle" id="playBtn" onclick="handlePlayAction('play')" title="收听本文">
-		<svg id="playBtn" onclick="handlePlayAction('play')" title="收听本文" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="16" class="octicon" style="margin-top: 11px;">
-    <path d="M160 288h-16c-35.35 0-64 28.7-64 64.12v63.76c0 35.41 28.65 64.12 64 64.12h16c17.67 0 32-14.36 32-32.06V320.06c0-17.71-14.33-32.06-32-32.06zm208 0h-16c-17.67 0-32 14.35-32 32.06v127.88c0 17.7 14.33 32.06 32 32.06h16c35.35 0 64-28.71 64-64.12v-63.76c0-35.41-28.65-64.12-64-64.12zM256 32C112.91 32 4.57 151.13 0 288v112c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16V288c0-114.67 93.33-207.8 208-207.82 114.67.02 208 93.15 208 207.82v112c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16V288C507.43 151.13 399.09 32 256 32z"></path>
-  </svg>
-	</span>
 	<a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题"style="display:none;">
 		<svg class="octicon" width="16" height="16" ><path id="themeSwitch" fill-rule="evenodd"></path></svg>
 	</a>   
@@ -104,40 +102,6 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 </a>
 </div>
     <div id="content">
-<style>
-.sentence {
-  cursor: pointer;
-  /* 默认 inline，不破坏排版 */
-}
-.sentence:hover {
-  background-color: #f0f0f0;
-}
-.sentence.current {
-  background-color: #ffeb3b; /* 黄色高亮 */
-  border-radius: 2px;
-}
-</style>
-<!-- 听读控制面板（插入到printview容器前） -->
-<div class="reader-panel" style="margin: 20px 0;display: none;">
-  <div class="controls">
-    <button id="playBtn" class="btn" onclick="handlePlayAction('play')">开始</button>
-    <button id="pauseBtn" class="btn" disabled onclick="handlePlayAction('pause')">暂停</button>
-    <button id="resumeBtn" class="btn" disabled onclick="handlePlayAction('resume')">继续</button>
-    <button id="stopBtn" class="btn" disabled onclick="handlePlayAction('stop')">停止</button>
-  </div>
-  <div class="voice-control">
-    <label for="voiceSelect">选择语音</label>
-    <select id="voiceSelect" class="voice-select" aria-label="选择朗读语音"></select>
-  </div>
-  <div class="progress-container">
-    <div class="progress-info">
-      进度: <span id="progressText">0/0</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" id="progressFill"></div>
-    </div>
-  </div>
-</div>
 <div class="markdown-body" id="postBody"><p><p>对于中小学教师职称等级，我相信大部分老师已经有所了解。其实简单来说，改革后的教师职称可以分为五个等级：正高级教师、高级教师、一级教师、二级教师和三级教师。这五个等级分别对应正高、副高、中级、助理和员级。</p><div style="text-align: center;"><b><font size="4">中小学教师职称制度改革职称(职务)过渡对应表</font></b></div><center><table style="border-collapse: collapse;text-align: center;line-height: 2em;white-space: nowrap" cellspacing="0" cellpadding="4"><tbody><tr><td colspan="2"><div style="text-align:center;">过渡前名称与岗位等级</div></td><td colspan="2"><div style="text-align:center;">过渡后名称与岗位等级<br></div></td></tr><tr><td><div style="text-align:center;">教师职称(职务)<br></div><div style="text-align:center;">名称</div></td><td><div style="text-align:center;">专业技术岗位<br></div><div style="text-align:center;">等级</div></td><td><div style="text-align:center;">教师职称(职务)<br></div><div style="text-align:center;">名称</div></td><td><div style="text-align:center;">专业技术岗位<br></div><div style="text-align:center;">等级</div></td></tr><tr><td rowspan="4" style="text-align:center;">中学正高级教师</td><td style="text-align:center;">一级</td><td rowspan="4" style="text-align:center;">正高级教师</td><td style="text-align:center;">一级</td></tr><tr><td style="text-align:center;">二级</td><td style="text-align:center;">二级</td></tr><tr><td style="text-align:center;">三级</td><td style="text-align:center;">三级</td></tr><tr><td style="text-align:center;">四级</td><td style="text-align:center;">四级</td></tr><tr><td rowspan="3"><div style="text-align:center;">中学高级教师</div><div style="text-align:center;">小学高级教师<br></div><div style="text-align:center;">(副高级)<br></div></td><td style="text-align:center;">五级</td><td rowspan="3" style="text-align:center;">高级教师</td><td style="text-align:center;">五级</td></tr><tr><td style="text-align:center;">六级</td><td style="text-align:center;">六级</td></tr><tr><td style="text-align:center;">七级</td><td style="text-align:center;">七级</td></tr><tr><td rowspan="3"><div style="text-align:center;">中学一级教师</div><div style="text-align:center;">小学高级教师<br></div></td><td style="text-align:center;">八级</td><td rowspan="3" style="text-align:center;">一级教师</td><td style="text-align:center;">八级</td></tr><tr><td style="text-align:center;">九级</td><td style="text-align:center;">九级</td></tr><tr><td style="text-align:center;">十级</td><td style="text-align:center;">十级</td></tr><tr><td rowspan="2"><div style="text-align:center;">中学二级教师</div><div style="text-align:center;">小学一级教师<br></div></td><td style="text-align:center;">十一级</td><td rowspan="2" style="text-align:center;">二级教师</td><td style="text-align:center;">十一级</td></tr><tr><td style="text-align:center;">十二级</td><td style="text-align:center;">十二级</td></tr><tr><td><div style="text-align:center;">中学三级教师</div><div style="text-align:center;">小学二级教师<br></div><div style="text-align:center;">小学三级教师<br></div></td><td style="text-align:center;">十三级</td><td style="text-align:center;">三级教师</td><td><div style="text-align:center;"><br></div><div style="text-align:center;">十三级</div></td></tr></tbody></table></center><p>通过上面的表格，我们可以清晰地看到改革前后各个级别的对应关系，同时能够更好地了解新的职称制度。中小学教师职称制度改革后，中小学统一规范职称名称，教师的职称等级变的更加明确和简洁，专业技术岗位等级不再繁琐，一目了然。</p><hr title="别的属性： none：无样式；dotted：点线；dashed：虚线；solid：实线； double：双线；groove：槽线；ridge：脊线；inset：内凹；outset：外凸。" style="border-top: 0px dotted #0003;margin-top: 0px;"><p style="text-align: center; "><b style=""><font size="6">教师的职称相当于什么行政级别？</font><font size="4">&nbsp;</font></b></p><p><b><font color="#ff0000">第一层级，正高级(教授)&nbsp;</font></b></p><p>一级，相当于正部级,</p><p>二级，相当于副部级,</p><p>三级，相当于正厅级,</p><p>四级，相当于副厅级.&nbsp;</p><p><b><font color="#ff0000">第二层级，副高级(副教授)&nbsp;</font></b></p><p>五级，相当于正处级,</p><p>六级，七级，相当于副处级。</p><p><b><font color="#ff0000">第三层级，中级(讲师)&nbsp;</font></b></p><p>八级，相当于正科级,</p><p>九级，十级，相当于副科级。&nbsp;</p><p><b><font color="#ff0000">第四层级，初级(助教)&nbsp;</font></b></p><p>十一级，相当于科员级,</p><p>十二级，相当于办事员。&nbsp;</p><p>注意：以上说的教师职称相当于行政级别，但实际与行政级别的工资福利、社会地位以及隐形待遇等不同的，可以说一个正高级教师待遇不如一个正科级公务员，因为教师除了工资其他什么福利基本上没有，而公务员不同，除了工资待遇还有其他福利，比如车贴、电话补贴以及综治奖、文明奖，这也不是什么秘密了！&nbsp;</p><p>&nbsp;<font color="#ff0000">教师工资主要来源于三块，岗位工资、薪级工资以及绩效工资，岗位工资就是你的职称级别</font>，比如你是七级（副高级）岗位工资就是3037元，而薪级工资与你任教年限有关，比如你任教二十年，薪级工资则为1421元，而绩效工资有明显的地区差别，经济基础好的地区，各种绩效工资会配齐，而经济基础不太好的地区，相对来说会低好多。</p><p>教师属于事业编制的国家公务人员，这种也是体制内的工作与公务员一样也有许多的优势，比如工资很稳定，退休有保障，旱涝保收虽然收入算不上很高，但绝对稳定。这种体制内的工作优势凸显，无论外面风云有多变幻，教师和公务员依旧风轻云淡，不愁吃穿。</p><p>按理说教师应该心满意足，努力工作，但是人往高处走，水往低处流这是自然规律，绝大多数人都不会满足于现状，总是这山望着那山高，教师总爱与公务员进行比较，而且不比不知道，一比气更多，因为许多方面的不平衡让教师心生抱怨。</p><p>比如教育部提出的教师工资收入要基本与公务员收入相等的目标已经基本完成，但还是有明显差距。</p><p><font color="#ff0000">我们首先来对一个副高级职称的教师和一个副处级公务员进行对比看看区别在哪里？</font></p><p>待遇基本相同，有时候副高级职称的工作略高于副处级职务的公务员。副高级职称的教师工资属于事业编，副高共有七，六，五三个级别，从待遇来看，副高级要高于副处级别，六级和五级就更高了，而且教师还有教龄津贴（尽管很少），班主任津贴（一部分人）</p><p>但是一个“相当于”就很说明问题了，副高级职称教师只能说明你的工作待遇与副处级公务员相比基本差不多。</p><p>但在影响力和社会地位以及福利待遇方面就有明显差别，有些福利待遇方面来说根本没有可比性。公务员有车补教师有吗？公务员外出开会有公车接送教师有吗？公务员住院报销时有公务员补贴教师有吗？公务员和副高级职称的教师一同出席某些活动，坐在前面的肯定是公务员而不是教师。</p><p>看到这样一个笑话，两个人是发小，同时毕业于某大学，同年参加工作，一个成为公务员处级领导，一个是副高级职称教授。</p><p>过年回来一同参加同乡会，主家却首先把处级公务员请到上座，而把副高级职称教授放在其次，于是教授有些愤愤不平，心想我们两个论资历一样，论地位差不多，论收入我比他还高一点，凭什么他在先我在后？</p><p>其实这在中国人的传统观念中很正常，因为人们普遍认为公务员是具有很高社会地位的一种象征，就如同大家互相之间调侃的一样，人家公务员是当官的，见多识广，你职称再高你也只是一个教师。</p><p>而且论人脉和社会地位以及影响力公务员都远远高于一个副高级职称的教师，假如人家是副处级公务员，而且是管理教育系统的副处级公务员，而另一个是副高级职称的校长，那肯定校长得听从这个公务员的管理，而副高级职称的教师要听命于校长管理，这就是明摆着的一个事实。</p><p><font color="#ff0000">从另一方面来说，二者又没有可比性，因为分工不同，职责不同，各自的角色也不同</font>，事业编制与公务员序列性质不同，基本上也就没有可比性。特别是工作性质不同，教师职称与公务员职务走的是完全不同的途径，二者之间不能进行绝对的对比。</p><p>但是作为教师更大的优势是风险较小，工作性质单纯，不用花费太多的心思和精力去维护许许多多的上下级关系，不用操心一旦失误有可能前途尽毁的担忧，只要你教好学生，问心无愧就好，何必自寻烦恼硬要与人论高低呢？</p></p></div>
 <div style="font-size:small;margin-top:8px;float:right;" id="article-links">
 <script>
@@ -191,6 +155,9 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 </script>
 </div>
 
+<button class="btn btn-block" type="button" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
 </div>
     <div id="footer"><div id="footer2">
     <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" style="margin-right: 4px;height:18px;vertical-align: bottom;fill: #ff5a5a;"class="animate_heartBeatScale"><path d="M1017.152 426.592a263.296 263.296 0 0 0-502.304-133.92 263.328 263.328 0 0 0-502.304 133.92s5.152 259.264 505.536 520.096c500.32-260.832 499.072-520.096 499.072-520.096zM282.016 194.976a43.2 43.2 0 1 1 .096 86.4 43.2 43.2 0 0 1-.096-86.4zm-135.04 323.232a45.12 45.12 0 0 1-55.488-31.328 289.472 289.472 0 0 1-10.816-66.592C76.64 313.824 142.24 261.472 145.504 258.88a45.024 45.024 0 0 1 63.2 8.032c15.168 19.488 11.744 47.36-7.328 62.72-2.336 1.952-30.784 27.52-30.592 82.24.096 14.752 2.208 31.616 7.488 50.784a45.12 45.12 0 0 1-31.296 55.552z"/></svg><span id="runday"></span><br>
@@ -207,6 +174,7 @@ if("10/26/1977"!=""){
     document.getElementById("runday").innerHTML="博主已运行"+diffDay+"天"+" • ";
 }
 </script></div>
+<script src="/blog/pluging/playBtn.js" type="text/javascript"></script>
 </body>
 <script>
 var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
@@ -224,11 +192,45 @@ document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
 
 
 
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+	cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","linji1/blog");
+    script.setAttribute("issue-term","title");
+    
+    script.setAttribute("theme","github-light");
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+openComments();
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
 
 
 
 </script>
 <script src='/fancyapps/dist/fancybox/fancybox.umd.js'></script>
 
-<script src="/blog/pluging/playBtn.js" type="text/javascript"></script>
 </html>
