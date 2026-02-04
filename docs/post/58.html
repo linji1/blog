@@ -61,8 +61,12 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 
 <body>
     <div id="header">
+		
+	<a href="https://github.com/linji1/blog/issues/58" target="_blank">
 <h1 class="postTitle">[通知] 2024-2025学年度第二学期一中高二年级学生周末安排表</h1>
-</div>
+</a>
+	
+	</div>
     <div id="functionBtn">
 <div>
 	<a href="/blog/index.html" id="buttonHome" class="btn btn-invisible circle" title="首页">
@@ -83,12 +87,14 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
             <path id="关于本人" fill-rule="evenodd" d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
         </svg>
     </a>
-	
-	<a href="https://github.com/linji1/blog/issues/58" target="_blank" class="btn btn-invisible circle" title="Issue">
-		<svg class="octicon" width="16" height="16"><path id="pathIssue" fill-rule="evenodd" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
-	</a>
-	
 
+<span class="btn btn-invisible circle" id="playBtn" onclick="handlePlayAction('play')" title="收听本文">
+		<svg id="playBtn" onclick="handlePlayAction('play')" title="收听本文" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="16" class="octicon" style="
+    margin-top: 8px;
+">
+    <path d="M160 288h-16c-35.35 0-64 28.7-64 64.12v63.76c0 35.41 28.65 64.12 64 64.12h16c17.67 0 32-14.36 32-32.06V320.06c0-17.71-14.33-32.06-32-32.06zm208 0h-16c-17.67 0-32 14.35-32 32.06v127.88c0 17.7 14.33 32.06 32 32.06h16c35.35 0 64-28.71 64-64.12v-63.76c0-35.41-28.65-64.12-64-64.12zM256 32C112.91 32 4.57 151.13 0 288v112c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16V288c0-114.67 93.33-207.8 208-207.82 114.67.02 208 93.15 208 207.82v112c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16V288C507.43 151.13 399.09 32 256 32z"></path>
+  </svg>
+	</span>
 	<a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题"style="display:none;">
 		<svg class="octicon" width="16" height="16" ><path id="themeSwitch" fill-rule="evenodd"></path></svg>
 	</a>   
@@ -102,6 +108,40 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 </a>
 </div>
     <div id="content">
+<style>
+.sentence {
+  cursor: pointer;
+  /* 默认 inline，不破坏排版 */
+}
+.sentence:hover {
+  background-color: #f0f0f0;
+}
+.sentence.current {
+  background-color: #ffeb3b; /* 黄色高亮 */
+  border-radius: 2px;
+}
+</style>
+<!-- 听读控制面板（插入到printview容器前） -->
+<div class="reader-panel" style="margin: 20px 0;display: none;">
+  <div class="controls">
+    <button id="playBtn" class="btn" onclick="handlePlayAction('play')">开始</button>
+    <button id="pauseBtn" class="btn" disabled onclick="handlePlayAction('pause')">暂停</button>
+    <button id="resumeBtn" class="btn" disabled onclick="handlePlayAction('resume')">继续</button>
+    <button id="stopBtn" class="btn" disabled onclick="handlePlayAction('stop')">停止</button>
+  </div>
+  <div class="voice-control">
+    <label for="voiceSelect">选择语音</label>
+    <select id="voiceSelect" class="voice-select" aria-label="选择朗读语音"></select>
+  </div>
+  <div class="progress-container">
+    <div class="progress-info">
+      进度: <span id="progressText">0/0</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+</div>
 <div class="markdown-body" id="postBody"><p><table border="1"style="border-collapse: collapse;text-align: center;width: 100%;font-size: 14px;"><tbody><tr style="background-color: #7DBEC9;font-weight: 600;"><td>周次</td><td>日期</td><td>内容</td><td>周六安排</td><td>周日安排</td><td>学生离校与返校安排</td></tr><tr><td style="background-color: #EAAFAC;">第1周</td><td>2月10日-2月16日</td><td>2月13日开学(周四)</td><td style="background-color: #F8C8F7;">2月15日上课<br>(语数英)</td><td style="background-color: #EFE095;">2月15晚-16日<br>班主任楼层管理</td><td>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第2周</td><td>2月17日-2月23日</td><td>上课</td><td></td><td></td><td>2月21日(周五)下午离校返家，<br>2月23日(周日)下午返校。</td></tr><tr><td style="background-color: #EAAFAC;">第3周</td><td>2月24日-3月2日</td><td>上课</td><td style="background-color: #B4DEB3;">3月1日上课<br>(选考科目)</td><td style="background-color: #EFE095;">3月1晚-2日<br>班主任楼层管理</td><td>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第4周</td><td>3月3日-3月9日</td><td>上课</td><td></td><td></td><td>3月7日(周五)下午离校返家，<br>3月9日(周白)下午返校。</td></tr><tr><td style="background-color: #EAAFAC;">第5周</td><td>3月10日-3月16日</td><td>上课</td><td style="background-color: #F8C8F7;">3月15日上课<br>(语数英)</td><td style="background-color: #EFE095;">3月15晚-16日<br>班主任楼层管理</td><td>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第6周</td><td>3月17日-3月23日</td><td>上课</td><td></td><td></td><td>3月21日(周五)下午离校返家，<br>3月23日(周日)下午返校。</td></tr><tr><td style="background-color: #EAAFAC;">第7周</td><td>3月24日-3月30日</td><td>上课</td><td style="background-color: #B4DEB3;">3月29日上课<br>(选考科目)</td><td style="background-color: #EFE095;">3月29晚-30日<br>班主任楼层管理</td><td>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第8周</td><td>3月31日-4月6日</td><td>上课(4号/周五/清明节)</td><td></td><td></td><td>4月3日(周四)下午离校返家，<br>4月6日(周日)下午返校。</td></tr><tr><td style="background-color: #EAAFAC;">第9周</td><td>4月7日-4月13日</td><td>上课</td><td style="background-color: #F8C8F7;">4月12日上课<br>(语数英)</td><td style="background-color: #EFE095;">4月12晚-13日<br>班主任楼层管理</td><td>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第10周</td><td>4月14日-4月20日</td><td>上课</td><td></td><td></td><td>4月18日(周五)下午离校返家，<br>4月20日(周日)下午返校。</td></tr><tr><td style="background-color: #EAAFAC;">第11周</td><td>4月21日-4月27日</td><td>上课</td><td style="background-color: #EFE095;">4月25晚-26日<br>班主任楼层管理</td><td style="background-color: #B1DBE9;">4月27日上课<br>按节日调休课程</td><td>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第12周</td><td>4月28日-5月4日</td><td>上课(1号/周四/劳动节)</td><td></td><td></td><td>4月30日(周三)下午离校返家。</td></tr><tr><td style="background-color: #EAAFAC;">第13周</td><td>5月5日-5月11日</td><td>上课</td><td style="background-color: #B4DEB3;">5月10日上课<br>(选科科目)</td><td style="background-color: #EFE095;">5月10晚-11日<br>班主任楼层管理</td><td>5月5日(周一)下午返校。<br>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第14周</td><td>5月12日-5月18日</td><td>上课</td><td></td><td></td><td>5月16日（周五）下午离校返家。<br>5月18日（周日）下午返校。</td></tr><tr><td style="background-color: #EAAFAC;">第15周</td><td>5月19日-5月25日</td><td>上课</td><td style="background-color: #F8C8F7;">5月24日上课<br>(语数英)</td><td style="background-color: #EFE095;">5月24晚-25日<br>班主任楼层管理</td><td>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第16周</td><td>5月26日-6月1日</td><td>上课(31号/周六/端午节)</td><td></td><td></td><td>5月30日(周五)下午离校返家。</td></tr><tr><td style="background-color: #EAAFAC;">第17周</td><td>6月2日-6月8日</td><td>上课(7、8、9号高考)</td><td></td><td></td><td>6月2日(周一)下午返校，<br>6月6日(周五)上午离校返家。</td></tr><tr><td style="background-color: #EAAFAC;">第18周</td><td>6月9日-6月15日</td><td>上课</td><td style="background-color: #B4DEB3;">6月14日上课<br>(选考科目)</td><td style="background-color: #EFE095;">6月14晚-15日<br>班主任楼层管理</td><td>6月9日(周一)下午返校<br>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第19周</td><td>6月16日-6月22日</td><td>上课</td><td></td><td></td><td>6月20日(周五)下午离校返家，<br>6月22日(周日)下午返校。</td></tr><tr><td style="background-color: #EAAFAC;">第20周</td><td>6月23日-6月29日</td><td>上课</td><td style="background-color: #F8C8F7;">6月28日上课<br>(语数英)</td><td></td><td>6月28日(周六)下午离校返家。</td></tr><tr><td style="background-color: #EAAFAC;">第21周</td><td>6月30日-7月6日</td><td>上课(6月30日至7月2日中考)</td><td style="background-color: #B4DEB3;">7月5日上课<br>(选考科目)</td><td style="background-color: #EFE095;">7月5晚-6日<br>班主任楼层管理</td><td>7月2日(周三)下午返校。<br>周末留校</td></tr><tr><td style="background-color: #EAAFAC;">第22周</td><td>7月7日-7月13日</td><td>期末考试，7月12日放暑假</td><td></td><td></td><td>拟7月11日(周五)下午离校返家。</td></tr><tr><td colspan="6"style="text-align:center;">注：具体情况以实际通知为准，2025年2月14日启用。林肖乐2025年2月16日（星期六）进入一中就读。</td></tr></tbody></table></p>
 <div class="ImgLazyLoad-circle"></div>
 <img data-fancybox="gallery" img-src="/assets1/file/2025/02/2025022038.webp">
@@ -179,6 +219,7 @@ if("10/26/1977"!=""){
     document.getElementById("runday").innerHTML="博主已运行"+diffDay+"天"+" • ";
 }
 </script></div>
+<script src="/blog/pluging/playBtn.js" type="text/javascript"></script>
 </body>
 <script>
 var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
