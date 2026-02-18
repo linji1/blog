@@ -14,7 +14,7 @@
 <meta property="og:url" content="post/102.html">
 <meta property="og:image" content="/blog/avatar.svg">
 <title>如何使用Wget下载整个网站？</title>
-<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
 
 
 </head>
@@ -209,7 +209,8 @@ body,#content,#functionBtn,.tagTitle,.title-left a,.subnav-search{-webkit-animat
 <p>使用<code class="notranslate">wget</code>下载整个网站可以通过合理组合其参数来实现，下面为你详细介绍操作步骤及相关参数示例：</p>
 <h3>基本命令示例</h3>
 <p>以下是一个能下载整个网站的常用<code class="notranslate">wget</code>命令示例：</p>
-<div class="highlight highlight-source-shell"><pre class="notranslate">wget -r -l inf -p -k -E --restrict-file-names=windows --domains=example.com https://example.com</pre></div>
+<pre lang="bash" class="notranslate"><code class="notranslate">wget -r -l inf -p -k -E --restrict-file-names=windows --domains=example.com https://example.com
+</code></pre>
 <h3>参数解释</h3>
 <ol>
 <li><strong><code class="notranslate">-r</code></strong>：
