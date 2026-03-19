@@ -18,7 +18,7 @@
 <meta property="og:url" content="post/14.html">
 <meta property="og:image" content="/blog/avatar.svg">
 <title>[Markdown] 使用笔记</title>
-
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 
 </head>
@@ -165,50 +165,46 @@ E=mc^2
 $$</p>
 <hr>
 <h3>3. 高亮一段代码[^code]</h3>
-<pre lang="js" class="notranslate"><code class="notranslate">// 给页面里所有的 DOM 元素添加一个 1px 的描边（outline）;
-[].forEach.call($$("*"),function(a){
-  a.style.outline="1px solid #"+(~~(Math.random()*(1&lt;&lt;24))).toString(16);
-})
-</code></pre>
+<div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-c">// 给页面里所有的 DOM 元素添加一个 1px 的描边（outline）;</span>
+<span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">forEach</span><span class="pl-kos">.</span><span class="pl-en">call</span><span class="pl-kos">(</span><span class="pl-en">$$</span><span class="pl-kos">(</span><span class="pl-s">"*"</span><span class="pl-kos">)</span><span class="pl-kos">,</span><span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-s1">a</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+  <span class="pl-s1">a</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">outline</span><span class="pl-c1">=</span><span class="pl-s">"1px solid #"</span><span class="pl-c1">+</span><span class="pl-kos">(</span><span class="pl-c1">~</span><span class="pl-c1">~</span><span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">random</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-c1">*</span><span class="pl-kos">(</span><span class="pl-c1">1</span><span class="pl-c1">&lt;&lt;</span><span class="pl-c1">24</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">toString</span><span class="pl-kos">(</span><span class="pl-c1">16</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span></pre></div>
 <h3>4. 高效绘制流程图</h3>
-<pre lang="mermaid" class="notranslate"><code class="notranslate">graph TD;
-  A--&gt;B;
-  A--&gt;C;
-  B--&gt;D;
-  C--&gt;D;
-</code></pre>
+<div class="highlight highlight-source-mermaid"><pre class="notranslate"><span class="pl-k">graph</span> <span class="pl-ent">TD</span><span class="pl-sg">;</span>
+  <span class="pl-ent">A</span><span class="pl-k">--&gt;</span><span class="pl-ent">B</span><span class="pl-sg">;</span>
+  <span class="pl-ent">A</span><span class="pl-k">--&gt;</span><span class="pl-ent">C</span><span class="pl-sg">;</span>
+  <span class="pl-ent">B</span><span class="pl-k">--&gt;</span><span class="pl-ent">D</span><span class="pl-sg">;</span>
+  <span class="pl-ent">C</span><span class="pl-k">--&gt;</span><span class="pl-ent">D</span><span class="pl-sg">;</span></pre></div>
 <h3>5. 高效绘制序列图</h3>
-<pre lang="mermaid" class="notranslate"><code class="notranslate">sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice-&gt;John: Hello John, how are you?
-  loop Healthcheck
-      John-&gt;John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts &lt;br/&gt;prevail...
-  John--&gt;Alice: Great!
-  John-&gt;Bob: How about you?
-  Bob--&gt;John: Jolly good!
-</code></pre>
+<div class="highlight highlight-source-mermaid"><pre class="notranslate"><span class="pl-k">sequenceDiagram</span>
+  <span class="pl-k">participant</span> <span class="pl-ent">Alice</span>
+  <span class="pl-k">participant</span> <span class="pl-ent">Bob</span>
+  <span class="pl-ent">Alice</span><span class="pl-k">-&gt;</span><span class="pl-ent">John</span><span class="pl-k">:</span> <span class="pl-s">Hello John, how are you?</span>
+  <span class="pl-k">loop</span> <span class="pl-s">Healthcheck</span>
+      <span class="pl-ent">John</span><span class="pl-k">-&gt;</span><span class="pl-ent">John</span><span class="pl-k">:</span> <span class="pl-s">Fight against hypochondria</span>
+  <span class="pl-k">end</span>
+  <span class="pl-k">Note right of </span><span class="pl-ent">John</span><span class="pl-k">:</span> <span class="pl-s">Rational thoughts &lt;br/&gt;prevail...</span>
+  <span class="pl-ent">John</span><span class="pl-k">--&gt;</span><span class="pl-ent">Alice</span><span class="pl-k">:</span> <span class="pl-s">Great!</span>
+  <span class="pl-ent">John</span><span class="pl-k">-&gt;</span><span class="pl-ent">Bob</span><span class="pl-k">:</span> <span class="pl-s">How about you?</span>
+  <span class="pl-ent">Bob</span><span class="pl-k">--&gt;</span><span class="pl-ent">John</span><span class="pl-k">:</span> <span class="pl-s">Jolly good!</span></pre></div>
 <h3>6. 高效绘制甘特图</h3>
 <blockquote>
 <p><strong>甘特图</strong>内在思想简单。基本是一条线条图，横轴表示时间，纵轴表示活动（项目），线条表示在整个期间上计划和实际的活动完成情况。它直观地表明任务计划在什么时候进行，及实际进展与计划要求的对比。</p>
 </blockquote>
-<pre lang="mermaid" class="notranslate"><code class="notranslate">gantt
-  title 项目开发流程
-  section 项目确定
-    需求分析       :a1, 2019-06-22, 3d
-    可行性报告     :after a1, 5d
-    概念验证       : 5d
-  section 项目实施
-    概要设计      :2019-07-05  , 5d
-    详细设计      :2019-07-08, 10d
-    编码          :2019-07-15, 10d
-    测试          :2019-07-22, 5d
-  section 发布验收
+<div class="highlight highlight-source-mermaid"><pre class="notranslate"><span class="pl-k">gantt</span>
+  <span class="pl-k">title</span> <span class="pl-s">项目开发流程</span>
+  <span class="pl-k">section</span> <span class="pl-s">项目确定</span>
+    <span class="pl-e">需求分析      </span> <span class="pl-k">:</span><span class="pl-en">a1</span><span class="pl-sg">,</span> <span class="pl-c1">2019-06-22</span><span class="pl-sg">,</span> <span class="pl-c1">3</span><span class="pl-k">d</span>
+    <span class="pl-e">可行性报告    </span> <span class="pl-k">:</span><span class="pl-k">after</span> <span class="pl-en">a1</span><span class="pl-sg">,</span> <span class="pl-c1">5</span><span class="pl-k">d</span>
+    <span class="pl-e">概念验证      </span> <span class="pl-k">:</span> <span class="pl-c1">5</span><span class="pl-k">d</span>
+  <span class="pl-k">section</span> <span class="pl-s">项目实施</span>
+    <span class="pl-e">概要设计     </span> <span class="pl-k">:</span><span class="pl-c1">2019-07-05</span>  <span class="pl-sg">,</span> <span class="pl-c1">5</span><span class="pl-k">d</span>
+    <span class="pl-e">详细设计     </span> <span class="pl-k">:</span><span class="pl-c1">2019-07-08</span><span class="pl-sg">,</span> <span class="pl-c1">10</span><span class="pl-k">d</span>
+    <span class="pl-e">编码         </span> <span class="pl-k">:</span><span class="pl-c1">2019-07-15</span><span class="pl-sg">,</span> <span class="pl-c1">10</span><span class="pl-k">d</span>
+    <span class="pl-e">测试         </span> <span class="pl-k">:</span><span class="pl-c1">2019-07-22</span><span class="pl-sg">,</span> <span class="pl-c1">5</span><span class="pl-k">d</span>
+  <span class="pl-k">section</span> <span class="pl-s">发布验收</span>
     发布: 2d
-    验收: 3d
-</code></pre>
+    验收: 3d</pre></div>
 <h3>7. 支持图表</h3>
 <div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>可能在博客内无法正常预览</p>
 </div>
@@ -322,13 +318,12 @@ $$</p>
 </tbody>
 </table></markdown-accessiblity-table>
 <h3>9. 折叠代码块</h3>
-<pre lang="markdown" class="notranslate"><code class="notranslate">&lt;details&gt;
-  &lt;summary&gt;点我展开看代码&lt;/summary&gt;
-  &lt;pre&gt;&lt;code&gt;
+<div class="highlight highlight-text-md"><pre class="notranslate">&lt;<span class="pl-ent">details</span>&gt;
+  &lt;<span class="pl-ent">summary</span>&gt;点我展开看代码&lt;/<span class="pl-ent">summary</span>&gt;
+  &lt;<span class="pl-ent">pre</span>&gt;&lt;<span class="pl-ent">code</span>&gt;
 # 在这里写折叠的代码
-  &lt;/code&gt;&lt;/pre&gt;
-&lt;/details&gt;
-</code></pre>
+  &lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;
+&lt;/<span class="pl-ent">details</span>&gt;</pre></div>
 <h3>10. 更详细语法说明</h3>
 <p>想要查看更详细的语法说明，可以参考这份 <a href="https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/markdown-tutorial.md">Markdown 资源列表</a>，涵盖入门至进阶教程，以及资源、平台等信息，能让您对她有更深的认知。</p>
 <p>总而言之，不同于其它<em>所见即所得</em>的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 <code class="notranslate">GitHub</code> 和 技术问答网站 <code class="notranslate">StackOverFlow</code> 的御用书写格式，而且越发流行，正在在向各行业渗透。</p>
@@ -395,12 +390,11 @@ print("Hello World")
 ```
 </code></pre>
 <p>效果如下:</p>
-<pre lang="python" class="notranslate"><code class="notranslate">import request
-import time
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-s1">request</span>
+<span class="pl-k">import</span> <span class="pl-s1">time</span>
 
-time.sleep_ms(1000)
-print("Hello World")
-</code></pre>
+<span class="pl-s1">time</span>.<span class="pl-c1">sleep_ms</span>(<span class="pl-c1">1000</span>)
+<span class="pl-en">print</span>(<span class="pl-s">"Hello World"</span>)</pre></div>
 <h2>链接</h2>
 <pre class="notranslate"><code class="notranslate">[我的博客](https://linji.org)
 </code></pre>
@@ -458,34 +452,29 @@ print("Hello World")
 - this text is highlighted in red
 ```
 </code></pre>
-<pre lang="diff" class="notranslate"><code class="notranslate">+ this text is highlighted in green
-- this text is highlighted in red
-</code></pre>
+<div class="highlight highlight-source-diff"><pre class="notranslate"><span class="pl-mi1"><span class="pl-mi1">+</span> this text is highlighted in green</span>
+<span class="pl-md"><span class="pl-md">-</span> this text is highlighted in red</span></pre></div>
 <h2>字体颜色</h2>
 <pre class="notranslate"><code class="notranslate">```CSS
 Some text in green! 123
 ```
 </code></pre>
-<pre lang="CSS" class="notranslate"><code class="notranslate">Some text in green! 123
-</code></pre>
+<div class="highlight highlight-source-css"><pre class="notranslate"><span class="pl-ent">Some</span> <span class="pl-ent">text</span> <span class="pl-ent">in</span> <span class="pl-ent">green</span>! 123</pre></div>
 <pre class="notranslate"><code class="notranslate">```P4
 Some text in blue! 123
 ```
 </code></pre>
-<pre lang="P4" class="notranslate"><code class="notranslate">Some text in blue! 123
-</code></pre>
+<div class="highlight highlight-source-p4"><pre class="notranslate"><span class="pl-c1">Some</span> <span class="pl-c1">text</span> <span class="pl-c1">in</span> <span class="pl-c1">blue</span>! <span class="pl-c1">123</span></pre></div>
 <pre class="notranslate"><code class="notranslate">```Mint
 Some text in blue with additional keyword highlighting! 123
 ```
 </code></pre>
-<pre lang="Mint" class="notranslate"><code class="notranslate">Some text in blue with additional keyword highlighting! 123
-</code></pre>
+<div class="highlight highlight-source-mint"><pre class="notranslate"><span class="pl-en">Some</span> <span class="pl-c1">text</span> <span class="pl-c1">in</span> <span class="pl-c1">blue</span> <span class="pl-k">with</span> <span class="pl-c1">additional</span> <span class="pl-c1">keyword</span> <span class="pl-c1">highlighting</span>! <span class="pl-c1">123</span></pre></div>
 <pre class="notranslate"><code class="notranslate">```JSON
 Some text highlighted in red! 123
 ```
 </code></pre>
-<pre lang="JSON" class="notranslate"><code class="notranslate">Some text highlighted in red! 123
-</code></pre>
+<div class="highlight highlight-source-json"><pre class="notranslate"><span class="pl-ii">Some text highlighted in red! 123</span></pre></div>
 <h2>HTML 语法</h2>
 <p>等宽字体</p>
 <pre class="notranslate"><code class="notranslate">&lt;samp&gt;Monospaced text&lt;/samp&gt;
@@ -516,10 +505,9 @@ Dropdown content (supports **markdown** ~~yay!~~)
 <details>
 <summary>Item summary with dropdown</summary>
 <p>Dropdown content (supports <strong>markdown</strong> <del>yay!</del>)</p>
-<pre lang="json" class="notranslate"><code class="notranslate">{
-  awesome: "true"
-}
-</code></pre>
+<div class="highlight highlight-source-json"><pre class="notranslate">{
+  <span class="pl-ii">awesome: "true"</span>
+}</pre></div>
 </details>
 <p>粗体斜体</p>
 <pre class="notranslate"><code class="notranslate">__*Italic-bold*__
