@@ -19,7 +19,8 @@
 	--h5-size: 0.875rem;
 	--h6-size: 0.75rem;
 	--body-font-size: 0.875rem;
-	--font-size-small: 0.75rem
+	--font-size-small: 0.75rem;
+    background: url(https://bz.w3h5.com/img/uhd) center center no-repeat no-repeat fixed #ffffff
 }
 
 :root,
